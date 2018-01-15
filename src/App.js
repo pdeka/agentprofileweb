@@ -8,7 +8,7 @@ import {
 import Preview from './Preview';
 import NotFound from './NotFound';
 import Home from './Home';
-// import './App.css';
+import './App.css';
 
 const App = (props) => (
   <Router>
