@@ -6,10 +6,9 @@ import {
   Redirect,
 } from 'react-router-dom';
 import Preview from './Preview';
-import Help from './Help';
 import NotFound from './NotFound';
 import Home from './Home';
-import './App.css';
+// import './App.css';
 
 const App = (props) => (
   <Router>
