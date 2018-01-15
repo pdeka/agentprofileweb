@@ -8,6 +8,7 @@ import {
 import Preview from './Preview';
 import Help from './Help';
 import NotFound from './NotFound';
+import Home from './Home';
 import './App.css';
 
 const App = (props) => (
@@ -15,6 +16,7 @@ const App = (props) => (
     <Switch>
       <Redirect exact from="/" to="/help"/>
       <Route exact path="/help" component={Help} />
+      <Route exact path="/Home" component={Home} />
       <Route exact path="/preview" render={routeProps => <Preview {...routeProps} prismicCtx={props.prismicCtx} />} />
       <Route component={NotFound} />
     </Switch>
