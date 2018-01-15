@@ -15,8 +15,7 @@ const App = (props) => (
   <Router>
     <Switch>
       <Redirect exact from="/" to="/home"/>
-      <Route exact path="/help" component={Help} />
-      <Route exact path="/Home" component={Home} />
+      <Route exact path="/home" component={Home} />
       <Route exact path="/preview" render={routeProps => <Preview {...routeProps} prismicCtx={props.prismicCtx} />} />
       <Route component={NotFound} />
     </Switch>

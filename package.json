@@ -2,6 +2,7 @@
   "name": "reactjs-starter",
   "version": "0.1.1",
   "private": true,
+  "homepage" : "https://ruma.netlify.com",
   "dependencies": {
     "highlight.js": "~9.12.0",
     "jquery": "~3.2.1",
