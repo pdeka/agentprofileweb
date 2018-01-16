@@ -1,0 +1,25 @@
+{
+  "id": "WlxzrikAAFZEwgvG",
+  "uid": "homepage_ruma_mundi",
+  "type": "homepage",
+  "href": "https://rumamundi.prismic.io/api/v2/documents/search?ref=Wlx5tCkAAFZEwias&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WlxzrikAAFZEwgvG%22%29+%5D%5D",
+  "tags": [],
+  "first_publication_date": "2018-01-15T09:51:48+0000",
+  "last_publication_date": "2018-01-15T09:51:48+0000",
+  "slugs": ["ruma-mundi"],
+  "linked_documents": [],
+  "lang": "en-au",
+  "alternate_languages": [],
+  "data": {
+    "homepage_header": [{
+      "type": "heading1",
+      "text": "Ruma Mundi",
+      "spans": []
+    }],
+    "top_level_text_1": [{
+      "type": "paragraph",
+      "text": "Ruma and her team have been assisting people with their real estate needs in the local community for over 15 years. They have been honoured to help many families over these years and enjoy a great reputation in our local area. Ruma feels blessed to have a wonderful team who work tirelessly to assist clients and are committed to the business mission, vision and values.",
+      "spans": []
+    }]
+  }
+}
