@@ -1,0 +1,82 @@
+{
+  "id": "WlxzrikAAFZEwgvG",
+  "uid": "homepage_ruma_mundi",
+  "type": "homepage",
+  "href": "https://rumamundi.prismic.io/api/v2/documents/search?ref=Wl3nsyQAACQAfB6s&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WlxzrikAAFZEwgvG%22%29+%5D%5D",
+  "tags": [],
+  "first_publication_date": "2018-01-15T09:51:48+0000",
+  "last_publication_date": "2018-01-16T11:53:23+0000",
+  "slugs": ["ruma-mundi"],
+  "linked_documents": [],
+  "lang": "en-au",
+  "alternate_languages": [],
+  "data": {
+    "facebook_link": {
+      "link_type": "Web",
+      "url": "https://www.facebook.com/ruma.mundi"
+    },
+    "instagram_link": {
+      "link_type": "Web",
+      "url": "https://www.instagram.com/rumamundi/"
+    },
+    "linkedin_link": {
+      "link_type": "Web",
+      "url": "https://au.linkedin.com/in/ruma-mundi-0344a4b6"
+    },
+    "youtube_link": {
+      "link_type": "Web",
+      "url": "https://www.youtube.com/channel/UCyKhjcW2Ca57SooI5zAcIgg"
+    },
+    "address_line_1": [{
+      "type": "paragraph",
+      "text": "Shop 64-65/2 Sentry Dr",
+      "spans": []
+    }],
+    "address_line_2": [{
+      "type": "paragraph",
+      "text": "Stanhope Gardens",
+      "spans": []
+    }],
+    "address_line_3": [{
+      "type": "paragraph",
+      "text": "NSW 2768",
+      "spans": []
+    }],
+    "email": [{
+      "type": "paragraph",
+      "text": "rumamundi@gmail.com",
+      "spans": []
+    }],
+    "phone": [{
+      "type": "paragraph",
+      "text": "+61 9876 1234",
+      "spans": []
+    }],
+    "office_opening_hours": [{
+      "type": "paragraph",
+      "text": "Mon - Fri, 9:00-15:00",
+      "spans": []
+    }],
+    "homepage_header": [{
+      "type": "heading1",
+      "text": "Ruma Mundi",
+      "spans": []
+    }],
+    "top_level_text_1": [{
+      "type": "paragraph",
+      "text": "Ruma and her team have been assisting people with their real estate needs in the local community for over 15 years. They have been honoured to help many families over these years and enjoy a great reputation in our local area. Ruma feels blessed to have a wonderful team who work tirelessly to assist clients and are committed to the business mission, vision and values.",
+      "spans": []
+    }],
+    "our_difference_header": [{
+      "type": "heading1",
+      "text": "How are we different?",
+      "spans": []
+    }],
+    "our_difference_text": [{
+      "type": "paragraph",
+      "text": "Ruma is approachable and highly successful. ",
+      "spans": []
+    }],
+    "our_difference_image": {}
+  }
+}
