@@ -2,8 +2,9 @@
   "name": "reactjs-starter",
   "version": "0.1.1",
   "private": true,
-  "homepage" : "https://ruma.netlify.com",
+  "homepage": "https://ruma.netlify.com",
   "dependencies": {
+    "react-google-maps": "~9.4.5",
     "highlight.js": "~9.12.0",
     "jquery": "~3.2.1",
     "js-cookie": "^2.2.0",
@@ -14,7 +15,8 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "~4.2.2",
-    "whatwg-fetch": "~2.0.3"
+    "whatwg-fetch": "~2.0.3",
+    "recompose": "~0.26.0"
   },
   "devDependencies": {
     "react-scripts": "~1.0.14"
@@ -23,7 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean": "rm -r build/*"
   },
   "engines": {
     "node": ">=4.8.1",
