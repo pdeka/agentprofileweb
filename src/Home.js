@@ -67,11 +67,6 @@ export default class Home extends React.Component {
                                 </li>
                                 <li class="nav-item">
                                     <a href="#pablo" class="nav-link">
-                                        My Community
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#pablo" class="nav-link">
                                         Articles & Videos
                                     </a>
                                 </li>
