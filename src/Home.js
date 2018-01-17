@@ -68,9 +68,13 @@ export default class Home extends React.Component {
 
   render() {
     if (this.state.doc && this.state.articles && this.state.testimonials) {
+      console.log("Here is the document: " + JSON.stringify(this.state.doc));
       let data = this.state.doc.data;
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
+
+      const headerSummaryParagraphs = data.top_level_text_1.map((para) => {return <div>{para.text}</div>})
+
       return <div class="main">
         <div class="cd-section" id="headers">
             <div class="header-1">
@@ -138,7 +142,7 @@ export default class Home extends React.Component {
                         <div class="row">
                             <div class="col-md-6">
                                 <h1 class="title">{data.homepage_header[0].text}</h1>
-                                <h4>{data.top_level_text_1[0].text}</h4>
+                                <h4>{headerSummaryParagraphs}</h4>
                                 <br/>
                                 <a href="#" target="_blank" class="btn btn-danger btn-lg">
                                     Success Stories
