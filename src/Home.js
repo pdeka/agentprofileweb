@@ -4,12 +4,15 @@ import PrismicReact from 'prismic-reactjs';
 import './Home.css';
 import MapContainer from './MapContainer';
 import PrismicConfig from './prismic-configuration';
+import Prismic from 'prismic-javascript';
 
 
 export default class Home extends React.Component {
 
   state = {
     doc: null,
+    articles: null,
+    testimonials: null,
     notFound: false,
   }
 
@@ -22,7 +25,6 @@ export default class Home extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log("prismic context ==== " + JSON.stringify(this.props.prismicCtx.toolbar()));
     this.props.prismicCtx.toolbar();
   }
 
@@ -30,7 +32,7 @@ export default class Home extends React.Component {
     if (props.prismicCtx) {
 
       // We are using the function to get a document by its uid
-      return props.prismicCtx.api.getByUID('homepage', PrismicConfig.homepage_uid, {}, (err, doc) => {
+      props.prismicCtx.api.getByUID('homepage', PrismicConfig.homepage_uid, {}, (err, doc) => {
         if (doc) {
           // We put the retrieved content in the state as a doc variable
           this.setState({ doc });
@@ -39,14 +41,36 @@ export default class Home extends React.Component {
           this.setState({ notFound: !doc });
         }
       });
+
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'article'), { orderings : '[my.article.date desc]', pageSize : 2  }).then(
+        (articles) => {
+          if (articles) {
+            // We put the retrieved content in the state as a doc variable
+            this.setState({ articles });
+          }
+        }
+      );
+
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'testimonial'), { orderings : '[my.testimonial.date desc]', pageSize : 3  }).then(
+        (testimonials) => {
+          if (testimonials) {
+            // We put the retrieved content in the state as a doc variable
+            this.setState({ testimonials });
+          }
+        }
+      );
+
+      return null;
+
     }
     return null;
   }
 
   render() {
-    console.log("Doc ==== " + JSON.stringify(this.state.doc));
-    if (this.state.doc) {
+    if (this.state.doc && this.state.articles && this.state.testimonials) {
       let data = this.state.doc.data;
+      let articleResults = this.state.articles.results;
+      let testimonialResults = this.state.testimonials.results;
       return <div class="main">
         <div class="cd-section" id="headers">
             <div class="header-1">
@@ -186,19 +210,19 @@ export default class Home extends React.Component {
                                         </div>
                                     </div>
                                     <div class="col-md-7">
-                                        <h6 class="card-category text-info">Enterprise</h6>
+                                        <h6 class="card-category text-info">{articleResults[0].data.article_tag}</h6>
                                         <h3 class="card-title">
-                                            <a href="#pablo">Autodesk looks to future of 3D printing with Project Escher</a>
+                                            <a href="#pablo">{articleResults[0].data.article_title[0].text}</a>
                                         </h3>
                                         <p class="card-description">
-                                            Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses. Today, it’s moving to a subscription model. Yet its own business model disruption is only part of the story — and…
+                                            {articleResults[0].data.article_summary[0].text}
                                             <a href="#pablo"> Read More </a>
                                         </p>
                                         <p class="author">
                                             by
                                             <a href="#pablo">
                                                 <b>Ruma</b>
-                                            </a>, 2 days ago
+                                            </a>, {articleResults[0].data.date}
                                         </p>
                                     </div>
                                 </div>
@@ -207,20 +231,20 @@ export default class Home extends React.Component {
                                 <div class="row">
                                     <div class="col-md-7">
                                         <h6 class="card-category text-danger">
-                                            <i class="material-icons">trending_up</i> Trending
+                                            <i class="material-icons">trending_up</i> {articleResults[1].data.article_tag}
                                         </h6>
                                         <h3 class="card-title">
-                                            <a href="#pablo">6 insights into the French Fashion landscape</a>
+                                            <a href="#pablo">{articleResults[1].data.article_title[0].text}</a>
                                         </h3>
                                         <p class="card-description">
-                                            Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses. Today, it’s moving to a subscription model. Yet its own business model disruption is only part of the story — and…
+                                            {articleResults[1].data.article_summary[0].text}
                                             <a href="#pablo"> Read More </a>
                                         </p>
                                         <p class="author">
                                             by
                                             <a href="#pablo">
                                                 <b>Ruma</b>
-                                            </a>, 2 days ago
+                                            </a>, {articleResults[1].data.date}
                                         </p>
                                     </div>
                                     <div class="col-md-5">
@@ -252,15 +276,15 @@ export default class Home extends React.Component {
                                 </div>
                                 <div class="card-body ">
                                     <h5 class="card-description">
-                                      Ruma and her fantastic team recently sold our property in Quakers Hill. You get what you pay for.
+                                     {testimonialResults[0].data.comment[0].text}
                                     </h5>
                                 </div>
                                 <div class="card-footer ">
-                                    <h4 class="card-title">Alec Thompson</h4>
-                                    <h6 class="card-category">@alecthompson</h6>
+                                    <h4 class="card-title">{testimonialResults[0].data.full_name[0].text}</h4>
+                                    <h6 class="card-category">@{testimonialResults[0].data.full_name[0].text}</h6>
                                     <div class="card-avatar">
                                         <a href="#pablo">
-                                            <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg"/>
+                                            <img class="img" src={testimonialResults[0].data.photo.url}/>
                                         </a>
                                     </div>
                                 </div>
@@ -273,15 +297,15 @@ export default class Home extends React.Component {
                                 </div>
                                 <div class="card-body ">
                                     <h5 class="card-description">
-                                        &quot;Don&apos;t be scared of the truth because we need to restart the human foundation in truth. That&apos;s why I love you like Kanye loves Kanye I love Rick Owens&#x2019; bed design but the back is not so attractive&quot;
+                                      {testimonialResults[1].data.comment[0].text}
                                     </h5>
                                 </div>
                                 <div class="card-footer ">
-                                    <h4 class="card-title">Gina Andrew</h4>
-                                    <h6 class="card-category">@ginaandrew</h6>
+                                    <h4 class="card-title">{testimonialResults[1].data.full_name[0].text}</h4>
+                                    <h6 class="card-category">@{testimonialResults[1].data.full_name[0].text}</h6>
                                     <div class="card-avatar">
                                         <a href="#pablo">
-                                            <img class="img" src="./vendor/creativetim/img/faces/card-profile4-square.jpg"/>
+                                            <img class="img" src={testimonialResults[1].data.photo.url}/>
                                         </a>
                                     </div>
                                 </div>
@@ -294,15 +318,15 @@ export default class Home extends React.Component {
                                 </div>
                                 <div class="card-body ">
                                     <h5 class="card-description">
-                                        &quot;Your products, all the kits that I have downloaded from your site and worked with are sooo cool! I love the color mixtures, cards... everything. Keep up the great work!&quot;
+                                      {testimonialResults[2].data.comment[0].text}
                                     </h5>
                                 </div>
                                 <div class="card-footer ">
-                                    <h4 class="card-title">George West</h4>
-                                    <h6 class="card-category">@georgewest</h6>
+                                    <h4 class="card-title">{testimonialResults[2].data.full_name[0].text}</h4>
+                                    <h6 class="card-category">@{testimonialResults[2].data.full_name[0].text}</h6>
                                     <div class="card-avatar">
                                         <a href="#pablo">
-                                            <img class="img" src="./vendor/creativetim/img/faces/card-profile2-square.jpg"/>
+                                            <img class="img" src={testimonialResults[2].data.photo.url}/>
                                         </a>
                                     </div>
                                 </div>
