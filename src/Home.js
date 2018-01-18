@@ -2,10 +2,10 @@ import React from 'react';
 import NotFound from './NotFound';
 import PrismicReact from 'prismic-reactjs';
 import './Home.css';
-import MapContainer from './MapContainer';
 import PrismicConfig from './prismic-configuration';
 import Prismic from 'prismic-javascript';
-import classNames from 'classnames';
+import MapContainer from './MapContainer';
+import ArticlePreview from './ArticlePreview';
 
 export default class Home extends React.Component {
 
@@ -64,32 +64,6 @@ export default class Home extends React.Component {
 
     }
     return null;
-  }
-
-  getFormattedEmbedUrl(embedUrl){
-    let thisArray = embedUrl.split('\?v=');
-    let interestedIndex = thisArray.length - 1;
-    if(interestedIndex >=0){
-      return "https://www.youtube.com/embed/" + thisArray[interestedIndex] + "?feature=oembed";
-    }else {
-      return "";
-    }
-  }
-
-  displayImageOrVideo(data){
-      if(data.youtube_link === null){
-        return <div className={classNames('card-header', 'card-header-image')}>
-                  <img className={'img'} src={data.top_level_image.url}/>
-                </div>;
-      }else{
-        return <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
-                <div className={'mb-r'}>
-                  <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
-                    <iframe id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(data.youtube_link.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen=""></iframe>"
-                  </div>
-                </div>
-              </div>;
-      }
   }
 
   render() {
@@ -277,7 +251,7 @@ export default class Home extends React.Component {
                             <div class="card card-plain card-blog">
                                 <div class="row">
                                     <div class="col-md-5">
-                                      {this.displayImageOrVideo(articleResults[0].data)}
+                                      <ArticlePreview data={articleResults[0].data} />
                                     </div>
                                     <div class="col-md-7">
                                         <h6 class="card-category text-info">{articleResults[0].data.article_tag}</h6>
@@ -318,7 +292,7 @@ export default class Home extends React.Component {
                                         </p>
                                     </div>
                                     <div class="col-md-5">
-                                      {this.displayImageOrVideo(articleResults[1].data)}
+                                      <ArticlePreview data={articleResults[1].data} />
                                     </div>
                                 </div>
                             </div>
