@@ -173,13 +173,50 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="info">
-                                <div class="icon icon-info">
-                                    <i class="material-icons">chat</i>
+                      <div class="col-md-4">
+                          <div class="info">
+                              <div class="rotating-card-container">
+                                <div class="card card-rotate">
+                                  <div class="front">
+                                    <div class="card-body">
+                                      <h5 class="card-category card-category-social text-success">
+                                        <i class="fa fa-newspaper-o"></i>
+                                        Properties Sold
+                                      </h5>
+                                      <h4 class="card-title">
+                                        300 properties sold
+                                      </h4>
+                                      <p class="class-description">
+                                        Ruma sold more properties then any other agents in the area.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="back">
+                                    <div class="card-body">
+                                      <h5 class="card-title">
+                                        Do more...
+                                      </h5>
+                                      <p class="class-description">
+                                        Ruma is a top tier agent and has more sold properties in her name then anyone else.
+                                      </p>
+                                      <div class="stats text-center">
+                                        <a href="#pablo" class="btn btn-rose btn-round">
+                                          <i class="material-icons">subject</i> Read
+                                        </a>
+                                        <a href="#pablo" class="btn btn-just-icon btn-round btn-twitter">
+                                          <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="#pablo" class="btn btn-just-icon btn-round btn-dribbble">
+                                          <i class="fa fa-dribbble"></i>
+                                        </a>
+                                        <a href="#pablo" class="btn btn-just-icon btn-round btn-facebook">
+                                          <i class="fa fa-facebook"></i>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
-                                <h4 class="info-title">Free Chat</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                              </div>
                             </div>
                         </div>
                         <div class="col-md-4">
