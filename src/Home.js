@@ -68,10 +68,10 @@ export default class Home extends React.Component {
 
   render() {
     if (this.state.doc && this.state.articles && this.state.testimonials) {
-      console.log("Here is the document: " + JSON.stringify(this.articleResults));
       let data = this.state.doc.data;
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
+      // console.log("Here is the document: " + JSON.stringify(articleResults));
 
       const headerSummaryParagraphs = data.top_level_text_1.map((para) => {return <div key={Math.random(1,9)}>{para.text}</div>})
 
@@ -253,7 +253,7 @@ export default class Home extends React.Component {
                                     <div class="col-md-5">
                                         <div class="card-header card-header-image">
                                             <a href="#pablito">
-                                                <img class="img" src="./vendor/creativetim/img/examples/card-blog4.jpg"/>
+                                                <img class="img" src={articleResults[0].data.top_level_image.url}/>
                                             </a>
                                         </div>
                                     </div>
