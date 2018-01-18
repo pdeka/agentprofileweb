@@ -68,12 +68,12 @@ export default class Home extends React.Component {
 
   render() {
     if (this.state.doc && this.state.articles && this.state.testimonials) {
-      console.log("Here is the document: " + JSON.stringify(this.state.doc));
+      console.log("Here is the document: " + JSON.stringify(this.articleResults));
       let data = this.state.doc.data;
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
 
-      const headerSummaryParagraphs = data.top_level_text_1.map((para) => {return <div>{para.text}</div>})
+      const headerSummaryParagraphs = data.top_level_text_1.map((para) => {return <div key={Math.random(1,9)}>{para.text}</div>})
 
       return <div class="main">
         <div class="cd-section" id="headers">
@@ -150,7 +150,7 @@ export default class Home extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <video autoPlay loop id="video-background" muted plays-inline preload="auto" poster="./images/poster.png">
+                    <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster="./images/poster.png">
                       <source src="https://luxuryp.s3.amazonaws.com/ecd307c1d17f6c44dd6779a538a6779d.m4v" type="video/mp4"/>
                     </video>
                 </div>
@@ -163,6 +163,13 @@ export default class Home extends React.Component {
                         <div class="col-md-8 ml-auto mr-auto">
                             <h2 class="title">{data.our_difference_header[0].text}</h2>
                             <h5 class="description">{data.our_difference_text[0].text}</h5>
+                            <div class="icon">
+                              <i class="material-icons">format_quote</i>
+                            </div>
+                            <blockquote class="blockquote text-center">
+                              <p class="mb-0">{data.our_difference_quotation[0].text}</p>
+                              <footer class="blockquote-footer">{data.quotation_by[0].text}</footer>
+                            </blockquote>
                         </div>
                     </div>
                     <div class="row">
