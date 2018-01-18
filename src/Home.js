@@ -296,8 +296,12 @@ export default class Home extends React.Component {
                                         </p>
                                     </div>
                                     <div class="col-md-5">
-                                        <div class="card-header card-header-image">
-                                            <img class="img img-raised" src="./vendor/creativetim/img/office2.jpg"/>
+                                        <div class="card-header card-header-image card-raised">
+                                          <div class="mb-r">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                              <iframe src="https://www.youtube.com/embed/3rZWhOYLzAo?feature=oembed" frameborder="0" allowfullscreen></iframe>"
+                                            </div>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>

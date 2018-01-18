@@ -11,3 +11,15 @@
   background-size: cover;
   transition: all 2s cubic-bezier(0.835, 0, 0.19, 1);
 }
+
+@media (min-width: 992px) {
+  .mb-r {
+    margin-bottom: 3rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .mb-r {
+    margin-bottom: 2rem !important;
+  }
+}
