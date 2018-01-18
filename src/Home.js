@@ -5,7 +5,7 @@ import './Home.css';
 import MapContainer from './MapContainer';
 import PrismicConfig from './prismic-configuration';
 import Prismic from 'prismic-javascript';
-
+import classNames from 'classnames';
 
 export default class Home extends React.Component {
 
@@ -76,12 +76,28 @@ export default class Home extends React.Component {
     }
   }
 
+  displayImageOrVideo(data){
+      if(data.youtube_link === {}){
+        return <div className={classNames('card-header', 'card-header-image')}>
+                  <img className={'img'} src={data.top_level_image.url}/>
+                </div>;
+      }else{
+        return <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
+                <div className={'mb-r'}>
+                  <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
+                    <iframe id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(data.youtube_link.embed_url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen=""></iframe>"
+                  </div>
+                </div>
+              </div>;
+      }
+  }
+
   render() {
     if (this.state.doc && this.state.articles && this.state.testimonials) {
       let data = this.state.doc.data;
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
-      // console.log("Here is the document: " + JSON.stringify(articleResults));
+      console.log("Here is the document: " + JSON.stringify(articleResults));
 
       const headerSummaryParagraphs = data.top_level_text_1.map((para) => {return <div key={Math.random(1,9)}>{para.text}</div>})
 
@@ -261,11 +277,7 @@ export default class Home extends React.Component {
                             <div class="card card-plain card-blog">
                                 <div class="row">
                                     <div class="col-md-5">
-                                        <div class="card-header card-header-image">
-                                            <a href="#pablito">
-                                                <img class="img" src={articleResults[0].data.top_level_image.url}/>
-                                            </a>
-                                        </div>
+                                      {this.displayImageOrVideo(articleResults[0].data)}
                                     </div>
                                     <div class="col-md-7">
                                         <h6 class="card-category text-info">{articleResults[0].data.article_tag}</h6>
@@ -306,13 +318,7 @@ export default class Home extends React.Component {
                                         </p>
                                     </div>
                                     <div class="col-md-5">
-                                        <div class="card-header card-header-image card-raised">
-                                          <div class="mb-r">
-                                            <div class="embed-responsive embed-responsive-16by9">
-                                              <iframe id="iframe-rounded-corner" src={this.getFormattedEmbedUrl(articleResults[1].data.youtube_link.embed_url)} frameborder="0" gesture="media" allow="encrypted-media" allowFullScreen=""></iframe>"
-                                            </div>
-                                          </div>
-                                        </div>
+                                      {this.displayImageOrVideo(articleResults[1].data)}
                                     </div>
                                 </div>
                             </div>
