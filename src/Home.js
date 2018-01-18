@@ -66,6 +66,17 @@ export default class Home extends React.Component {
     return null;
   }
 
+  getFormattedEmbedUrl(embedUrl){
+    let thisArray = embedUrl.split('/');
+    let interestedIndex = thisArray.length - 1;
+    if(interestedIndex >=0){
+      // console.log("Formatted Youtube Url is:" + "https://www.youtube.com/embed/" + thisArray[interestedIndex] + "?feature=oembed");
+      return "https://www.youtube.com/embed/" + thisArray[interestedIndex] + "?feature=oembed";
+    }else {
+      return "";
+    }
+  }
+
   render() {
     if (this.state.doc && this.state.articles && this.state.testimonials) {
       let data = this.state.doc.data;
@@ -299,7 +310,7 @@ export default class Home extends React.Component {
                                         <div class="card-header card-header-image card-raised">
                                           <div class="mb-r">
                                             <div class="embed-responsive embed-responsive-16by9">
-                                              <iframe id="iframe-rounded-corner" src="https://www.youtube.com/embed/3rZWhOYLzAo?feature=oembed" allowfullscreen></iframe>"
+                                              <iframe id="iframe-rounded-corner" src={this.getFormattedEmbedUrl(articleResults[1].data.youtube_link.embed_url)} allowFullScreen></iframe>"
                                             </div>
                                           </div>
                                         </div>
