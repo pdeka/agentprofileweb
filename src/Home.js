@@ -299,7 +299,7 @@ export default class Home extends React.Component {
                                         <div class="card-header card-header-image card-raised">
                                           <div class="mb-r">
                                             <div class="embed-responsive embed-responsive-16by9">
-                                              <iframe src="https://www.youtube.com/embed/3rZWhOYLzAo?feature=oembed" frameborder="0" allowfullscreen></iframe>"
+                                              <iframe id="iframe-rounded-corner" src="https://www.youtube.com/embed/3rZWhOYLzAo?feature=oembed" allowfullscreen></iframe>"
                                             </div>
                                           </div>
                                         </div>
