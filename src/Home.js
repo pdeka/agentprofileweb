@@ -70,7 +70,6 @@ export default class Home extends React.Component {
     let thisArray = embedUrl.split('/');
     let interestedIndex = thisArray.length - 1;
     if(interestedIndex >=0){
-      // console.log("Formatted Youtube Url is:" + "https://www.youtube.com/embed/" + thisArray[interestedIndex] + "?feature=oembed");
       return "https://www.youtube.com/embed/" + thisArray[interestedIndex] + "?feature=oembed";
     }else {
       return "";
@@ -310,7 +309,7 @@ export default class Home extends React.Component {
                                         <div class="card-header card-header-image card-raised">
                                           <div class="mb-r">
                                             <div class="embed-responsive embed-responsive-16by9">
-                                              <iframe id="iframe-rounded-corner" src={this.getFormattedEmbedUrl(articleResults[1].data.youtube_link.embed_url)} allowFullScreen></iframe>"
+                                              <iframe id="iframe-rounded-corner" src={this.getFormattedEmbedUrl(articleResults[1].data.youtube_link.embed_url)} frameborder="0" gesture="media" allow="encrypted-media" allowFullScreen=""></iframe>"
                                             </div>
                                           </div>
                                         </div>
