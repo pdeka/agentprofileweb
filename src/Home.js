@@ -175,7 +175,7 @@ export default class Home extends React.Component {
         </div>
         <div class="cd-section" id="features" style={{background: 'white'}}>
             <div class="container">
-                <div class="features-1">
+                <div class="features-1 no-padding-bottom">
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto">
                             <h2 class="title">{data.our_difference_header[0].text}</h2>
@@ -222,7 +222,7 @@ export default class Home extends React.Component {
             </div>
         </div>
         <div class="cd-section" id="blogs" style={{background: 'white'}}>
-            <div class="blogs-1" id="blogs-1">
+            <div class="blogs-1 no-padding-bottom" id="blogs-1">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 ml-auto mr-auto">
@@ -282,7 +282,7 @@ export default class Home extends React.Component {
             </div>
         </div>
         <div class="cd-section" id="testimonials">
-            <div class="testimonials-1 section-image" style={{backgroundImage: 'url(' + './vendor/creativetim/img/dg2.jpg' + ')'}}>
+            <div class="testimonials-1 section-image no-padding-bottom" style={{backgroundImage: 'url(' + './vendor/creativetim/img/dg2.jpg' + ')'}}>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto text-center">
