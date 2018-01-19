@@ -6,6 +6,8 @@ import PrismicConfig from './prismic-configuration';
 import Prismic from 'prismic-javascript';
 import MapContainer from './MapContainer';
 import ArticlePreview from './ArticlePreview';
+import Truncate from 'react-truncate';
+import FormatDate from './FormatDate';
 
 export default class Home extends React.Component {
 
@@ -239,14 +241,15 @@ export default class Home extends React.Component {
                                             <a href="#pablo">{articleResults[0].data.article_title[0].text}</a>
                                         </h3>
                                         <p class="card-description">
-                                            {articleResults[0].data.article_summary[0].text}
-                                            <a href="#pablo"> Read More </a>
+                                            <Truncate lines={3} ellipsis={<span>... <a href="#pablo"> Read More </a></span>}>
+                                              {articleResults[0].data.article_summary[0].text}
+                                            </Truncate>
                                         </p>
                                         <p class="author">
                                             by
-                                            <a href="#pablo">
+                                            <a href="#pablo" class="article-author">
                                                 <b>Ruma</b>
-                                            </a>, {articleResults[0].data.date}
+                                            </a>, <FormatDate data={articleResults[0].data.date} />
                                         </p>
                                     </div>
                                 </div>
@@ -261,14 +264,15 @@ export default class Home extends React.Component {
                                             <a href="#pablo">{articleResults[1].data.article_title[0].text}</a>
                                         </h3>
                                         <p class="card-description">
+                                          <Truncate lines={3} ellipsis={<span>... <a href="#pablo"> Read More </a></span>}>
                                             {articleResults[1].data.article_summary[0].text}
-                                            <a href="#pablo"> Read More </a>
+                                          </Truncate>
                                         </p>
                                         <p class="author">
                                             by
-                                            <a href="#pablo">
+                                            <a href="#pablo" class="article-author">
                                                 <b>Ruma</b>
-                                            </a>, {articleResults[1].data.date}
+                                            </a>, <FormatDate data={articleResults[1].data.date} />
                                         </p>
                                     </div>
                                     <div class="col-md-5">

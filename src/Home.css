@@ -35,19 +35,23 @@
   left: 50%
 }
 
-.hero-text{
+.hero-text {
   font-weight: 400;
 }
 
-.hero-contact-info{
+.hero-contact-info {
   font-weight: 600;
   margin-left: 4px;
 }
 
-.hero-contact-info-container{
+.hero-contact-info-container {
   margin-right: 20px;
 }
 
-.no-padding-bottom{
+.no-padding-bottom {
   padding-bottom: 0
+}
+
+.article-author {
+  margin-left: 4px
 }
