@@ -71,7 +71,7 @@ export default class Home extends React.Component {
       let data = this.state.doc.data;
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
-      console.log("Here is the document: " + JSON.stringify(articleResults));
+      // console.log("Here is the document: " + JSON.stringify(articleResults));
 
       const headerSummaryParagraphs = data.top_level_text_1.map((para) => {return <div key={Math.random(1,9)}>{para.text}</div>})
 
