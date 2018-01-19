@@ -154,18 +154,18 @@ export default class Home extends React.Component {
                         </div>
                         <div class="row">
                           <div class="col-md-6">
-                                  <span class="hero-contact-info-container">
+                                  <a class="hero-contact-info-container" href="tel:+61420234234">
                                     <i class="fa fa-phone"></i>
                                     <span class="hero-contact-info">+61 420 234 234</span>
-                                  </span>
-                                  <span class="hero-contact-info-container">
+                                  </a>
+                                  <a class="hero-contact-info-container" href="mailto:name@email.com" target="_blank">
                                     <i class="fa fa-envelope"></i>
                                     <span class="hero-contact-info">mail</span>
-                                  </span>
-                                  <span class="hero-contact-info-container">
+                                  </a>
+                                  <a class="hero-contact-info-container" href="https://calendly.com/prabin" target="_blank">
                                     <i class="fa fa-handshake-o"></i>
                                     <span class="hero-contact-info">meet</span>
-                                  </span>
+                                  </a>
                           </div>
                         </div>
                     </div>
@@ -286,7 +286,7 @@ export default class Home extends React.Component {
             </div>
         </div>
         <div class="cd-section" id="testimonials">
-            <div class="testimonials-1 section-image no-padding-bottom" style={{backgroundImage: 'url(' + './vendor/creativetim/img/dg2.jpg' + ')'}}>
+            <div class="testimonials-1 section-image" style={{backgroundImage: 'url(' + './vendor/creativetim/img/dg2.jpg' + ')'}}>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto text-center">
@@ -302,7 +302,9 @@ export default class Home extends React.Component {
                                 </div>
                                 <div class="card-body ">
                                     <h5 class="card-description">
-                                     {testimonialResults[0].data.comment[0].text}
+                                      <Truncate lines={4} ellipsis={<span>... <a href="#pablo"> Read More </a></span>}>
+                                        {testimonialResults[0].data.comment[0].text}
+                                      </Truncate>
                                     </h5>
                                 </div>
                                 <div class="card-footer ">
@@ -323,7 +325,9 @@ export default class Home extends React.Component {
                                 </div>
                                 <div class="card-body ">
                                     <h5 class="card-description">
-                                      {testimonialResults[1].data.comment[0].text}
+                                      <Truncate lines={4} ellipsis={<span>... <a href="#pablo"> Read More </a></span>}>
+                                        {testimonialResults[1].data.comment[0].text}
+                                      </Truncate>
                                     </h5>
                                 </div>
                                 <div class="card-footer ">
@@ -344,7 +348,9 @@ export default class Home extends React.Component {
                                 </div>
                                 <div class="card-body ">
                                     <h5 class="card-description">
-                                      {testimonialResults[2].data.comment[0].text}
+                                      <Truncate lines={4} ellipsis={<span>... <a href="#pablo"> Read More </a></span>}>
+                                        {testimonialResults[2].data.comment[0].text}
+                                      </Truncate>
                                     </h5>
                                 </div>
                                 <div class="card-footer ">
