@@ -49,15 +49,19 @@
   margin-right: 20px;
 }
 
+/* todo: remove this using theme-color in creativ tim's scss */
+a.hero-contact-info-container:hover,a.hero-contact-info-container:visited,a.hero-contact-info-container:active,a.hero-contact-info-container:link {
+  color: white;
+}
+
+a:hover,a:visited,a:active,a:link {
+  color: #3C4858;
+}
+
 .no-padding-bottom {
   padding-bottom: 0
 }
 
 .article-author {
   margin-left: 4px
-}
-
-/* todo: remove this using theme-color in creativ tim's scss */
-a:hover, a:visited, a:active, a:link {
-  color: white;
 }
