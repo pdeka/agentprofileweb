@@ -116,6 +116,11 @@ export default class Home extends React.Component {
                                         Partners
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="#pablo" class="nav-link">
+                                        Contact Us
+                                    </a>
+                                </li>
                             </ul>
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
@@ -142,12 +147,24 @@ export default class Home extends React.Component {
                         <div class="row">
                             <div class="col-md-6">
                                 <h1 class="title">{data.homepage_header[0].text}</h1>
-                                <h4>{headerSummaryParagraphs}</h4>
-                                <br/>
-                                <a href="#" target="_blank" class="btn btn-danger btn-lg">
-                                    Success Stories
-                                </a>
+                                <h4 class="hero-text">{headerSummaryParagraphs}</h4>
                             </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                                  <span class="hero-contact-info-container">
+                                    <i class="fa fa-phone"></i>
+                                    <span class="hero-contact-info">+61 420 234 234</span>
+                                  </span>
+                                  <span class="hero-contact-info-container">
+                                    <i class="fa fa-envelope"></i>
+                                    <span class="hero-contact-info">mail</span>
+                                  </span>
+                                  <span class="hero-contact-info-container">
+                                    <i class="fa fa-handshake-o"></i>
+                                    <span class="hero-contact-info">meet</span>
+                                  </span>
+                          </div>
                         </div>
                     </div>
                     <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster="./images/poster.png">
@@ -173,67 +190,30 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                     <div class="row">
-                      <div class="col-md-4">
-                          <div class="info">
-                              <div class="rotating-card-container">
-                                <div class="card card-rotate">
-                                  <div class="front">
-                                    <div class="card-body">
-                                      <h5 class="card-category card-category-social text-success">
-                                        <i class="fa fa-newspaper-o"></i>
-                                        Properties Sold
-                                      </h5>
-                                      <h4 class="card-title">
-                                        300 properties sold
-                                      </h4>
-                                      <p class="class-description">
-                                        Ruma sold more properties then any other agents in the area.
-                                      </p>
-                                    </div>
-                                  </div>
-                                  <div class="back">
-                                    <div class="card-body">
-                                      <h5 class="card-title">
-                                        Do more...
-                                      </h5>
-                                      <p class="class-description">
-                                        Ruma is a top tier agent and has more sold properties in her name then anyone else.
-                                      </p>
-                                      <div class="stats text-center">
-                                        <a href="#pablo" class="btn btn-rose btn-round">
-                                          <i class="material-icons">subject</i> Read
-                                        </a>
-                                        <a href="#pablo" class="btn btn-just-icon btn-round btn-twitter">
-                                          <i class="fa fa-twitter"></i>
-                                        </a>
-                                        <a href="#pablo" class="btn btn-just-icon btn-round btn-dribbble">
-                                          <i class="fa fa-dribbble"></i>
-                                        </a>
-                                        <a href="#pablo" class="btn btn-just-icon btn-round btn-facebook">
-                                          <i class="fa fa-facebook"></i>
-                                        </a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
                         <div class="col-md-4">
                             <div class="info">
-                                <div class="icon icon-success">
-                                    <i class="material-icons">verified_user</i>
+                                <div class="icon icon-disabled">
+                                    <i class="material-icons">home</i>
                                 </div>
-                                <h4 class="info-title">Verified Users</h4>
+                                <h4 class="info-title">300 houses sold</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="info">
-                                <div class="icon icon-danger">
-                                    <i class="material-icons">fingerprint</i>
+                                <div class="icon icon-disabled">
+                                    <i class="material-icons">gavel</i>
                                 </div>
-                                <h4 class="info-title">Fingerprint</h4>
+                                <h4 class="info-title">90% auction clearance rate</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info">
+                                <div class="icon icon-disabled">
+                                    <i class="material-icons">star</i>
+                                </div>
+                                <h4 class="info-title">Top 10 agent</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </div>
@@ -428,7 +408,14 @@ export default class Home extends React.Component {
         </div>
       </div>
     }else{
-      return <div></div>
+      return   <div class="sections-page  section-white">
+        <div id="spinner-middle">
+          <div>
+              <i class="fa fa-refresh fa-spin fa-5x fa-fw"></i>
+          </div>
+        </div>
+      </div>
+
     }
   }
 }
