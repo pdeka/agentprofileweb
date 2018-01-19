@@ -25,7 +25,7 @@ export default class ArticlePreview extends React.Component {
       return <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
         <div className={'mb-r'}>
           <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
-            <iframe id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(data.youtube_link.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen=""></iframe>"
+            <iframe id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(data.youtube_link.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
           </div>
         </div>
       </div>;
