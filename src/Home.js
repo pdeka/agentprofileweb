@@ -92,7 +92,7 @@ export default class Home extends React.Component {
               <div class="collapse navbar-collapse">
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                        <a href="#pablo" class="nav-link">
+                        <a href="#" class="nav-link">
                             Home
                         </a>
                       </li>
