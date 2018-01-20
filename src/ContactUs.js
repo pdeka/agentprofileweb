@@ -66,20 +66,20 @@ export default class ContactUs extends React.Component {
                         </p>
                         <form role="form" id="contact-form" method="post">
                             <div class="form-group">
-                                <label for="name" class="bmd-label-floating">Your name</label>
+                                <label htmlFor="name" class="bmd-label-floating">Your name</label>
                                 <input type="text" class="form-control" id="name"/>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmails" class="bmd-label-floating">Email address</label>
+                                <label htmlFor="exampleInputEmails" class="bmd-label-floating">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmails"/>
                                 <span class="bmd-help">We'll never share your email with anyone else.</span>
                             </div>
                             <div class="form-group">
-                                <label for="phone" class="bmd-label-floating">Phone</label>
+                                <label htmlFor="phone" class="bmd-label-floating">Phone</label>
                                 <input type="text" class="form-control" id="phone"/>
                             </div>
                             <div class="form-group label-floating">
-                                <label class="form-control-label bmd-label-floating" for="message">Your message</label>
+                                <label class="form-control-label bmd-label-floating" htmlFor="message">Your message</label>
                                 <textarea class="form-control" rows="6" id="message"></textarea>
                             </div>
                             <div class="submit text-center">
