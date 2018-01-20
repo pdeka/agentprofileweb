@@ -29,7 +29,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "clean": "rm -r build/*"
+    "clean": "rm -r build/*",
+    "sass" : "sass --watch src/styles/scss:src/styles/css",
+    "sass:build": "sass src/styles/scss:src/styles/css"
   },
   "engines": {
     "node": ">=4.8.1",

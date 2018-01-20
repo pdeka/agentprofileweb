@@ -1,0 +1,53 @@
+#video-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: all 2s cubic-bezier(0.835, 0, 0.19, 1); }
+
+/* todo: Remove this using bootstrap media queries */
+@media (min-width: 992px) {
+  .mb-r {
+    margin-bottom: 3rem !important; } }
+@media (max-width: 992px) {
+  .mb-r {
+    margin-bottom: 2rem !important; } }
+#iframe-rounded-corner {
+  border: 4px solid #000;
+  border-radius: 4px !important; }
+
+#spinner-middle {
+  position: fixed;
+  top: 50%;
+  left: 50%; }
+
+.hero-text {
+  font-weight: 400; }
+
+.hero-contact-info {
+  font-weight: 600;
+  margin-left: 4px; }
+
+.hero-contact-info-container {
+  margin-right: 20px; }
+
+/* todo: remove this using theme-color in creativ tim's scss */
+a.hero-contact-info-container:hover, a.hero-contact-info-container:visited, a.hero-contact-info-container:active, a.hero-contact-info-container:link {
+  color: white; }
+
+a:hover, a:visited, a:active, a:link {
+  color: #3C4858; }
+
+.no-padding-bottom {
+  padding-bottom: 0; }
+
+.article-author {
+  margin-left: 4px; }
+
+/*# sourceMappingURL=Home.css.map */

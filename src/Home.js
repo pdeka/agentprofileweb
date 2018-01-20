@@ -1,13 +1,14 @@
 import React from 'react';
 import NotFound from './NotFound';
 import PrismicReact from 'prismic-reactjs';
-import './Home.css';
 import PrismicConfig from './prismic-configuration';
 import Prismic from 'prismic-javascript';
 import MapContainer from './MapContainer';
 import ArticlePreview from './ArticlePreview';
 import Truncate from 'react-truncate';
 import FormatDate from './FormatDate';
+import './styles/css/Home.css';
+
 
 export default class Home extends React.Component {
 
@@ -104,22 +105,12 @@ export default class Home extends React.Component {
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#pablo" class="nav-link">
-                                        Success Stories
-                                    </a>
-                                </li>
-                                <li class="nav-item">
                                     <a href={data.properties_link.url} class="nav-link" target="_blank">
                                         Properties
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#pablo" class="nav-link">
-                                        Partners
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#pablo" class="nav-link">
+                                    <a href="/contactus" class="nav-link">
                                         Contact Us
                                     </a>
                                 </li>

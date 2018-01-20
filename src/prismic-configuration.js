@@ -15,5 +15,6 @@ export default {
   linkResolver(doc, ctx) {
     return '/';
   },
-  homepage_uid: 'homepage_ruma_mundi'
+  homepage_uid: 'homepage_ruma_mundi',
+  contactuspage_uid: 'contactuspage_ruma_mundi'
 };
