@@ -102,12 +102,12 @@ export default class Home extends React.Component {
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="#pablo" class="nav-link">
+                        <a href={data.properties_link.url} class="nav-link">
                             Properties
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="#pablo" class="nav-link">
+                        <a href="/contactus" class="nav-link">
                             Contact Us
                         </a>
                       </li>
