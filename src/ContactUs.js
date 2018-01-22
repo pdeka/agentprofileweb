@@ -8,6 +8,7 @@ import ArticlePreview from './ArticlePreview';
 import Truncate from 'react-truncate';
 import FormatDate from './FormatDate';
 import MainNavigation from './MainNavigation';
+import './styles/css/ContactUs.css';
 
 export default class ContactUs extends React.Component {
 
@@ -108,8 +109,8 @@ export default class ContactUs extends React.Component {
                     </div>
                     <div class="col-md-4 ml-auto">
                         <div class="info info-horizontal">
-                            <div class="icon icon-primary">
-                                <i class="material-icons">pin_drop</i>
+                            <div class="icon icon-disabled">
+                                <i class="fa fa-location-arrow"></i>
                             </div>
                             <div class="description">
                                 <h4 class="info-title">Find us at the office</h4>
@@ -120,14 +121,25 @@ export default class ContactUs extends React.Component {
                             </div>
                         </div>
                         <div class="info info-horizontal">
-                            <div class="icon icon-primary">
-                                <i class="material-icons">phone</i>
+                            <div class="icon icon-disabled">
+                                <i class="fa fa-volume-control-phone"></i>
                             </div>
                             <div class="description">
                                 <h4 class="info-title">Give us a ring</h4>
-                                <p> {contactInfo.phone[0].text}
-                                    <br/> {contactInfo.office_opening_hours[0].text}
-                                </p>
+                                <a href="tel:+61420234234">
+                                  <p>+61 420 234 234</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info info-horizontal">
+                            <div class="icon icon-disabled icon-smaller-margin">
+                              <i class="fa fa-coffee"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">Set up a meeting</h4>
+                                <a href="https://calendly.com/prabin" target="_blank">
+                                  <p>Click to set up</p>
+                                </a>
                             </div>
                         </div>
                     </div>
