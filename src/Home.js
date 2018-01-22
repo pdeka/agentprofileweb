@@ -17,6 +17,7 @@ export default class Home extends React.Component {
     doc: null,
     articles: null,
     testimonials: null,
+    contactInfo: null,
     notFound: false,
   }
 
@@ -64,6 +65,14 @@ export default class Home extends React.Component {
         }
       );
 
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'contactinformation')).then(
+        (contactInfo) => {
+          if (contactInfo) {
+            this.setState({ contactInfo });
+          }
+        }
+      );
+
       return null;
 
     }
@@ -71,11 +80,12 @@ export default class Home extends React.Component {
   }
 
   render() {
-    if (this.state.doc && this.state.articles && this.state.testimonials) {
+    if (this.state.doc && this.state.articles && this.state.testimonials && this.state.contactInfo) {
       let data = this.state.doc.data;
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
-      // console.log("Here is the document: " + JSON.stringify(articleResults));
+      let contactInfo = this.state.contactInfo.results[0].data;
+      console.log("Here is the contact info: " + JSON.stringify(contactInfo));
 
       const headerSummaryParagraphs = data.top_level_text_1.map((para) => {return <div key={Math.random(1,9)}>{para.text}</div>})
 
@@ -328,9 +338,9 @@ export default class Home extends React.Component {
                                               </div>
                                               <div class="description">
                                                   <h5 class="info-title">Give us a ring</h5>
-                                                  <p> {data.contact_us_name[0].text}
-                                                      <br/> {data.phone[0].text}
-                                                      <br/> {data.office_opening_hours[0].text}
+                                                  <p> {contactInfo.contact_us_name[0].text}
+                                                      <br/> {contactInfo.phone[0].text}
+                                                      <br/> {contactInfo.office_opening_hours[0].text}
                                                   </p>
                                               </div>
                                           </div>
@@ -342,9 +352,9 @@ export default class Home extends React.Component {
                                               </div>
                                               <div class="description">
                                                   <h5 class="info-title">Find us at the office</h5>
-                                                  <p> {data.address_line_1[0].text}
-                                                      <br/> {data.address_line_2[0].text}
-                                                      <br/> {data.address_line_3[0].text}
+                                                  <p> {contactInfo.address_line_1[0].text}
+                                                      <br/> {contactInfo.address_line_2[0].text}
+                                                      <br/> {contactInfo.address_line_3[0].text}
                                                   </p>
                                               </div>
                                           </div>
