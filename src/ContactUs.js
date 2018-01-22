@@ -7,12 +7,14 @@ import MapContainer from './MapContainer';
 import ArticlePreview from './ArticlePreview';
 import Truncate from 'react-truncate';
 import FormatDate from './FormatDate';
+import MainNavigation from './MainNavigation';
 
 export default class ContactUs extends React.Component {
 
   state = {
     homepageDoc: null,
     contactuspageDoc: null,
+    contactInfo: null,
   }
 
   componentWillMount() {
@@ -29,31 +31,48 @@ export default class ContactUs extends React.Component {
 
   fetchPage(props) {
     if (props.prismicCtx) {
-      props.prismicCtx.api.getByUID('homepage', PrismicConfig.homepage_uid, {}, (err, homepageDoc) => {
+
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'homepage')).then((homepageDoc) => {
         if (homepageDoc) {
           this.setState({ homepageDoc });
         } else {
           this.setState({ notFound: !homepageDoc });
         }
       });
-      props.prismicCtx.api.getByUID('contactuspage', PrismicConfig.contactuspage_uid, {}, (err, contactuspageDoc) => {
+
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'contactuspage')).then((contactuspageDoc) => {
         if (contactuspageDoc) {
           this.setState({ contactuspageDoc });
         } else {
           this.setState({ notFound: !contactuspageDoc });
         }
       });
+
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'contactinformation')).then(
+        (contactInfo) => {
+          if (contactInfo) {
+            this.setState({ contactInfo });
+          }
+        }
+      );
+
       return null;
     }
     return null;
   }
 
   render() {
-    if (this.state.homepageDoc && this.state.contactuspageDoc) {
-      let homepage = this.state.homepageDoc.data;
-      let contactuspage = this.state.contactuspageDoc.data;
-      console.log("Here is the document: " + JSON.stringify(contactuspage));
+    if (this.state.homepageDoc && this.state.contactuspageDoc && this.state.contactInfo) {
+      console.log("Here is the document: " + JSON.stringify(this.state.homepageDoc.results[0].data));
+
+      let homepage = this.state.homepageDoc.results[0].data;
+      let contactuspage = this.state.contactuspageDoc.results[0].data;
+      let contactInfo = this.state.contactInfo.results[0].data;
       return <div class="contact-us ">
+    <MainNavigation thisProp={homepage} navBarTransparent={false}/>
+    <div id="contactUsMap" class="big-map">
+      <MapContainer />
+    </div>
     <div class="main main-raised">
         <div class="contact-content">
             <div class="container">
@@ -94,9 +113,9 @@ export default class ContactUs extends React.Component {
                             </div>
                             <div class="description">
                                 <h4 class="info-title">Find us at the office</h4>
-                                <p> {homepage.address_line_1[0].text}
-                                    <br/> {homepage.address_line_2[0].text}
-                                    <br/> {homepage.address_line_3[0].text}
+                                <p> {contactInfo.address_line_1[0].text}
+                                    <br/> {contactInfo.address_line_2[0].text}
+                                    <br/> {contactInfo.address_line_3[0].text}
                                 </p>
                             </div>
                         </div>
@@ -106,8 +125,8 @@ export default class ContactUs extends React.Component {
                             </div>
                             <div class="description">
                                 <h4 class="info-title">Give us a ring</h4>
-                                <p> {homepage.phone[0].text}
-                                    <br/> {homepage.office_opening_hours[0].text}
+                                <p> {contactInfo.phone[0].text}
+                                    <br/> {contactInfo.office_opening_hours[0].text}
                                 </p>
                             </div>
                         </div>

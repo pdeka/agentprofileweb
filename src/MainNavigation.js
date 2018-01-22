@@ -7,12 +7,25 @@ import MapContainer from './MapContainer';
 import ArticlePreview from './ArticlePreview';
 import Truncate from 'react-truncate';
 import FormatDate from './FormatDate';
+import classNames from 'classnames';
 
 export default class MainNavigation extends React.Component {
 
   render() {
     let data = this.props.thisProp;
-    return <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+    let navClassNames = {
+      'navbar': true,
+      'navbar-color-on-scroll': true,
+      'navbar-transparent': true,
+      'fixed-top': true,
+      'navbar-expand-lg': true
+    }
+
+    if (this.props.navBarTransparent === false){
+      navClassNames['navbar-transparent'] = false;
+    }
+
+    return <nav className={classNames(navClassNames)} color-on-scroll="100" id="sectionsNav">
       <div class="container">
         <div class="navbar-translate">
           <a class="navbar-brand" href="#">Ruma Mundi Logo</a>

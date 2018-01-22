@@ -38,7 +38,7 @@ export default class Home extends React.Component {
 
       props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'homepage')).then((doc) => {
         if (doc) {
-]          this.setState({ doc });
+          this.setState({ doc });
         } else {
           this.setState({ notFound: !doc });
         }
@@ -86,7 +86,7 @@ export default class Home extends React.Component {
       const headerSummaryParagraphs = data.top_level_text_1.map((para) => {return <div key={Math.random(1,9)}>{para.text}</div>})
 
       return <div class="sections-page  section-white ">
-        <MainNavigation thisProp={data} />
+        <MainNavigation thisProp={data} navBarTransparent={true}/>
         <div class="main">
           <div class="cd-section" id="headers">
               <div class="header-1">
