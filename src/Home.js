@@ -37,7 +37,7 @@ export default class Home extends React.Component {
     if (props.prismicCtx) {
 
       // We are using the function to get a document by its uid
-      props.prismicCtx.api.getByUID('homepage', PrismicConfig.homepage_uid, {}, (err, doc) => {
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'homepage')).then((doc) => {
         if (doc) {
           // We put the retrieved content in the state as a doc variable
           this.setState({ doc });
@@ -81,11 +81,12 @@ export default class Home extends React.Component {
 
   render() {
     if (this.state.doc && this.state.articles && this.state.testimonials && this.state.contactInfo) {
-      let data = this.state.doc.data;
+      console.log("Here is the doc: " + JSON.stringify(this.state.doc.results[0].data));
+
+      let data = this.state.doc.results[0].data;
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
       let contactInfo = this.state.contactInfo.results[0].data;
-      console.log("Here is the contact info: " + JSON.stringify(contactInfo));
 
       const headerSummaryParagraphs = data.top_level_text_1.map((para) => {return <div key={Math.random(1,9)}>{para.text}</div>})
 
