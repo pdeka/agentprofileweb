@@ -36,13 +36,10 @@ export default class Home extends React.Component {
   fetchPage(props) {
     if (props.prismicCtx) {
 
-      // We are using the function to get a document by its uid
       props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'homepage')).then((doc) => {
         if (doc) {
-          // We put the retrieved content in the state as a doc variable
-          this.setState({ doc });
+]          this.setState({ doc });
         } else {
-          // We changed the state to display error not found if no matched doc
           this.setState({ notFound: !doc });
         }
       });
@@ -50,7 +47,6 @@ export default class Home extends React.Component {
       props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'article'), { orderings : '[my.article.date desc]', pageSize : 2  }).then(
         (articles) => {
           if (articles) {
-            // We put the retrieved content in the state as a doc variable
             this.setState({ articles });
           }
         }
@@ -59,7 +55,6 @@ export default class Home extends React.Component {
       props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'testimonial'), { orderings : '[my.testimonial.date desc]', pageSize : 3  }).then(
         (testimonials) => {
           if (testimonials) {
-            // We put the retrieved content in the state as a doc variable
             this.setState({ testimonials });
           }
         }
