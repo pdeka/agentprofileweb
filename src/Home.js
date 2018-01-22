@@ -8,6 +8,7 @@ import ArticlePreview from './ArticlePreview';
 import Truncate from 'react-truncate';
 import FormatDate from './FormatDate';
 import MainNavigation from './MainNavigation';
+import FooterLinkedToContactUs from './FooterLinkedToContactUs';
 import './styles/css/Home.css';
 
 
@@ -76,7 +77,6 @@ export default class Home extends React.Component {
 
   render() {
     if (this.state.doc && this.state.articles && this.state.testimonials && this.state.contactInfo) {
-      console.log("Here is the doc: " + JSON.stringify(this.state.doc.results[0].data));
 
       let data = this.state.doc.results[0].data;
       let articleResults = this.state.articles.results;
@@ -314,54 +314,7 @@ export default class Home extends React.Component {
                   </div>
               </div>
           </div>
-          <div class="cd-section" id="contactus">
-              <div class="contactus-2">
-                  <div class="map">
-                    <MapContainer />
-                  </div>
-                  <div class="col-md-6">
-                      <div class="card card-contact card-raised">
-                          <form id="contact-form2" method="post">
-                              <div class="card-header card-header-rose text-center">
-                                  <h4 class="card-title">Contact Us</h4>
-                              </div>
-                              <div class="card-body">
-                                  <div class="row">
-                                      <div class="col-md-6">
-                                          <div class="info info-horizontal">
-                                              <div class="icon icon-rose">
-                                                  <i class="material-icons">phone</i>
-                                              </div>
-                                              <div class="description">
-                                                  <h5 class="info-title">Give us a ring</h5>
-                                                  <p> {contactInfo.contact_us_name[0].text}
-                                                      <br/> {contactInfo.phone[0].text}
-                                                      <br/> {contactInfo.office_opening_hours[0].text}
-                                                  </p>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="col-md-6">
-                                          <div class="info info-horizontal">
-                                              <div class="icon icon-rose">
-                                                  <i class="material-icons">pin_drop</i>
-                                              </div>
-                                              <div class="description">
-                                                  <h5 class="info-title">Find us at the office</h5>
-                                                  <p> {contactInfo.address_line_1[0].text}
-                                                      <br/> {contactInfo.address_line_2[0].text}
-                                                      <br/> {contactInfo.address_line_3[0].text}
-                                                  </p>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          </div>
+          <FooterLinkedToContactUs data={data.footer_content[0].text}/>
         </div>
       </div>
     }else{
