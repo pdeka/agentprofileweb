@@ -21,9 +21,7 @@ export default class MainNavigation extends React.Component {
       'navbar-expand-lg': true
     }
 
-    if (this.props.navBarTransparent === false){
-      navClassNames['navbar-transparent'] = false;
-    }
+    navClassNames['navbar-transparent'] = this.props.navBarTransparent;
 
     return <nav className={classNames(navClassNames)} color-on-scroll="100" id="sectionsNav">
       <div class="container">
@@ -48,7 +46,7 @@ export default class MainNavigation extends React.Component {
               </a>
             </li>
             <li class="nav-item">
-              <a href={data.properties_link.url} class="nav-link">
+              <a href={data.properties_link.url} class="nav-link" target="_blank">
                 Properties
               </a>
             </li>
