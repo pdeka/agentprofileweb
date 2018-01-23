@@ -86,7 +86,7 @@ export default class Home extends React.Component {
       return <div class="sections-page  section-white ">
         <MainNavigation thisProp={data} navBarTransparent={true}/>
         <div class="main">
-          <div class="page-header header-filter" >
+          <div class="page-header header-filter" data-parallax="true">
               <div class="container">
                   <div class="row">
                       <div class="col-md-6">
