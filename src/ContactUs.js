@@ -1,12 +1,6 @@
 import React from 'react';
-import NotFound from './NotFound';
-import PrismicReact from 'prismic-reactjs';
-import PrismicConfig from './prismic-configuration';
 import Prismic from 'prismic-javascript';
 import MapContainer from './MapContainer';
-import ArticlePreview from './ArticlePreview';
-import Truncate from 'react-truncate';
-import FormatDate from './FormatDate';
 import MainNavigation from './MainNavigation';
 import './styles/css/ContactUs.css';
 
@@ -86,7 +80,7 @@ export default class ContactUs extends React.Component {
                     <br/>
                     <br/>
                   </p>
-                  <form role="form" id="contact-form" method="post">
+                  <form id="contact-form" method="post">
                     <div class="form-group">
                       <label htmlFor="name" class="bmd-label-floating">Your name</label>
                       <input type="text" class="form-control" id="name"/>
@@ -140,7 +134,7 @@ export default class ContactUs extends React.Component {
                     </div>
                     <div class="description">
                       <h4 class="info-title">Set up a meeting</h4>
-                      <a href="https://calendly.com/prabin" target="_blank">
+                      <a href="https://calendly.com/prabin" target="_blank" rel="noopener noreferrer">
                         <p>Click to set up</p>
                       </a>
                     </div>

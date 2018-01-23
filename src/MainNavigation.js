@@ -1,12 +1,4 @@
 import React from 'react';
-import NotFound from './NotFound';
-import PrismicReact from 'prismic-reactjs';
-import PrismicConfig from './prismic-configuration';
-import Prismic from 'prismic-javascript';
-import MapContainer from './MapContainer';
-import ArticlePreview from './ArticlePreview';
-import Truncate from 'react-truncate';
-import FormatDate from './FormatDate';
 import classNames from 'classnames';
 
 export default class MainNavigation extends React.Component {
@@ -26,7 +18,7 @@ export default class MainNavigation extends React.Component {
     return <nav className={classNames(navClassNames)} color-on-scroll="100" id="sectionsNav">
       <div class="container">
         <div class="navbar-translate">
-          <a class="navbar-brand" href="#">Ruma Mundi Logo</a>
+          <a class="navbar-brand" href="/">Ruma Mundi Logo</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>

@@ -1,5 +1,4 @@
 import React from 'react';
-import classNames from 'classnames';
 import moment from 'moment';
 
 export default class FormatDate extends React.Component {

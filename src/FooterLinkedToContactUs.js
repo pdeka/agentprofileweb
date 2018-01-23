@@ -1,15 +1,4 @@
 import React from 'react';
-import NotFound from './NotFound';
-import PrismicReact from 'prismic-reactjs';
-import PrismicConfig from './prismic-configuration';
-import Prismic from 'prismic-javascript';
-import MapContainer from './MapContainer';
-import ArticlePreview from './ArticlePreview';
-import Truncate from 'react-truncate';
-import FormatDate from './FormatDate';
-import ContactUs from './ContactUs';
-import classNames from 'classnames';
-import {Redirect} from 'react-router';
 
 export default class FooterLinkedToContactUs extends React.Component {
 

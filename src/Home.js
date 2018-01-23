@@ -1,14 +1,12 @@
 import React from 'react';
-import NotFound from './NotFound';
-import PrismicReact from 'prismic-reactjs';
-import PrismicConfig from './prismic-configuration';
 import Prismic from 'prismic-javascript';
-import MapContainer from './MapContainer';
 import ArticlePreview from './ArticlePreview';
 import Truncate from 'react-truncate';
 import FormatDate from './FormatDate';
 import MainNavigation from './MainNavigation';
 import FooterLinkedToContactUs from './FooterLinkedToContactUs';
+import classNames from 'classnames';
+
 import './styles/css/Home.css';
 
 
@@ -81,7 +79,7 @@ export default class Home extends React.Component {
       let data = this.state.doc.results[0].data;
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
-      let contactInfo = this.state.contactInfo.results[0].data;
+      // let contactInfo = this.state.contactInfo.results[0].data;
 
       const headerSummaryParagraphs = data.top_level_text_1.map((para) => {return <div key={Math.random(1,9)}>{para.text}</div>})
 
@@ -104,11 +102,11 @@ export default class Home extends React.Component {
                                       <i class="fa fa-phone"></i>
                                       <span class="hero-contact-info">+61 420 234 234</span>
                                     </a>
-                                    <a class="hero-contact-info-container" href="mailto:name@email.com" target="_blank">
+                                    <a class="hero-contact-info-container" href="mailto:name@email.com" target="_blank" rel="noopener noreferrer">
                                       <i class="fa fa-envelope"></i>
                                       <span class="hero-contact-info">mail</span>
                                     </a>
-                                    <a class="hero-contact-info-container" href="https://calendly.com/prabin" target="_blank">
+                                    <a class="hero-contact-info-container" href="https://calendly.com/prabin" target="_blank" rel="noopener noreferrer">
                                       <i class="fa fa-handshake-o"></i>
                                       <span class="hero-contact-info">meet</span>
                                     </a>
@@ -232,7 +230,7 @@ export default class Home extends React.Component {
               </div>
           </div>
           <div class="cd-section" id="testimonials">
-              <div class="testimonials-1 section-image" style={{backgroundImage: 'url(' + './vendor/creativetim/img/dg2.jpg' + ')'}}>
+              <div class="testimonials-1 section-image" style={{backgroundImage: 'url(./vendor/creativetim/img/dg2.jpg)'}}>
                   <div class="container">
                       <div class="row">
                           <div class="col-md-6 ml-auto mr-auto text-center">
@@ -258,7 +256,7 @@ export default class Home extends React.Component {
                                       <h6 class="card-category">@{testimonialResults[0].data.full_name[0].text}</h6>
                                       <div class="card-avatar">
                                           <a href="#pablo">
-                                              <img class="img" src={testimonialResults[0].data.photo.url}/>
+                                              <img class="img" src={testimonialResults[0].data.photo.url} alt="testimonial ruma mundi stanhope gardens sydney"/>
                                           </a>
                                       </div>
                                   </div>
@@ -281,7 +279,7 @@ export default class Home extends React.Component {
                                       <h6 class="card-category">@{testimonialResults[1].data.full_name[0].text}</h6>
                                       <div class="card-avatar">
                                           <a href="#pablo">
-                                              <img class="img" src={testimonialResults[1].data.photo.url}/>
+                                              <img class="img" src={testimonialResults[1].data.photo.url} alt="testimonial ruma mundi stanhope gardens sydney"/>
                                           </a>
                                       </div>
                                   </div>
@@ -304,7 +302,7 @@ export default class Home extends React.Component {
                                       <h6 class="card-category">@{testimonialResults[2].data.full_name[0].text}</h6>
                                       <div class="card-avatar">
                                           <a href="#pablo">
-                                              <img class="img" src={testimonialResults[2].data.photo.url}/>
+                                              <img class="img" src={testimonialResults[2].data.photo.url} alt="testimonial ruma mundi stanhope gardens sydney"/>
                                           </a>
                                       </div>
                                   </div>
@@ -318,10 +316,10 @@ export default class Home extends React.Component {
         </div>
       </div>
     }else{
-      return   <div class="sections-page  section-white">
+      return   <div className={classNames('sections-page',  'section-white')}>
         <div id="spinner-middle">
           <div>
-              <i class="fa fa-refresh fa-spin fa-5x fa-fw"></i>
+              <i className={classNames('fa', 'fa-refresh', 'fa-spin', 'fa-5x', 'fa-fw')}></i>
           </div>
         </div>
       </div>
