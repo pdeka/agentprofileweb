@@ -1,11 +1,11 @@
 import React from 'react';
 import Prismic from 'prismic-javascript';
-import ArticlePreview from './ArticlePreview';
 import Truncate from 'react-truncate';
-import FormatDate from './FormatDate';
 import MainNavigation from './MainNavigation';
 import FooterLinkedToContactUs from './FooterLinkedToContactUs';
 import classNames from 'classnames';
+import ArticlePreview from './ArticlePreview';
+import FormatDate from './FormatDate';
 
 import './styles/css/Home.css';
 
@@ -167,68 +167,6 @@ export default class Home extends React.Component {
                   </div>
               </div>
           </div>
-          <div class="cd-section" id="blogs" style={{background: 'white'}}>
-              <div class="blogs-1 no-padding-bottom" id="blogs-1">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-md-10 ml-auto mr-auto">
-                              <h2 class="title">{data.homepage_articles_header[0].text}</h2>
-                              <br/>
-                              <div class="card card-plain card-blog">
-                                  <div class="row">
-                                      <div class="col-md-5">
-                                        <ArticlePreview data={articleResults[0].data} />
-                                      </div>
-                                      <div class="col-md-7">
-                                          <h6 class="card-category text-info">{articleResults[0].data.article_tag}</h6>
-                                          <h3 class="card-title">
-                                              <a href="#pablo">{articleResults[0].data.article_title[0].text}</a>
-                                          </h3>
-                                          <p class="card-description">
-                                              <Truncate lines={3} ellipsis={<span>... <a href="#pablo"> Read More </a></span>}>
-                                                {articleResults[0].data.article_summary[0].text}
-                                              </Truncate>
-                                          </p>
-                                          <p class="author">
-                                              by
-                                              <a href="#pablo" class="article-author">
-                                                  <b>Ruma</b>
-                                              </a>, <FormatDate data={articleResults[0].data.date} />
-                                          </p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="card card-plain card-blog">
-                                  <div class="row">
-                                      <div class="col-md-7">
-                                          <h6 class="card-category text-danger">
-                                              <i class="material-icons">trending_up</i> {articleResults[1].data.article_tag}
-                                          </h6>
-                                          <h3 class="card-title">
-                                              <a href="#pablo">{articleResults[1].data.article_title[0].text}</a>
-                                          </h3>
-                                          <p class="card-description">
-                                            <Truncate lines={3} ellipsis={<span>... <a href="#pablo"> Read More </a></span>}>
-                                              {articleResults[1].data.article_summary[0].text}
-                                            </Truncate>
-                                          </p>
-                                          <p class="author">
-                                              by
-                                              <a href="#pablo" class="article-author">
-                                                  <b>Ruma</b>
-                                              </a>, <FormatDate data={articleResults[1].data.date} />
-                                          </p>
-                                      </div>
-                                      <div class="col-md-5">
-                                        <ArticlePreview data={articleResults[1].data} />
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
           <div class="cd-section" id="testimonials">
               <div class="testimonials-1 section-image" style={{backgroundImage: 'url(./vendor/creativetim/img/dg2.jpg)'}}>
                   <div class="container">
@@ -306,6 +244,75 @@ export default class Home extends React.Component {
                                           </a>
                                       </div>
                                   </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="cd-section" id="blogs" style={{background: 'white'}}>
+              <div class="blogs-1 no-padding-bottom" id="blogs-1">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-10 ml-auto mr-auto">
+                              <h2 class="title">{data.homepage_articles_header[0].text}</h2>
+                              <br/>
+                              <div class="card card-plain card-blog">
+                                <div class="row">
+                                  <div class="col-md-5">
+                                    <ArticlePreview data={articleResults[0].data}/>
+                                  </div>
+                                  <div class="col-md-7">
+                                    <h6 class="card-category text-info">{articleResults[0].data.article_tag}</h6>
+                                    <h3 class="card-title">
+                                      <a href="#pablo">{articleResults[0].data.article_title[0].text}</a>
+                                    </h3>
+                                    <p class="card-description">
+                                      <Truncate lines={3} ellipsis={< span > ...<a href="#pablo">
+                                        Read More
+                                      </a> < /span>}>
+                                        {articleResults[0].data.article_summary[0].text}
+                                      </Truncate>
+                                    </p>
+                                    <p class="author">
+                                      by
+                                      <a href="#pablo" class="article-author">
+                                        <b>Ruma</b>
+                                      </a>,
+                                      <FormatDate data={articleResults[0].data.date}/>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card card-plain card-blog">
+                                <div class="row">
+                                  <div class="col-md-7">
+                                    <h6 class="card-category text-danger">
+                                      <i class="material-icons">trending_up</i>
+                                      {articleResults[1].data.article_tag}
+                                    </h6>
+                                    <h3 class="card-title">
+                                      <a href="#pablo">{articleResults[1].data.article_title[0].text}</a>
+                                    </h3>
+                                    <p class="card-description">
+                                      <Truncate lines={3} ellipsis={< span > ...<a href="#pablo">
+                                        Read More
+                                      </a> < /span>}>
+                                        {articleResults[1].data.article_summary[0].text}
+                                      </Truncate>
+                                    </p>
+                                    <p class="author">
+                                      by
+                                      <a href="#pablo" class="article-author">
+                                        <b>Ruma</b>
+                                      </a>,
+                                      <FormatDate data={articleResults[1].data.date}/>
+                                    </p>
+                                  </div>
+                                  <div class="col-md-5">
+                                    <ArticlePreview data={articleResults[1].data}/>
+                                  </div>
+                                </div>
                               </div>
                           </div>
                       </div>
