@@ -99,7 +99,7 @@ export default class ContactUs extends React.Component {
                       <textarea class="form-control" rows="6" id="message"></textarea>
                     </div>
                     <div class="submit text-center">
-                      <input type="submit" class="btn btn-primary btn-raised btn-round" value="Contact Us"/>
+                      <input type="submit" class="btn btn-warning btn-raised btn-round" value="Contact Us"/>
                     </div>
                   </form>
                 </div>
