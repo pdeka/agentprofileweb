@@ -1,16 +1,3 @@
-/* todo: Remove this using bootstrap media queries */
-@media (min-width: 992px) {
-  .mb-r {
-    margin-bottom: 3rem !important;
-  }
-}
-
-@media (max-width: 992px) {
-  .mb-r {
-    margin-bottom: 2rem !important;
-  }
-}
-
 #iframe-rounded-corner {
   border: 4px solid #000;
   border-radius: 4px !important;

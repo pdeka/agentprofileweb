@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,qDAAqD;AACrD,yBAA0B;EACxB,KAAM;IACJ,aAAa,EAAE,eAAe;AAIlC,yBAA0B;EACxB,KAAM;IACJ,aAAa,EAAE,eAAe;AAIlC,sBAAuB;EACrB,MAAM,EAAE,cAAc;EACtB,aAAa,EAAE,cAAc;;AAG/B,eAAgB;EACd,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG",
+"mappings": "AAAA,sBAAuB;EACrB,MAAM,EAAE,cAAc;EACtB,aAAa,EAAE,cAAc;;AAG/B,eAAgB;EACd,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG",
 "sources": ["../scss/Articles.scss"],
 "names": [],
 "file": "Articles.css"

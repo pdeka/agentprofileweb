@@ -19,7 +19,7 @@ export default class ArticlePreview extends React.Component {
   displayImageOrVideo(data) {
     if (data.youtube_link && data.youtube_link.url && data.youtube_link !== {}) {
       return <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
-        <div className={'mb-r'}>
+        <div>
           <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
             <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(data.youtube_link.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
           </div>
