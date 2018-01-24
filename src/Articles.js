@@ -1,11 +1,8 @@
 import React from 'react';
 import Prismic from 'prismic-javascript';
-import Truncate from 'react-truncate';
 import MainNavigation from './MainNavigation';
-import FooterLinkedToContactUs from './FooterLinkedToContactUs';
 import classNames from 'classnames';
 import ArticlePreview from './ArticlePreview';
-import FormatDate from './FormatDate';
 
 import './styles/css/Articles.css';
 
@@ -216,7 +213,7 @@ export default class Articles extends React.Component {
               &copy; 2018, made with
               <i class="material-icons">favorite</i>
               by
-              <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>
+              <a href="https://www.creative-tim.com" target="_blank" rel="noopener noreferrer">Creative Tim</a>
               for a better web.
             </div>
           </div>
