@@ -81,7 +81,7 @@ export default class Home extends React.Component {
       let testimonialResults = this.state.testimonials.results;
       // let contactInfo = this.state.contactInfo.results[0].data;
 
-      const headerSummaryParagraphs = data.top_level_text_1.map((para) => {return <div key={Math.random(1,9)}>{para.text}</div>})
+      const headerSummaryParagraphs = data.top_level_text_1.map((para, index) => {return <div key={index}>{para.text}</div>})
 
       return <div class="sections-page  section-white ">
         <MainNavigation thisProp={data} navBarTransparent={true}/>

@@ -1,0 +1,30 @@
+[{
+  "id": "WmdADSQAACUApRHB",
+  "uid": null,
+  "type": "articlespage",
+  "href": "https://rumamundi.prismic.io/api/v2/documents/search?ref=WmhVNiQAACQAqdQc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WmdADSQAACUApRHB%22%29+%5D%5D",
+  "tags": [],
+  "first_publication_date": "2018-01-23T14:00:49+0000",
+  "last_publication_date": "2018-01-24T09:43:18+0000",
+  "slugs": ["rumas-news-and-views"],
+  "linked_documents": [],
+  "lang": "en-au",
+  "alternate_languages": [],
+  "data": {
+    "header": [{
+      "type": "heading1",
+      "text": "Ruma's news and views",
+      "spans": []
+    }],
+    "footer_text": [{
+      "type": "heading6",
+      "text": "This is the question that goes in the footer.",
+      "spans": []
+    }],
+    "filters": [{
+      "type": "heading6",
+      "text": "My community, Advice, The market",
+      "spans": []
+    }]
+  }
+}]

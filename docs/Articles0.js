@@ -9,7 +9,7 @@ import FormatDate from './FormatDate';
 
 import './styles/css/Articles.css';
 
-export default class Articles extends React.Component {
+export default class Articles0 extends React.Component {
 
   state = {
     doc: null,
@@ -44,7 +44,8 @@ export default class Articles extends React.Component {
       });
 
       props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'article'), {
-        orderings: '[my.article.date desc]'
+        orderings: '[my.article.date desc]',
+        pageSize: 2
       }).then((articles) => {
         if (articles) {
           this.setState({articles});
@@ -67,45 +68,6 @@ export default class Articles extends React.Component {
     return articlespageResults[0].data.filters[0].text.split(',').map((item)=> {return item.trim()});
   }
 
-  replaceSpace(tab){
-    return tab.replace(' ','-');
-  }
-
-  selectArticles(tab, articleResults){
-    return articleResults.filter((article) => {
-      if (article.data.article_tag === tab) return article;
-    });
-  }
-
-  renderCards(articles, tab) {
-    if (articles.length === 0){
-      return <div class="card card-plain card-blog">
-            <div class="card-body">
-              <h3 class="card-title">
-                Sorry, Ruma has no '{tab}' content at the moment.
-                <br/>
-                Watch this space!
-              </h3>
-            </div>
-        </div>;
-    } else{
-      return articles.map((article, childIndex) => {
-        return <div class="card card-plain card-blog" key={childIndex}>
-              <ArticlePreview data={article.data} />
-              <div class="card-body">
-                  <h6 class="card-category text-info">{tab}</h6>
-                  <h3 class="card-title">
-                      <a href="#pablo">{article.data.article_title[0].text}</a>
-                  </h3>
-                  <h5 class="card-description">
-                    {article.data.article_summary[0].text}
-                  </h5>
-              </div>
-          </div>
-      });
-    }
-  }
-
   render() {
     if (this.state.doc && this.state.articles && this.state.articlespage) {
 
@@ -113,6 +75,7 @@ export default class Articles extends React.Component {
       let articleResults = this.state.articles.results;
       let articlespageResults = this.state.articlespage.results;
 
+      console.log("Articles page: " + JSON.stringify(articlespageResults));
 
       let tabs = this.filterTabs(articlespageResults);
 
@@ -122,7 +85,7 @@ export default class Articles extends React.Component {
           <div class="container">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto text-center">
-                <h2 class="title">{articlespageResults[0].data.header[0].text}</h2>
+                <h2 class="title">A Place for Entrepreneurs to Share and Discover New Stories</h2>
               </div>
             </div>
           </div>
@@ -133,32 +96,60 @@ export default class Articles extends React.Component {
               <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center">
                   <ul class="nav nav-pills nav-pills-primary">
-                    {tabs.map((tab, index) => {
-                      let aClasses = (index === 0)? {'nav-link': true, 'active': true}: {'nav-link': true, 'active': false};
-                      return <li key={index} class="nav-item">
-                        <a className={classNames(aClasses)} href={'#' + this.replaceSpace(tab)} data-toggle="tab">{tab}</a>
+                    {tabs.map((tab) => {
+                      return <li class="nav-item">
+                        <a class="nav-link active" href="#pill2" data-toggle="tab">{tab}</a>
                       </li>;
                     })}
                   </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="pill1"></div>
+                    <div class="tab-pane" id="pill2"></div>
+                    <div class="tab-pane" id="pill3"></div>
+                    <div class="tab-pane" id="pill4"></div>
+                  </div>
                 </div>
               </div>
               <div class="row">
                 <div class="blogs-4" id="blogs-4">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-md-8 ml-auto mr-auto">
-                              <div class="tab-content">
-                                {tabs.map((tab, index) => {
-                                  let divClasses = (index === 0)? {'tab-pane': true, 'active': true}: {'tab-pane': true, 'active': false};
-                                  let articles = this.selectArticles(tab, articleResults);
-                                  return <div key={index} className={classNames(divClasses)} id={this.replaceSpace(tab)}>
-                                    {this.renderCards(articles, tab)}
-                                  </div>
-                                })}
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 ml-auto mr-auto">
+                                <div class="card card-plain card-blog">
+                                    <div class="card-header card-header-image">
+                                        <a href="#pablo">
+                                            <img class="img img-raised" src="./vendor/creativetim/img/bg5.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="card-category text-info">Fashion</h6>
+                                        <h3 class="card-title">
+                                            <a href="#pablo">Autodesk looks to future of 3D</a>
+                                        </h3>
+                                        <h5 class="card-description">
+                                            Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is too high for the beams and angle of the ceiling I also wanted to point out that it’s the first album to go number 1 off of streaming...
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="card card-plain card-blog">
+                                    <div class="card-header card-header-image">
+                                        <a href="#pablo">
+                                            <img class="img img-raised" src="./vendor/creativetim/img/bg5.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="card-category text-success">Lifestyle</h6>
+                                        <h3 class="card-title">
+                                            <a href="#pablo">We will breathe clean air and exercise</a>
+                                        </h3>
+                                        <h5 class="card-description">
+                                            Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is too high for the beams and angle of the ceiling I also wanted to point out that it’s the first album to go number 1 off of streaming...
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -167,16 +158,17 @@ export default class Articles extends React.Component {
             <div class="container">
               <div class="row">
                 <div class="col-md-6">
-                  <h3 class="title">{articlespageResults[0].data.footer_content[0].text}</h3>
+                  <h3 class="title">Get Tips &amp; Tricks every Week!</h3>
+                  <p class="description">
+                    Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+                  </p>
                 </div>
                 <div class="col-md-6">
                   <div class="card card-plain card-form-horizontal">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-md-4">
-                          <a href="/contactus">
-                            <button type="button" class="btn btn-primary btn-round btn-block">Contact Us</button>
-                          </a>
+                          <button type="button" class="btn btn-primary btn-round btn-block">Subscribe</button>
                         </div>
                       </div>
                     </div>

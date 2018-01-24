@@ -17,11 +17,7 @@ export default class ArticlePreview extends React.Component {
   }
 
   displayImageOrVideo(data) {
-    if (data.youtube_link === null) {
-      return <div className={classNames('card-header', 'card-header-image')}>
-        <img className={'img'} src={data.top_level_image.url} alt="article ruma mundi stanhope garden sydney"/>
-      </div>;
-    } else {
+    if (data.youtube_link && data.youtube_link.url && data.youtube_link !== {}) {
       return <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
         <div className={'mb-r'}>
           <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
@@ -29,7 +25,16 @@ export default class ArticlePreview extends React.Component {
           </div>
         </div>
       </div>;
+    } else if (data.top_level_image && data.top_level_image.url && data.top_level_image !== {}) {
+      return <div className={classNames('card-header', 'card-header-image')}>
+        <img className={'img'} src={data.top_level_image.url} alt="article ruma mundi stanhope garden sydney"/>
+      </div>;
+    } else {
+      return <div className={classNames('card-header', 'card-header-image')}>
+        Can you please go to the Content Management System and enter an image or a video?
+      </div>;
     }
+
   }
 
   render() {
