@@ -22,7 +22,13 @@
     "moment": "~2.20.1"
   },
   "devDependencies": {
-    "react-scripts": "~1.0.14"
+    "react-scripts": "~1.0.14",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-install": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,7 +37,8 @@
     "eject": "react-scripts eject",
     "clean": "rm -r build/*",
     "sass" : "sass --watch src/styles/scss:src/styles/css",
-    "sass:build": "sass src/styles/scss:src/styles/css"
+    "sass:build": "sass src/styles/scss:src/styles/css",
+    "vendor:build": "gulp compile-scss --gulpfile public/vendor/creativetim/gulpfile.js"
   },
   "engines": {
     "node": ">=4.8.1",

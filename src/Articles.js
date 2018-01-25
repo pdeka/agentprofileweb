@@ -129,7 +129,7 @@ export default class Articles extends React.Component {
             <div class="section">
               <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center">
-                  <ul class="nav nav-pills nav-pills-warning">
+                  <ul class="nav nav-pills nav-pills-primary">
                     {tabs.map((tab, index) => {
                       let aClasses = (index === 0)? {'nav-link': true, 'active': true}: {'nav-link': true, 'active': false};
                       return <li key={index} class="nav-item">
@@ -172,7 +172,7 @@ export default class Articles extends React.Component {
                       <div class="row">
                         <div class="col-md-4">
                           <a href="/contactus">
-                            <button type="button" class="btn btn-warning btn-round btn-block">Contact Us</button>
+                            <button type="button" class="btn btn-primary btn-round btn-block">Contact Us</button>
                           </a>
                         </div>
                       </div>
