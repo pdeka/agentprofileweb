@@ -4,15 +4,14 @@ export default class FooterLinkedToContactUs extends React.Component {
 
   render() {
     let data = this.props.data;
-    return <div class="blogs-1">
-      <div class="container">
+    return <div class="subscribe-line">
         <div class="container">
           <div class="row">
-            <div class="col-md-8 ml-auto mr-auto">
-              <div>
+            <div class="col-md-12 ml-auto mr-auto">
+              <div style={{'textAlign': 'center'}}>
                 <h5 class="title">{data}
-                  <a href="/contactus">
-                    <button class="btn btn-disabled btn-round">
+                  <a href="/contactus" style={{'marginLeft' : '25px'}}>
+                    <button class="btn btn-primary btn-round">
                       Contact Us
                       <div class="ripple-container"></div>
                     </button>
@@ -22,8 +21,6 @@ export default class FooterLinkedToContactUs extends React.Component {
             </div>
           </div>
         </div>
-      </div>
     </div>;
-
   }
 }

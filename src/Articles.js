@@ -3,6 +3,7 @@ import Prismic from 'prismic-javascript';
 import MainNavigation from './MainNavigation';
 import classNames from 'classnames';
 import ArticlePreview from './ArticlePreview';
+import FooterLinkedToContactUs from "./FooterLinkedToContactUs";
 import PageFooter from "./PageFooter";
 
 import './styles/css/Articles.css';
@@ -161,31 +162,10 @@ export default class Articles extends React.Component {
               </div>
             </div>
           </div>
-          <div class="subscribe-line">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3 class="title">{articlespageResults[0].data.footer_content[0].text}</h3>
-                </div>
-                <div class="col-md-6">
-                  <div class="card card-plain card-form-horizontal">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <a href="/contactus">
-                            <button type="button" class="btn btn-primary btn-round btn-block">Contact Us</button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FooterLinkedToContactUs data={articlespageResults[0].data.footer_content[0].text}/>
         </div>
         <PageFooter />
-      </div>
+      </div>;
 
     } else {
       return <div className={classNames('sections-page', 'section-white')}>
@@ -194,7 +174,7 @@ export default class Articles extends React.Component {
             <i className={classNames('fa', 'fa-refresh', 'fa-spin', 'fa-5x', 'fa-fw')}></i>
           </div>
         </div>
-      </div>
+      </div>;
 
     }
   }
