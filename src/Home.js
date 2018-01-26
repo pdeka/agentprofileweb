@@ -112,8 +112,8 @@ export default class Home extends React.Component {
                     </div>
                   </div>
               </div>
-              <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster="./images/poster.png">
-                <source src="https://luxuryp.s3.amazonaws.com/ecd307c1d17f6c44dd6779a538a6779d.m4v" type="video/mp4"/>
+              <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster="https://prismic-io.s3.amazonaws.com/rumamundi%2Fe26a6369-65c4-47c4-b6f3-d782cbc937cd_videoposter.png">
+                <source src="https://prismic-io.s3.amazonaws.com/rumamundi%2Fcef043a5-a762-48d8-93da-2041424e6c41_test-13-720p-25fps-heavily-compressed.mp4" type="video/mp4"/>
               </video>
           </div>
         </div>
