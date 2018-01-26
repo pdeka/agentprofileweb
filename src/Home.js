@@ -105,10 +105,6 @@ export default class Home extends React.Component {
                               <i class="fa fa-envelope"></i>
                               <span class="hero-contact-info">mail</span>
                             </a>
-                            <a class="hero-contact-info-container" href="https://calendly.com/prabin" target="_blank" rel="noopener noreferrer">
-                              <i class="fa fa-handshake-o"></i>
-                              <span class="hero-contact-info">meet</span>
-                            </a>
                     </div>
                   </div>
               </div>
