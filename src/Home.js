@@ -90,7 +90,7 @@ export default class Home extends React.Component {
           <div class="page-header header-filter" data-parallax="true">
               <div class="container">
                   <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-8">
                           <h1 class="title">{data.homepage_header[0].text}</h1>
                           <h4 class="hero-text">{headerSummaryParagraphs}</h4>
                       </div>
