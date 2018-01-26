@@ -3,6 +3,7 @@ import Prismic from 'prismic-javascript';
 import MainNavigation from './MainNavigation';
 import classNames from 'classnames';
 import ArticlePreview from './ArticlePreview';
+import PageFooter from "./PageFooter";
 
 import './styles/css/Articles.css';
 
@@ -183,41 +184,7 @@ export default class Articles extends React.Component {
             </div>
           </div>
         </div>
-        <footer class="footer ">
-          <div class="container">
-            <nav class="pull-left">
-              <ul>
-                <li>
-                  <a href="https://www.creative-tim.com">
-                    Creative Tim
-                  </a>
-                </li>
-                <li>
-                  <a href="http://presentation.creative-tim.com">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="http://blog.creative-tim.com">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.creative-tim.com/license">
-                    Licenses
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <div class="copyright pull-right">
-              &copy; 2018, made with
-              <i class="material-icons">favorite</i>
-              by
-              <a href="https://www.creative-tim.com" target="_blank" rel="noopener noreferrer">Creative Tim</a>
-              for a better web.
-            </div>
-          </div>
-        </footer>
+        <PageFooter />
       </div>
 
     } else {

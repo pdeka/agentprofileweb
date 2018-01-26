@@ -6,6 +6,7 @@ import FooterLinkedToContactUs from './FooterLinkedToContactUs';
 import classNames from 'classnames';
 import ArticlePreview from './ArticlePreview';
 import FormatDate from './FormatDate';
+import PageFooter from "./PageFooter";
 
 import './styles/css/Home.css';
 
@@ -311,8 +312,11 @@ export default class Home extends React.Component {
                     </div>
                 </div>
             </div>
+            <FooterLinkedToContactUs data={data.footer_content[0].text}/>
         </div>
-        <FooterLinkedToContactUs data={data.footer_content[0].text}/>
+        <div class="main footer-container footer-background-transparent">
+          <PageFooter />
+        </div>
       </div>
     }else{
       return   <div className={classNames('sections-page',  'section-white')}>

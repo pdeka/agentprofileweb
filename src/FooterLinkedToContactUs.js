@@ -4,7 +4,7 @@ export default class FooterLinkedToContactUs extends React.Component {
 
   render() {
     let data = this.props.data;
-    return <footer class="footer footer-white">
+    return <div class="blogs-1">
       <div class="container">
         <div class="container">
           <div class="row">
@@ -23,7 +23,7 @@ export default class FooterLinkedToContactUs extends React.Component {
           </div>
         </div>
       </div>
-    </footer>;
+    </div>;
 
   }
 }

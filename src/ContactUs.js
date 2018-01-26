@@ -2,6 +2,8 @@ import React from 'react';
 import Prismic from 'prismic-javascript';
 import MapContainer from './MapContainer';
 import MainNavigation from './MainNavigation';
+import PageFooter from "./PageFooter";
+
 import './styles/css/ContactUs.css';
 
 export default class ContactUs extends React.Component {
@@ -144,34 +146,7 @@ export default class ContactUs extends React.Component {
             </div>
           </div>
         </div>
-        <footer class="footer ">
-          <div class="container">
-            <nav class="pull-left">
-              <ul>
-                <li>
-                  <a href="https://www.creative-tim.com">
-                    Creative Tim
-                  </a>
-                </li>
-                <li>
-                  <a href="http://presentation.creative-tim.com">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="http://blog.creative-tim.com">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.creative-tim.com/license">
-                    Licenses
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </footer>
+        <PageFooter />
       </div>
     } else {
       return <div class="sections-page  section-white">
