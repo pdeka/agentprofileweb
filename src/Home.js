@@ -114,51 +114,22 @@ export default class Home extends React.Component {
           </div>
         </div>
         <div class="main main-raised">
-            <div class="container">
-                <div class="features-1 no-padding-bottom">
-                    <div class="row">
-                        <div class="col-md-8 ml-auto mr-auto">
-                            <h2 class="title">{data.our_difference_header[0].text}</h2>
-                            <h5 class="description">{data.our_difference_text[0].text}</h5>
-                            <div class="icon">
-                              <i class="material-icons">format_quote</i>
-                            </div>
-                            <blockquote class="blockquote text-center">
-                              <p class="mb-0">{data.our_difference_quotation[0].text}</p>
-                              <footer class="blockquote-footer">{data.quotation_by[0].text}</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="info">
-                                <div class="icon icon-disabled">
-                                    <i class="material-icons">home</i>
-                                </div>
-                                <h4 class="info-title">300 houses sold</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="info">
-                                <div class="icon icon-disabled">
-                                    <i class="material-icons">gavel</i>
-                                </div>
-                                <h4 class="info-title">90% auction clearance rate</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="info">
-                                <div class="icon icon-disabled">
-                                    <i class="material-icons">star</i>
-                                </div>
-                                <h4 class="info-title">Top 10 agent</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container" >
+              <div class="features-3">
+                <div class="row">
+                  <div class="col-md-6 ml-auto mr-auto">
+                      <h2 class="title">Let Ruma help you</h2>
+                          <h5 class="description">
+                              <p>The moment you use Material Kit, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                          </h5>
+                  </div>
+                  <div class="col-md-6 ml-auto mr-auto">
+                      <div >
+                          <img src="https://prismic-io.s3.amazonaws.com/rumamundi%2F2871661f-afdd-4ab3-8dfe-9ba479b4db35_reb-ruma-mundi.png" />
+                      </div>
+                  </div>
                 </div>
+              </div>
             </div>
             <div class="testimonials-1 section-image" style={{backgroundImage: 'url(./vendor/creativetim/img/dg2.jpg)'}}>
                 <div class="container">
