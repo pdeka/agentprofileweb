@@ -17,6 +17,8 @@ export default class MainNavigation extends React.Component {
 
     navClassNames['navbar-transparent'] = this.props.navBarTransparent;
 
+    console.log("data :" + JSON.stringify(data));
+
     return <nav className={classNames(navClassNames)} color-on-scroll="100" id="sectionsNav">
       <div class="container">
         <div class="navbar-translate">
@@ -67,12 +69,12 @@ export default class MainNavigation extends React.Component {
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link" target="_blank">
+              <a href={data.linkedin_link.url} class="nav-link" target="_blank">
                 <i class="fa fa-linkedin"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://www.ratemyagent.com.au/real-estate-agent/ruma-mundi-br828/reviews"
+              <a href={data.rate_my_agent_link.url}
                   class="nav-link" target="_blank">
                 <i class="fa icon-ratemyagent" style={{'fontSize': '17px'}}></i>
               </a>
