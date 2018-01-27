@@ -148,11 +148,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
               </div>
             </div>
             <div class="cd-section" id="teams">
-                <div class="team-5 section-image" style={{'backgroundImage': 'url(https://i2.au.reastatic.net/800x600/d354909da99c1be8aa878fb1967de04008fb0ceb708ab18624dbabd4023cc856/main.jpg)'}}>
+                <div class="team-5 section-image" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8 ml-auto mr-auto text-center">
-                                <h2 class="title">Team Ruma</h2>
+                                <h2 class="title">Her Team</h2>
                                 <h5 class="description">This is the paragraph where you can write more details about your team. Keep you user engaged by providing meaningful information.</h5>
                             </div>
                         </div>
