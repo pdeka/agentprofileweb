@@ -76,7 +76,9 @@ export default class MainNavigation extends React.Component {
             <li class="nav-item">
               <a href={data.rate_my_agent_link.url}
                   class="nav-link" target="_blank">
+              <div style={{'marginBottom': '-1px'}}>
                 <i class="fa icon-ratemyagent" style={{'fontSize': '17px'}}></i>
+              </div>
               </a>
             </li>
           </ul>
