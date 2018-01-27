@@ -53,7 +53,7 @@ export default class MainNavigation extends React.Component {
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a href={data.facebook_link.url} class="nav-link" target="_blank">
-                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-facebook"></i>
               </a>
             </li>
             <li class="nav-item">
@@ -64,6 +64,17 @@ export default class MainNavigation extends React.Component {
             <li class="nav-item">
               <a href={data.youtube_link.url} class="nav-link" target="_blank">
                 <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.ratemyagent.com.au/real-estate-agent/ruma-mundi-br828/reviews"
+                  class="nav-link" target="_blank">
+                <i class="fa icon-ratemyagent" style={{'fontSize': '17px'}}></i>
               </a>
             </li>
           </ul>
