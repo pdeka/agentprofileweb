@@ -123,9 +123,9 @@ export default class Home extends React.Component {
                           <div class="col-md-7">
                               <div class="card-body">
                                   <h2 class="card-title">Meet Ruma</h2>
-                                  <h4 class="card-category text-muted">Principle Agent</h4>
+                                  <h4 class="card-category text-muted">Founder & Principle Agent</h4>
                                   <p class="card-description">
-                                      Don't be scared of the truth because we need to restart the human foundation in truth...
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                   </p>
                               </div>
                               <div class="card-footer">
@@ -148,11 +148,11 @@ export default class Home extends React.Component {
               </div>
             </div>
             <div class="cd-section" id="teams">
-                <div class="team-5 section-image" style={{'backgroundImage': 'url(./vendor/creativetim/img/examples/city.jpg)'}}>
+                <div class="team-5 section-image" style={{'backgroundImage': 'url(https://i2.au.reastatic.net/800x600/d354909da99c1be8aa878fb1967de04008fb0ceb708ab18624dbabd4023cc856/main.jpg)'}}>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8 ml-auto mr-auto text-center">
-                                <h2 class="title">The Executive Team 5</h2>
+                                <h2 class="title">Team Ruma</h2>
                                 <h5 class="description">This is the paragraph where you can write more details about your team. Keep you user engaged by providing meaningful information.</h5>
                             </div>
                         </div>
@@ -273,15 +273,15 @@ export default class Home extends React.Component {
             <div class="blogs-1 no-padding-bottom" id="blogs-1">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-10 ml-auto mr-auto">
+                        <div class="col-md-12 ml-auto mr-auto">
                             <h2 class="title">{data.homepage_articles_header[0].text}</h2>
                             <br/>
                             <div class="card card-plain card-blog">
                               <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-8">
                                   <ArticlePreview data={articleResults[0].data}/>
                                 </div>
-                                <div class="col-md-7">
+                                <div class="col-md-4">
                                   <h6 class="card-category text-info">{articleResults[0].data.article_tag}</h6>
                                   <h3 class="card-title">
                                     <a href="#pablo">{articleResults[0].data.article_title[0].text}</a>
@@ -300,36 +300,6 @@ export default class Home extends React.Component {
                                     </a>,
                                     <FormatDate data={articleResults[0].data.date}/>
                                   </p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card card-plain card-blog">
-                              <div class="row">
-                                <div class="col-md-7">
-                                  <h6 class="card-category text-danger">
-                                    <i class="material-icons">trending_up</i>
-                                    {articleResults[1].data.article_tag}
-                                  </h6>
-                                  <h3 class="card-title">
-                                    <a href="#pablo">{articleResults[1].data.article_title[0].text}</a>
-                                  </h3>
-                                  <p class="card-description">
-                                    <Truncate lines={3} ellipsis={< span > ...<a href="#pablo">
-                                      Read More
-                                    </a> < /span>}>
-                                      {articleResults[1].data.article_summary[0].text}
-                                    </Truncate>
-                                  </p>
-                                  <p class="author">
-                                    by
-                                    <a href="#pablo" class="article-author">
-                                      <b>Ruma</b>
-                                    </a>,
-                                    <FormatDate data={articleResults[1].data.date}/>
-                                  </p>
-                                </div>
-                                <div class="col-md-5">
-                                  <ArticlePreview data={articleResults[1].data}/>
                                 </div>
                               </div>
                             </div>
