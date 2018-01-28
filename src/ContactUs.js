@@ -68,77 +68,54 @@ export default class ContactUs extends React.Component {
       let contactInfo = this.state.contactInfo.results[0].data;
 
       return <div class="contact-us ">
-        <MainNavigation thisProp={homepage} navBarTransparent={false}/>
-        <div id="contactUsMap" class="big-map">
-          <MapContainer/>
+        <MainNavigation thisProp={homepage} navBarTransparent={true}/>
+        <div class="page-header header-filter header-small" data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 ml-auto mr-auto text-center">
+                <h2 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="main main-raised">
           <div class="contact-content">
             <div class="container">
               <h2 class="title">{contactuspage.header[0].text}</h2>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <p class="description">{contactuspage.title_text[0].text}
-                    <br/>
-                    <br/>
                   </p>
-                  <form id="contact-form" method="post">
-                    <div class="form-group">
-                      <label htmlFor="name" class="bmd-label-floating">Your name</label>
-                      <input type="text" class="form-control" id="name"/>
-                    </div>
-                    <div class="form-group">
-                      <label htmlFor="exampleInputEmails" class="bmd-label-floating">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmails"/>
-                      <span class="bmd-help">We'll never share your email with anyone else.</span>
-                    </div>
-                    <div class="form-group">
-                      <label htmlFor="phone" class="bmd-label-floating">Phone</label>
-                      <input type="text" class="form-control" id="phone"/>
-                    </div>
-                    <div class="form-group label-floating">
-                      <label class="form-control-label bmd-label-floating" htmlFor="message">Your message</label>
-                      <textarea class="form-control" rows="6" id="message"></textarea>
-                    </div>
-                    <div class="submit text-center">
-                      <input type="submit" class="btn btn-primary btn-raised btn-round" value="Contact Us"/>
-                    </div>
-                  </form>
+                  <br/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div id="contactUsMap" class="big-map">
+                    <MapContainer/>
+                  </div>
                 </div>
                 <div class="col-md-4 ml-auto">
-                  <div class="info info-horizontal">
-                    <div class="icon icon-disabled">
-                      <i class="fa fa-location-arrow"></i>
-                    </div>
-                    <div class="description">
-                      <h4 class="info-title">Find us at the office</h4>
-                      <p>
-                        {contactInfo.address_line_1[0].text}
-                        <br/> {contactInfo.address_line_2[0].text}
-                        <br/> {contactInfo.address_line_3[0].text}
-                      </p>
-                    </div>
-                  </div>
                   <div class="info info-horizontal">
                     <div class="icon icon-disabled">
                       <i class="fa fa-volume-control-phone"></i>
                     </div>
                     <div class="description">
                       <h4 class="info-title">Give us a ring</h4>
-                      <a href="tel:+61420234234">
-                        <p>+61 420 234 234</p>
-                      </a>
+                      <a class="btn btn-primary btn-round" style={{'fontSize': '16px', 'fontWeight': '900', 'color': 'white', 'textTransform': 'none'}}>+61 420 234 234<div class="ripple-container"></div></a>
                     </div>
                   </div>
                   <div class="info info-horizontal">
-                    <div class="icon icon-disabled icon-smaller-margin">
-                      <i class="fa fa-coffee"></i>
+                    <div class="icon icon-disabled">
+                      <i class="fa fa-location-arrow"></i>
                     </div>
                     <div class="description">
-                      <h4 class="info-title">Set up a meeting</h4>
-                      <a href="https://calendly.com/prabin" target="_blank" rel="noopener noreferrer">
-                        <p>Click to set up</p>
-                      </a>
+                      <h4 class="info-title">... Or find us at the office</h4>
+                      <p>
+                        {contactInfo.address_line_1[0].text}
+                        <br/> {contactInfo.address_line_2[0].text}
+                        <br/> {contactInfo.address_line_3[0].text}
+                      </p>
                     </div>
                   </div>
                 </div>
