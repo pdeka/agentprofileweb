@@ -102,7 +102,7 @@ export default class ContactUs extends React.Component {
                     </div>
                     <div class="description">
                       <h4 class="info-title">Give us a ring</h4>
-                      <a class="btn btn-primary btn-round" style={{'fontSize': '16px', 'fontWeight': '900', 'color': 'white', 'textTransform': 'none'}}>+61 420 234 234<div class="ripple-container"></div></a>
+                      <a href="tel:+61411030202" class="btn btn-primary btn-round" style={{'fontSize': '16px', 'fontWeight': '900', 'color': 'white', 'textTransform': 'none'}}>0411 030 202<div class="ripple-container"></div></a>
                     </div>
                   </div>
                   <div class="info info-horizontal">
