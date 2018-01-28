@@ -37,8 +37,13 @@ export default class MainNavigation extends React.Component {
               </a>
             </li>
             <li class="nav-item">
-              <a href="/articles" class="nav-link">
+              <a href="/about" class="nav-link">
                 Meet Ruma
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/articles" class="nav-link">
+                Articles & Videos
               </a>
             </li>
             <li class="nav-item">

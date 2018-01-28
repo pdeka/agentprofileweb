@@ -10,6 +10,7 @@ import NotFound from './NotFound';
 import Home from './Home';
 import ContactUs from './ContactUs';
 import Articles from './Articles';
+import About from './About';
 import './styles/css/App.css';
 
 const App = (props) => (
@@ -19,6 +20,7 @@ const App = (props) => (
       <Route exact path="/home" render={routeProps => <Home {...routeProps} prismicCtx={props.prismicCtx} />} />
       <Route exact path="/contactus" render={routeProps => <ContactUs {...routeProps} prismicCtx={props.prismicCtx} />} />
       <Route exact path="/articles" render={routeProps => <Articles {...routeProps} prismicCtx={props.prismicCtx} />} />
+      <Route exact path="/about" render={routeProps => <About {...routeProps} prismicCtx={props.prismicCtx} />} />
       <Route exact path="/preview" render={routeProps => <Preview {...routeProps} prismicCtx={props.prismicCtx} />} />
       <Route component={NotFound} />
     </Switch>
