@@ -125,7 +125,7 @@ export default class Home extends React.Component {
                                   <h2 class="card-title">Meet Ruma</h2>
                                   <h4 class="card-category text-muted">Founder & Principle Agent</h4>
                                   <p class="card-description">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                   </p>
                                   <a href="/about" style={{'marginLeft' : '25px'}}>
                                     <button class="btn btn-primary btn-round">
@@ -133,11 +133,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                                       <div class="ripple-container"></div>
                                     </button>
                                   </a>
-                              </div>
-                              <div class="card-footer">
-                                  <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-twitter"></i></a>
-                                  <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-facebook-square"></i></a>
-                                  <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-google"></i></a>
                               </div>
                           </div>
                           <div class="col-md-5">

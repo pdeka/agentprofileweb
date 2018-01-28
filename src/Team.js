@@ -71,38 +71,98 @@ export default class Team extends React.Component {
           </div>
         </div>
         <div class="main main-raised">
-          <div class="container">
-              <div class="features-1 no-padding-bottom">
-                  <div class="row">
-                      <div class="col-md-8 ml-auto mr-auto">
-                          <h2 class="title">Meet Ruma</h2>
-                          <h5 class="description">
-                            Behind Ruma’s personable manner and respectful approach is a sharp and strategic thinker with exemplary sales skills. With nearly 20 years’ experience in the real estate industry, Ruma has honed many highly effective negotiating strategies that time and again have produced exceptional sale prices for her clients. Displaying absolute integrity and professionalism, Ruma’s dedication to each individual campaign is reflected in the consistency of her results.
-                          </h5>
-                          <div class="icon">
-                            <i class="material-icons">format_quote</i>
-                          </div>
-                          <blockquote class="blockquote text-center">
-                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                            <footer class="blockquote-footer">Ruma Mundi</footer>
-                          </blockquote>
-                      </div>
+            <div class="container" >
+              <div class="features-3">
+                <div class="row">
+                  <div class="col-md-12 ml-auto mr-auto">
+                    <div class="card card-profile card-plain">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h2 class="card-title">Alex Cross</h2>
+                                    <h4 class="card-category text-muted">Founder & Principle Agent</h4>
+                                    <p class="card-description">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <div class="card-footer justify-content-center">
+                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-facebook-square"></i></a>
+                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-google"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card-header card-header-image">
+                                    <a href="#pablo">
+                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                   </div>
-              </div>
-          </div>
-          <div class="team-2" id="team-2">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-8 ml-auto mr-auto text-center">
-                          <h2 class="title">Awards and Recognitions</h2>
-                          <h5 class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                          </h5>
-                      </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 ml-auto mr-auto">
+                    <div class="card card-profile card-plain">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="card-header card-header-image">
+                                    <a href="#pablo">
+                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h2 class="card-title">Alex Cross</h2>
+                                    <h4 class="card-category text-muted">Founder & Principle Agent</h4>
+                                    <p class="card-description">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <div class="card-footer justify-content-center">
+                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-facebook-square"></i></a>
+                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-google"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                   </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 ml-auto mr-auto">
+                    <div class="card card-profile card-plain">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h2 class="card-title">Alex Cross</h2>
+                                    <h4 class="card-category text-muted">Founder & Principle Agent</h4>
+                                    <p class="card-description">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <div class="card-footer justify-content-center">
+                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-facebook-square"></i></a>
+                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-google"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card-header card-header-image">
+                                    <a href="#pablo">
+                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-          </div>
-          <FooterLinkedToContactUs data={teampageResults[0].data.footer_content[0].text}/>
+            </div>
+            <FooterLinkedToContactUs data={data.footer_content[0].text}/>
         </div>
         <PageFooter />
       </div>;
