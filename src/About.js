@@ -90,16 +90,20 @@ export default class About extends React.Component {
                   </div>
               </div>
           </div>
-          <div class="team-2" id="team-2">
+          <div class="team-2 section-dark" id="team-5" >
               <div class="container">
                   <div class="row">
                       <div class="col-md-8 ml-auto mr-auto text-center">
                           <h2 class="title">Awards and Recognitions</h2>
-                          <h5 class="description">
+                          <h5 class="description" style={{'marginBottom': 0}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                           </h5>
                       </div>
                   </div>
+              </div>
+          </div>
+          <div class="team-2" id="team-2">
+              <div class="container">
                   <div class="row">
                       <div class="col-md-4">
                           <div class="card card-profile card-plain">

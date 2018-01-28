@@ -97,14 +97,14 @@ export default class Home extends React.Component {
                   </div>
                   <div class="row">
                     <div class="col-md-6">
-                            <a class="hero-contact-info-container" href="tel:+61420234234">
-                              <i class="fa fa-phone"></i>
-                              <span class="hero-contact-info">+61 420 234 234</span>
-                            </a>
-                            <a class="hero-contact-info-container" href="mailto:name@email.com" target="_blank" rel="noopener noreferrer">
-                              <i class="fa fa-envelope"></i>
-                              <span class="hero-contact-info">mail</span>
-                            </a>
+                      <a class="btn btn-link btn-lg" href="tel:+61420234234" style={{'marginLeft': 0, 'paddingLeft': 0}}>
+                        <i class="fa fa-phone" style={{'fontSize': '20px', 'fontWeight': '900', 'color': 'white'}}> &nbsp;0411 030 202</i>
+                        <div class="ripple-container"></div>
+                      </a>
+                      <a class="btn btn-link btn-lg" href="mailto:name@email.com" target="_blank" rel="noopener noreferrer" style={{'marginLeft': 0, 'paddingLeft': 0}}>
+                        <i class="fa fa-envelope" style={{'fontSize': '20px', 'fontWeight': '900', 'color': 'white', 'textTransform': 'none'}}> &nbsp;mail</i>
+                        <div class="ripple-container"></div>
+                      </a>
                     </div>
                   </div>
               </div>
