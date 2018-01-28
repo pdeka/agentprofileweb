@@ -127,6 +127,12 @@ export default class Home extends React.Component {
                                   <p class="card-description">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                   </p>
+                                  <a href="/articles" style={{'marginLeft' : '25px'}}>
+                                    <button class="btn btn-primary btn-round">
+                                      Meet Ruma
+                                      <div class="ripple-container"></div>
+                                    </button>
+                                  </a>
                               </div>
                               <div class="card-footer">
                                   <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-twitter"></i></a>
