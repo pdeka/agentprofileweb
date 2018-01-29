@@ -619,9 +619,10 @@
         padding-bottom: 40px;
         padding-top: 40px;
     }
-    .container{
-        max-width: 970px;
-    }
+    // Comment out max width to make it the same as the section page. 
+    // .container{
+    //     max-width: 970px;
+    // }
     .big-map{
         height: 55vh;
         width: 100%;
