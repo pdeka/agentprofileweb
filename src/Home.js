@@ -121,25 +121,27 @@ export default class Home extends React.Component {
                   <div class="col-md-12 ml-auto mr-auto">
                   <div class="card card-profile card-plain">
                       <div class="row">
+                          <div class="col-md-5">
+                              <div class="card-header card-header-image">
+                                  <a href="#pablo">
+                                      <img class="img" src="./images/family-portraits-melbourne-603.jpg" />
+                                  </a>
+                              </div>
+                          </div>
                           <div class="col-md-7">
                               <div class="card-body">
-                                  <h2 class="card-title">Meet Ruma</h2>
-                                  <h4 class="card-category text-muted">Founder & Principle Agent</h4>
+                                  <h3 class="card-title">Real estate, done differently</h3>
                                   <p class="card-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                   </p>
                                   <a href="/about" style={{'marginLeft' : '25px'}}>
                                     <button class="btn btn-primary btn-round">
                                       Meet Ruma
                                       <div class="ripple-container"></div>
                                     </button>
-                                  </a>
-                              </div>
-                          </div>
-                          <div class="col-md-5">
-                              <div class="card-header card-header-image">
-                                  <a href="#pablo">
-                                      <img class="img" src="./images/family-portraits-melbourne-603.jpg" />
                                   </a>
                               </div>
                           </div>
