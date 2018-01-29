@@ -114,6 +114,7 @@ export default class Home extends React.Component {
           </div>
         </div>
         <div class="main">
+            <div class="cd-section">
             <div class="container" >
               <div class="features-3">
                 <div class="row">
@@ -138,7 +139,7 @@ export default class Home extends React.Component {
                           <div class="col-md-5">
                               <div class="card-header card-header-image">
                                   <a href="#pablo">
-                                      <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" />
+                                      <img class="img" src="./images/family-portraits-melbourne-603.jpg" />
                                   </a>
                               </div>
                           </div>
@@ -148,84 +149,41 @@ export default class Home extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="cd-section" id="teams">
-                <div class="team-5 section-image" id="team-5" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
-                    <div class="container">
+            </div>
+            <div class="cd-section section-dark">
+              <div class="container" >
+                <div class="features-3">
+                  <div class="row">
+                    <div class="col-md-12 ml-auto mr-auto">
+                    <div class="card card-profile card-plain">
                         <div class="row">
-                            <div class="col-md-8 ml-auto mr-auto text-center">
-                                <h2 class="title">Team Ruma</h2>
-                                <h5 class="description">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                              <div class="card card-profile card-plain">
-                                  <div class="card-header card-header-image">
-                                      <a href="#pablo">
-                                          <img class="img" src="./vendor/creativetim/img/examples/card-profile2.jpg" />
-                                      </a>
-                                  </div>
-                                  <div class="card-body ">
-                                      <h4 class="card-title">Deon Deka</h4>
-                                      <h6 class="card-category text-muted">Agent</h6>
-                                      <p class="card-description">
-                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                      </p>
-                                  </div>
-                                  <div class="card-footer justify-content-left">
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-facebook-square"></i></a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-instagram"></i></a>
-                                  </div>
-                              </div>
+                            <div class="col-md-8">
+                                <div class="card-header card-header-image">
+                                    <a href="#pablo">
+                                        <img class="img" src="https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg" />
+                                    </a>
+                                </div>
                             </div>
                             <div class="col-md-4">
-                              <div class="card card-profile card-plain">
-                                  <div class="card-header card-header-image">
-                                      <a href="#pablo">
-                                          <img class="img" src="./vendor/creativetim/img/examples/card-profile1.jpg" />
-                                      </a>
-                                  </div>
-                                  <div class="card-body ">
-                                      <h4 class="card-title">Safira Mundi</h4>
-                                      <h6 class="card-category text-muted">Agent</h6>
-                                      <p class="card-description">
-                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                      </p>
-                                  </div>
-                                  <div class="card-footer justify-content-left">
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-facebook-square"></i></a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-instagram"></i></a>
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card card-profile card-plain">
-                                    <div class="card-header card-header-image">
-                                        <a href="#pablo">
-                                            <img class="img" src="./vendor/creativetim/img/examples/card-profile4.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="card-body ">
-                                        <h4 class="card-title">Samara Mundi</h4>
-                                        <h6 class="card-category text-muted">Agent</h6>
-                                        <p class="card-description">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer justify-content-left">
-                                      <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-linkedin"></i></a>
-                                      <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-facebook-square"></i></a>
-                                      <a href="#pablo" class="btn btn-just-icon btn-link btn-white"><i class="fa fa-instagram"></i></a>
-                                    </div>
+                                <div class="card-body">
+                                    <h2 class="card-title">The Team</h2>
+                                    <p class="card-description">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <a href="/team" style={{'marginLeft' : '25px'}}>
+                                      <button class="btn btn-primary btn-round">
+                                        Meet The Team
+                                        <div class="ripple-container"></div>
+                                      </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
             <div class="blogs-1" id="blogs-1">
                 <div class="container">
