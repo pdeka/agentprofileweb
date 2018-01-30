@@ -82,7 +82,7 @@ export default class Home extends React.Component {
       let testimonialResults = this.state.testimonials.results;
       // let contactInfo = this.state.contactInfo.results[0].data;
 
-      const headerSummaryParagraphs = data.top_level_text_1.map((para, index) => {return <div key={index}>{para.text}</div>})
+      // const headerSummaryParagraphs = data.top_level_text_1.map((para, index) => {return <div key={index}>{para.text}</div>})
 
       return <div class="sections-page  section-white ">
         <MainNavigation thisProp={data} navBarTransparent={true}/>
@@ -127,7 +127,7 @@ export default class Home extends React.Component {
                           <div class="col-md-5">
                               <div class="card-header card-header-image">
                                   <a href="#pablo">
-                                      <img class="img" src="./images/family-portraits-melbourne-603.jpg" />
+                                      <img class="img" src="./images/family-portraits-melbourne-603.jpg" alt="please fill" />
                                   </a>
                               </div>
                           </div>
@@ -177,7 +177,7 @@ export default class Home extends React.Component {
                             <div class="col-md-8">
                                 <div class="card-header card-header-image">
                                     <a href="#pablo">
-                                        <img class="img" src="https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg" />
+                                        <img class="img" src="https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg" alt="please fill" />
                                     </a>
                                 </div>
                             </div>

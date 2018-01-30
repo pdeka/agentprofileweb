@@ -2,7 +2,6 @@ import React from 'react';
 import Prismic from 'prismic-javascript';
 import MainNavigation from './MainNavigation';
 import classNames from 'classnames';
-import ArticlePreview from './ArticlePreview';
 import FooterLinkedToContactUs from "./FooterLinkedToContactUs";
 import PageFooter from "./PageFooter";
 
@@ -109,7 +108,7 @@ export default class About extends React.Component {
                           <div class="card card-profile card-plain">
                               <div class="card-header card-header-image" style={{'height': '198px'}}>
                                   <a href="#pablo">
-                                      <img class="img" src="./images/REB-top-50.png" style={{'height': '198px'}}/>
+                                      <img class="img" src="./images/REB-top-50.png" style={{'height': '198px'}} alt="REB top 50 Ruma Mundi North West Sydney"/>
                                   </a>
                               </div>
                               <div class="card-body ">
@@ -121,7 +120,7 @@ export default class About extends React.Component {
                           <div class="card card-profile card-plain">
                               <div class="card-header card-header-image" style={{'height': '198px'}}>
                                   <a href="#pablo">
-                                      <img class="img" src="./images/First-National-Real-Estate-SEQA-441x269.png" style={{'height': '198px'}}/>
+                                      <img class="img" src="./images/First-National-Real-Estate-SEQA-441x269.png" style={{'height': '198px'}} alt="First National Real Estate Ruma Mundi Sydney"/>
                                   </a>
                               </div>
                               <div class="card-body ">
@@ -134,7 +133,7 @@ export default class About extends React.Component {
                           <div class="card card-profile card-plain">
                               <div class="card-header card-header-image" style={{'height': '198px'}}>
                                   <a href="#pablo">
-                                      <img class="img" src="./images/REBsalesagentoftheyear.jpeg" style={{'height': '198px'}}/>
+                                      <img class="img" src="./images/REBsalesagentoftheyear.jpeg" style={{'height': '198px'}} alt="REB sales agent of the year Ruma Mundi Sydney"/>
                                   </a>
                               </div>
                               <div class="card-body ">

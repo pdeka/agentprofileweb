@@ -2,7 +2,6 @@ import React from 'react';
 import Prismic from 'prismic-javascript';
 import MainNavigation from './MainNavigation';
 import classNames from 'classnames';
-import ArticlePreview from './ArticlePreview';
 import FooterLinkedToContactUs from "./FooterLinkedToContactUs";
 import PageFooter from "./PageFooter";
 
@@ -57,7 +56,7 @@ export default class Team extends React.Component {
     if (this.state.doc && this.state.teampage) {
 
       let data = this.state.doc.results[0].data;
-      let teampageResults = this.state.teampage.results;
+      // let teampageResults = this.state.teampage.results;
 
       return <div class="sections-page">
         <MainNavigation thisProp={data} navBarTransparent={true}/>
@@ -94,7 +93,7 @@ export default class Team extends React.Component {
                             <div class="col-md-5">
                                 <div class="card-header card-header-image">
                                     <a href="#pablo">
-                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" />
+                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" alt="please fill"/>
                                     </a>
                                 </div>
                             </div>
@@ -109,7 +108,7 @@ export default class Team extends React.Component {
                             <div class="col-md-5">
                                 <div class="card-header card-header-image">
                                     <a href="#pablo">
-                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" />
+                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" alt="please fill"/>
                                     </a>
                                 </div>
                             </div>
@@ -152,7 +151,7 @@ export default class Team extends React.Component {
                             <div class="col-md-5">
                                 <div class="card-header card-header-image">
                                     <a href="#pablo">
-                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" />
+                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" alt="please fill"/>
                                     </a>
                                 </div>
                             </div>
