@@ -91,8 +91,11 @@ export default class Home extends React.Component {
               <div class="container">
                   <div class="row">
                       <div class="col-md-8">
-                          <h1 class="title">{data.homepage_header[0].text}</h1>
-                          <h4 class="hero-text">{headerSummaryParagraphs}</h4>
+                          <h2 class="title">Real estate, done differently</h2>
+                          <h4 style={{'fontWeight': 400}}>Ruma’s professional approach has led to unparalleled results for her clients.
+                            She invests in long term relationships with her clients, being deeply aware that selling or buying a house
+                            is a significant decision, that extends far beyond a financial transaction
+                          </h4>
                       </div>
                   </div>
                   <div class="row">
@@ -130,12 +133,10 @@ export default class Home extends React.Component {
                           </div>
                           <div class="col-md-7">
                               <div class="card-body">
-                                  <h3 class="card-title">Real estate, done differently</h3>
+                                  <h3 class="card-title">Passion, integrity and care</h3>
                                   <p class="card-description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                   </p>
                                   <a href="/about" style={{'marginLeft' : '25px'}}>
                                     <button class="btn btn-primary btn-round">
@@ -159,13 +160,6 @@ export default class Home extends React.Component {
                     <div class="col-md-12 ml-auto mr-auto">
                     <div class="card card-profile card-plain">
                         <div class="row">
-                            <div class="col-md-8">
-                                <div class="card-header card-header-image">
-                                    <a href="#pablo">
-                                        <img class="img" src="https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg" />
-                                    </a>
-                                </div>
-                            </div>
                             <div class="col-md-4">
                                 <div class="card-body">
                                     <h2 class="card-title">The Team</h2>
@@ -177,6 +171,13 @@ export default class Home extends React.Component {
                                         Meet The Team
                                         <div class="ripple-container"></div>
                                       </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-header card-header-image">
+                                    <a href="#pablo">
+                                        <img class="img" src="https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -199,7 +200,6 @@ export default class Home extends React.Component {
                                   <ArticlePreview data={articleResults[0].data}/>
                                 </div>
                                 <div class="col-md-4">
-                                  <h6 class="card-category text-info">{articleResults[0].data.article_tag}</h6>
                                   <h3 class="card-title">
                                     <a href="#pablo">{articleResults[0].data.article_title[0].text}</a>
                                   </h3>
@@ -211,7 +211,7 @@ export default class Home extends React.Component {
                                     </Truncate>
                                   </p>
                                   <p class="author">
-                                    by <b>Ruma</b>,
+                                    by <b>Ruma</b>,&nbsp;
                                     <FormatDate data={articleResults[0].data.date}/>
                                   </p>
                                 </div>
