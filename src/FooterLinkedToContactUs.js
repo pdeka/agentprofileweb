@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default class FooterLinkedToContactUs extends React.Component {
 
@@ -10,12 +11,12 @@ export default class FooterLinkedToContactUs extends React.Component {
             <div class="col-md-12 ml-auto mr-auto">
               <div style={{'textAlign': 'center'}}>
                 <h5 class="title">{data}
-                  <a href="/contactus" style={{'marginLeft' : '25px'}}>
+                  <Link to="/contactus" style={{'marginLeft' : '25px'}}>
                     <button class="btn btn-primary btn-round">
                       Contact Us
                       <div class="ripple-container"></div>
                     </button>
-                  </a>
+                  </Link>
                 </h5>
               </div>
             </div>

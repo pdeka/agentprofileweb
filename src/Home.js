@@ -7,6 +7,7 @@ import classNames from 'classnames';
 import ArticlePreview from './ArticlePreview';
 import FormatDate from './FormatDate';
 import PageFooter from "./PageFooter";
+import {Link} from 'react-router-dom';
 
 import './styles/css/Home.css';
 
@@ -138,12 +139,12 @@ export default class Home extends React.Component {
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                   </p>
-                                  <a href="/about" style={{'marginLeft' : '25px'}}>
+                                  <Link to="/about" style={{'marginLeft' : '25px'}} class="nav-link">
                                     <button class="btn btn-primary btn-round">
                                       Meet Ruma
                                       <div class="ripple-container"></div>
                                     </button>
-                                  </a>
+                                  </Link>
                               </div>
                           </div>
                       </div>
@@ -166,12 +167,12 @@ export default class Home extends React.Component {
                                     <p class="card-description">
                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                     </p>
-                                    <a href="/team" style={{'marginLeft' : '25px'}}>
-                                      <button class="btn btn-primary btn-round">
-                                        Meet The Team
-                                        <div class="ripple-container"></div>
-                                      </button>
-                                    </a>
+                                    <Link to="/team" style={{'marginLeft' : '25px'}}>
+                                        <button class="btn btn-primary btn-round">
+                                          Meet The Team
+                                          <div class="ripple-container"></div>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                             <div class="col-md-8">

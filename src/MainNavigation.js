@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import {Link} from 'react-router-dom';
 
 import "./styles/css/MainNavigation.css"
 
@@ -30,24 +31,16 @@ export default class MainNavigation extends React.Component {
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="/home" class="nav-link">
-                Home
-              </a>
+              <Link to="/home" class="nav-link">Home</Link>
             </li>
             <li class="nav-item">
-              <a href="/about" class="nav-link">
-                Meet Ruma
-              </a>
+              <Link to="/about" class="nav-link">Meet Ruma</Link>
             </li>
             <li class="nav-item">
-              <a href="/team" class="nav-link">
-                The Team
-              </a>
+              <Link to="/team" class="nav-link">The Team</Link>
             </li>
             <li class="nav-item">
-              <a href="/articles" class="nav-link">
-                Articles & Videos
-              </a>
+              <Link to="/articles" class="nav-link">Articles & Videos</Link>
             </li>
             <li class="nav-item">
               <a href={data.properties_link.url} class="nav-link" target="_blank">
@@ -55,9 +48,7 @@ export default class MainNavigation extends React.Component {
               </a>
             </li>
             <li class="nav-item">
-              <a href="/contactus" class="nav-link">
-                Contact Us
-              </a>
+              <Link to="/contactus" class="nav-link">Contact Us</Link>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
