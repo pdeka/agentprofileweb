@@ -195,8 +195,7 @@ export default class Home extends React.Component {
                               <div class="card-body">
                                   <h3 class="card-title">Passion, integrity and care</h3>
                                   <p class="card-description text-black">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Ruma's name is synonymous with the real estate industry in the Hills District. She is a director, a small business owner, a top real estate agent in the country,  but above all a mother of 2 beautiful daughters, Samara and Safira, and a person renowned in the community for her dedication, her integrity and her compassion. 
                                   </p>
                                   <Link to="/about" style={{'marginLeft' : '25px'}} class="nav-link">
                                     <button class="btn btn-primary btn-round">
