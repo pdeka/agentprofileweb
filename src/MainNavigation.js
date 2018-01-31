@@ -40,7 +40,10 @@ export default class MainNavigation extends React.Component {
               <Link to="/team" class="nav-link">The Team</Link>
             </li>
             <li class="nav-item">
-              <Link to="/articles" class="nav-link">Articles & Videos</Link>
+              <Link to="/testimonials" class="nav-link">Testimonials</Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/articles" class="nav-link">News & Advice</Link>
             </li>
             <li class="nav-item">
               <a href={data.properties_link.url} class="nav-link" target="_blank">
@@ -48,7 +51,7 @@ export default class MainNavigation extends React.Component {
               </a>
             </li>
             <li class="nav-item">
-              <Link to="/contactus" class="nav-link">Contact Us</Link>
+              <Link to="/contactus" class="nav-link">Contact</Link>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
@@ -58,18 +61,8 @@ export default class MainNavigation extends React.Component {
               </a>
             </li>
             <li class="nav-item">
-              <a href={data.instagram_link.url} class="nav-link" target="_blank">
-                <i class="fa fa-instagram"></i>
-              </a>
-            </li>
-            <li class="nav-item">
               <a href={data.youtube_link.url} class="nav-link" target="_blank">
                 <i class="fa fa-youtube"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href={data.linkedin_link.url} class="nav-link" target="_blank">
-                <i class="fa fa-linkedin"></i>
               </a>
             </li>
             <li class="nav-item">
