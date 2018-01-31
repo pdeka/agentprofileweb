@@ -31,27 +31,27 @@ export default class MainNavigation extends React.Component {
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <Link to="/home" class="nav-link">Home</Link>
+              <Link to="/home" class="nav-link bold-navigation">Home</Link>
             </li>
             <li class="nav-item">
-              <Link to="/about" class="nav-link">Meet Ruma</Link>
+              <Link to="/about" class="nav-link bold-navigation">Meet Ruma</Link>
             </li>
             <li class="nav-item">
-              <Link to="/team" class="nav-link">The Team</Link>
+              <Link to="/team" class="nav-link bold-navigation">The Team</Link>
             </li>
             <li class="nav-item">
-              <Link to="/testimonials" class="nav-link">Testimonials</Link>
+              <Link to="/testimonials" class="nav-link bold-navigation">Testimonials</Link>
             </li>
             <li class="nav-item">
-              <Link to="/articles" class="nav-link">News & Advice</Link>
+              <Link to="/articles" class="nav-link bold-navigation">News & Advice</Link>
             </li>
             <li class="nav-item">
-              <a href={data.properties_link.url} class="nav-link" target="_blank">
+              <a href={data.properties_link.url} class="nav-link bold-navigation" target="_blank">
                 Properties
               </a>
             </li>
             <li class="nav-item">
-              <Link to="/contactus" class="nav-link">Contact</Link>
+              <Link to="/contactus" class="nav-link bold-navigation">Contact</Link>
             </li>
           </ul>
         </div>

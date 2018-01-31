@@ -187,7 +187,7 @@ export default class Home extends React.Component {
                           <div class="col-md-5">
                               <div class="card-header card-header-image">
                                   <a href="#pablo">
-                                      <img class="img" src="./images/family-portraits-melbourne-603.jpg" alt="please fill" />
+                                      <img class="img" src="./images/180131_NKnight_Ruma_0017.jpg" alt="please fill" />
                                   </a>
                               </div>
                           </div>
@@ -195,7 +195,7 @@ export default class Home extends React.Component {
                               <div class="card-body">
                                   <h3 class="card-title">Passion, integrity and care</h3>
                                   <p class="card-description text-black">
-                                    Ruma's name is synonymous with the real estate industry in the Hills District. She is a director, a small business owner, a top real estate agent in the country,  but above all a mother of 2 beautiful daughters, Samara and Safira, and a person renowned in the community for her dedication, her integrity and her compassion. 
+                                    Ruma's name is synonymous with the real estate industry in the Hills District. She is a director, a small business owner, a top real estate agent in the country,  but above all a mother of 2 beautiful daughters, Samara and Safira, and a person renowned in the community for her dedication, her integrity and her compassion.
                                   </p>
                                   <Link to="/about" style={{'marginLeft' : '25px'}} class="nav-link">
                                     <button class="btn btn-primary btn-round">
