@@ -123,7 +123,7 @@ export default class About extends React.Component {
                             She is a hard working mom of 2 beautiful daughters, Samara and Safira, which among other things, gives her a perspective on what a growing family needs. Nick, her husband helps her out between his work as an executive at Woolworths, and making time for Samara and Safira. Ruma is keenly aware of the juggles of everyday life in the North West of Sydney, and the pressures families today have to work with to live happy and stay healthy.
                           </p>
                           <p class="description"  >
-                            Principal of First National Hills Direct, Ruma is a hard-working, dedicated director who has an unwavering dedication for her Agency and her staff.
+                            Principal of First National Hills Direct, Ruma is a hard-working director who has an unwavering dedication for her Agency and her staff.
                             With an Master’s degree in business administration and a bachelor’s degree in commerce, she has the education to back her up.
                             Ruma and her team's success are driven by a strong market knowledge of the Hills District and a passion for people, coupled with care and integrity in all their dealings. During her dynamic career, Ruma has succeeded in bringing about a positive and refreshing change to customer service in the real estate industry, not just in the North West of Sydney, but in the country as a whole.
                           </p>
@@ -132,7 +132,7 @@ export default class About extends React.Component {
                           </div>
                           <blockquote class="blockquote text-center">
                             <p class="mb-0">
-                              I have been selling real estate on Sydney’s Hills District for nearly 20 years. A major portion of the homes that I sell are either past clients, or referrals. My passion and motivation is continually driven forward by the satisfaction I receive when I secure an exceptional outcome for my clients.
+                              I have been selling real estate in Sydney’s Hills District for nearly 20 years. A major portion of the homes that I sell are either past clients, or referrals. My passion and motivation is continually driven forward by the satisfaction I receive when I secure an exceptional outcome for my clients.
                             </p>
                             <footer class="blockquote-footer">Ruma Mundi</footer>
                           </blockquote>
@@ -330,7 +330,7 @@ export default class About extends React.Component {
                             Ruma and her team have been honoured to help out families in her local community, over the years. She and her team are passionate about giving back to the community that they live and work in - a community that has given them so much. They have tirelessly worked for charities and local community groups like Variety Children’s Foundation, the Cancer Counil’s Pink Ribbon, Harman Foundation, The Ponds Little Athletics club, The Ponds Cricket Club and the Quakers Hill Bombers Junior AFL Club, to name a few. Contribution is in terms of money donated, and voluntary work done on days when a few hands are required to do the job.
                           </p>
                           <p class="description">
-                            Ruma started a Giveaway drive last Christmas, which was tremendously successful. The inaugural giveaway drive was set up to give thousand dollars to 10 families in need, within the community. The success and positive feedback has resulted in Ruma committing to make this a recurring annual event. It was fulfilling for her and her team to go through the experience of organising such an event. There are plans to brainstorm on how such events can be improved upon, so that even more families can be benefited the next time.
+                            Ruma started a Giveaway drive last Christmas, which was tremendously successful. The inaugural Giveaway drive was set up to give thousand dollars to 10 families in need, within the community. The success and positive feedback has resulted in Ruma committing to make this a recurring annual event. It was fulfilling for her and her team to go through the experience of organising such an event. There are plans to brainstorm on how such events can be improved upon, so that even more families can be benefited the next time.
                           </p>
                       </div>
                   </div>
