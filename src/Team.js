@@ -155,40 +155,6 @@ export default class Team extends React.Component {
                   <div class="col-md-12 ml-auto mr-auto">
                     <div class="card card-profile card-plain">
                         <div class="row">
-                            <div class="col-md-5">
-                                <div class="card-header card-header-image">
-                                    <a href="#pablo">
-                                        <img class="img" src="./images/baileyabela.jpeg" alt="please fill"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body">
-                                    <h2 class="card-title">Bailey Abela</h2>
-                                    <h4 class="card-category text-muted">PA to Ruma Mundi</h4>
-                                    <p class="card-description">
-                                    Having started his real estate career at the beginning of 2017, Bailey joins the team here at First National Hills Direct looking to take his development in the industry to the next level. Being a proud Hills resident for his entire life Bailey has a strong grasp on the growth of the area as well as the residents who call it home. Bailey likes to pride himself on being a young, highly motivated and professional individual with strong ethics, an eagerness to succeed and maturity beyond his years. Always with a bright and contagious smile on his face, Bailey loves connecting with anyone he comes by.
-                                    </p>
-
-                                    <p class="card-description">
-
-                                    Bailey understands the importance of knowledge and keeping up to date with the dynamic marketplace, which sees him undertaking constant professional and personal training. Working closely next to Ruma and Brad, Bailey thoroughly enjoys any challenge that is set out for him to achieve. Without any hesitation, Bailey is always glad to help with his 'can-do' attitude which is so rarely seen of someone of his age.
-                                    </p>
-                                </div>
-                                <div class="card-footer justify-content-center">
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-twitter"></i></a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-facebook-square"></i></a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-google"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 ml-auto mr-auto">
-                    <div class="card card-profile card-plain">
-                        <div class="row">
                             <div class="col-md-7">
                                 <div class="card-body">
                                     <h2 class="card-title">Ian Williamson</h2>
@@ -216,6 +182,40 @@ export default class Team extends React.Component {
                                 <div class="card-header card-header-image">
                                     <a href="#pablo">
                                         <img class="img" src="./images/ianwilliamson.jpeg" alt="please fill"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 ml-auto mr-auto">
+                    <div class="card card-profile card-plain">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h2 class="card-title">Bailey Abela</h2>
+                                    <h4 class="card-category text-muted">PA to Ruma Mundi</h4>
+                                    <p class="card-description">
+                                    Having started his real estate career at the beginning of 2017, Bailey joins the team here at First National Hills Direct looking to take his development in the industry to the next level. Being a proud Hills resident for his entire life Bailey has a strong grasp on the growth of the area as well as the residents who call it home. Bailey likes to pride himself on being a young, highly motivated and professional individual with strong ethics, an eagerness to succeed and maturity beyond his years. Always with a bright and contagious smile on his face, Bailey loves connecting with anyone he comes by.
+                                    </p>
+
+                                    <p class="card-description">
+
+                                    Bailey understands the importance of knowledge and keeping up to date with the dynamic marketplace, which sees him undertaking constant professional and personal training. Working closely next to Ruma and Brad, Bailey thoroughly enjoys any challenge that is set out for him to achieve. Without any hesitation, Bailey is always glad to help with his 'can-do' attitude which is so rarely seen of someone of his age.
+                                    </p>
+                                </div>
+                                <div class="card-footer justify-content-center">
+                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-facebook-square"></i></a>
+                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-google"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card-header card-header-image">
+                                    <a href="#pablo">
+                                        <img class="img" src="./images/baileyabela.jpeg" alt="please fill"/>
                                     </a>
                                 </div>
                             </div>
