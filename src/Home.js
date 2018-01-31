@@ -176,7 +176,7 @@ export default class Home extends React.Component {
               </video>
           </div>
         </div>
-        <div class="main">
+        <div class="main main-raised-for-home" style={{'zIndex': 4}}>
             <div class="cd-section">
             <div class="container" >
               <div class="features-3">
@@ -300,7 +300,7 @@ export default class Home extends React.Component {
             </div>
             <FooterLinkedToContactUs data={"We would love to have a coffee with you."}/>
         </div>
-        <div class="main footer-container">
+        <div class="main main-raised-for-home" style={{'zIndex': 3}}>
           <PageFooter />
         </div>
       </div>
