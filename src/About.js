@@ -4,6 +4,7 @@ import MainNavigation from './MainNavigation';
 import classNames from 'classnames';
 import FooterLinkedToContactUs from "./FooterLinkedToContactUs";
 import PageFooter from "./PageFooter";
+import {Link} from 'react-router-dom';
 
 import './styles/css/About.css';
 
@@ -318,6 +319,126 @@ export default class About extends React.Component {
 
               </div>
           </div>
+          <div class="team-3">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-8 ml-auto mr-auto text-center">
+                          <h2 class="title">Ruma in the community</h2>
+                          <h5 class="description">
+                            This is the paragraph where you can write more details about your team. Keep you user engaged by providing meaningful information.
+                          </h5>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-2">
+                          <div class="card card-profile card-plain">
+                              <div class="row">
+                                  <div class="col">
+                                      <div class="card-header card-header-image community-image-fixed-height">
+                                          <a href="https://www.pinkribbon.com.au/">
+                                              <img class="img community-image-fixed-height" src="./images/Pink-Ribbon-Day-Logo.jpg" />
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <p class="card-description"></p>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="card card-profile card-plain">
+                              <div class="row">
+                                  <div class="col">
+                                      <div class="card-header card-header-image community-image-fixed-height">
+                                          <a href="http://www.thepondscricketclub.com.au">
+                                              <img class="img community-image-fixed-height" src="./images/ponds-cricket-club.jpg" />
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                      <p class="card-description"></p>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="card card-profile card-plain">
+                              <div class="row">
+                                  <div class="col">
+                                      <div class="card-header card-header-image community-image-fixed-height">
+                                          <a href="http://www.thepondslac.com.au/">
+                                              <img class="img community-image-fixed-height" src="./images/ponds-little-athletics-centre.jpg" />
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                      <p class="card-description"></p>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="card card-profile card-plain">
+                              <div class="row">
+                                  <div class="col">
+                                      <div class="card-header card-header-image community-image-fixed-height">
+                                          <a href="http://www.variety.org.au">
+                                              <img class="img community-image-fixed-height" src="./images/variety-logo-706x456.png" />
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                      <p class="card-description"></p>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="card card-profile card-plain">
+                              <div class="row">
+                                  <div class="col">
+                                      <div class="card-header card-header-image community-image-fixed-height">
+                                          <Link to="/articles">
+                                              <img class="img community-image-fixed-height" src="./images/christmasgiveback.png" />
+                                          </Link>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                      <p class="card-description"></p>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1">
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
           <FooterLinkedToContactUs data={aboutpageResults[0].data.footer_content[0].text}/>
         </div>
         <PageFooter />
