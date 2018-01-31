@@ -195,7 +195,8 @@ export default class Home extends React.Component {
                               <div class="card-body">
                                   <h3 class="card-title">Passion, integrity and care</h3>
                                   <p class="card-description text-black">
-                                    Ruma's name is synonymous with the real estate industry in the Hills District. She is a director, a small business owner, one of the top-50 real estate agents in the country,  but above all a mother of 2 beautiful daughters, Samara and Safira, and a person renowned in the community for her dedication, her integrity and her compassion.
+                                    Ruma's name is synonymous with the real estate industry in the Hills District.
+                                    She is among the REB top 50, a director, a business owner, but above all a mother of 2 beautiful daughters, Samara and Safira, and a person renowned in the community for her dedication, her integrity and her compassion.
                                   </p>
                                   <Link to="/about" style={{'marginLeft' : '25px'}} class="nav-link">
                                     <button class="btn btn-primary btn-round">
@@ -223,7 +224,11 @@ export default class Home extends React.Component {
                                 <div class="card-body pt-0 mt-0">
                                     <h2 class="card-title">The Team</h2>
                                     <p class="card-description">
-                                      People rarely achieve much without a good supportive team around them. We truely believe that we have the best team in the North West of Sydney. Our extensive experience, local knowledge, attention to details and determination to do the best for all our clients, has been the bed rock of our success. However, our true strength is in our positivity and humility. We pride ourselves with the that fact that we have managed to preserve the sense of approachability and hospitality, with a deep understanding that being the agent you can trust and seek advice from, has been a core competency of our endeavour so far.
+                                      People rarely achieve much without a good supportive team around them. We truely believe that we have the best team in the North West of Sydney.
+                                      Our extensive experience, local knowledge, attention to details and determination to do the best for our clients, has been the bed rock of our success.
+                                      However, our true strength is in our positivity and humility.
+                                      We pride ourselves with the fact that we have managed to preserve a sense of approachability and hospitality,
+                                      with a deep understanding that being the agent you can trust and seek advice from, has been a core competency of our endeavour so far.
                                     </p>
                                     <Link to="/team" style={{'marginLeft' : '25px'}}>
                                         <button class="btn btn-primary btn-round">
