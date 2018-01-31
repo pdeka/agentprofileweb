@@ -115,15 +115,15 @@ export default class About extends React.Component {
                   <div class="row">
                       <div class="col-md-8 ml-auto mr-auto">
                           <h2 class="title">Serving you with love and care</h2>
-                          <h5 class="description"  >
+                          <p class="description"  >
                             In the past decade, Ruma Mundi's name has become synonymous with Real Estate in the Hills District.  Behind her personable manner and respectful approach is a sharp and strategic thinker with exemplary sales skills. With nearly 20 years’ experience in the real estate industry, Ruma has honed highly effective negotiating strategies that time and again have produced exceptional sale prices for her clients. Displaying absolute integrity and professionalism, Ruma’s dedication to each individual campaign is reflected in the consistency of her results.
-                          </h5>
-                          <h5 class="description"  >
+                          </p>
+                          <p class="description"  >
                             She is a hard working mom of 2 beautiful daughters, Samara and Safira, which among other things, gives her a perspective on what a growing family needs. Nick, her husband helps her out between his work as an executive at Woolworths, and making time for Samara and Safira. Ruma is keenly aware of the juggles of everyday life in the North West of Sydney, and the pressures families today have to work with to live happy and stay healthy.
-                          </h5>
-                          <h5 class="description"  >
+                          </p>
+                          <p class="description"  >
                             Principal of First National Hills Direct, Ruma is a hard-working, dedicated director who has an unwavering dedication for her Agency and her staff.  With an Master’s degree in business administration and a bachelor’s degree in commerce, she has the education to back her up.  Ruma and her team's success are driven by having a strong market knowledge of the Hills District and having a passion for people coupled with a persona that is caring and approachable. During her dynamic career, Ruma has succeeded in bringing about a positive and refreshing change to customer service in the real estate industry, not just in the North West of Sydney, but in the country as a whole.
-                          </h5>
+                          </p>
                           <div class="icon">
                             <i class="material-icons">format_quote</i>
                           </div>
@@ -142,11 +142,11 @@ export default class About extends React.Component {
                   <div class="row">
                       <div class="col-md-8 ml-auto mr-auto text-center">
                           <h2 class="title">Awards and Recognitions</h2>
-                          <blockquote class="blockquote-without-left-line text-center">
+                          <blockquote class="blockquote-without-left-line text-center text-white">
                             <p class="mb-0">
                               While it is an honour&nbsp;to be recognised both nationally and globally, my true reward comes from the satisfaction that I gain from a good result for my clients.&nbsp;
                             </p>
-                            <footer class="blockquote-footer">Ruma</footer>
+                            <footer class="blockquote-footer text-white">Ruma</footer>
                           </blockquote>
                       </div>
                   </div>
@@ -157,8 +157,8 @@ export default class About extends React.Component {
                                   <i class="fa fa-trophy"></i>
                               </div>
                               <div class="description">
-                                  <h4 class="info-title">#4 | Top Salesperson</h4>
-                                  <p>
+                                  <h4 class="info-title text-white">#4 | Top Salesperson</h4>
+                                  <p class="text-white">
                                      Residental | GEM Awards | First National Real Estate Australia, 2016
                                   </p>
                               </div>
@@ -170,9 +170,9 @@ export default class About extends React.Component {
                                   <i class="fa fa-trophy"></i>
                               </div>
                               <div class="description">
-                                  <h4 class="info-title">Diamond Award</h4>
-                                  <p>
-                                    Residental Commission - First National Real Estate (NSW), 2016
+                                  <h4 class="info-title text-white">Diamond Award</h4>
+                                  <p class="text-white">
+                                    Residental Commission   - First National Real Estate (NSW), 2016
                                   </p>
                               </div>
                           </div>
@@ -183,8 +183,8 @@ export default class About extends React.Component {
                                   <i class="fa fa-trophy"></i>
                               </div>
                               <div class="description">
-                                  <h4 class="info-title">#4 | Top Salesperson</h4>
-                                  <p>
+                                  <h4 class="info-title text-white">#4 | Top Salesperson</h4>
+                                  <p class="text-white">
                                     First National Real Estate (NSW), 2016
                                   </p>
                               </div>
@@ -198,8 +198,8 @@ export default class About extends React.Component {
                                   <i class="fa fa-trophy"></i>
                               </div>
                               <div class="description">
-                                  <h4 class="info-title">Grand Centurion</h4>
-                                  <p>
+                                  <h4 class="info-title text-white">Grand Centurion</h4>
+                                  <p class="text-white">
                                     Top 1% Producer Globally, 2015
                                   </p>
                               </div>
@@ -211,8 +211,8 @@ export default class About extends React.Component {
                                   <i class="fa fa-trophy"></i>
                               </div>
                               <div class="description">
-                                  <h4 class="info-title">Silver Auction Certificate</h4>
-                                  <p>
+                                  <h4 class="info-title text-white">Silver Auction Certificate</h4>
+                                  <p class="text-white">
                                     3rd Quarter 2015
                                   </p>
                               </div>
@@ -224,8 +224,8 @@ export default class About extends React.Component {
                                   <i class="fa fa-trophy"></i>
                               </div>
                               <div class="description">
-                                  <h4 class="info-title">Top Principal (GCC) NSW</h4>
-                                  <p>
+                                  <h4 class="info-title text-white">Top Principal (GCC) NSW</h4>
+                                  <p class="text-white">
                                     2nd Quarter 2015
                                   </p>
                               </div>
@@ -239,8 +239,8 @@ export default class About extends React.Component {
                                   <i class="fa fa-trophy"></i>
                               </div>
                               <div class="description">
-                                  <h4 class="info-title">Grand Centurion</h4>
-                                  <p>
+                                  <h4 class="info-title text-white">Grand Centurion</h4>
+                                  <p class="text-white">
                                     Top 1% Producer Globally, 2015
                                   </p>
                               </div>
@@ -252,8 +252,8 @@ export default class About extends React.Component {
                                   <i class="fa fa-trophy"></i>
                               </div>
                               <div class="description">
-                                  <h4 class="info-title">Silver Auction Certificate</h4>
-                                  <p>
+                                  <h4 class="info-title text-white">Silver Auction Certificate</h4>
+                                  <p class="text-white">
                                     3rd Quarter 2015
                                   </p>
                               </div>
@@ -262,11 +262,11 @@ export default class About extends React.Component {
                       <div class="col-md-4">
                           <div class="info info-horizontal" style={{'padding': 0}}>
                               <div class="icon icon-default">
-                                  <i class="fa fa-trophy"></i>
+                                  <i class="fa fa-trophy la-lg"></i>
                               </div>
                               <div class="description">
-                                  <h4 class="info-title">Top Principal (GCC) NSW</h4>
-                                  <p>
+                                  <h4 class="info-title text-white">Top Principal (GCC) NSW</h4>
+                                  <p class="text-white">
                                     2nd Quarter 2015
                                   </p>
                               </div>
@@ -297,7 +297,7 @@ export default class About extends React.Component {
                               </div>
                               <div class="card-body ">
                                   <h4 class="card-title">#2 | Combined Highest Gross Sales</h4>
-                                  <h6 class="card-category text-muted">First National Real Estate NSW Network</h6>
+                                  <p class="text-white">First National Real Estate NSW Network</p>
                               </div>
                           </div>
                       </div>
@@ -310,7 +310,7 @@ export default class About extends React.Component {
                               </div>
                               <div class="card-body ">
                                   <h4 class="card-title">Finalist | Sales Agent of the Year - Metropolitan </h4>
-                                  <h6 class="card-category">REB Awards 2017</h6>
+                                  <p class="text-white">REB Awards 2017</p>
                               </div>
                           </div>
                       </div>
