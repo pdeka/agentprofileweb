@@ -312,8 +312,8 @@ export default class About extends React.Component {
                                   </a>
                               </div>
                               <div class="card-body ">
-                                  <h4 class="card-title">Finalist | Sales Agent of the Year - Metropolitan </h4>
-                                  <p class="text-white">REB Awards 2017</p>
+                                  <h4 class="card-title">Finalist | Sales Agent of the Year</h4>
+                                  <p class="text-white">REB Awards 2017 (Metropolitan)</p>
                               </div>
                           </div>
                       </div>
