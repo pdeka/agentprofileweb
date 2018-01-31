@@ -86,8 +86,8 @@ export default class Home extends React.Component {
                     <i class="material-icons">format_quote</i>
                 </div>
                 <div class="card-body ">
-                    <h5 class="card-description">
-                      <Truncate lines={5} ellipsis={<span>... <a href={testimonialResults[key].data.external_link.url}>Read More</a></span>}>
+                    <h5 class="card-description pb-1 mb-1 mt-1">
+                      <Truncate lines={7} ellipsis={<span>... <a href={testimonialResults[key].data.external_link.url}>Read More</a></span>}>
                         {testimonialResults[key].data.comment[0].text}
                       </Truncate>
                     </h5>
@@ -296,7 +296,7 @@ export default class Home extends React.Component {
                     </div>
                 </div>
             </div>
-            <FooterLinkedToContactUs data={data.footer_content[0].text}/>
+            <FooterLinkedToContactUs data={"We would love to have a coffee with you."}/>
         </div>
         <div class="main footer-container">
           <PageFooter />
