@@ -4,6 +4,7 @@ import Truncate from 'react-truncate';
 import MainNavigation from './MainNavigation';
 import FooterLinkedToContactUs from './FooterLinkedToContactUs';
 import classNames from 'classnames';
+import Chance from 'chance';
 import ArticlePreview from './ArticlePreview';
 import FormatDate from './FormatDate';
 import PageFooter from "./PageFooter";
@@ -53,7 +54,7 @@ export default class Home extends React.Component {
         }
       );
 
-      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'testimonial'), { orderings : '[my.testimonial.date desc]', pageSize : 3  }).then(
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'testimonial'), { pageSize : 10  }).then(
         (testimonials) => {
           if (testimonials) {
             this.setState({ testimonials });
@@ -73,6 +74,36 @@ export default class Home extends React.Component {
 
     }
     return null;
+  }
+
+  showTestimonials(testimonialResults) {
+    let chance = new Chance();
+    let uniques = chance.unique(chance.natural, 3, {min: 0, max: 3});
+    return uniques.map((key, index) => {
+      return <div key={index} class="col-md-4">
+            <div class="card card-testimonial">
+                <div class="icon">
+                    <i class="material-icons">format_quote</i>
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-description">
+                      <Truncate lines={5} ellipsis={<span>... <a href={testimonialResults[key].data.external_link.url}>Read More</a></span>}>
+                        {testimonialResults[key].data.comment[0].text}
+                      </Truncate>
+                    </h5>
+                </div>
+                <div class="card-footer ">
+                    <h4 class="card-title">{testimonialResults[key].data.full_name[0].text}</h4>
+                    <h6 class="card-category" style={{'textTransform': 'none'}}>@&nbsp;<a href={testimonialResults[key].data.external_link.url}>Rate My Agent</a></h6>
+                    <div class="card-avatar">
+                        <a href="#pablo">
+                            <img class="img" src={testimonialResults[key].data.photo.url} alt="testimonial ruma mundi stanhope gardens sydney"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>;
+    });
   }
 
   render() {
@@ -255,79 +286,13 @@ export default class Home extends React.Component {
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto text-center">
                             <h2 class="title">{data.homepage_testimonials_header[0].text}</h2>
-                            <h5 class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+                            <h5 class="description">
+                              What our clients say is a testament to the value and quality of our service. We enthusiastically gather feedback, and endeavour to continously improve our services based on what they tell us.
+                            </h5>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="card card-testimonial">
-                                <div class="icon">
-                                    <i class="material-icons">format_quote</i>
-                                </div>
-                                <div class="card-body ">
-                                    <h5 class="card-description">
-                                      <Truncate lines={4} ellipsis={<span>... <a href="#pablo"> Read More </a></span>}>
-                                        {testimonialResults[0].data.comment[0].text}
-                                      </Truncate>
-                                    </h5>
-                                </div>
-                                <div class="card-footer ">
-                                    <h4 class="card-title">{testimonialResults[0].data.full_name[0].text}</h4>
-                                    <h6 class="card-category">@{testimonialResults[0].data.full_name[0].text}</h6>
-                                    <div class="card-avatar">
-                                        <a href="#pablo">
-                                            <img class="img" src={testimonialResults[0].data.photo.url} alt="testimonial ruma mundi stanhope gardens sydney"/>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card card-testimonial">
-                                <div class="icon">
-                                    <i class="material-icons">format_quote</i>
-                                </div>
-                                <div class="card-body ">
-                                    <h5 class="card-description">
-                                      <Truncate lines={4} ellipsis={<span>... <a href="#pablo"> Read More </a></span>}>
-                                        {testimonialResults[1].data.comment[0].text}
-                                      </Truncate>
-                                    </h5>
-                                </div>
-                                <div class="card-footer ">
-                                    <h4 class="card-title">{testimonialResults[1].data.full_name[0].text}</h4>
-                                    <h6 class="card-category">@{testimonialResults[1].data.full_name[0].text}</h6>
-                                    <div class="card-avatar">
-                                        <a href="#pablo">
-                                            <img class="img" src={testimonialResults[1].data.photo.url} alt="testimonial ruma mundi stanhope gardens sydney"/>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card card-testimonial">
-                                <div class="icon">
-                                    <i class="material-icons">format_quote</i>
-                                </div>
-                                <div class="card-body ">
-                                    <h5 class="card-description">
-                                      <Truncate lines={4} ellipsis={<span>... <a href="#pablo"> Read More </a></span>}>
-                                        {testimonialResults[2].data.comment[0].text}
-                                      </Truncate>
-                                    </h5>
-                                </div>
-                                <div class="card-footer ">
-                                    <h4 class="card-title">{testimonialResults[2].data.full_name[0].text}</h4>
-                                    <h6 class="card-category">@{testimonialResults[2].data.full_name[0].text}</h6>
-                                    <div class="card-avatar">
-                                        <a href="#pablo">
-                                            <img class="img" src={testimonialResults[2].data.photo.url} alt="testimonial ruma mundi stanhope gardens sydney"/>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {this.showTestimonials(testimonialResults)}
                     </div>
                 </div>
             </div>

@@ -19,7 +19,8 @@
     "recompose": "~0.26.0",
     "classnames": "~2.2.5",
     "react-truncate": "~2.3.0",
-    "moment": "~2.20.1"
+    "moment": "~2.20.1",
+    "chance": "~1.0.13"
   },
   "devDependencies": {
     "react-scripts": "~1.0.14",
@@ -36,7 +37,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "clean": "rm -r build/*",
-    "sass" : "sass --watch src/styles/scss:src/styles/css",
+    "sass": "sass --watch src/styles/scss:src/styles/css",
     "sass:build": "sass src/styles/scss:src/styles/css",
     "vendor:build": "gulp compile-scss --gulpfile public/vendor/creativetim/gulpfile.js"
   },
