@@ -118,10 +118,20 @@ export default class Team extends React.Component {
                         <div class="row">
                             <div class="col-md-7">
                                 <div class="card-body">
-                                    <h2 class="card-title">Alex Cross</h2>
-                                    <h4 class="card-category text-muted">Founder & Principle Agent</h4>
+                                    <h2 class="card-title">Brad Norrie</h2>
+                                    <h4 class="card-category text-muted">Sales Executive</h4>
                                     <p class="card-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    As a fully licensed real estate agent and local resident with over 15 years’ experience in the real estate industry, Brad is committed to exceeding expectations. An invaluable asset to Brad’s success is his years of knowledge and practice, his attention to detail and his drive and determination to achieve nothing less than the best for all of his clients. Brad believes that above all else the vendors and buyers deserve his undivided attention, which is exactly what they receive.
+                                    </p>
+
+                                    <p class="card-description">
+
+                                    Brad thrives on the dynamic nature of the business overall and has a positive attitude which is received by his clients. His communication and relationship building abilities are matched by outstanding local area knowledge and exceptional attention to detail.
+                                    </p>
+
+                                    <p class="card-description">
+
+                                    Brad has an outstanding ability to understand each client’s goals and priorities. He has brought enthusiasm, organizational skills and a natural ability to communicate, into the world of real estate.
                                     </p>
                                 </div>
                                 <div class="card-footer justify-content-center">
@@ -133,7 +143,7 @@ export default class Team extends React.Component {
                             <div class="col-md-5">
                                 <div class="card-header card-header-image">
                                     <a href="#pablo">
-                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" alt="please fill"/>
+                                        <img class="img" src="./images/bradnorrie.jpeg" alt="please fill"/>
                                     </a>
                                 </div>
                             </div>
@@ -148,16 +158,21 @@ export default class Team extends React.Component {
                             <div class="col-md-5">
                                 <div class="card-header card-header-image">
                                     <a href="#pablo">
-                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" alt="please fill"/>
+                                        <img class="img" src="./images/baileyabela.jpeg" alt="please fill"/>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-7">
                                 <div class="card-body">
-                                    <h2 class="card-title">Alex Cross</h2>
-                                    <h4 class="card-category text-muted">Founder & Principle Agent</h4>
+                                    <h2 class="card-title">Bailey Abela</h2>
+                                    <h4 class="card-category text-muted">PA to Ruma Mundi</h4>
                                     <p class="card-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Having started his real estate career at the beginning of 2017, Bailey joins the team here at First National Hills Direct looking to take his development in the industry to the next level. Being a proud Hills resident for his entire life Bailey has a strong grasp on the growth of the area as well as the residents who call it home. Bailey likes to pride himself on being a young, highly motivated and professional individual with strong ethics, an eagerness to succeed and maturity beyond his years. Always with a bright and contagious smile on his face, Bailey loves connecting with anyone he comes by.
+                                    </p>
+
+                                    <p class="card-description">
+
+                                    Bailey understands the importance of knowledge and keeping up to date with the dynamic marketplace, which sees him undertaking constant professional and personal training. Working closely next to Ruma and Brad, Bailey thoroughly enjoys any challenge that is set out for him to achieve. Without any hesitation, Bailey is always glad to help with his 'can-do' attitude which is so rarely seen of someone of his age.
                                     </p>
                                 </div>
                                 <div class="card-footer justify-content-center">
@@ -176,10 +191,19 @@ export default class Team extends React.Component {
                         <div class="row">
                             <div class="col-md-7">
                                 <div class="card-body">
-                                    <h2 class="card-title">Alex Cross</h2>
-                                    <h4 class="card-category text-muted">Founder & Principle Agent</h4>
+                                    <h2 class="card-title">Ian Williamson</h2>
+                                    <h4 class="card-category text-muted">Sales Executive</h4>
                                     <p class="card-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    To achieve a positive and impressive sale result Ian focuses on correctly pricing a property based on thorough research and recent sales. He believes that marketing the property in a strategic manner and employing a smart sale method that best suits your property will appeal to a wider range of potential buyers.
+                                    </p>
+
+                                    <p class="card-description">
+                                    Ian places an importance on training, ongoing professional development and mentoring, he is always adapting to the changing real estate world. Ian ongoing knowledge and training have only helped him acquire the correct approach to all client’s needs. Ian ensures that he has the best foundation possible to service his clients. Ian has the knowledge and experience that buyers and sellers need in a market that requires an agent who knows the market and has the most effective tools at his fingertips.
+                                    </p>
+
+                                    <p class="card-description">
+
+                                    Ian sets fourth groundwork for excellence which allows him to provide a level of service rarely seen in the real estate world, that is why he loves his work. Ian takes pride in his achievements and finds enjoyment in working with all of his clients to provide a selling or purchasing experience unsurpassed by any other agent.
                                     </p>
                                 </div>
                                 <div class="card-footer justify-content-center">
@@ -191,7 +215,7 @@ export default class Team extends React.Component {
                             <div class="col-md-5">
                                 <div class="card-header card-header-image">
                                     <a href="#pablo">
-                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" alt="please fill"/>
+                                        <img class="img" src="./images/ianwilliamson.jpeg" alt="please fill"/>
                                     </a>
                                 </div>
                             </div>

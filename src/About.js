@@ -155,12 +155,12 @@ export default class About extends React.Component {
                       <div class="col-md-4">
                           <div class="info info-horizontal" style={{'padding': 0}}>
                               <div class="icon icon-default">
-                                  <i class="fa fa-trophy"></i>
+                                  <i class="fa fa-trophy fa-inverse"></i>
                               </div>
                               <div class="description">
                                   <h4 class="info-title text-white">#4 | Top Salesperson</h4>
-                                  <p class="text-white">
-                                     Residental | GEM Awards | First National Real Estate Australia, 2016
+                                  <p class="text-white awards-para">
+                                     GEM Awards
                                   </p>
                               </div>
                           </div>
@@ -168,12 +168,12 @@ export default class About extends React.Component {
                       <div class="col-md-4">
                           <div class="info info-horizontal" style={{'padding': 0}}>
                               <div class="icon icon-default">
-                                  <i class="fa fa-trophy"></i>
+                                  <i class="fa fa-trophy fa-inverse"></i>
                               </div>
                               <div class="description">
                                   <h4 class="info-title text-white">Diamond Award</h4>
-                                  <p class="text-white">
-                                    Residental Commission   - First National Real Estate (NSW), 2016
+                                  <p class="text-white awards-para">
+                                    Residental Commission, FN, 2016
                                   </p>
                               </div>
                           </div>
@@ -181,12 +181,12 @@ export default class About extends React.Component {
                       <div class="col-md-4">
                           <div class="info info-horizontal" style={{'padding': 0}}>
                               <div class="icon icon-default">
-                                  <i class="fa fa-trophy"></i>
+                                  <i class="fa fa-trophy fa-inverse"></i>
                               </div>
                               <div class="description">
                                   <h4 class="info-title text-white">#4 | Top Salesperson</h4>
-                                  <p class="text-white">
-                                    First National Real Estate (NSW), 2016
+                                  <p class="text-white awards-para">
+                                    FN Real Estate, 2016
                                   </p>
                               </div>
                           </div>
@@ -196,11 +196,11 @@ export default class About extends React.Component {
                       <div class="col-md-4">
                           <div class="info info-horizontal" style={{'padding': 0}}>
                               <div class="icon icon-default">
-                                  <i class="fa fa-trophy"></i>
+                                  <i class="fa fa-trophy fa-inverse"></i>
                               </div>
                               <div class="description">
                                   <h4 class="info-title text-white">Grand Centurion</h4>
-                                  <p class="text-white">
+                                  <p class="text-white awards-para">
                                     Top 1% Producer Globally, 2015
                                   </p>
                               </div>
@@ -209,11 +209,11 @@ export default class About extends React.Component {
                       <div class="col-md-4">
                           <div class="info info-horizontal" style={{'padding': 0}}>
                               <div class="icon icon-default">
-                                  <i class="fa fa-trophy"></i>
+                                  <i class="fa fa-trophy fa-inverse"></i>
                               </div>
                               <div class="description">
                                   <h4 class="info-title text-white">Silver Auction Certificate</h4>
-                                  <p class="text-white">
+                                  <p class="text-white awards-para">
                                     3rd Quarter 2015
                                   </p>
                               </div>
@@ -222,11 +222,11 @@ export default class About extends React.Component {
                       <div class="col-md-4">
                           <div class="info info-horizontal" style={{'padding': 0}}>
                               <div class="icon icon-default">
-                                  <i class="fa fa-trophy"></i>
+                                  <i class="fa fa-trophy fa-inverse"></i>
                               </div>
                               <div class="description">
                                   <h4 class="info-title text-white">Top Principal (GCC) NSW</h4>
-                                  <p class="text-white">
+                                  <p class="text-white awards-para">
                                     2nd Quarter 2015
                                   </p>
                               </div>
@@ -237,11 +237,11 @@ export default class About extends React.Component {
                       <div class="col-md-4">
                           <div class="info info-horizontal" style={{'padding': 0}}>
                               <div class="icon icon-default">
-                                  <i class="fa fa-trophy"></i>
+                                  <i class="fa fa-trophy fa-inverse"></i>
                               </div>
                               <div class="description">
                                   <h4 class="info-title text-white">Grand Centurion</h4>
-                                  <p class="text-white">
+                                  <p class="text-white awards-para">
                                     Top 1% Producer Globally, 2015
                                   </p>
                               </div>
@@ -250,11 +250,11 @@ export default class About extends React.Component {
                       <div class="col-md-4">
                           <div class="info info-horizontal" style={{'padding': 0}}>
                               <div class="icon icon-default">
-                                  <i class="fa fa-trophy"></i>
+                                  <i class="fa fa-trophy fa-inverse"></i>
                               </div>
                               <div class="description">
                                   <h4 class="info-title text-white">Silver Auction Certificate</h4>
-                                  <p class="text-white">
+                                  <p class="text-white awards-para">
                                     3rd Quarter 2015
                                   </p>
                               </div>
@@ -263,11 +263,11 @@ export default class About extends React.Component {
                       <div class="col-md-4">
                           <div class="info info-horizontal" style={{'padding': 0}}>
                               <div class="icon icon-default">
-                                  <i class="fa fa-trophy la-lg"></i>
+                                  <i class="fa fa-trophy  fa-inverse"></i>
                               </div>
                               <div class="description">
                                   <h4 class="info-title text-white">Top Principal (GCC) NSW</h4>
-                                  <p class="text-white">
+                                  <p class="text-white awards-para">
                                     2nd Quarter 2015
                                   </p>
                               </div>
@@ -324,9 +324,12 @@ export default class About extends React.Component {
                   <div class="row">
                       <div class="col-md-8 ml-auto mr-auto text-center">
                           <h2 class="title">Ruma in the community</h2>
-                          <h5 class="description">
-                            This is the paragraph where you can write more details about your team. Keep you user engaged by providing meaningful information.
-                          </h5>
+                          <p class="description">
+                            Ruma and her team have been honoured to help out families in her local community, over the years. She and her team are passionate about giving back to the community that they live and work in - a community that has given them so much. They have tirelessly worked for charities and local community groups like Variety Children’s Foundation, the Cancer Counil’s Pink Ribbon, Harman Foundation, The Ponds Little Athletics club, The Ponds Cricket Club and the Quakers Hill Bombers Junior AFL Club, to name a few. Contribution is in terms of money donated, and voluntary work done on days when a few hands are required to do the job.
+                          </p>
+                          <p class="description">
+                            Ruma started a Giveaway drive last Christmas, which was tremendously successful. The inaugural giveaway drive was set up to give thousand dollars to 10 families in need, within the community. The success and positive feedback has resulted in Ruma committing to make this a recurring annual event. It was fulfilling for her and her team to go through the experience of organising such an event. There are plans to brainstorm on how such events can be improved upon, so that even more families can be benefited the next time.
+                          </p>
                       </div>
                   </div>
                   <div class="row">
@@ -439,7 +442,7 @@ export default class About extends React.Component {
           </div>
 
 
-          <FooterLinkedToContactUs data={aboutpageResults[0].data.footer_content[0].text}/>
+          <FooterLinkedToContactUs data={"Contact Ruma for a market appraisal"}/>
         </div>
         <PageFooter />
       </div>;
