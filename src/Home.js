@@ -124,10 +124,10 @@ export default class Home extends React.Component {
                   <div class="row">
                       <div class="col-md-8">
                           <h2 class="title">Real estate, done differently</h2>
-                          <h4 class="text-white" style={{'fontWeight': 400}}>Ruma’s professional approach has led to unparalleled results for her clients.
+                          <h5 class="text-white" style={{'fontWeight': 400, 'fontSize': '18px'}}>Ruma’s professional approach has led to unparalleled results for her clients.
                             She invests in long term relationships with her clients, being deeply aware that selling or buying a house
                             is a significant decision, that extends far beyond a financial transaction
-                          </h4>
+                          </h5>
                           <br/>
                       </div>
                   </div>
@@ -284,7 +284,7 @@ export default class Home extends React.Component {
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto text-center">
                             <h2 class="title">{data.homepage_testimonials_header[0].text}</h2>
-                            <h5 class="description">
+                            <h5 class="description text-white">
                               What our clients say is a testament to the value and quality of our service. We enthusiastically gather feedback, and endeavour to continously improve our services based on what they tell us.
                             </h5>
                         </div>
