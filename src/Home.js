@@ -193,7 +193,7 @@ export default class Home extends React.Component {
                                 <div class="card-body">
                                     <h2 class="card-title">The Team</h2>
                                     <p class="card-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                      People rarely achieve much without a good supportive team around them. We truely believe that we have the best team in the North West of Sydney. Our extensive experience, local knowledge, attention to details and determination to do the best for all our clients, has been the bed rock of our success. However, our true strength is in our positivity and humility. We pride ourselves with the that fact that we have managed to preserve the sense of approachability and hospitality, with a deep understanding that being the agent you can trust and seek advice from, has been a core competency of our endeavour so far.
                                     </p>
                                     <Link to="/team" style={{'marginLeft' : '25px'}}>
                                         <button class="btn btn-primary btn-round">
