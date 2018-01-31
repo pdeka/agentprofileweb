@@ -142,11 +142,12 @@ export default class About extends React.Component {
                   <div class="row">
                       <div class="col-md-8 ml-auto mr-auto text-center">
                           <h2 class="title">Awards and Recognitions</h2>
-                          <h5 class="description">
-                            While it is an honour&nbsp;to be recognised both nationally and globally, my true reward comes from the satisfaction that I gain from a good result for my clients.&nbsp;
-                            <br/>
-                          - Ruma
-                          </h5>
+                          <blockquote class="blockquote-without-left-line text-center">
+                            <p class="mb-0">
+                              While it is an honour&nbsp;to be recognised both nationally and globally, my true reward comes from the satisfaction that I gain from a good result for my clients.&nbsp;
+                            </p>
+                            <footer class="blockquote-footer">Ruma</footer>
+                          </blockquote>
                       </div>
                   </div>
                   <div class="row">

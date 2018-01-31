@@ -8,3 +8,20 @@
   top: 50%;
   left: 50%
 }
+
+.blockquote-without-left-line{
+    padding: 10px 20px;
+    margin: 0 0 20px;
+
+    p{
+        font-size: 1.063rem;
+        font-style: italic;
+    }
+
+    small{
+        display: block;
+        font-size: 80%;
+        line-height: 1.42857143;
+        color: #777;
+    }
+}

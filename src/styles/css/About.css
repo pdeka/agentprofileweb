@@ -7,4 +7,16 @@
   top: 50%;
   left: 50%; }
 
+.blockquote-without-left-line {
+  padding: 10px 20px;
+  margin: 0 0 20px; }
+  .blockquote-without-left-line p {
+    font-size: 1.063rem;
+    font-style: italic; }
+  .blockquote-without-left-line small {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857143;
+    color: #777; }
+
 /*# sourceMappingURL=About.css.map */
