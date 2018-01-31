@@ -221,7 +221,7 @@ export default class Home extends React.Component {
                     <div class="card card-profile card-plain">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="card-body">
+                                <div class="card-body pt-0" style={{'marginTop': '-34px'}}>
                                     <h2 class="card-title">The Team</h2>
                                     <p class="card-description">
                                       People rarely achieve much without a good supportive team around them. We truely believe that we have the best team in the North West of Sydney. Our extensive experience, local knowledge, attention to details and determination to do the best for all our clients, has been the bed rock of our success. However, our true strength is in our positivity and humility. We pride ourselves with the that fact that we have managed to preserve the sense of approachability and hospitality, with a deep understanding that being the agent you can trust and seek advice from, has been a core competency of our endeavour so far.
@@ -236,9 +236,7 @@ export default class Home extends React.Component {
                             </div>
                             <div class="col-md-8">
                                 <div class="card-header card-header-image">
-                                    <a href="#pablo">
                                         <img class="img" src="https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg" alt="please fill" />
-                                    </a>
                                 </div>
                             </div>
                         </div>
