@@ -97,18 +97,46 @@ export default class Home extends React.Component {
                             She invests in long term relationships with her clients, being deeply aware that selling or buying a house
                             is a significant decision, that extends far beyond a financial transaction
                           </h4>
+                          <br/>
                       </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-6">
-                      <a class="btn btn-link btn-lg" href="tel:+61411030202" style={{'marginLeft': 0, 'paddingLeft': 0}}>
-                        <i class="fa fa-phone" style={{'fontSize': '20px', 'fontWeight': '900', 'color': 'white'}}> &nbsp;0411 030 202</i>
-                        <div class="ripple-container"></div>
-                      </a>
-                      <a class="btn btn-link btn-lg" href="mailto:name@email.com" target="_blank" rel="noopener noreferrer" style={{'marginLeft': 0, 'paddingLeft': 0}}>
-                        <i class="fa fa-envelope" style={{'fontSize': '20px', 'fontWeight': '900', 'color': 'white', 'textTransform': 'none'}}> &nbsp;mail</i>
-                        <div class="ripple-container"></div>
-                      </a>
+                    <div class="col-md-7">
+                      <div class="card card-profile card-plain mt-1">
+                          <div class="row">
+                              <div class="col-md-7  pl-0 ml-0">
+                                  <div class="card-footer pb-0 pt-0" style={{'paddingLeft': '14px'}}>
+                                      <a href="tel:+61411030202" class="btn btn-inverse btn-round" style={{'fontSize': '16px', 'fontWeight': '900', 'color': 'white', 'textTransform': 'none'}}>
+                                        <i class="fa fa-phone fa-inverse" />
+                                        &nbsp;0411 030 202
+                                        <div class="ripple-container"></div>
+                                      </a>
+                                  </div>
+                                  <div class="card-footer pb-0 pt-0">
+                                      <a href="#pablo" class="btn btn-just-icon btn-link btn-facebook" target="_blank">
+                                          <i class="fa fa-facebook fa-inverse"></i>
+                                      </a>
+                                      <a href="#pablo" class="btn btn-just-icon btn-link btn-instagram" target="_blank">
+                                          <i class="fa fa-instagram fa-inverse"></i>
+                                      </a>
+                                      <a href="#pablo" class="btn btn-just-icon btn-link btn-youtube" target="_blank">
+                                          <i class="fa fa-youtube fa-inverse"></i>
+                                      </a>
+                                      <a href="#pablo" class="btn btn-just-icon btn-link btn-linkedin" target="_blank">
+                                          <i class="fa fa-linkedin fa-inverse"></i>
+                                      </a>
+                                      <a href={data.rate_my_agent_link.url} class="btn btn-just-icon btn-link" target="_blank">
+                                        <div style={{'marginBottom': '-1px'}}>
+                                          <i class="fa icon-ratemyagent fa-inverse" style={{'fontSize': '17px'}}></i>
+                                        </div>
+                                      </a>
+                                      <a class="btn btn-just-icon btn-link" href="mailto:name@email.com" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa fa-envelope fa-inverse"/>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                     </div>
                   </div>
               </div>

@@ -54,26 +54,6 @@ export default class MainNavigation extends React.Component {
               <Link to="/contactus" class="nav-link">Contact</Link>
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href={data.facebook_link.url} class="nav-link" target="_blank">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href={data.youtube_link.url} class="nav-link" target="_blank">
-                <i class="fa fa-youtube"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href={data.rate_my_agent_link.url}
-                  class="nav-link" target="_blank">
-              <div style={{'marginBottom': '-1px'}}>
-                <i class="fa icon-ratemyagent" style={{'fontSize': '17px'}}></i>
-              </div>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
