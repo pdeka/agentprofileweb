@@ -124,7 +124,7 @@ export default class Home extends React.Component {
                   <div class="row">
                       <div class="col-md-8">
                           <h2 class="title">Real estate, done differently</h2>
-                          <h4 style={{'fontWeight': 400}}>Ruma’s professional approach has led to unparalleled results for her clients.
+                          <h4 class="text-white" style={{'fontWeight': 400}}>Ruma’s professional approach has led to unparalleled results for her clients.
                             She invests in long term relationships with her clients, being deeply aware that selling or buying a house
                             is a significant decision, that extends far beyond a financial transaction
                           </h4>
@@ -137,7 +137,7 @@ export default class Home extends React.Component {
                           <div class="row">
                               <div class="col-md-7  pl-0 ml-0">
                                   <div class="card-footer pb-0 pt-0" style={{'paddingLeft': '14px'}}>
-                                      <a href="tel:+61411030202" class="btn btn-inverse btn-round" style={{'fontSize': '16px', 'fontWeight': '900', 'color': 'white', 'textTransform': 'none'}}>
+                                      <a href="tel:+61411030202" class="btn btn-inverse btn-round text-white" style={{'fontSize': '16px', 'fontWeight': '900', 'textTransform': 'none'}}>
                                         <i class="fa fa-phone fa-inverse" />
                                         &nbsp;0411 030 202
                                         <div class="ripple-container"></div>
@@ -194,7 +194,7 @@ export default class Home extends React.Component {
                           <div class="col-md-7">
                               <div class="card-body">
                                   <h3 class="card-title">Passion, integrity and care</h3>
-                                  <p class="card-description">
+                                  <p class="card-description text-black">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                   </p>

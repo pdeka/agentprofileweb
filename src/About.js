@@ -115,13 +115,13 @@ export default class About extends React.Component {
                   <div class="row">
                       <div class="col-md-8 ml-auto mr-auto">
                           <h2 class="title">Serving you with love and care</h2>
-                          <h5 class="description"  style={{'color': 'black'}}>
+                          <h5 class="description"  >
                             In the past decade, Ruma Mundi's name has become synonymous with Real Estate in the Hills District.  Behind her personable manner and respectful approach is a sharp and strategic thinker with exemplary sales skills. With nearly 20 years’ experience in the real estate industry, Ruma has honed highly effective negotiating strategies that time and again have produced exceptional sale prices for her clients. Displaying absolute integrity and professionalism, Ruma’s dedication to each individual campaign is reflected in the consistency of her results.
                           </h5>
-                          <h5 class="description"  style={{'color': 'black'}}>
+                          <h5 class="description"  >
                             She is a hard working mom of 2 beautiful daughters, Samara and Safira, which among other things, gives her a perspective on what a growing family needs. Nick, her husband helps her out between his work as an executive at Woolworths, and making time for Samara and Safira. Ruma is keenly aware of the juggles of everyday life in the North West of Sydney, and the pressures families today have to work with to live happy and stay healthy.
                           </h5>
-                          <h5 class="description"  style={{'color': 'black'}}>
+                          <h5 class="description"  >
                             Principal of First National Hills Direct, Ruma is a hard-working, dedicated director who has an unwavering dedication for her Agency and her staff.  With an Master’s degree in business administration and a bachelor’s degree in commerce, she has the education to back her up.  Ruma and her team's success are driven by having a strong market knowledge of the Hills District and having a passion for people coupled with a persona that is caring and approachable. During her dynamic career, Ruma has succeeded in bringing about a positive and refreshing change to customer service in the real estate industry, not just in the North West of Sydney, but in the country as a whole.
                           </h5>
                           <div class="icon">

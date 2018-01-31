@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,sBAAuB;EACrB,MAAM,EAAE,cAAc;EACtB,aAAa,EAAE,cAAc;;AAG/B,eAAgB;EACd,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG",
-"sources": ["../scss/Articles.scss"],
+"mappings": "",
+"sources": [],
 "names": [],
 "file": "Articles.css"
 }

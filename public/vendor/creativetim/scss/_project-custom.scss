@@ -1,0 +1,57 @@
+p{
+    font-size: $font-paragraph +2;
+    font-family: $font-family-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+  font-family: $font-family-sans-serif;
+  color: $black-color;
+}
+
+.title,
+.card-title,
+.info-title,
+.footer-brand,
+.footer-big h5,
+.footer-big h4,
+.media .media-heading{
+    font-weight: $font-weight-extra-bold;
+    font-family: $font-family-sans-serif;
+
+    &,
+    a{
+        color: $black-color;
+        text-decoration: none;
+    }
+}
+
+.text-black{
+  color: $black-color;
+}
+
+.text-white{
+  color: $white;
+}
+
+.card-description, .description{
+  @extend .card-description;
+  color: $black-color;
+}
+
+
+.blockquote-without-left-line{
+    padding: 10px 20px;
+    margin: 0 0 20px;
+
+    p{
+        font-size: 1.063rem;
+        font-style: italic;
+    }
+
+    small{
+        display: block;
+        font-size: 80%;
+        line-height: 1.42857143;
+        color: #777;
+    }
+}
