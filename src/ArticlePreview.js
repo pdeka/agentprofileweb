@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import YoutubeURL from './lib/YoutubeURL';
 
 export default class ArticlePreview extends React.Component {
   state = {
@@ -7,14 +8,7 @@ export default class ArticlePreview extends React.Component {
   }
 
   getFormattedEmbedUrl(embedUrl) {
-    let reg = /(youtu\.be\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v)\/))([^\?&"'>]+)/ ;
-    let thisArray = reg.exec(embedUrl);
-    let interestedIndex = 5;
-    if (interestedIndex >= 0) {
-      return "https://www.youtube.com/embed/" + thisArray[interestedIndex] + "?feature=oembed";
-    } else {
-      return "";
-    }
+    return new YoutubeURL().getFormattedEmbedUrl(embedUrl);
   }
 
   displayImageOrVideo(data) {

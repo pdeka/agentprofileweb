@@ -4,6 +4,8 @@ import MainNavigation from './MainNavigation';
 import classNames from 'classnames';
 import FooterLinkedToContactUs from "./FooterLinkedToContactUs";
 import PageFooter from "./PageFooter";
+import Truncate from 'react-truncate';
+import YoutubeURL from './lib/YoutubeURL';
 
 import './styles/css/Team.css';
 
@@ -40,11 +42,19 @@ export default class Testimonials extends React.Component {
         }
       });
 
-      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'testimonialpage')).then((testimonialpage) => {
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'testimonialspage')).then((testimonialpage) => {
         if (testimonialpage) {
           this.setState({testimonialpage});
         }
       });
+
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'testimonial'), { orderings : '[my.testimonial.sort_order desc]',pageSize : 10  }).then(
+        (testimonials) => {
+          if (testimonials) {
+            this.setState({ testimonials });
+          }
+        }
+      );
 
       return null;
 
@@ -52,11 +62,17 @@ export default class Testimonials extends React.Component {
     return null;
   }
 
+  getFormattedEmbedUrl(embedUrl) {
+    return new YoutubeURL().getFormattedEmbedUrl(embedUrl);
+  }
+
   render() {
-    if (this.state.doc && this.state.testimonialpage) {
+    if (this.state.doc && this.state.testimonialpage && this.state.testimonials ) {
 
       let data = this.state.doc.results[0].data;
-      // let testimonialpageResults = this.state.testimonialpage.results;
+      let testimonialResults = this.state.testimonials.results;
+
+      let testimonialpageResults = this.state.testimonialpage.results;
 
       return <div class="sections-page">
         <MainNavigation thisProp={data} navBarTransparent={true}/>
@@ -64,7 +80,7 @@ export default class Testimonials extends React.Component {
           <div class="container">
               <div class="row">
                   <div class="col-md-8">
-                      <h2 class="title pb-0 mb-0" >The Client</h2>
+                      <h2 class="title pb-0 mb-0" >Client Stories</h2>
                   </div>
               </div>
               <div class="row">
@@ -109,95 +125,160 @@ export default class Testimonials extends React.Component {
           </div>
         </div>
         <div class="main main-raised">
-            <div class="container" >
-              <div class="features-3">
-                <div class="row">
-                  <div class="col-md-12 ml-auto mr-auto">
+            <div class="cd-section" >
+              <div class="blogs-2" id="blogs-2">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12 ml-auto mr-auto">
+                              <div class="row">
+                                {[0,1,2].map((key) => {
+                                  return <div key={key} class="col-md-4">
+                                      <div class="card card-plain">
+                                          <div class="card-header card-header-image">
+                                                  <img class="img img-raised" src={testimonialResults[key].data.photo.url} />
+                                          </div>
+                                          <div class="card-body">
+                                              <a href={testimonialResults[key].data.external_link.url}>
+                                                <h4 class="card-title mb-0 pb-0">{testimonialResults[key].data.full_name[0].text}</h4>
+                                              <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
+                                              </a>
+
+                                              <p class="card-description">
+                                                <Truncate lines={12} ellipsis={<span>... <a target="_blank" href={testimonialResults[key].data.external_link.url}>Read More</a></span>}>
+                                                  {testimonialResults[key].data.comment[0].text}
+                                                </Truncate>
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                }
+                              )}
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="cd-section section-dark">
+              <div class="container" >
+                <div class="features-3">
+                  <div class="row">
+                    <div class="col-md-12 ml-auto mr-auto">
                     <div class="card card-profile card-plain">
                         <div class="row">
-                            <div class="col-md-7">
-                                <div class="card-body">
-                                    <h2 class="card-title">Alex Cross</h2>
-                                    <h4 class="card-category text-muted">Founder & Principle Agent</h4>
-                                    <p class="card-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
+                            <div class="col-md-6">
+                              <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
+                                <div>
+                                  <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
+                                    <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialpageResults[0].data.video_1.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
+                                  </div>
                                 </div>
-                                <div class="card-footer justify-content-center">
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-twitter"></i></a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-facebook-square"></i></a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-google"></i></a>
-                                </div>
+                              </div>
                             </div>
-                            <div class="col-md-5">
-                                <div class="card-header card-header-image">
-                                    <a href="#pablo">
-                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" alt="please fill"/>
-                                    </a>
+                            <div class="col-md-6">
+                              <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
+                                <div>
+                                  <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
+                                    <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialpageResults[0].data.video_2.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
+                                  </div>
                                 </div>
+                              </div>
                             </div>
                         </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 ml-auto mr-auto">
-                    <div class="card card-profile card-plain">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <div class="card-header card-header-image">
-                                    <a href="#pablo">
-                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" alt="please fill"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body">
-                                    <h2 class="card-title">Alex Cross</h2>
-                                    <h4 class="card-category text-muted">Founder & Principle Agent</h4>
-                                    <p class="card-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                                <div class="card-footer justify-content-center">
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-twitter"></i></a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-facebook-square"></i></a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-google"></i></a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12 ml-auto mr-auto">
-                    <div class="card card-profile card-plain">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div class="card-body">
-                                    <h2 class="card-title">Alex Cross</h2>
-                                    <h4 class="card-category text-muted">Founder & Principle Agent</h4>
-                                    <p class="card-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                                <div class="card-footer justify-content-center">
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-twitter"></i></a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-facebook-square"></i></a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-google"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="card-header card-header-image">
-                                    <a href="#pablo">
-                                        <img class="img" src="./vendor/creativetim/img/faces/card-profile1-square.jpg" alt="please fill"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="cd-section" >
+              <div class="blogs-2" id="blogs-2">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12 ml-auto mr-auto">
+                              <div class="row">
+                                {[0,1,2].map((key) => {
+                                  return <div key={key} class="col-md-4">
+                                      <div class="card card-plain">
+                                          <div class="card-header card-header-image">
+                                                  <img class="img img-raised" src={testimonialResults[key].data.photo.url} />
+                                          </div>
+                                          <div class="card-body">
+                                              <a href={testimonialResults[key].data.external_link.url}>
+                                                <h4 class="card-title mb-0 pb-0">{testimonialResults[key].data.full_name[0].text}</h4>
+                                              <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
+                                              </a>
+
+                                              <p class="card-description">
+                                                <Truncate lines={12} ellipsis={<span>... <a target="_blank" href={testimonialResults[key].data.external_link.url}>Read More</a></span>}>
+                                                  {testimonialResults[key].data.comment[0].text}
+                                                </Truncate>
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                }
+                              )}
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12 ml-auto mr-auto">
+                              <div class="row">
+                                {[0,1,2].map((key) => {
+                                  return <div key={key} class="col-md-4">
+                                      <div class="card card-plain">
+                                          <div class="card-header card-header-image">
+                                                  <img class="img img-raised" src={testimonialResults[key].data.photo.url} />
+                                          </div>
+                                          <div class="card-body">
+                                              <a href={testimonialResults[key].data.external_link.url}>
+                                                <h4 class="card-title mb-0 pb-0">{testimonialResults[key].data.full_name[0].text}</h4>
+                                              <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
+                                              </a>
+
+                                              <p class="card-description">
+                                                <Truncate lines={12} ellipsis={<span>... <a target="_blank" href={testimonialResults[key].data.external_link.url}>Read More</a></span>}>
+                                                  {testimonialResults[key].data.comment[0].text}
+                                                </Truncate>
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                }
+                              )}
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12 ml-auto mr-auto">
+                              <div class="row">
+                                {[0,1,2].map((key) => {
+                                  return <div key={key} class="col-md-4">
+                                      <div class="card card-plain">
+                                          <div class="card-header card-header-image">
+                                                  <img class="img img-raised" src={testimonialResults[key].data.photo.url} />
+                                          </div>
+                                          <div class="card-body">
+                                              <a href={testimonialResults[key].data.external_link.url}>
+                                                <h4 class="card-title mb-0 pb-0">{testimonialResults[key].data.full_name[0].text}</h4>
+                                              <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
+                                              </a>
+
+                                              <p class="card-description">
+                                                <Truncate lines={12} ellipsis={<span>... <a target="_blank" href={testimonialResults[key].data.external_link.url}>Read More</a></span>}>
+                                                  {testimonialResults[key].data.comment[0].text}
+                                                </Truncate>
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                }
+                              )}
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
             </div>
             <FooterLinkedToContactUs data={data.footer_content[0].text}/>

@@ -40,7 +40,7 @@ export default class MainNavigation extends React.Component {
               <Link to="/team" class="nav-link bold-navigation">The Team</Link>
             </li>
             <li class="nav-item">
-              <Link to="/testimonials" class="nav-link bold-navigation">Testimonials</Link>
+              <Link to="/testimonials" class="nav-link bold-navigation">Client Stories</Link>
             </li>
             <li class="nav-item">
               <Link to="/articles" class="nav-link bold-navigation">News & Advice</Link>
