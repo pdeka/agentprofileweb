@@ -66,6 +66,9 @@ a:hover, a:visited, a:active, a:link {
 
   .main-raised {
     margin: 0;
-    border-radius: 0; } }
+    border-radius: 0; }
+
+  .teampage-container {
+    margin-top: -37px !important; } }
 
 /*# sourceMappingURL=Home.css.map */
