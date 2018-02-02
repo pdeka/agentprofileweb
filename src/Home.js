@@ -120,7 +120,7 @@ export default class Home extends React.Component {
         <MainNavigation thisProp={data} navBarTransparent={true}/>
         <div class="main">
           <div class="page-header header-filter" data-parallax="true">
-              <div class="container">
+              <div class="container hero-text-margin">
                   <div class="row">
                       <div class="col-md-8">
                           <h2 class="title">Real estate, done differently</h2>
@@ -179,7 +179,7 @@ export default class Home extends React.Component {
         <div class="main main-raised-for-home" style={{'zIndex': 4}}>
             <div class="cd-section">
             <div class="container" >
-              <div class="features-3">
+              <div class="features-3 home-about-section">
                 <div class="row">
                   <div class="col-md-12 ml-auto mr-auto">
                   <div class="card card-profile card-plain">
@@ -215,14 +215,14 @@ export default class Home extends React.Component {
             </div>
             <div class="cd-section section-dark">
               <div class="container" >
-                <div class="features-3">
+                <div class="features-3 home-team-section">
                   <div class="row">
                     <div class="col-md-12 ml-auto mr-auto">
                     <div class="card card-profile card-plain">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="card-body pt-0 mt-0">
-                                    <h2 class="card-title">The Team</h2>
+                                <div class="card-body pt-0 mt-0 pb-5">
+                                    <h3 class="card-title">The Team</h3>
                                     <p class="card-description">
                                       People rarely achieve much without a good supportive team around them. We truely believe that we have the best team in the North West of Sydney.
                                       Our extensive experience, local knowledge, attention to details and determination to do the best for our clients, has been the bed rock of our success.
@@ -250,18 +250,18 @@ export default class Home extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="blogs-1" id="blogs-1">
+            <div class="blogs-1 home-article-section" id="blogs-1">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 ml-auto mr-auto">
-                            <h2 class="title">{data.homepage_articles_header[0].text}</h2>
-                            <br/>
+                            <h3 class="card-title home-article-desktop-title">{data.homepage_articles_header[0].text}</h3>
+                            <h3 class="card-title home-article-mobile-title">Monthly Wrap-up</h3>
                             <div class="card card-plain card-blog">
                               <div class="row">
                                 <div class="col-md-8">
                                   <ArticlePreview data={articleResults[0].data}/>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 pt-4">
                                   <h3 class="card-title">
                                     <a href="#pablo">{articleResults[0].data.article_title[0].text}</a>
                                   </h3>
@@ -283,11 +283,11 @@ export default class Home extends React.Component {
                     </div>
                 </div>
             </div>
-            <div class="testimonials-1 section-image" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
+            <div class="testimonials-1 section-image home-client-section" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto text-center">
-                            <h2 class="title">{data.homepage_testimonials_header[0].text}</h2>
+                            <h3 class="title">{data.homepage_testimonials_header[0].text}</h3>
                             <h5 class="description text-white">
                               What our clients say is a testament to the value and quality of our service. We enthusiastically gather feedback, and endeavour to continously improve our services based on what they tell us.
                             </h5>
