@@ -61,12 +61,3 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     border-radius: 0;
     @include shadow-16dp();
 }
-
-@media all and (max-width: 991px) {
-
-  .main-raised{
-      margin: 0;
-      border-radius: 0;
-  }
-
-}

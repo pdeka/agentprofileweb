@@ -62,7 +62,7 @@ export default class About extends React.Component {
       return <div class="sections-page">
         <MainNavigation thisProp={data} navBarTransparent={true}/>
         <div class="page-header header-small header-filter" data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
-        <div class="container">
+        <div class="container hero-text-margin">
             <div class="row">
                 <div class="col-md-8">
                     <h2 class="title pb-0 mb-0" >Meet Ruma</h2>
@@ -112,6 +112,7 @@ export default class About extends React.Component {
         </div>
         <div class="main main-raised">
               <div class="features-1 pt-5 pb-3">
+                <div class="container">
                   <div class="row">
                       <div class="col-md-8 ml-auto mr-auto">
                           <h3 class="title">Serving you with love and care</h3>
@@ -137,6 +138,7 @@ export default class About extends React.Component {
                           </blockquote>
                       </div>
                   </div>
+                </div>
               </div>
           <div class="team-2 section-image pt-5 pb-3" id="team-5" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
               <div class="container">
@@ -274,11 +276,11 @@ export default class About extends React.Component {
                           </div>
                       </div>
                   </div>
-                  <div class="row">
+                  <div class="row awards-image-section">
                       <div class="col-md-4">
                           <div class="card card-profile card-plain">
 
-                              <div class="card-header card-header-image" style={{'height': '166px'}}>
+                              <div class="card-header card-header-image mb-0" style={{'height': '166px'}}>
                                   <a href="#pablo">
                                       <img class="img" src="./images/REB-top-50.png" style={{'height': '166px'}} alt="REB top 50 Ruma Mundi North West Sydney"/>
                                   </a>
@@ -290,7 +292,7 @@ export default class About extends React.Component {
                           </div>
                       </div>
                       <div class="col-md-4">
-                          <div class="card card-profile card-plain">
+                          <div class="card card-profile card-plain mb-0">
                               <div class="card-header card-header-image" style={{'height': '166px'}}>
                                   <a href="#pablo">
                                       <img class="img" src="./images/First-National-Real-Estate-SEQA-441x269.png" style={{'height': '166px'}} alt="First National Real Estate Ruma Mundi Sydney"/>
@@ -316,7 +318,6 @@ export default class About extends React.Component {
                           </div>
                       </div>
                   </div>
-
               </div>
           </div>
           <div class="team-3 pt-5 pb-0">
@@ -440,8 +441,6 @@ export default class About extends React.Component {
                   </div>
               </div>
           </div>
-
-
           <FooterLinkedToContactUs data={"Contact Ruma for a market appraisal"}/>
         </div>
         <PageFooter />
