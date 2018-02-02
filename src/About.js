@@ -64,8 +64,9 @@ export default class About extends React.Component {
         <div class="page-header header-small header-filter" data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
         <div class="container hero-text-margin">
             <div class="row">
-                <div class="col-md-8">
-                    <h2 class="title pb-0 mb-0" >Meet Ruma</h2>
+                <div class="col-md-12">
+                  <h2 class="title mb-0">Meet Ruma</h2>
+                  <h5 class="text-white hero-paragraph-text mt-0"></h5>
                 </div>
             </div>
             <div class="row">

@@ -124,7 +124,7 @@ export default class Home extends React.Component {
                   <div class="row">
                       <div class="col-md-8">
                           <h2 class="title">Real estate, done differently</h2>
-                          <h5 class="text-white" style={{'fontWeight': 400, 'fontSize': '18px'}}>Ruma’s professional approach has led to unparalleled results for her clients.
+                          <h5 class="text-white hero-paragraph-text">Ruma’s professional approach has led to unparalleled results for her clients.
                             She invests in long term relationships with her clients, being deeply aware that selling or buying a house
                             is a significant decision, that extends far beyond a financial transaction
                           </h5>

@@ -77,17 +77,12 @@ export default class Testimonials extends React.Component {
       return <div class="sections-page">
         <MainNavigation thisProp={data} navBarTransparent={true}/>
         <div class="page-header header-filter header-small" data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
-          <div class="container">
+          <div class="container hero-text-margin">
               <div class="row">
                   <div class="col-md-12 ">
-                    <h1 class="text-white">
-                      Stories from clients
-                    </h1>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                    A sentence here talking giving people.
+                    <h2 class="title mb-0">Stories from our clients</h2>
+                    <h5 class="text-white hero-paragraph-text mt-0">Feedback is important. Here are some we have got
+                    </h5>
                   </div>
               </div>
               <div class="row">
