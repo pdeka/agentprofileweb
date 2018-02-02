@@ -111,11 +111,10 @@ export default class About extends React.Component {
 
         </div>
         <div class="main main-raised">
-          <div class="container">
-              <div class="features-1 no-padding-bottom">
+              <div class="features-1 pt-5 pb-3">
                   <div class="row">
                       <div class="col-md-8 ml-auto mr-auto">
-                          <h2 class="title">Serving you with love and care</h2>
+                          <h3 class="title">Serving you with love and care</h3>
                           <p class="description"  >
                           Ruma Mundi's name has become synonymous with real estate in the Hills District. During her dynamic career spanning close to 20 years, Ruma has succeeded in bringing about a positive and refreshing change to customer service in the real estate industry, not just in the North West of Sydney, but in the country as a whole. She has earned her place in an elite group of agents, through highly effective negotiating strategies that time and again have produced exceptional sale prices for her clients. Her integrity and professionalism has earned her respect not just among her peers, but with the community as a whole. Behind her personable manner and respectful approach is a sharp and strategic thinker with exemplary sales skills. Displaying absolute integrity  Ruma’s dedication to each individual campaign is reflected in the consistency of her results.
                           </p>
@@ -139,12 +138,11 @@ export default class About extends React.Component {
                       </div>
                   </div>
               </div>
-          </div>
-          <div class="team-2 section-image" id="team-5" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
+          <div class="team-2 section-image pt-5 pb-3" id="team-5" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
               <div class="container">
                   <div class="row">
                       <div class="col-md-8 ml-auto mr-auto text-center">
-                          <h2 class="title">Awards and Recognitions</h2>
+                          <h3 class="title">Awards and Recognitions</h3>
                           <blockquote class="blockquote-without-left-line text-center text-white">
                             <p class="mb-0">
                               While it is an honour&nbsp;to be recognised both nationally and globally, my true reward comes from the satisfaction that I gain from a good result for my clients.&nbsp;
@@ -321,11 +319,11 @@ export default class About extends React.Component {
 
               </div>
           </div>
-          <div class="team-3">
+          <div class="team-3 pt-5 pb-0">
               <div class="container">
                   <div class="row">
                       <div class="col-md-8 ml-auto mr-auto text-center">
-                          <h2 class="title">Ruma in the community</h2>
+                          <h3 class="title">Ruma in the community</h3>
                           <p class="description">
                             Ruma and her team have been honoured to help out families in her local community, over the years. She and her team are passionate about giving back to the community that they live and work in - a community that has given them so much. They have tirelessly worked for charities and local community groups like Variety Children’s Foundation, the Cancer Counil’s Pink Ribbon, Harman Foundation, The Ponds Little Athletics club, The Ponds Cricket Club and the Quakers Hill Bombers Junior AFL Club, to name a few. Contribution is in terms of money donated, and voluntary work done on days when a few hands are required to do the job.
                           </p>
