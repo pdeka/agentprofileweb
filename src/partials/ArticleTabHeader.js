@@ -14,12 +14,12 @@ export default class ArticleTabHeader extends React.Component {
   renderHeader(descriptions, tab) {
       let tabItem = descriptions[tab];
 
-      return <div class="col-md-12 ml-auto mr-auto">
+      return  <div class="col-md-12 ml-auto mr-auto mt-4">
           <h3 class="title">{tabItem.header}</h3>
           <p class="description">
             {tabItem.desc}
           </p>
-      </div>;
+        </div>;
   }
 
   render() {
