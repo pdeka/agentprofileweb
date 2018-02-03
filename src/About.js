@@ -112,35 +112,35 @@ export default class About extends React.Component {
 
         </div>
         <div class="main main-raised">
-              <div class="features-1 pt-5 pb-3">
-                <div class="container">
-                  <div class="row">
-                      <div class="col-md-8 ml-auto mr-auto">
-                          <h3 class="title">Serving you with love and care</h3>
-                          <p class="description"  >
-                          Ruma Mundi's name has become synonymous with real estate in the Hills District. During her dynamic career spanning close to 20 years, Ruma has succeeded in bringing about a positive and refreshing change to customer service in the real estate industry, not just in the North West of Sydney, but in the country as a whole. She has earned her place in an elite group of agents, through highly effective negotiating strategies that time and again have produced exceptional sale prices for her clients. Her integrity and professionalism has earned her respect not just among her peers, but with the community as a whole. Behind her personable manner and respectful approach is a sharp and strategic thinker with exemplary sales skills. Displaying absolute integrity  Ruma’s dedication to each individual campaign is reflected in the consistency of her results.
-                          </p>
-                          <p class="description"  >
-                          She is a hard working mom of 2 beautiful daughters, Samara and Safira. Being a mom gives her a perspective on what a growing family needs. Nick, her husband helps her out between his work as an executive at Woolworths, and making time for the family. Ruma is keenly aware of the juggles of everyday life in the North West of Sydney, and the pressures families today have to work with to live happy and stay healthy.
-                          </p>
+          <div class="features-1 pt-5 pb-3">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-8 ml-auto mr-auto">
+                      <h3 class="title">Serving you with love and care</h3>
+                      <p class="description"  >
+                      Ruma Mundi's name has become synonymous with real estate in the Hills District. During her dynamic career spanning close to 20 years, Ruma has succeeded in bringing about a positive and refreshing change to customer service in the real estate industry, not just in the North West of Sydney, but in the country as a whole. She has earned her place in an elite group of agents, through highly effective negotiating strategies that time and again have produced exceptional sale prices for her clients. Her integrity and professionalism has earned her respect not just among her peers, but with the community as a whole. Behind her personable manner and respectful approach is a sharp and strategic thinker with exemplary sales skills. Displaying absolute integrity  Ruma’s dedication to each individual campaign is reflected in the consistency of her results.
+                      </p>
+                      <p class="description"  >
+                      She is a hard working mom of 2 beautiful daughters, Samara and Safira. Being a mom gives her a perspective on what a growing family needs. Nick, her husband helps her out between his work as an executive at Woolworths, and making time for the family. Ruma is keenly aware of the juggles of everyday life in the North West of Sydney, and the pressures families today have to work with to live happy and stay healthy.
+                      </p>
 
-                          <p class="description"  >
+                      <p class="description"  >
 
-                          Principal of First National Hills Direct, Ruma is a hard-working director who has an unwavering dedication for her Agency and her staff. With an Master’s degree in business administration and a bachelor’s degree in commerce, she has the education to back her up. Ruma and her team's success are driven by a strong market knowledge of the Hills District and a passion for people, coupled with care and integrity in all their dealings.
-                          </p>
-                          <div class="icon">
-                            <i class="material-icons">format_quote</i>
-                          </div>
-                          <blockquote class="blockquote text-center">
-                            <p class="mb-0">
-                              I have been selling real estate in Sydney’s Hills District for nearly 20 years. A major portion of the homes that I sell are either past clients, or referrals. My passion and motivation is continually driven forward by the satisfaction I receive when I secure an exceptional outcome for my clients.
-                            </p>
-                            <footer class="blockquote-footer">Ruma Mundi</footer>
-                          </blockquote>
+                      Principal of First National Hills Direct, Ruma is a hard-working director who has an unwavering dedication for her Agency and her staff. With an Master’s degree in business administration and a bachelor’s degree in commerce, she has the education to back her up. Ruma and her team's success are driven by a strong market knowledge of the Hills District and a passion for people, coupled with care and integrity in all their dealings.
+                      </p>
+                      <div class="icon">
+                        <i class="material-icons">format_quote</i>
                       </div>
+                      <blockquote class="blockquote text-center">
+                        <p class="mb-0">
+                          I have been selling real estate in Sydney’s Hills District for nearly 20 years. A major portion of the homes that I sell are either past clients, or referrals. My passion and motivation is continually driven forward by the satisfaction I receive when I secure an exceptional outcome for my clients.
+                        </p>
+                        <footer class="blockquote-footer">Ruma Mundi</footer>
+                      </blockquote>
                   </div>
-                </div>
               </div>
+            </div>
+          </div>
           <div class="team-2 section-image pt-5 pb-3" id="team-5" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
               <div class="container">
                   <div class="row">
@@ -327,10 +327,10 @@ export default class About extends React.Component {
                       <div class="col-md-8 ml-auto mr-auto text-center">
                           <h3 class="title">Ruma in the community</h3>
                           <p class="description">
-                            Ruma, and her team have been honoured to help out families in her local community, over the years. She, and her team, are passionate about giving back to the community that they live and work in - a community that has given them so much. They have tirelessly worked for charities and local community groups like Variety Children’s Foundation, the Cancer Counil’s Pink Ribbon, Harman Foundation, The Ponds Little Athletics club, The Ponds Cricket Club and the Quakers Hill Bombers Junior AFL Club, to name a few. Contributions are in terms of money donated, and voluntary work done on days when a few hands are required to do the job.
+                            Ruma, and her team have been honoured to help out families in her local community, over the years. She, and her team, are passionate about giving back to the community that they live and work in - a community that has given them so much. They have tirelessly worked for charities and local community groups like Variety Children’s Foundation, the Cancer Council’s Pink Ribbon, Harman Foundation, The Ponds Little Athletics club, The Ponds Cricket Club and the Quakers Hill Bombers Junior AFL Club, to name a few. Contributions are in terms of money donated, and voluntary work done on days when a few hands are required to do the job.
                           </p>
                           <p class="description">
-                            Ruma started a Giveaway drive last Christmas, which was tremendously successful. The inaugural Giveaway drive was set up to give a thousand dollars to 10 families in need, within the community. The success and positive feedback has resulted in Ruma committing to make this a recurring annual event. It was fulfilling for her, and her team, to go through the experience of organising such an event. They have plans to brainstorm on how such events can be improved upon, so that even more families can be benefited the next time.
+                            Ruma started a Giveaway drive last Christmas, which was tremendously successful. The inaugural Giveaway drive was set up to award a thousand dollars to 10 families in need, within the community. The success and positive feedback has resulted in Ruma committing to make this a recurring annual event. It was fulfilling for her, and her team, to go through the experience of organising such an event. They have plans to brainstorm on how such events can be improved upon, so that even more families can be benefited the next time.
                           </p>
                       </div>
                   </div>
