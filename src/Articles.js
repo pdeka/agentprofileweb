@@ -6,6 +6,8 @@ import ArticlePreview from './partials/ArticlePreview';
 import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
 import PageFooter from "./partials/PageFooter";
 import FormatDate from "./partials/FormatDate";
+import ArticleTabCards from './partials/ArticleTabCards';
+import ArticleTabHeader from './partials/ArticleTabHeader';
 
 import './styles/css/Articles.css';
 
@@ -64,53 +66,11 @@ export default class Articles extends React.Component {
   }
 
   filterTabs(articlespageResults){
-    return articlespageResults[0].data.filters[0].text.split(',').map((item)=> {return item.trim()});
+    return articlespageResults[0].data.body[0].items.map((item)=> {return item.tab[0].text});
   }
 
   replaceSpace(tab){
     return tab.replace(' ','-');
-  }
-
-  selectArticles(tab, articleResults){
-    return articleResults.filter((article) => {
-      if (article.data.article_tag === tab) return article;
-    });
-  }
-
-  renderCards(articles, tab) {
-    if (articles.length === 0){
-      return <div class="card card-plain card-blog">
-            <div class="card-body">
-              <h3 class="card-title">
-                Sorry, Ruma has no '{tab}' content at the moment.
-                <br/>
-                Watch this space!
-              </h3>
-            </div>
-        </div>;
-    } else{
-      return articles.map((article, childIndex) => {
-        return <div class="card card-plain card-blog" key={childIndex}>
-                  <div class="row">
-                      <div class="col-md-4">
-                        <ArticlePreview data={article.data} />
-                      </div>
-                      <div class="col-md-8">
-                        <h3 class="card-title" style={{marginTop: 0}}>
-                          {article.data.article_title[0].text}
-                        </h3>
-                        <p class="card-description">
-                          {article.data.article_summary[0].text}
-                        </p>
-                        <p class="author">
-                          by <b>Ruma</b>,&nbsp;
-                          <FormatDate data={article.data.date}/>
-                        </p>
-                      </div>
-                  </div>
-                </div>
-      });
-    }
   }
 
   render() {
@@ -175,10 +135,10 @@ export default class Articles extends React.Component {
 
         </div>
         <div class="main main-raised">
-          <div class="container">
-            <div class="section">
+          <div class="features-1">
+            <div class="container">
               <div class="row">
-                <div class="col-md-8 ml-auto mr-auto text-center">
+                <div class="col-md-8 ml-auto mr-auto">
                   <ul class="nav nav-pills nav-pills-primary justify-content-center">
                     {tabs.map((tab, index) => {
                       let aClasses = (index === 0)? {'nav-link': true, 'active': true}: {'nav-link': true, 'active': false};
@@ -190,22 +150,26 @@ export default class Articles extends React.Component {
                 </div>
               </div>
               <div class="row">
-                <div class="blogs-3" id="blogs-3">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-md-10 ml-auto mr-auto">
-                              <div class="tab-content">
-                                {tabs.map((tab, index) => {
-                                  let divClasses = (index === 0)? {'tab-pane': true, 'active': true}: {'tab-pane': true, 'active': false};
-                                  let articles = this.selectArticles(tab, articleResults);
-                                  return <div key={index} className={classNames(divClasses)} id={this.replaceSpace(tab)}>
-                                    {this.renderCards(articles, tab)}
-                                  </div>
-                                })}
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 ml-auto mr-auto">
+                            <div class="tab-content">
+                              {tabs.map((tab, index) => {
+                                let divClasses = (index === 0)? {'tab-pane': true, 'active': true}: {'tab-pane': true, 'active': false};
+                                return <div key={index} className={classNames(divClasses)} id={this.replaceSpace(tab)}>
+                                          <div class="container">
+                                            <div class="row">
+                                              <ArticleTabHeader articlespageResults={articlespageResults} tab={tab} />
+                                            </div>
+                                            <div class="row">
+                                              <ArticleTabCards articleResults={articleResults} tab={tab} />
+                                            </div>
+                                          </div>
+                                      </div>
+                              })}
+                            </div>
+                        </div>
+                    </div>
                 </div>
               </div>
             </div>

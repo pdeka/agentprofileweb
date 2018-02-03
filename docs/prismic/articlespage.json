@@ -2,29 +2,103 @@
   "id": "WmdADSQAACUApRHB",
   "uid": null,
   "type": "articlespage",
-  "href": "https://rumamundi.prismic.io/api/v2/documents/search?ref=WmhVNiQAACQAqdQc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WmdADSQAACUApRHB%22%29+%5D%5D",
+  "href": "https://rumamundi.prismic.io/api/v2/documents/search?ref=WnWMlSQAACUA4-At&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WmdADSQAACUApRHB%22%29+%5D%5D",
   "tags": [],
   "first_publication_date": "2018-01-23T14:00:49+0000",
-  "last_publication_date": "2018-01-24T09:43:18+0000",
-  "slugs": ["rumas-news-and-views"],
+  "last_publication_date": "2018-02-03T10:19:01+0000",
+  "slugs": ["rumas-news-and-views.-and-something-else", "rumas-news-and-views"],
   "linked_documents": [],
   "lang": "en-au",
   "alternate_languages": [],
   "data": {
     "header": [{
       "type": "heading1",
-      "text": "Ruma's news and views",
-      "spans": []
-    }],
-    "footer_text": [{
-      "type": "heading6",
-      "text": "This is the question that goes in the footer.",
+      "text": "Ruma's news and views. And something else",
       "spans": []
     }],
     "filters": [{
       "type": "heading6",
-      "text": "My community, Advice, The market",
+      "text": "My Community, Tips, The Market, Properties",
       "spans": []
+    }],
+    "footer_content": [{
+      "type": "heading6",
+      "text": "I think you should contact Ruma if you want to preserve your sanity!",
+      "spans": []
+    }],
+    "body": [{
+      "slice_type": "tabs",
+      "slice_label": null,
+      "items": [{
+        "tab": [{
+          "type": "heading6",
+          "text": "My Community",
+          "spans": []
+        }],
+        "header": [{
+          "type": "heading6",
+          "text": "Ruma in the community",
+          "spans": []
+        }],
+        "description": [{
+          "type": "paragraph",
+          "text": "Ruma is keen to give back to the community which has given her so much over the years. She, and her team, have tirelessly worked for charities and local communities including Variety Children’s Foundation, the Cancer Council’s Pink Ribbon, Harman Foundation, The Ponds Little Athletics club, The Ponds Cricket Club and the Quakers Hill Bombers Junior AFL Club, to name a few.",
+          "spans": []
+        }, {
+          "type": "paragraph",
+          "text": "Last years Christmas Giveaway campaign was a resounding success. The inaugural Giveaway drive was set up to award a thousand dollars to 10 families in need, within the community. The lucky winners were Janet Wales, Rachel Capps, Kayla Carstairs, Lin Metcalfe, Darren Dixon, Natalie Moussa, Rebecca Connell, Lily Tjian, Sara Russell and Georgina Lovell. Congratulations to the winners.",
+          "spans": []
+        }]
+      }, {
+        "tab": [{
+          "type": "heading6",
+          "text": "Tips",
+          "spans": []
+        }],
+        "header": [{
+          "type": "heading6",
+          "text": "These are the tips",
+          "spans": []
+        }],
+        "description": [{
+          "type": "paragraph",
+          "text": "Tips description",
+          "spans": []
+        }]
+      }, {
+        "tab": [{
+          "type": "heading6",
+          "text": "The Market",
+          "spans": []
+        }],
+        "header": [{
+          "type": "heading6",
+          "text": "The Market",
+          "spans": []
+        }],
+        "description": [{
+          "type": "paragraph",
+          "text": "The Market description",
+          "spans": []
+        }]
+      }, {
+        "tab": [{
+          "type": "heading6",
+          "text": "Properties",
+          "spans": []
+        }],
+        "header": [{
+          "type": "heading6",
+          "text": "Properties",
+          "spans": []
+        }],
+        "description": [{
+          "type": "paragraph",
+          "text": "Properties here",
+          "spans": []
+        }]
+      }],
+      "primary": {}
     }]
   }
 }]
