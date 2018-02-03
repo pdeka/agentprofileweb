@@ -77,6 +77,9 @@ a:hover, a:visited, a:active, a:link {
     border-radius: 0; }
 
   .teampage-container {
-    margin-top: -37px !important; } }
+    margin-top: -37px !important; }
+
+  .testimonialpage-first-video {
+    margin-bottom: 3em !important; } }
 
 /*# sourceMappingURL=Home.css.map */

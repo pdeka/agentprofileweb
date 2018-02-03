@@ -142,7 +142,7 @@ export default class Testimonials extends React.Component {
                   <div class="col-md-12 ml-auto mr-auto">
                   <div class="card card-profile card-plain">
                       <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-md-6 testimonialpage-first-video">
                             <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
                               <div>
                                 <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
@@ -305,7 +305,7 @@ export default class Testimonials extends React.Component {
                           <div class="col-md-8 ml-auto mr-auto text-center">
                               <h2 class="title">Feedback across the web does matter</h2>
                               <h5 class="description text-white">
-                                Open generally forgets to ask people for feedback. But feedback across social media does matter, and helps us improve ourselves.
+                                One generally forgets to ask people for feedback. But feedback across social media does matter, and helps us improve ourselves.
                               </h5>
                           </div>
                       </div>
