@@ -4,7 +4,6 @@ import MainNavigation from './partials/MainNavigation';
 import classNames from 'classnames';
 import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
 import PageFooter from "./partials/PageFooter";
-import Truncate from 'react-truncate';
 import YoutubeURL from './lib/YoutubeURL';
 import WebTestimonialRow from './partials/WebTestimonialRow';
 

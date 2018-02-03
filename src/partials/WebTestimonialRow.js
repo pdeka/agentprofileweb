@@ -1,7 +1,4 @@
 import React from 'react';
-import Prismic from 'prismic-javascript';
-import MainNavigation from './MainNavigation';
-import classNames from 'classnames';
 import Truncate from 'react-truncate';
 
 export default class Testimonials extends React.Component {
