@@ -90,7 +90,7 @@ export default class Testimonials extends React.Component {
               <div class="row">
                   <div class="col-md-12 ">
                     <h2 class="title mb-0">Stories from our clients</h2>
-                    <h5 class="text-white hero-paragraph-text mt-0">Feedback is important. Here are some we have got.
+                    <h5 class="text-white hero-paragraph-text mt-0">Feedback is important. Here are some we have got
                     </h5>
                   </div>
               </div>

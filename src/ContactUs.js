@@ -72,9 +72,11 @@ export default class ContactUs extends React.Component {
         <div class="page-header header-filter header-small" data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
           <div class="container">
               <div class="row">
-                  <div class="col-md-8">
-                      <h2 class="title pb-0 mb-0" >Contact Us</h2>
-                  </div>
+                <div class="col-md-12">
+                  <h2 class="title mb-0">We would love a coffee with you</h2>
+                  <h5 class="text-white hero-paragraph-text mt-0">Give us a ring at the number below or visit us at the office
+                  </h5>
+                </div>
               </div>
               <div class="row">
                 <div class="col-md-7">
@@ -121,15 +123,6 @@ export default class ContactUs extends React.Component {
         <div class="main main-raised">
           <div class="contact-content">
             <div class="container">
-              <h2 class="title">We would love a coffee with you</h2>
-              <div class="row">
-                <div class="col-md-12">
-                  <p class="description">
-                    Give us a ring at the number below, or visit us at the office.
-                  </p>
-                  <br/>
-                </div>
-              </div>
               <div class="row">
                 <div class="col-md-6">
                   <div id="contactUsMap" class="big-map">
