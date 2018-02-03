@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./styles/css/PageFooter.css";
+import "../styles/css/PageFooter.css";
 
 
 export default class PageFooter extends React.Component {

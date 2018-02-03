@@ -1,9 +1,9 @@
 import React from 'react';
 import Prismic from 'prismic-javascript';
-import MainNavigation from './MainNavigation';
+import MainNavigation from './partials/MainNavigation';
 import classNames from 'classnames';
-import FooterLinkedToContactUs from "./FooterLinkedToContactUs";
-import PageFooter from "./PageFooter";
+import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
+import PageFooter from "./partials/PageFooter";
 import {Link} from 'react-router-dom';
 
 import './styles/css/About.css';

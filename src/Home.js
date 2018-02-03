@@ -1,13 +1,13 @@
 import React from 'react';
 import Prismic from 'prismic-javascript';
 import Truncate from 'react-truncate';
-import MainNavigation from './MainNavigation';
-import FooterLinkedToContactUs from './FooterLinkedToContactUs';
+import MainNavigation from './partials/MainNavigation';
+import FooterLinkedToContactUs from './partials/FooterLinkedToContactUs';
 import classNames from 'classnames';
 import Chance from 'chance';
-import ArticlePreview from './ArticlePreview';
-import FormatDate from './FormatDate';
-import PageFooter from "./PageFooter";
+import ArticlePreview from './partials/ArticlePreview';
+import FormatDate from './partials/FormatDate';
+import PageFooter from "./partials/PageFooter";
 import {Link} from 'react-router-dom';
 
 import './styles/css/Home.css';

@@ -1,8 +1,8 @@
 import React from 'react';
 import Prismic from 'prismic-javascript';
-import MapContainer from './MapContainer';
-import MainNavigation from './MainNavigation';
-import PageFooter from "./PageFooter";
+import MapContainer from './partials/MapContainer';
+import MainNavigation from './partials/MainNavigation';
+import PageFooter from "./partials/PageFooter";
 
 import './styles/css/ContactUs.css';
 

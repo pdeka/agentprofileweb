@@ -2,13 +2,7 @@ import React from 'react';
 import Prismic from 'prismic-javascript';
 import MainNavigation from './MainNavigation';
 import classNames from 'classnames';
-import FooterLinkedToContactUs from "./FooterLinkedToContactUs";
-import PageFooter from "./PageFooter";
 import Truncate from 'react-truncate';
-import YoutubeURL from './lib/YoutubeURL';
-import Range from './lib/Range';
-
-import './styles/css/Team.css';
 
 export default class Testimonials extends React.Component {
 

@@ -1,11 +1,11 @@
 import React from 'react';
 import Prismic from 'prismic-javascript';
-import MainNavigation from './MainNavigation';
+import MainNavigation from './partials/MainNavigation';
 import classNames from 'classnames';
-import ArticlePreview from './ArticlePreview';
-import FooterLinkedToContactUs from "./FooterLinkedToContactUs";
-import PageFooter from "./PageFooter";
-import FormatDate from "./FormatDate";
+import ArticlePreview from './partials/ArticlePreview';
+import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
+import PageFooter from "./partials/PageFooter";
+import FormatDate from "./partials/FormatDate";
 
 import './styles/css/Articles.css';
 

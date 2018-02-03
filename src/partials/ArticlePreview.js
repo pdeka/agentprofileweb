@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import YoutubeURL from './lib/YoutubeURL';
+import YoutubeURL from '../lib/YoutubeURL';
 
 export default class ArticlePreview extends React.Component {
   state = {
