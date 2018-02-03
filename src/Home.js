@@ -78,7 +78,7 @@ export default class Home extends React.Component {
 
   showTestimonials(testimonialResults) {
     let chance = new Chance();
-    let uniques = chance.unique(chance.natural, 3, {min: 0, max: 3});
+    let uniques = chance.unique(chance.natural, 3, {min: 0, max: (testimonialResults.length - 1)});
     return uniques.map((key, index) => {
       return <div key={index} class="col-md-4">
             <div class="card card-testimonial">
