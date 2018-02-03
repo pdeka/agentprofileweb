@@ -66,6 +66,10 @@ export default class Testimonials extends React.Component {
     return new YoutubeURL().getFormattedEmbedUrl(embedUrl);
   }
 
+  heroTestimonialQuote(testimonialResults, index){
+    return testimonialResults[index].data.optional_quote[0] && testimonialResults[index].data.optional_quote[0].text
+  }
+
   render() {
     if (this.state.doc && this.state.testimonialpage && this.state.testimonials ) {
 
@@ -128,67 +132,166 @@ export default class Testimonials extends React.Component {
         </div>
         <div class="main main-raised">
             <div class="cd-section">
-              <div class="container" >
-                <div class="features-3">
-                  <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
-                    <div class="card card-profile card-plain">
-                        <div class="row">
-                            <div class="col-md-6">
-                              <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
-                                <div>
-                                  <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
-                                    <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialpageResults[0].data.video_1.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
-                                  </div>
+              <div class="container pt-5">
+                <div class="row">
+                  <div class="col-md-12 ml-auto mr-auto">
+                  <div class="card card-profile card-plain">
+                      <div class="row">
+                          <div class="col-md-6">
+                            <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
+                              <div>
+                                <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
+                                  <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialpageResults[0].data.video_1.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
                                 </div>
                               </div>
                             </div>
-                            <div class="col-md-6">
-                              <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
-                                <div>
-                                  <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
-                                    <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialpageResults[0].data.video_2.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
-                                  </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
+                              <div>
+                                <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
+                                  <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialpageResults[0].data.video_2.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
                                 </div>
                               </div>
                             </div>
-                        </div>
-                    </div>
-                    </div>
+                          </div>
+                      </div>
+                  </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="cd-section" >
-              <div class="blogs-2" id="blogs-2">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-md-12 ml-auto mr-auto">
-                              <div class="row">
-                                {[0,1,2].map((key) => {
-                                  return <div key={key} class="col-md-4">
-                                      <div class="card card-plain">
-                                          <div class="card-header card-header-image">
-                                                  <img class="img img-raised" src={testimonialResults[key].data.photo.url} />
-                                          </div>
-                                          <div class="card-body">
-                                              <h2>
-                                                “You work for your client at the highest level!”
-                                              </h2>
-
-                                              <p class="card-description">
-                                                  {testimonialResults[key].data.comment[0].text}
-                                              </p>
-                                          </div>
-                                      </div>
+                <div class="container pt-3">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="container">
+                          <div class="row">
+                              <div class="card card-plain">
+                                  <div class="card-header card-header-image">
+                                      <img class="img img-raised" src={testimonialResults[0].data.photo.url} />
                                   </div>
-                                }
-                              )}
+                                  <div class="card-body">
+                                      <h2>
+                                        {this.heroTestimonialQuote(testimonialResults, 0)}
+                                      </h2>
+                                      <p class="card-description">
+                                          {testimonialResults[0].data.comment[0].text}
+                                      </p>
+                                      <a href={testimonialResults[0].data.external_link.url}>
+                                        <h4 class="card-title mb-0 pb-0"> - {testimonialResults[0].data.full_name[0].text}</h4>
+                                        <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
+                                      </a>
+                                  </div>
                               </div>
                           </div>
+                          <div class="row">
+                              <div class="card card-plain mt-0">
+                                  <div class="card-header card-header-image">
+                                      <img class="img img-raised" src={testimonialResults[3].data.photo.url} />
+                                  </div>
+                                  <div class="card-body">
+                                      <h2>
+                                        {this.heroTestimonialQuote(testimonialResults, 3)}
+                                      </h2>
+                                      <p class="card-description">
+                                          {testimonialResults[3].data.comment[0].text}
+                                      </p>
+                                      <a href={testimonialResults[3].data.external_link.url}>
+                                        <h4 class="card-title mb-0 pb-0"> - {testimonialResults[3].data.full_name[0].text}</h4>
+                                        <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
                       </div>
-                  </div>
-              </div>
+                      <div class="col-md-4">
+                        <div class="container">
+                          <div class="row">
+                              <div class="card card-plain mt-0 pt-0">
+                                  <div class="card-body mt-0 pt-0">
+                                      <h2>
+                                        {this.heroTestimonialQuote(testimonialResults, 1)}
+                                      </h2>
+                                      <p class="card-description">
+                                          {testimonialResults[1].data.comment[0].text}
+                                      </p>
+                                      <a href={testimonialResults[1].data.external_link.url}>
+                                        <h4 class="card-title mb-0 pb-0"> - {testimonialResults[1].data.full_name[0].text}</h4>
+                                        <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
+                                      </a>
+                                  </div>
+                                  <div class="card-header card-header-image">
+                                      <img class="img img-raised" src={testimonialResults[1].data.photo.url} />
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="card card-plain mt-0">
+                                  <div class="card-body">
+                                      <h2>
+                                        {this.heroTestimonialQuote(testimonialResults, 4)}
+                                      </h2>
+                                      <p class="card-description">
+                                          {testimonialResults[4].data.comment[0].text}
+                                      </p>
+                                      <a href={testimonialResults[4].data.external_link.url}>
+                                        <h4 class="card-title mb-0 pb-0"> - {testimonialResults[4].data.full_name[0].text}</h4>
+                                        <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
+                                      </a>
+                                  </div>
+                                  <div class="card-header card-header-image">
+                                      <img class="img img-raised" src={testimonialResults[4].data.photo.url} />
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="container">
+                          <div class="row">
+                              <div class="card card-plain">
+                                  <div class="card-header card-header-image">
+                                      <img class="img img-raised" src={testimonialResults[2].data.photo.url} />
+                                  </div>
+                                  <div class="card-body">
+                                      <h2>
+                                        {this.heroTestimonialQuote(testimonialResults, 2)}
+                                      </h2>
+                                      <p class="card-description">
+                                          {testimonialResults[2].data.comment[0].text}
+                                      </p>
+                                      <a href={testimonialResults[2].data.external_link.url}>
+                                        <h4 class="card-title mb-0 pb-0"> - {testimonialResults[2].data.full_name[0].text}</h4>
+                                        <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="card card-plain mt-0">
+                                  <div class="card-header card-header-image">
+                                      <img class="img img-raised" src={testimonialResults[5].data.photo.url} />
+                                  </div>
+                                  <div class="card-body">
+                                      <h2>
+                                        {this.heroTestimonialQuote(testimonialResults, 5)}
+                                      </h2>
+                                      <p class="card-description">
+                                        {testimonialResults[5].data.comment[0].text}
+                                      </p>
+                                      <a href={testimonialResults[5].data.external_link.url}>
+                                        <h4 class="card-title mb-0 pb-0"> - {testimonialResults[5].data.full_name[0].text}</h4>
+                                        <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
             </div>
             <div class="cd-section section-image" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
               <div class="blogs-2" id="blogs-2">
