@@ -6,6 +6,7 @@ import FooterLinkedToContactUs from "./FooterLinkedToContactUs";
 import PageFooter from "./PageFooter";
 import Truncate from 'react-truncate';
 import YoutubeURL from './lib/YoutubeURL';
+import WebTestimonialRow from './WebTestimonialRow';
 
 import './styles/css/Team.css';
 
@@ -67,7 +68,11 @@ export default class Testimonials extends React.Component {
   }
 
   heroTestimonialQuote(testimonialResults, index){
-    return testimonialResults[index].data.optional_quote[0] && testimonialResults[index].data.optional_quote[0].text
+    return <span>
+            <i class="fa fa-quote-left testimonialpage-quote-format pr-2"/>
+            {testimonialResults[index].data.optional_quote[0] && testimonialResults[index].data.optional_quote[0].text}
+            <i class="fa fa-quote-right testimonialpage-quote-format pl-2"></i>
+          </span>;
   }
 
   render() {
@@ -167,7 +172,7 @@ export default class Testimonials extends React.Component {
                       <div class="col-md-4">
                         <div class="container">
                           <div class="row">
-                              <div class="card card-plain">
+                              <div class="card card-testimonial">
                                   <div class="card-header card-header-image">
                                       <img class="img img-raised" src={testimonialResults[0].data.photo.url} />
                                   </div>
@@ -186,7 +191,7 @@ export default class Testimonials extends React.Component {
                               </div>
                           </div>
                           <div class="row">
-                              <div class="card card-plain mt-0">
+                              <div class="card card-testimonial">
                                   <div class="card-header card-header-image">
                                       <img class="img img-raised" src={testimonialResults[3].data.photo.url} />
                                   </div>
@@ -209,8 +214,8 @@ export default class Testimonials extends React.Component {
                       <div class="col-md-4">
                         <div class="container">
                           <div class="row">
-                              <div class="card card-plain mt-0 pt-0">
-                                  <div class="card-body mt-0 pt-0">
+                              <div class="card card-testimonial">
+                                  <div class="card-body">
                                       <h2>
                                         {this.heroTestimonialQuote(testimonialResults, 1)}
                                       </h2>
@@ -222,13 +227,13 @@ export default class Testimonials extends React.Component {
                                         <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
                                       </a>
                                   </div>
-                                  <div class="card-header card-header-image">
+                                  <div class="card-header card-header-image  mt-2 mb-4">
                                       <img class="img img-raised" src={testimonialResults[1].data.photo.url} />
                                   </div>
                               </div>
                           </div>
                           <div class="row">
-                              <div class="card card-plain mt-0">
+                              <div class="card card-testimonial">
                                   <div class="card-body">
                                       <h2>
                                         {this.heroTestimonialQuote(testimonialResults, 4)}
@@ -241,7 +246,7 @@ export default class Testimonials extends React.Component {
                                         <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
                                       </a>
                                   </div>
-                                  <div class="card-header card-header-image">
+                                  <div class="card-header card-header-image  mt-2 mb-4">
                                       <img class="img img-raised" src={testimonialResults[4].data.photo.url} />
                                   </div>
                               </div>
@@ -251,7 +256,7 @@ export default class Testimonials extends React.Component {
                       <div class="col-md-4">
                         <div class="container">
                           <div class="row">
-                              <div class="card card-plain">
+                              <div class="card card-testimonial">
                                   <div class="card-header card-header-image">
                                       <img class="img img-raised" src={testimonialResults[2].data.photo.url} />
                                   </div>
@@ -270,7 +275,7 @@ export default class Testimonials extends React.Component {
                               </div>
                           </div>
                           <div class="row">
-                              <div class="card card-plain mt-0">
+                              <div class="card card-testimonial">
                                   <div class="card-header card-header-image">
                                       <img class="img img-raised" src={testimonialResults[5].data.photo.url} />
                                   </div>
@@ -295,7 +300,7 @@ export default class Testimonials extends React.Component {
             </div>
             <div class="cd-section section-image" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
               <div class="blogs-2" id="blogs-2">
-                  <div class="container">
+                  <div class="container mb-5">
                       <div class="row">
                           <div class="col-md-8 ml-auto mr-auto text-center">
                               <h2 class="title">Feedback across the web does matter</h2>
@@ -304,90 +309,11 @@ export default class Testimonials extends React.Component {
                               </h5>
                           </div>
                       </div>
-                      <div class="row">
-                          <div class="col-md-12 ml-auto mr-auto">
-                              <div class="row">
-                                {[0,1,2].map((key) => {
-                                  return <div key={key} class="col-md-4">
-                                      <div class="card card-plain">
-                                          <div class="card-header card-header-image">
-                                                  <img class="img img-raised" src={testimonialResults[key].data.photo.url} />
-                                          </div>
-                                          <div class="card-body">
-                                              <a href={testimonialResults[key].data.external_link.url}>
-                                                <h4 class="card-title mb-0 pb-0">{testimonialResults[key].data.full_name[0].text}</h4>
-                                              <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
-                                              </a>
-
-                                              <p class="card-description">
-                                                <Truncate lines={12} ellipsis={<span>... <a target="_blank" href={testimonialResults[key].data.external_link.url}>Read More</a></span>}>
-                                                  {testimonialResults[key].data.comment[0].text}
-                                                </Truncate>
-                                              </p>
-                                          </div>
-                                      </div>
-                                  </div>
-                                }
-                              )}
-                              </div>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-md-12 ml-auto mr-auto">
-                              <div class="row">
-                                {[0,1,2].map((key) => {
-                                  return <div key={key} class="col-md-4">
-                                      <div class="card card-plain">
-                                          <div class="card-header card-header-image">
-                                                  <img class="img img-raised" src={testimonialResults[key].data.photo.url} />
-                                          </div>
-                                          <div class="card-body">
-                                              <a href={testimonialResults[key].data.external_link.url}>
-                                                <h4 class="card-title mb-0 pb-0">{testimonialResults[key].data.full_name[0].text}</h4>
-                                              <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
-                                              </a>
-
-                                              <p class="card-description">
-                                                <Truncate lines={12} ellipsis={<span>... <a target="_blank" href={testimonialResults[key].data.external_link.url}>Read More</a></span>}>
-                                                  {testimonialResults[key].data.comment[0].text}
-                                                </Truncate>
-                                              </p>
-                                          </div>
-                                      </div>
-                                  </div>
-                                }
-                              )}
-                              </div>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-md-12 ml-auto mr-auto">
-                              <div class="row">
-                                {[0,1,2].map((key) => {
-                                  return <div key={key} class="col-md-4">
-                                      <div class="card card-plain">
-                                          <div class="card-header card-header-image">
-                                                  <img class="img img-raised" src={testimonialResults[key].data.photo.url} />
-                                          </div>
-                                          <div class="card-body">
-                                              <a href={testimonialResults[key].data.external_link.url}>
-                                                <h4 class="card-title mb-0 pb-0">{testimonialResults[key].data.full_name[0].text}</h4>
-                                              <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
-                                              </a>
-
-                                              <p class="card-description">
-                                                <Truncate lines={12} ellipsis={<span>... <a target="_blank" href={testimonialResults[key].data.external_link.url}>Read More</a></span>}>
-                                                  {testimonialResults[key].data.comment[0].text}
-                                                </Truncate>
-                                              </p>
-                                          </div>
-                                      </div>
-                                  </div>
-                                }
-                              )}
-                              </div>
-                          </div>
-                      </div>
+                  </div>
+                  <div class="container">
+                      <WebTestimonialRow testimonialResults={testimonialResults} indices={[6,7,8]} />
+                      <WebTestimonialRow testimonialResults={testimonialResults} indices={[9,10,11]} />
+                      <WebTestimonialRow testimonialResults={testimonialResults} indices={[12,13,14]} />
                   </div>
               </div>
             </div>

@@ -65,6 +65,11 @@ a:hover,a:visited,a:active,a:link {
   display: none;
 }
 
+.testimonialpage-quote-format{
+  font-size: 16px;
+  vertical-align: super;
+}
+
 @media all and (max-width: 991px) {
   .hero-text-margin{
     margin-top: 100px;
