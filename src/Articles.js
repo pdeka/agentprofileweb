@@ -179,7 +179,7 @@ export default class Articles extends React.Component {
             <div class="section">
               <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center">
-                  <ul class="nav nav-pills nav-pills-primary">
+                  <ul class="nav nav-pills nav-pills-primary justify-content-center">
                     {tabs.map((tab, index) => {
                       let aClasses = (index === 0)? {'nav-link': true, 'active': true}: {'nav-link': true, 'active': false};
                       return <li key={index} class="nav-item">

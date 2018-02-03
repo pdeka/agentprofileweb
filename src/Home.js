@@ -288,9 +288,9 @@ export default class Home extends React.Component {
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto text-center">
                             <h3 class="title">{data.homepage_testimonials_header[0].text}</h3>
-                            <h5 class="description text-white">
+                            <p class="description text-white">
                               What our clients say is a testament to the value and quality of our service. We enthusiastically gather feedback, and endeavour to continously improve our services based on what they tell us.
-                            </h5>
+                            </p>
                         </div>
                     </div>
                     <div class="row">

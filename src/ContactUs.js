@@ -121,10 +121,11 @@ export default class ContactUs extends React.Component {
         <div class="main main-raised">
           <div class="contact-content">
             <div class="container">
-              <h2 class="title">Would love a coffee with you</h2>
+              <h2 class="title">We would love a coffee with you</h2>
               <div class="row">
                 <div class="col-md-12">
-                  <p class="description">{contactuspage.title_text[0].text}
+                  <p class="description">
+                    Give us a ring at the number below, or visit us at the office.
                   </p>
                   <br/>
                 </div>
