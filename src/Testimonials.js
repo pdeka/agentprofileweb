@@ -8,7 +8,7 @@ import Truncate from 'react-truncate';
 import YoutubeURL from './lib/YoutubeURL';
 import WebTestimonialRow from './partials/WebTestimonialRow';
 
-import './styles/css/Team.css';
+import './styles/css/Testimonials.css';
 
 export default class Testimonials extends React.Component {
 
