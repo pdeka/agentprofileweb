@@ -129,7 +129,7 @@ export default class Articles extends React.Component {
           <div class="container">
               <div class="row">
                   <div class="col-md-8">
-                      <h2 class="title pb-0 mb-0" >News & Advice</h2>
+                      <h2 class="title pb-0 mb-0" >News & advice from Ruma</h2>
                   </div>
               </div>
               <div class="row">
