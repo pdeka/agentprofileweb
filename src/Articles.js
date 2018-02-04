@@ -135,7 +135,7 @@ export default class Articles extends React.Component {
 
         </div>
         <div class="main main-raised">
-          <div class="features-1">
+          <div class="features-1 articlepage-tabs">
             <div class="container">
               <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">

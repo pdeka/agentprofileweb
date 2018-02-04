@@ -26,11 +26,11 @@ export default class ArticleTabCards extends React.Component {
       return articles.map((article, childIndex) => {
         return <div class="card card-plain card-blog" key={childIndex}>
                   <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <ArticlePreview data={article.data} />
                       </div>
-                      <div class="col-md-8">
-                        <h3 class="card-title" style={{marginTop: 0}}>
+                      <div class="col-md-6">
+                        <h3 class="card-title">
                           {article.data.article_title[0].text}
                         </h3>
                         <p class="card-description">
