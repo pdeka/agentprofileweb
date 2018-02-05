@@ -3,6 +3,13 @@ body {
   padding: 0;
 }
 
+.page-header{
+  &.header-medium{
+    height: 80vh;
+    min-height: 80vh;
+  }
+}
+
 
 @media all and (max-width: 991px) {
   .hero-text-margin{

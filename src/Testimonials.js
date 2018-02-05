@@ -79,51 +79,12 @@ export default class Testimonials extends React.Component {
         <MainNavigation thisProp={data} navBarTransparent={true}/>
         <div class="page-header header-filter header-small" data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
           <div class="container hero-text-margin">
-              <div class="row">
-                  <div class="col-md-12 ">
-                    <h2 class="title mb-0">Stories from our clients</h2>
-                    <h5 class="text-white hero-paragraph-text mt-0">Feedback is important. Here are some we have got
+              <div class="row justify-content-center">
+                  <div class="col-md-12">
+                    <h2 class="title mb-0 text-center">Stories from our clients</h2>
+                    <h5 class="text-white hero-paragraph-text mt-0 text-center">Feedback is important. Here are some we have got
                     </h5>
                   </div>
-              </div>
-              <div class="row">
-                <div class="col-md-7">
-                  <div class="card card-profile card-plain mt-1">
-                      <div class="row">
-                          <div class="col-md-7  pl-0 ml-0">
-                              <div class="card-footer pb-0 pt-0" style={{'paddingLeft': '14px'}}>
-                                  <a href="tel:+61411030202" class="btn btn-inverse btn-round" style={{'fontSize': '16px', 'fontWeight': '900', 'color': 'white', 'textTransform': 'none'}}>
-                                    <i class="fa fa-phone fa-inverse" />
-                                    &nbsp;0411 030 202
-                                    <div class="ripple-container"></div>
-                                  </a>
-                              </div>
-                              <div class="card-footer pb-0 pt-0">
-                                  <a href="#pablo" class="btn btn-just-icon btn-link btn-facebook" target="_blank">
-                                      <i class="fa fa-facebook fa-inverse"></i>
-                                  </a>
-                                  <a href="#pablo" class="btn btn-just-icon btn-link btn-instagram" target="_blank">
-                                      <i class="fa fa-instagram fa-inverse"></i>
-                                  </a>
-                                  <a href="#pablo" class="btn btn-just-icon btn-link btn-youtube" target="_blank">
-                                      <i class="fa fa-youtube fa-inverse"></i>
-                                  </a>
-                                  <a href="#pablo" class="btn btn-just-icon btn-link btn-linkedin" target="_blank">
-                                      <i class="fa fa-linkedin fa-inverse"></i>
-                                  </a>
-                                  <a href={data.rate_my_agent_link.url} class="btn btn-just-icon btn-link" target="_blank">
-                                    <div style={{'marginBottom': '-1px'}}>
-                                      <i class="fa icon-ratemyagent fa-inverse" style={{'fontSize': '17px'}}></i>
-                                    </div>
-                                  </a>
-                                  <a class="btn btn-just-icon btn-link" href="mailto:name@email.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa fa-envelope fa-inverse"/>
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
               </div>
           </div>
         </div>

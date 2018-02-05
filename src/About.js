@@ -61,53 +61,22 @@ export default class About extends React.Component {
 
       return <div class="sections-page">
         <MainNavigation thisProp={data} navBarTransparent={true}/>
-        <div class="page-header header-small header-filter" data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
+        <div class="page-header header-medium header-filter" data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
         <div class="container hero-text-margin">
-            <div class="row">
-                <div class="col-md-12">
-                  <h2 class="title mb-0">Meet Ruma</h2>
-                  <h5 class="text-white hero-paragraph-text mt-0"></h5>
+              <div class="row">
+                <div class="col-md-3">
                 </div>
-            </div>
-            <div class="row">
-              <div class="col-md-7">
-                <div class="card card-profile card-plain mt-1">
-                    <div class="row">
-                        <div class="col-md-7  pl-0 ml-0">
-                            <div class="card-footer pb-0 pt-0" style={{'paddingLeft': '14px'}}>
-                                <a href="tel:+61411030202" class="btn btn-inverse btn-round" style={{'fontSize': '16px', 'fontWeight': '900', 'color': 'white', 'textTransform': 'none'}}>
-                                  <i class="fa fa-phone fa-inverse" />
-                                  &nbsp;0411 030 202
-                                  <div class="ripple-container"></div>
-                                </a>
-                            </div>
-                            <div class="card-footer pb-0 pt-0">
-                                <a href="#pablo" class="btn btn-just-icon btn-link btn-facebook" target="_blank">
-                                    <i class="fa fa-facebook fa-inverse"></i>
-                                </a>
-                                <a href="#pablo" class="btn btn-just-icon btn-link btn-instagram" target="_blank">
-                                    <i class="fa fa-instagram fa-inverse"></i>
-                                </a>
-                                <a href="#pablo" class="btn btn-just-icon btn-link btn-youtube" target="_blank">
-                                    <i class="fa fa-youtube fa-inverse"></i>
-                                </a>
-                                <a href="#pablo" class="btn btn-just-icon btn-link btn-linkedin" target="_blank">
-                                    <i class="fa fa-linkedin fa-inverse"></i>
-                                </a>
-                                <a href={data.rate_my_agent_link.url} class="btn btn-just-icon btn-link" target="_blank">
-                                  <div style={{'marginBottom': '-1px'}}>
-                                    <i class="fa icon-ratemyagent fa-inverse" style={{'fontSize': '17px'}}></i>
-                                  </div>
-                                </a>
-                                <a class="btn btn-just-icon btn-link" href="mailto:name@email.com" target="_blank" rel="noopener noreferrer">
-                                  <i class="fa fa-envelope fa-inverse"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-6">
+                  <div class="iframe-container">
+                      <iframe height="300" src="https://www.youtube.com/embed/IN6QnLpVEPI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                  </div>
+                </div>
+                <div class="col-md-3">
                 </div>
               </div>
-            </div>
+              <div class="row justify-content-center mt-5">
+                <h2 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+              </div>
         </div>
 
         </div>
@@ -327,118 +296,19 @@ export default class About extends React.Component {
                       <div class="col-md-8 ml-auto mr-auto text-center">
                           <h3 class="title">Ruma in the community</h3>
                           <p class="description">
-                            Ruma, and her team have been honoured to help out families in her local community, over the years. She, and her team, are passionate about giving back to the community that they live and work in - a community that has given them so much. They have tirelessly worked for charities and local community groups like Variety Children’s Foundation, the Cancer Council’s Pink Ribbon, Harman Foundation, The Ponds Little Athletics club, The Ponds Cricket Club and the Quakers Hill Bombers Junior AFL Club, to name a few. Contributions are in terms of money donated, and voluntary work done on days when a few hands are required to do the job.
-                          </p>
-                          <p class="description">
-                            Ruma started a Giveaway drive last Christmas, which was tremendously successful. The inaugural Giveaway drive was set up to award a thousand dollars to 10 families in need, within the community. The success and positive feedback has resulted in Ruma committing to make this a recurring annual event. It was fulfilling for her, and her team, to go through the experience of organising such an event. They have plans to brainstorm on how such events can be improved upon, so that even more families can be benefited the next time.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                           </p>
                       </div>
                   </div>
                   <div class="row">
-                      <div class="col-md-1">
-                      </div>
-                      <div class="col-md-2">
-                          <div class="card card-profile card-plain">
-                              <div class="row">
-                                  <div class="col">
-                                      <div class="card-header card-header-image community-image-fixed-height">
-                                          <a href="https://www.pinkribbon.com.au/">
-                                              <img class="img community-image-fixed-height" src="./images/Pink-Ribbon-Day-Logo.jpg" />
-                                          </a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="row">
-                                <div class="col">
-                                    <div class="card-body">
-                                        <p class="card-description"></p>
-                                    </div>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-2">
-                          <div class="card card-profile card-plain">
-                              <div class="row">
-                                  <div class="col">
-                                      <div class="card-header card-header-image community-image-fixed-height">
-                                          <a href="http://www.thepondscricketclub.com.au">
-                                              <img class="img community-image-fixed-height" src="./images/ponds-cricket-club.jpg" />
-                                          </a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="row">
-                                <div class="col">
-                                    <div class="card-body">
-                                      <p class="card-description"></p>
-                                    </div>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-2">
-                          <div class="card card-profile card-plain">
-                              <div class="row">
-                                  <div class="col">
-                                      <div class="card-header card-header-image community-image-fixed-height">
-                                          <a href="http://www.thepondslac.com.au/">
-                                              <img class="img community-image-fixed-height" src="./images/ponds-little-athletics-centre.jpg" />
-                                          </a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="row">
-                                <div class="col">
-                                    <div class="card-body">
-                                      <p class="card-description"></p>
-                                    </div>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-2">
-                          <div class="card card-profile card-plain">
-                              <div class="row">
-                                  <div class="col">
-                                      <div class="card-header card-header-image community-image-fixed-height">
-                                          <a href="http://www.variety.org.au">
-                                              <img class="img community-image-fixed-height" src="./images/variety-logo-706x456.png" />
-                                          </a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="row">
-                                <div class="col">
-                                    <div class="card-body">
-                                      <p class="card-description"></p>
-                                    </div>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-2">
-                          <div class="card card-profile card-plain">
-                              <div class="row">
-                                  <div class="col">
-                                      <div class="card-header card-header-image community-image-fixed-height">
-                                          <Link to="/articles">
-                                              <img class="img community-image-fixed-height" src="./images/christmasgiveback.png" />
-                                          </Link>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="row">
-                                <div class="col">
-                                    <div class="card-body">
-                                      <p class="card-description"></p>
-                                    </div>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-1">
-                      </div>
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                      <Link to="/about" class="nav-link">
+                        <button class="btn btn-primary btn-round">
+                          Read More
+                          <div class="ripple-container"></div>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
               </div>
           </div>
