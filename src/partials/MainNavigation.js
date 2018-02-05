@@ -46,12 +46,7 @@ export default class MainNavigation extends React.Component {
               <Link to="/testimonials" class="nav-link bold-navigation">Client Stories</Link>
             </li>
             <li class="nav-item">
-              <a href={data.properties_link.url} class="nav-link bold-navigation" target="_blank">
-                Properties
-              </a>
-            </li>
-            <li class="nav-item">
-              <Link to="/contactus" class="nav-link bold-navigation">Contact</Link>
+              <Link to="/properties" class="nav-link bold-navigation">Properties</Link>
             </li>
           </ul>
         </div>

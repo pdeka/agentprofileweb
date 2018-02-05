@@ -17,14 +17,14 @@ export default class ArticleTabCards extends React.Component {
   }
 
   renderPreview(article) {
-    return <div class="col-md-6">
+    return <div class="col-md-4">
       <ArticlePreview data={article.data}/>
     </div>;
 
   }
 
   renderSummary(article) {
-    return <div class="col-md-6">
+    return <div class="col-md-8">
       <h3 class="card-title">
         {article.data.article_title[0].text}
       </h3>

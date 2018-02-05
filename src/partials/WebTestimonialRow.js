@@ -17,7 +17,7 @@ export default class WebTestimonialRow extends React.Component {
             <div class="row">
               {indices.map((key) => {
                 if (!testimonialResults[key]) {
-                  return <span/>;
+                  return <span key={key}/>;
                 }
 
                 return <div key={key} class="col-md-4">

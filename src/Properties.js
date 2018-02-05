@@ -10,7 +10,7 @@ import {Link} from 'react-router-dom';
 
 import './styles/css/About.css';
 
-export default class Community extends React.Component {
+export default class Properties extends React.Component {
 
   state = {
     doc: null,
@@ -88,7 +88,7 @@ export default class Community extends React.Component {
             <div class="container">
               <div class="row">
                   <div class="col-md-8 ml-auto mr-auto">
-                      <h3 class="title">Ruma in the Community</h3>
+                      <h3 class="title">Lorem ipsum dolor sit amet</h3>
                       <p class="description"  >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                       </p>
@@ -104,6 +104,11 @@ export default class Community extends React.Component {
                         </p>
                         <footer class="blockquote-footer">Ruma</footer>
                       </blockquote>
+                      <div class="description">
+                        <a href={data.properties_link.url} class="nav-link bold-navigation" target="_blank">
+                          More Properties
+                        </a>
+                      </div>
                   </div>
               </div>
             </div>
@@ -133,7 +138,7 @@ export default class Community extends React.Component {
                 <div class="row">
                   <div class="container">
                       <div class="row">
-                          <ArticleTabCards articleResults={articleResults} tab={"My Community"} />
+                          <ArticleTabCards articleResults={articleResults} tab={"Properties"} />
                       </div>
                   </div>
                 </div>
