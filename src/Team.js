@@ -108,7 +108,7 @@ export default class Team extends React.Component {
                                 <div class="col-md-5">
                                     <div class="card-header card-header-image">
                                         <a href="#pablo">
-                                            <img class="img" src="./images/bradnorrie.jpeg" alt="please fill"/>
+                                            <img class="img" src="https://prismic-io.s3.amazonaws.com/rumamundi%2Fc4f01682-7818-45aa-8bb4-16477b3663c2_brad-profile-full-length.jpg" alt="please fill"/>
                                         </a>
                                     </div>
                                 </div>
@@ -120,6 +120,13 @@ export default class Team extends React.Component {
                       <div class="col-md-12 ml-auto mr-auto">
                         <div class="card card-profile card-plain">
                             <div class="row">
+                                <div class="col-md-5">
+                                    <div class="card-header card-header-image">
+                                        <a href="#pablo">
+                                            <img class="img" src="https://prismic-io.s3.amazonaws.com/rumamundi%2Ffdc936ea-2b8d-422f-9d59-d006725e0aa1_ian-profile-full-length.jpg" alt="please fill"/>
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="col-md-7">
                                     <div class="card-body">
                                         <h3 class="card-title">Ian Williamson</h3>
@@ -141,13 +148,6 @@ export default class Team extends React.Component {
                                         <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-twitter"></i></a>
                                         <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-facebook-square"></i></a>
                                         <a href="#pablo" class="btn btn-just-icon btn-link btn-default"><i class="fa fa-google"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="card-header card-header-image">
-                                        <a href="#pablo">
-                                            <img class="img" src="./images/ianwilliamson.jpeg" alt="please fill"/>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +180,7 @@ export default class Team extends React.Component {
                                 <div class="col-md-5">
                                     <div class="card-header card-header-image">
                                         <a href="#pablo">
-                                            <img class="img" src="./images/baileyabela.jpeg" alt="please fill"/>
+                                            <img class="img" src="https://prismic-io.s3.amazonaws.com/rumamundi%2F1df645f3-dc94-46e8-9e54-bc9daf4283da_bailey-profile-full-length.jpg" alt="please fill"/>
                                         </a>
                                     </div>
                                 </div>
