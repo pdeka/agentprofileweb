@@ -48,6 +48,9 @@ export default class MainNavigation extends React.Component {
             <li class="nav-item">
               <Link to="/properties" class="nav-link bold-navigation">Properties</Link>
             </li>
+            <li class="nav-item" style={{'display': 'none'}}>
+              <Link to="/contactus" class="nav-link bold-navigation">Contact Us</Link>
+            </li>
           </ul>
         </div>
       </div>

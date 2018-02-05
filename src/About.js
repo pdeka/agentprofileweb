@@ -28,6 +28,10 @@ export default class About extends React.Component {
     this.props.prismicCtx.toolbar();
   }
 
+  componentDidMount () {
+    window.scrollTo(0, 0);
+  }
+
   fetchPage(props) {
     if (props.prismicCtx) {
 
