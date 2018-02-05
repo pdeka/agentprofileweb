@@ -302,7 +302,7 @@ export default class About extends React.Component {
                   </div>
                   <div class="row">
                     <div class="col-md-8 ml-auto mr-auto text-center">
-                      <Link to="/about" class="nav-link">
+                      <Link to="/community" class="nav-link">
                         <button class="btn btn-primary btn-round">
                           Read More
                           <div class="ripple-container"></div>

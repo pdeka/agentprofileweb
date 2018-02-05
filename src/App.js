@@ -13,6 +13,7 @@ import Articles from './Articles';
 import About from './About';
 import Team from './Team';
 import Testimonials from './Testimonials';
+import Community from './Community';
 import './styles/css/App.css';
 
 const App = (props) => (
@@ -25,6 +26,7 @@ const App = (props) => (
       <Route exact path="/about" render={routeProps => <About {...routeProps} prismicCtx={props.prismicCtx} />} />
       <Route exact path="/team" render={routeProps => <Team {...routeProps} prismicCtx={props.prismicCtx} />} />
       <Route exact path="/testimonials" render={routeProps => <Testimonials {...routeProps} prismicCtx={props.prismicCtx} />} />
+      <Route exact path="/community" render={routeProps => <Community {...routeProps} prismicCtx={props.prismicCtx} />} />
       <Route exact path="/preview" render={routeProps => <Preview {...routeProps} prismicCtx={props.prismicCtx} />} />
       <Route component={NotFound} />
     </Switch>
