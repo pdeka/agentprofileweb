@@ -6,6 +6,7 @@ import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
 import PageFooter from "./partials/PageFooter";
 import YoutubeURL from './lib/YoutubeURL';
 import WebTestimonialRow from './partials/WebTestimonialRow';
+import TestimonialCardBody from "./partials/TestimonialCardBody";
 
 import './styles/css/Testimonials.css';
 
@@ -64,14 +65,6 @@ export default class Testimonials extends React.Component {
 
   getFormattedEmbedUrl(embedUrl) {
     return new YoutubeURL().getFormattedEmbedUrl(embedUrl);
-  }
-
-  heroTestimonialQuote(testimonialResults, index){
-    return <span>
-            <i class="fa fa-quote-left testimonialpage-quote-format pr-2"/>
-            {testimonialResults[index].data.optional_quote[0] && testimonialResults[index].data.optional_quote[0].text}
-            <i class="fa fa-quote-right testimonialpage-quote-format pl-2"></i>
-          </span>;
   }
 
   render() {
@@ -175,18 +168,7 @@ export default class Testimonials extends React.Component {
                                   <div class="card-header card-header-image">
                                       <img class="img img-raised" src={testimonialResults[0].data.photo.url} />
                                   </div>
-                                  <div class="card-body">
-                                      <h2>
-                                        {this.heroTestimonialQuote(testimonialResults, 0)}
-                                      </h2>
-                                      <p class="card-description">
-                                          {testimonialResults[0].data.comment[0].text}
-                                      </p>
-                                      <a href={testimonialResults[0].data.external_link.url}>
-                                        <h4 class="card-title mb-0 pb-0"> - {testimonialResults[0].data.full_name[0].text}</h4>
-                                        <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
-                                      </a>
-                                  </div>
+                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[0].data} />
                               </div>
                           </div>
                           <div class="row">
@@ -194,18 +176,7 @@ export default class Testimonials extends React.Component {
                                   <div class="card-header card-header-image">
                                       <img class="img img-raised" src={testimonialResults[3].data.photo.url} />
                                   </div>
-                                  <div class="card-body">
-                                      <h2>
-                                        {this.heroTestimonialQuote(testimonialResults, 3)}
-                                      </h2>
-                                      <p class="card-description">
-                                          {testimonialResults[3].data.comment[0].text}
-                                      </p>
-                                      <a href={testimonialResults[3].data.external_link.url}>
-                                        <h4 class="card-title mb-0 pb-0"> - {testimonialResults[3].data.full_name[0].text}</h4>
-                                        <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
-                                      </a>
-                                  </div>
+                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[3].data} />
                               </div>
                           </div>
                         </div>
@@ -214,18 +185,7 @@ export default class Testimonials extends React.Component {
                         <div class="container">
                           <div class="row">
                               <div class="card card-testimonial">
-                                  <div class="card-body">
-                                      <h2>
-                                        {this.heroTestimonialQuote(testimonialResults, 1)}
-                                      </h2>
-                                      <p class="card-description">
-                                          {testimonialResults[1].data.comment[0].text}
-                                      </p>
-                                      <a href={testimonialResults[1].data.external_link.url}>
-                                        <h4 class="card-title mb-0 pb-0"> - {testimonialResults[1].data.full_name[0].text}</h4>
-                                        <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
-                                      </a>
-                                  </div>
+                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[1].data} />
                                   <div class="card-header card-header-image  mt-2 mb-4">
                                       <img class="img img-raised" src={testimonialResults[1].data.photo.url} />
                                   </div>
@@ -233,18 +193,7 @@ export default class Testimonials extends React.Component {
                           </div>
                           <div class="row">
                               <div class="card card-testimonial">
-                                  <div class="card-body">
-                                      <h2>
-                                        {this.heroTestimonialQuote(testimonialResults, 4)}
-                                      </h2>
-                                      <p class="card-description">
-                                          {testimonialResults[4].data.comment[0].text}
-                                      </p>
-                                      <a href={testimonialResults[4].data.external_link.url}>
-                                        <h4 class="card-title mb-0 pb-0"> - {testimonialResults[4].data.full_name[0].text}</h4>
-                                        <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
-                                      </a>
-                                  </div>
+                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[4].data} />
                                   <div class="card-header card-header-image  mt-2 mb-4">
                                       <img class="img img-raised" src={testimonialResults[4].data.photo.url} />
                                   </div>
@@ -259,18 +208,7 @@ export default class Testimonials extends React.Component {
                                   <div class="card-header card-header-image">
                                       <img class="img img-raised" src={testimonialResults[2].data.photo.url} />
                                   </div>
-                                  <div class="card-body">
-                                      <h2>
-                                        {this.heroTestimonialQuote(testimonialResults, 2)}
-                                      </h2>
-                                      <p class="card-description">
-                                          {testimonialResults[2].data.comment[0].text}
-                                      </p>
-                                      <a href={testimonialResults[2].data.external_link.url}>
-                                        <h4 class="card-title mb-0 pb-0"> - {testimonialResults[2].data.full_name[0].text}</h4>
-                                        <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
-                                      </a>
-                                  </div>
+                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[2].data} />
                               </div>
                           </div>
                           <div class="row">
@@ -278,18 +216,7 @@ export default class Testimonials extends React.Component {
                                   <div class="card-header card-header-image">
                                       <img class="img img-raised" src={testimonialResults[5].data.photo.url} />
                                   </div>
-                                  <div class="card-body">
-                                      <h2>
-                                        {this.heroTestimonialQuote(testimonialResults, 5)}
-                                      </h2>
-                                      <p class="card-description">
-                                        {testimonialResults[5].data.comment[0].text}
-                                      </p>
-                                      <a href={testimonialResults[5].data.external_link.url}>
-                                        <h4 class="card-title mb-0 pb-0"> - {testimonialResults[5].data.full_name[0].text}</h4>
-                                        <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
-                                      </a>
-                                  </div>
+                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[5].data} />
                               </div>
                           </div>
                         </div>

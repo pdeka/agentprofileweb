@@ -8,6 +8,7 @@ import Chance from 'chance';
 import ArticlePreview from './partials/ArticlePreview';
 import FormatDate from './partials/FormatDate';
 import PageFooter from "./partials/PageFooter";
+import TestimonialCardBody from "./partials/TestimonialCardBody";
 import {Link} from 'react-router-dom';
 
 import './styles/css/Home.css';
@@ -82,23 +83,12 @@ export default class Home extends React.Component {
     return uniques.map((key, index) => {
       return <div key={index} class="col-md-4">
             <div class="card card-testimonial">
-                <div class="icon">
-                    <i class="material-icons">format_quote</i>
-                </div>
-                <div class="card-body ">
-                    <h5 class="card-description pb-1 mb-1 mt-1">
-                      <Truncate lines={7} ellipsis={<span>... <a target="_blank" href={testimonialResults[key].data.external_link.url}>Read More</a></span>}>
-                        {testimonialResults[key].data.comment[0].text}
-                      </Truncate>
-                    </h5>
-                </div>
+                <TestimonialCardBody truncateLines={9} data={testimonialResults[key].data} />
                 <div class="card-footer ">
-                    <h4 class="card-title">{testimonialResults[key].data.full_name[0].text}</h4>
-                    <h6 class="card-category" style={{'textTransform': 'none'}}>@&nbsp;<a target="_blank" href={testimonialResults[key].data.external_link.url}>Rate My Agent</a></h6>
                     <div class="card-avatar">
-                        <a target="_blank" href={testimonialResults[key].data.external_link.url}>
-                            <img class="img" src={testimonialResults[key].data.photo.url} alt="testimonial ruma mundi stanhope gardens sydney"/>
-                        </a>
+                      <a target="_blank" href={testimonialResults[key].data.external_link.url}>
+                          <img class="img" src={testimonialResults[key].data.photo.url} alt="testimonial ruma mundi stanhope gardens sydney"/>
+                      </a>
                     </div>
                 </div>
             </div>
@@ -193,7 +183,7 @@ export default class Home extends React.Component {
                           </div>
                           <div class="col-md-7">
                               <div class="card-body">
-                                  <h3 class="card-title">Passion, integrity and care</h3>
+                                  <h3 class="card-title">Passion Integrity Care</h3>
                                   <p class="card-description text-black">
                                     Ruma's name is synonymous with the real estate industry in the Hills District.
                                     She is among the REB top 50, a director, a business owner, but above all a mother of 2 beautiful daughters, Samara and Safira, and a person renowned in the community for her dedication, her integrity and her compassion.
@@ -256,6 +246,9 @@ export default class Home extends React.Component {
                         <div class="col-md-12 ml-auto mr-auto">
                             <h3 class="card-title home-article-desktop-title">{data.homepage_articles_header[0].text}</h3>
                             <h3 class="card-title home-article-mobile-title">Monthly Wrap-up</h3>
+                            <p class="card-description">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
                             <div class="card card-plain card-blog">
                               <div class="row">
                                 <div class="col-md-8">
@@ -283,7 +276,7 @@ export default class Home extends React.Component {
                     </div>
                 </div>
             </div>
-            <div class="testimonials-1 section-image home-client-section" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
+            <div class="testimonials-1 section-image home-client-section pb-5" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto text-center">
@@ -295,6 +288,14 @@ export default class Home extends React.Component {
                     </div>
                     <div class="row">
                         {this.showTestimonials(testimonialResults)}
+                    </div>
+                    <div class="row justify-content-center mt-5" >
+                      <Link to="/testimonials" style={{'marginLeft' : '25px'}}>
+                          <button class="btn btn-primary btn-round">
+                            See More
+                            <div class="ripple-container"></div>
+                          </button>
+                      </Link>
                     </div>
                 </div>
             </div>

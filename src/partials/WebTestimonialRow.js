@@ -1,15 +1,8 @@
 import React from 'react';
 import Truncate from 'react-truncate';
+import TestimonialCardBody from './TestimonialCardBody';
 
-export default class Testimonials extends React.Component {
-
-  heroTestimonialQuote(testimonialResults, index){
-    return <span>
-            <i class="fa fa-quote-left testimonialpage-quote-format pr-2"/>
-            {testimonialResults[index].data.optional_quote[0] && testimonialResults[index].data.optional_quote[0].text}
-            <i class="fa fa-quote-right testimonialpage-quote-format pl-2"></i>
-          </span>;
-  }
+export default class WebTestimonialRow extends React.Component {
 
   render(){
     let testimonialResults = this.props.testimonialResults;
@@ -32,17 +25,7 @@ export default class Testimonials extends React.Component {
                         <div class="card-header card-header-image">
                                 <img class="img img-raised" src={testimonialResults[key].data.photo.url} />
                         </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                              <Truncate lines={7} ellipsis={<span>... <a target="_blank" href={testimonialResults[key].data.external_link.url}>Read More</a></span>}>
-                                {testimonialResults[key].data.comment[0].text}
-                              </Truncate>
-                            </p>
-                            <a href={testimonialResults[key].data.external_link.url}>
-                              <h4 class="card-title mb-0 pb-0"> - {testimonialResults[key].data.full_name[0].text}</h4>
-                              <h6 class="card-category mt-0 pt-0">@&nbsp;Rate My Agent</h6>
-                            </a>
-                        </div>
+                        <TestimonialCardBody truncateLines={7} data={testimonialResults[key].data} />
                     </div>
                 </div>
               }
