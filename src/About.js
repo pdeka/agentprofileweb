@@ -72,7 +72,7 @@ export default class About extends React.Component {
                 </div>
                 <div class="col-md-6">
                   <div class="iframe-container">
-                      <iframe height="300" src="https://www.youtube.com/embed/IN6QnLpVEPI" frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen=""></iframe>
+                      <iframe height="300" src="https://www.youtube.com/embed/IN6QnLpVEPI" frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>
                   </div>
                 </div>
                 <div class="col-md-3">
