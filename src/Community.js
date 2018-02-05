@@ -6,6 +6,7 @@ import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
 import PageFooter from "./partials/PageFooter";
 import ArticleTabCards from "./partials/ArticleTabCards";
 import ArticlePreview from "./partials/ArticlePreview";
+import FormatDate from "./partials/FormatDate";
 import {Link} from 'react-router-dom';
 
 import './styles/css/About.css';
@@ -50,9 +51,11 @@ export default class Community extends React.Component {
         }
       });
 
-      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'article'), {
-        orderings: '[my.article.date desc]'
-      }).then((articles) => {
+      props.prismicCtx.api.query([
+        Prismic.Predicates.at('document.tags', ['Our Community']),
+        Prismic.Predicates.at('document.type', 'article')
+      ], {orderings: '[my.article.date desc]'}
+      ).then((articles) => {
         if (articles) {
           this.setState({articles});
         }
@@ -72,10 +75,9 @@ export default class Community extends React.Component {
 
       let articleResults = this.state.articles.results;
 
-
       return <div class="sections-page">
         <MainNavigation thisProp={data} navBarTransparent={true}/>
-        <div class="page-header header-small header-filter" data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F3c89da69-a02d-4eb9-b784-1128443aa4c9_temporary-collage.jpg)'}}>
+        <div class="page-header header-small header-filter" data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F52219df8-9af5-4681-a719-be9132fbf5c1_photo-collage-vector-background.jpg)'}}>
         <div class="container hero-text-margin">
               <div class="row justify-content-center mt-5">
                 <h2 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
@@ -115,12 +117,16 @@ export default class Community extends React.Component {
                     <div class="card card-plain card-profile mt-5 mb-0">
                           <ArticlePreview data={articleResults[0].data}/>
                           <div class="card-body">
-                            <div class="card-body pt-0 mt-0 pb-5">
-                                <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
+                                <h3 class="card-title">
+                                  {articleResults[0].data.article_title[0].text}
+                                </h3>
                                 <p class="card-description">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  {articleResults[0].data.article_summary[0].text}
                                 </p>
-                            </div>
+                                <p class="author text-white">
+                                  by &nbsp;<b>Ruma</b>,&nbsp;
+                                  <FormatDate data={articleResults[0].data.date}/>
+                                </p>
                           </div>
                     </div>
                   </div>

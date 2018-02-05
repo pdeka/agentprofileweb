@@ -4,14 +4,6 @@ import FormatDate from "./FormatDate";
 
 export default class ArticleTabCards extends React.Component {
 
-  selectArticles(tab, articleResults) {
-    return articleResults.filter((article) => {
-      if (article.data.article_tag === tab)
-        return article;
-      }
-    );
-  }
-
   isOdd(num) {
     return num % 2;
   }
@@ -74,8 +66,6 @@ export default class ArticleTabCards extends React.Component {
   }
 
   render() {
-    let articles = this.selectArticles(this.props.tab, this.props.articleResults);
-
-    return this.renderCards(articles, this.props.tab);
+    return this.renderCards(this.props.articleResults, this.props.tab);
   }
 }
