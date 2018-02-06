@@ -70,6 +70,8 @@ export default class Home extends React.Component {
       let data = this.state.doc.results[0].data;
       // let contactInfo = this.state.contactInfo.results[0].data;
 
+      console.log("Here is the doc:" + JSON.stringify(data));
+
       return <div class="sections-page  section-white ">
         <MainNavigation thisProp={data} navBarTransparent={true}/>
         <div class="main">
@@ -77,8 +79,9 @@ export default class Home extends React.Component {
               <div class="container">
                   <div class="row">
                       <div class="col-md-12  text-center">
-                          <h1 class="title home-heading">/kəˈnɛkt/</h1>
-                          <h2 class="text-white sub-heading">We connect business strategy with creative design and technology
+                          <h1 class="title home-heading">{data.hero_text[0].text}</h1>
+                          <h2 class="text-white sub-heading">
+                            {data.hero_quote[0].text}
                           </h2>
                           <br/>
                       </div>
@@ -92,9 +95,9 @@ export default class Home extends React.Component {
                 <div class="features-1 home-about-section pt-5 pb-5">
                   <div class="row">
                     <div class="col-md-12 ml-auto mr-auto">
-                        <h1 class="title">Why Us</h1>
+                        <h1 class="title">{data.about_us_header[0].text}</h1>
                         <p class="description text-black">
-                          Kenekt Digital is a business focussed on digital and technology consulting. We have the expertise to connect creative energy, technical know-how and business experience to enable our clients to bring their digital ambitions to life.
+                          {data.about_us_text[0].text}
                         </p>
                     </div>
                   </div>
@@ -106,33 +109,32 @@ export default class Home extends React.Component {
                 <div class="features-1 pt-0 pb-5">
                     <div class="row">
                         <div class="col-md-12 ml-auto mr-auto">
-                            <h1 class="title">Our Services</h1>
+                            <h1 class="title">{data.services_header[0].text}</h1>
                             <p class="description  text-black">
-                              asdasd asdasda sda asd asdasd asdad asd as
+                              {data.services_description[0].text}
                             </p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="info">
-                                <div class="icon icon-info">
-                                    <i class="material-icons">chat</i>
+                                <div class="icon icon-info icon-disabled">
+                                    <i class="material-icons">explore</i>
                                 </div>
-                                <h4 class="info-title">Digital Advisory</h4>
-                                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                                <h4 class="info-title">{data.service_header_1[0].text}</h4>
+                                <p>
+                                  {data.service_description_1[0].text}
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="info">
-                                <div class="icon icon-success">
-                                    <i class="material-icons">verified_user</i>
+                                <div class="icon icon-success icon-disable">
+                                    <i class="material-icons">devices</i>
                                 </div>
-                                <h4 class="info-title">Digital Enablement</h4>
+                                <h4 class="info-title">{data.service_header_2[0].text}</h4>
                                 <p>
-                                  Web & mobile development, required to bring your strategy to life.
-                                  System integrators
-                                  Social media development
-                                  Data insights and analytics
+                                  {data.service_description_2[0].text}
                                 </p>
                             </div>
                         </div>
