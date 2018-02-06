@@ -34,21 +34,6 @@ export default class MainNavigation extends React.Component {
               <Link to="/home" class="nav-link bold-navigation">Home</Link>
             </li>
             <li class="nav-item">
-              <Link to="/about" class="nav-link bold-navigation">Meet Ruma</Link>
-            </li>
-            <li class="nav-item">
-              <Link to="/team" class="nav-link bold-navigation">The Team</Link>
-            </li>
-            <li class="nav-item">
-              <Link to="/community" class="nav-link bold-navigation">Our Community</Link>
-            </li>
-            <li class="nav-item">
-              <Link to="/testimonials" class="nav-link bold-navigation">Client Stories</Link>
-            </li>
-            <li class="nav-item">
-              <Link to="/properties" class="nav-link bold-navigation">Properties</Link>
-            </li>
-            <li class="nav-item" style={{'display': 'none'}}>
               <Link to="/contactus" class="nav-link bold-navigation">Contact Us</Link>
             </li>
           </ul>
