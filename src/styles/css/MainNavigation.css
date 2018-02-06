@@ -1,7 +1,7 @@
 .logo-font {
-  font-family: "Nothing You Could Do" !important;
-  font-size: 2.125rem !important;
-  font-weight: 500; }
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26.4px; }
 
 @font-face {
   font-family: 'icomoon';

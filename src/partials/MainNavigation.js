@@ -21,7 +21,7 @@ export default class MainNavigation extends React.Component {
     return <nav className={classNames(navClassNames)} color-on-scroll="100" id="sectionsNav">
       <div class="container">
         <div class="navbar-translate">
-          <a class="navbar-brand logo-font" href="/">Ruma Mundi</a>
+          <a class="navbar-brand logo-font" href="/">/kəˈnɛkt/</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>

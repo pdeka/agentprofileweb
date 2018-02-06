@@ -1,11 +1,32 @@
 p{
-    font-size: $font-paragraph +2;
+    font-size: 20px;
     font-family: $font-family-serif;
+    font-weight: 400;
+    line-height: 30px;
+    color: $black-color;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
   font-family: $font-family-sans-serif;
   color: $black-color;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 42px;
+}
+
+h2 {
+  font-size:28px;
+  font-weight:300;
+  line-height:33.6px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26.4px;
 }
 
 .title,
@@ -60,4 +81,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     margin: 0;
     border-radius: 0;
     @include shadow-16dp();
+}
+
+.header-xs-small {
+  height: 55vh;
+  min-height: 55vh;
 }

@@ -1,21 +1,3 @@
-#video-background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  transition: all 2s cubic-bezier(0.835, 0, 0.19, 1);
-}
-
-#iframe-rounded-corner {
-  border: 4px solid #000;
-  border-radius: 4px !important;
-}
 
 #spinner-middle {
   position: fixed;
@@ -44,23 +26,18 @@ a:hover,a:visited,a:active,a:link {
   font-size: 18px;
 }
 
+.home-background {
+  background: transparent url('https://prismic-io.s3.amazonaws.com/kenekt%2F3760cd1b-089d-43d3-a3f7-9bff70dde102_transparenttexture.png');
+}
 
-// .my-filter{
-//   position: absolute;
-//   z-index: 1;
-//   width: 100%;
-//   height: 100%;
-//   display: block;
-//   left: 0;
-//   top: 0;
-//   content: "";
-//   background-color: rgba(0, 0, 0, 0.5);
-// }
-//
-// .my-background {
-//   background-color: rgba(0, 0, 0, 0.5);
-// }
+.sub-heading {
+  font-size:24px;
+  font-weight:600;
+  line-height:26.4px;
+}
 
-.home-article-mobile-title{
-  display: none;
+.home-heading {
+  font-size:60px;
+  font-weight:1000;
+  line-height:60px;
 }
