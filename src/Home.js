@@ -118,7 +118,7 @@ export default class Home extends React.Component {
                     <div class="row">
                         <div class="col-md-6">
                             <div class="info">
-                                <div class="icon icon-info icon-disabled">
+                                <div class="icon icon-disabled">
                                     <i class="material-icons">explore</i>
                                 </div>
                                 <h4 class="info-title">{data.service_header_1[0].text}</h4>
@@ -129,7 +129,7 @@ export default class Home extends React.Component {
                         </div>
                         <div class="col-md-6">
                             <div class="info">
-                                <div class="icon icon-success icon-disable">
+                                <div class="icon icon-disabled">
                                     <i class="material-icons">devices</i>
                                 </div>
                                 <h4 class="info-title">{data.service_header_2[0].text}</h4>
