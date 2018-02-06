@@ -89,17 +89,75 @@ export default class Home extends React.Component {
         <div class="main main-raised-for-home" style={{'zIndex': 4}}>
             <div class="cd-section">
               <div class="container" >
-                <div class="features-3 home-about-section pt-2">
+                <div class="features-1 home-about-section pt-5 pb-5">
                   <div class="row">
                     <div class="col-md-12 ml-auto mr-auto">
-                    <div class="card card-profile card-plain">
-                          <div class="card-body">
-                              <h2 class="card-title">Why Us</h2>
-                              <p class="card-description text-black">
-                                Kenekt Digital is a business focussed on digital and technology consulting. We have the expertise to connect creative energy, technical know-how and business experience to enable our clients to bring their digital ambitions to life.
-                              </p>
-                          </div>
+                        <h1 class="title">Why Us</h1>
+                        <p class="description text-black">
+                          Kenekt Digital is a business focussed on digital and technology consulting. We have the expertise to connect creative energy, technical know-how and business experience to enable our clients to bring their digital ambitions to life.
+                        </p>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cd-section">
+              <div class="container">
+                <div class="features-1 pt-0 pb-5">
+                    <div class="row">
+                        <div class="col-md-12 ml-auto mr-auto">
+                            <h1 class="title">Our Services</h1>
+                            <p class="description  text-black">
+                              asdasd asdasda sda asd asdasd asdad asd as
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="info">
+                                <div class="icon icon-info">
+                                    <i class="material-icons">chat</i>
+                                </div>
+                                <h4 class="info-title">Digital Advisory</h4>
+                                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info">
+                                <div class="icon icon-success">
+                                    <i class="material-icons">verified_user</i>
+                                </div>
+                                <h4 class="info-title">Digital Enablement</h4>
+                                <p>
+                                  Web & mobile development, required to bring your strategy to life.
+                                  System integrators
+                                  Social media development
+                                  Data insights and analytics
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="cd-section">
+              <div class="container" >
+                <div class="features-1 home-about-section pt-5 pb-5">
+                  <div class="row">
+                    <div class="col-md-12 ml-auto mr-auto">
+                        <h1 class="title">Contant Us</h1>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                        <div class="info">
+                            <h4 class="info-title">Nick</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info">
+                            <h4 class="info-title">Nick</h4>
+                        </div>
                     </div>
                   </div>
                 </div>

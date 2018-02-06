@@ -10,7 +10,6 @@ export default class ContactUs extends React.Component {
 
   state = {
     homepageDoc: null,
-    contactuspageDoc: null,
     contactInfo: null
   }
 
@@ -53,19 +52,13 @@ export default class ContactUs extends React.Component {
         }
       });
 
-      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'contactinformation')).then((contactInfo) => {
-        if (contactInfo) {
-          this.setState({contactInfo});
-        }
-      });
-
       return null;
     }
     return null;
   }
 
   render() {
-    if (this.state.homepageDoc && this.state.contactuspageDoc && this.state.contactInfo) {
+    if (this.state.homepageDoc  && this.state.contactInfo) {
 
       let homepage = this.state.homepageDoc.results[0].data;
       let contactuspage = this.state.contactuspageDoc.results[0].data;
