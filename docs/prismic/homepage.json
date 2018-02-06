@@ -6,7 +6,7 @@
   }],
   "hero_quote": [{
     "type": "heading6",
-    "text": "We connect business strategy with creative design and technology. ",
+    "text": "We connect business strategy with creative design and technology",
     "spans": []
   }],
   "about_us_header": [{
@@ -22,6 +22,39 @@
   "services_header": [{
     "type": "heading6",
     "text": "Services",
+    "spans": []
+  }],
+  "services_description": [{
+    "type": "paragraph",
+    "text": "asdas asd ads asd a sd asd asd ",
+    "spans": []
+  }],
+  "service_header_1": [{
+    "type": "heading6",
+    "text": "Digital Advisory",
+    "spans": []
+  }],
+  "service_description_1": [{
+    "type": "paragraph",
+    "text": "CTO on-call ",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "Technology evaluation and product roadmap development ",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "Solution architecture",
+    "spans": []
+  }],
+  "service_header_2": [{
+    "type": "heading6",
+    "text": "Digital Enablement",
+    "spans": []
+  }],
+  "service_description_2": [{
+    "type": "heading6",
+    "text": "Web & mobile development, required to bring your strategy to life.System integrators Social media development Data insights and analytics ",
     "spans": []
   }]
 }
