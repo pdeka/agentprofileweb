@@ -1,0 +1,27 @@
+{
+  "hero_text": [{
+    "type": "heading6",
+    "text": " /kəˈnɛkt/",
+    "spans": []
+  }],
+  "hero_quote": [{
+    "type": "heading6",
+    "text": "We connect business strategy with creative design and technology. ",
+    "spans": []
+  }],
+  "about_us_header": [{
+    "type": "heading6",
+    "text": "About Kenekt Digital",
+    "spans": []
+  }],
+  "about_us_text": [{
+    "type": "paragraph",
+    "text": "Kenekt Digital is a business focussed on digital and technology consulting. We have the expertise to connect creative energy, technical know-how and business experience to enable our clients to bring their digital ambitions to life.",
+    "spans": []
+  }],
+  "services_header": [{
+    "type": "heading6",
+    "text": "Services",
+    "spans": []
+  }]
+}
