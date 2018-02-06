@@ -9,6 +9,7 @@ import ArticlePreview from './partials/ArticlePreview';
 import FormatDate from './partials/FormatDate';
 import PageFooter from "./partials/PageFooter";
 import TestimonialCardBody from "./partials/TestimonialCardBody";
+import Paragraphs from "./partials/Paragraphs";
 import {Link} from 'react-router-dom';
 
 import './styles/css/Home.css';
@@ -122,9 +123,7 @@ export default class Home extends React.Component {
                                     <i class="material-icons">explore</i>
                                 </div>
                                 <h4 class="info-title">{data.service_header_1[0].text}</h4>
-                                <p>
-                                  {data.service_description_1[0].text}
-                                </p>
+                                <Paragraphs paragraphs={data.service_description_1} />
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -133,9 +132,7 @@ export default class Home extends React.Component {
                                     <i class="material-icons">devices</i>
                                 </div>
                                 <h4 class="info-title">{data.service_header_2[0].text}</h4>
-                                <p>
-                                  {data.service_description_2[0].text}
-                                </p>
+                                <Paragraphs paragraphs={data.service_description_2} />
                             </div>
                         </div>
                     </div>
