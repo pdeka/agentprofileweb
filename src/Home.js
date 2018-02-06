@@ -164,8 +164,6 @@ export default class Home extends React.Component {
                                       </a>
                                   </div>
                                 </div>
-                                <div class="card-footer mt-o pt-0">
-                                </div>
                             </div>
                     </div>
                     <div class="col-md-2"></div>
@@ -188,6 +186,15 @@ export default class Home extends React.Component {
                             </div>
                     </div>
                     <div class="col-md-2"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 ml-auto mr-auto mb-0 mt-0">
+                      <a href="mailto:info@kenekt.com.au" target="_blank" rel="noopener noreferrer">
+                        <button class="btn btn-disabled btn-round">
+                            <i class="fa fa-envelope"></i>
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
