@@ -142,23 +142,52 @@ export default class Home extends React.Component {
             </div>
             <div class="cd-section">
               <div class="container" >
-                <div class="features-1 home-about-section pt-5 pb-5">
+                <div class="features-1 home-about-section pt-0 pb-5">
                   <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
+                    <div class="col-md-12 ml-auto mr-auto mb-5">
                         <h1 class="title">Contant Us</h1>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-6">
-                        <div class="info">
-                            <h4 class="info-title">Nick</h4>
-                        </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                      <div class="card card-profile card-raised mt-1">
+                                <div class="card-title mb-0 pb-0">
+                                  <p>Prabin</p>
+                                </div>
+                                <div class="card-body mt-o pt-0">
+                                  <div class="row">
+                                      <a href="tel:+610420984257" class="btn btn-inverse btn-round text-white  text-center" style={{'fontSize': '16px', 'fontWeight': '900', 'textTransform': 'none'}}>
+                                        <i class="fa fa-phone fa-inverse" />
+                                        &nbsp;0420 984 257
+                                        <div class="ripple-container"></div>
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="card-footer mt-o pt-0">
+                                </div>
+                            </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="info">
-                            <h4 class="info-title">Nick</h4>
-                        </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                      <div class="card card-profile card-raised mt-1">
+                                <div class="card-title  mb-0 pb-0">
+                                  <p>Nick</p>
+                                </div>
+                                <div class="card-body  mt-0 pt-0">
+                                  <div class="row">
+                                    <a href="tel:+61411030202" class="btn btn-inverse btn-round text-white" style={{'fontSize': '16px', 'fontWeight': '900', 'textTransform': 'none'}}>
+                                      <i class="fa fa-phone fa-inverse" />
+                                      &nbsp;0411 030 202
+                                      <div class="ripple-container"></div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="card-footer mt-o pt-0">
+                                </div>
+                            </div>
                     </div>
+                    <div class="col-md-2"></div>
                   </div>
                 </div>
               </div>
