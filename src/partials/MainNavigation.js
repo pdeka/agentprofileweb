@@ -30,6 +30,15 @@ export default class MainNavigation extends React.Component {
         </div>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#about" class="nav-link bold-navigation">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link bold-navigation">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link bold-navigation">Contact</a>
+            </li>
           </ul>
         </div>
       </div>

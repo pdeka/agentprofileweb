@@ -76,7 +76,7 @@ export default class Home extends React.Component {
       return <div class="sections-page  section-white ">
         <MainNavigation thisProp={data} navBarTransparent={true}/>
         <div class="main">
-          <div class="page-header header-xs-small header-filter home-background" data-parallax="true">
+          <div class="page-header header-medium-large header-filter home-background" data-parallax="true">
               <div class="container">
                   <div class="row">
                       <div class="col-md-12  text-center">
@@ -91,21 +91,21 @@ export default class Home extends React.Component {
           </div>
         </div>
         <div class="main main-raised-for-home" style={{'zIndex': 4}}>
-            <div class="cd-section">
-              <div class="container" >
+            <div class="cd-section" id="about">
+              <div class="container">
                 <div class="features-1 home-about-section pt-5 pb-5">
                   <div class="row">
-                    <div class="col-md-10 ml-auto mr-auto">
+                    <div class="col-md-8 ml-auto mr-auto">
                         <h1 class="title">{data.about_us_header[0].text}</h1>
-                        <Paragraphs paragraphs={data.about_us_text} clazz={"description"}/>
                         <h1 class="caption-text">{data.about_us_caption[0].text}</h1>
+                        <Paragraphs paragraphs={data.about_us_text} clazz={"text-left"}/>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="cd-section">
-              <div class="container">
+            <div class="cd-section" id="services">
+              <div class="container" >
                 <div class="features-1 pt-0 pb-5">
                     <div class="row">
                         <div class="col-md-12 ml-auto mr-auto">
@@ -136,7 +136,7 @@ export default class Home extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="cd-section">
+            <div class="cd-section" id="contact">
               <div class="container" >
                 <div class="features-1 home-about-section pt-0 pb-5">
                   <div class="row">
