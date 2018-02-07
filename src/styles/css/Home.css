@@ -45,4 +45,8 @@ a:hover, a:visited, a:active, a:link {
   height: 73vh;
   min-height: 73vh; }
 
+.service-description > div > p {
+  text-align: center !important;
+  line-height: 24px; }
+
 /*# sourceMappingURL=Home.css.map */

@@ -111,7 +111,7 @@ export default class Home extends React.Component {
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto">
                             <h1 class="title">{data.services_header[0].text}</h1>
-                            <Paragraphs paragraphs={data.services_description} clazz={["text-left",  'mb-4', 'mt-4']}/>
+                            {RichText.render(data.services_description)}
                         </div>
                     </div>
                     <div class="row">
@@ -131,8 +131,8 @@ export default class Home extends React.Component {
                                   <div class="col-md-1">
                                   </div>
                                 </div>
-                                <div class="mb-5">
-                                  <Paragraphs paragraphs={data.service_description_1} />
+                                <div class="mb-5 service-description">
+                                  {RichText.render(data.service_description_1)}
                                 </div>
                             </div>
                         </div>
@@ -150,8 +150,8 @@ export default class Home extends React.Component {
                                   <div class="col-md-1">
                                   </div>
                                 </div>
-                                <div class="mb-5">
-                                  <Paragraphs paragraphs={data.service_description_2} />
+                                <div class="mb-5 service-description">
+                                  {RichText.render(data.service_description_2)}
                                 </div>
                             </div>
                         </div>
@@ -174,7 +174,7 @@ export default class Home extends React.Component {
                     <div class="col-md-3">
                       <div class="card card-collapse mt-1">
                                 <div class="card-title  mb-0 pb-0">
-                                  <p>Nick</p>
+                                  <p class="mb-0 pb-2 text-center">Nick</p>
                                 </div>
                                 <div class="card-body  mt-0 pt-0">
                                     <a href="tel:+61411030202" class="btn btn-inverse btn-round text-white" style={{'fontSize': '16px', 'fontWeight': '900', 'textTransform': 'none'}}>
@@ -191,7 +191,7 @@ export default class Home extends React.Component {
                     <div class="col-md-3">
                       <div class="card card-collapse mt-1">
                                 <div class="card-title mb-0 pb-0">
-                                  <p>Prabin</p>
+                                  <p class="mb-0 pb-2 text-center">Prabin</p>
                                 </div>
                                 <div class="card-body mt-o pt-0">
                                       <a href="tel:+610420984257" class="btn btn-inverse btn-round text-white  text-center" style={{'fontSize': '16px', 'fontWeight': '900', 'textTransform': 'none'}}>
