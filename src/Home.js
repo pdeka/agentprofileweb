@@ -96,8 +96,12 @@ export default class Home extends React.Component {
               <div class="container">
                 <div class="features-1 home-about-section pt-5 pb-0">
                   <div class="row">
+                    <div class="col-md-12 ml-auto mr-auto">
+                      <h1 class="caption-text">{data.about_us_caption[0].text}</h1>
+                    </div>
+                  </div>
+                  <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
-                        <h1 class="caption-text">{data.about_us_caption[0].text}</h1>
                         <h1 class="title mt-5">{data.about_us_header[0].text}</h1>
                         {RichText.render(data.about_us_text)}
                     </div>
