@@ -97,9 +97,7 @@ export default class Home extends React.Component {
                   <div class="row">
                     <div class="col-md-12 ml-auto mr-auto">
                         <h1 class="title">{data.about_us_header[0].text}</h1>
-                        <p class="description text-black">
-                          {data.about_us_text[0].text}
-                        </p>
+                        <Paragraphs paragraphs={data.about_us_text} clazz={"description"}/>
                     </div>
                   </div>
                 </div>
@@ -111,9 +109,7 @@ export default class Home extends React.Component {
                     <div class="row">
                         <div class="col-md-12 ml-auto mr-auto">
                             <h1 class="title">{data.services_header[0].text}</h1>
-                            <p class="description  text-black">
-                              {data.services_description[0].text}
-                            </p>
+                            <Paragraphs paragraphs={data.services_description} clazz={"description"}/>
                         </div>
                     </div>
                     <div class="row">
@@ -144,7 +140,7 @@ export default class Home extends React.Component {
                 <div class="features-1 home-about-section pt-0 pb-5">
                   <div class="row">
                     <div class="col-md-12 ml-auto mr-auto mb-5">
-                        <h1 class="title">Contant Us</h1>
+                        <h1 class="title">Contact Us</h1>
                     </div>
                   </div>
                   <div class="row">
