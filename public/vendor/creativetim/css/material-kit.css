@@ -14759,7 +14759,7 @@ h2.title {
     top: 0;
     content: ""; }
   .header-filter::before {
-    background-color: rgba(0, 0, 0, 0.2); }
+    background-color: rgba(0, 0, 0, 0.3); }
   .header-filter .container {
     z-index: 2;
     position: relative; }
@@ -15459,7 +15459,10 @@ p {
   font-family: "Lora", "Times New Roman", serif;
   font-weight: 400;
   line-height: 30px;
-  color: #3C4858; }
+  color: #3C4858;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
