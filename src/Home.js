@@ -1,4 +1,5 @@
 import React from 'react';
+import {RichText, Date} from 'prismic-reactjs';
 import Prismic from 'prismic-javascript';
 import Truncate from 'react-truncate';
 import MainNavigation from './partials/MainNavigation';
@@ -71,7 +72,7 @@ export default class Home extends React.Component {
       let data = this.state.doc.results[0].data;
       // let contactInfo = this.state.contactInfo.results[0].data;
 
-      // console.log("Here is the doc:" + JSON.stringify(data));
+      console.log("Here is the doc:" + JSON.stringify(data));
 
       return <div class="sections-page  section-white ">
         <MainNavigation thisProp={data} navBarTransparent={true}/>
@@ -98,7 +99,7 @@ export default class Home extends React.Component {
                     <div class="col-md-8 ml-auto mr-auto">
                         <h1 class="caption-text">{data.about_us_caption[0].text}</h1>
                         <h1 class="title mt-5">{data.about_us_header[0].text}</h1>
-                        <Paragraphs paragraphs={data.about_us_text} clazz={["text-left",  'mb-4', 'mt-4']}/>
+                        {RichText.render(data.about_us_text)}
                     </div>
                   </div>
                 </div>

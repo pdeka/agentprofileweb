@@ -1,12 +1,12 @@
 {
   "hero_text": [{
     "type": "heading6",
-    "text": " /kəˈnɛkt/",
+    "text": "We connect business strategy with design and technology",
     "spans": []
   }],
   "hero_quote": [{
     "type": "heading6",
-    "text": "We connect business strategy with creative design and technology",
+    "text": "",
     "spans": []
   }],
   "about_us_header": [{
@@ -16,17 +16,86 @@
   }],
   "about_us_text": [{
     "type": "paragraph",
-    "text": "Kenekt Digital is a business focussed on digital and technology consulting. We have the expertise to connect creative energy, technical know-how and business experience to enable our clients to bring their digital ambitions to life.",
+    "text": "Kenekt Digital is a business focussed digital and technology consultancy. We have the expertise to connect creative energy, technical know-how and business experience to enable our clients to bring their digital ambitions to life.",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "Our team has nearly 40 years of combined digital and technology industry experience. We have provided advice and execution assistance to a variety of National and International organisations including realestate.com.au, ammi.com.au, tab.com.au, woolworths.com.au, telstra.com.au, ccamatil.com.au (Coca Cola Amatil), transport.nsw.gov.au, sydneywater.com.au, healthdirect.gov.au and newsdigital.com.au.",
+    "spans": [{
+      "start": 201,
+      "end": 218,
+      "type": "strong"
+    }, {
+      "start": 220,
+      "end": 231,
+      "type": "strong"
+    }, {
+      "start": 233,
+      "end": 243,
+      "type": "strong"
+    }, {
+      "start": 245,
+      "end": 262,
+      "type": "strong"
+    }, {
+      "start": 264,
+      "end": 278,
+      "type": "strong"
+    }, {
+      "start": 280,
+      "end": 295,
+      "type": "strong"
+    }, {
+      "start": 316,
+      "end": 336,
+      "type": "strong"
+    }, {
+      "start": 338,
+      "end": 356,
+      "type": "strong"
+    }, {
+      "start": 358,
+      "end": 377,
+      "type": "strong"
+    }, {
+      "start": 382,
+      "end": 400,
+      "type": "strong"
+    }]
+  }, {
+    "type": "paragraph",
+    "text": "",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "Over the years we have developed in-depth expertise and deep relationships in various industries including Real Estate, Retail, Gaming, Health and fully understand their unique nature and challenges.",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "Our experience is supplemented with Tertiary qualifications (B. Eng, M. Comp. Sc, MBA) and relevant industry certifications. We are passionate about understanding our clients’ challenges and aspirations, to help them utilise the business value of emerging technologies.",
+    "spans": []
+  }],
+  "about_us_caption": [{
+    "type": "heading6",
+    "text": "technology simplified",
     "spans": []
   }],
   "services_header": [{
     "type": "heading6",
-    "text": "Services",
+    "text": "Services we provide",
     "spans": []
   }],
   "services_description": [{
     "type": "paragraph",
-    "text": "asdas asd ads asd a sd asd asd ",
+    "text": "Our value lies in providing our clients with a suite of digital and technical services, covering digital strategy, architecture, engineering and implementation across mobile, web, social media channels and back-office.",
     "spans": []
   }],
   "service_header_1": [{
@@ -36,15 +105,19 @@
   }],
   "service_description_1": [{
     "type": "paragraph",
-    "text": "CTO on-call ",
-    "spans": []
-  }, {
-    "type": "paragraph",
-    "text": "Technology evaluation and product roadmap development ",
+    "text": "Technology evaluation",
     "spans": []
   }, {
     "type": "paragraph",
     "text": "Solution architecture",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "Technology Audit",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "CTO on-call ",
     "spans": []
   }],
   "service_header_2": [{
@@ -53,8 +126,20 @@
     "spans": []
   }],
   "service_description_2": [{
-    "type": "heading6",
-    "text": "Web & mobile development, required to bring your strategy to life.System integrators Social media development Data insights and analytics ",
+    "type": "paragraph",
+    "text": "Web development",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "System integration",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "Social media development ",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "Data insights and analytics ",
     "spans": []
   }]
 }
