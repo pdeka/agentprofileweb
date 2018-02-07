@@ -91,7 +91,7 @@ export default class Home extends React.Component {
           </div>
         </div>
         <div class="main main-raised-for-home" style={{'zIndex': 4}}>
-            <div class="cd-section" id="about">
+            <div class="cd-section  home-background" id="about">
               <div class="container">
                 <div class="features-1 home-about-section pt-5 pb-0">
                   <div class="row">
@@ -104,7 +104,7 @@ export default class Home extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="cd-section" id="services">
+            <div class="cd-section home-background" id="services">
               <div class="container" >
                 <div class="features-1 pt-5 pb-4">
                     <div class="row">
@@ -160,7 +160,7 @@ export default class Home extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="cd-section" id="contact">
+            <div class="cd-section  home-background" id="contact">
               <div class="container" >
                 <div class="features-1 home-about-section pt-2 pb-5">
                   <div class="row">

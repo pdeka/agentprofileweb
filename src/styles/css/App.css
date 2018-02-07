@@ -6,6 +6,12 @@ body {
   height: 80vh;
   min-height: 80vh; }
 
+.section-grey {
+  background: #eceff1;
+  background: radial-gradient(ellipse at center, #eceff1 0%, #90a4ae 100%);
+  background-color: #eceff1;
+  background-size: 200% 240%; }
+
 @media all and (max-width: 991px) {
   .home-heading {
     font-size: 34px;
