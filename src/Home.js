@@ -93,12 +93,12 @@ export default class Home extends React.Component {
         <div class="main main-raised-for-home" style={{'zIndex': 4}}>
             <div class="cd-section" id="about">
               <div class="container">
-                <div class="features-1 home-about-section pt-5 pb-5">
+                <div class="features-1 home-about-section pt-5 pb-3">
                   <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
-                        <h1 class="title">{data.about_us_header[0].text}</h1>
                         <h1 class="caption-text">{data.about_us_caption[0].text}</h1>
-                        <Paragraphs paragraphs={data.about_us_text} clazz={"text-left"}/>
+                        <h1 class="title mt-5">{data.about_us_header[0].text}</h1>
+                        <Paragraphs paragraphs={data.about_us_text} clazz={["text-left",  'mb-4', 'mt-4']}/>
                     </div>
                   </div>
                 </div>
@@ -106,31 +106,55 @@ export default class Home extends React.Component {
             </div>
             <div class="cd-section" id="services">
               <div class="container" >
-                <div class="features-1 pt-0 pb-5">
+                <div class="features-1 pt-0 pb-4">
                     <div class="row">
-                        <div class="col-md-12 ml-auto mr-auto">
+                        <div class="col-md-8 ml-auto mr-auto">
                             <h1 class="title">{data.services_header[0].text}</h1>
-                            <Paragraphs paragraphs={data.services_description} clazz={"description"}/>
+                            <Paragraphs paragraphs={data.services_description} clazz={["text-left",  'mb-4', 'mt-4']}/>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="info">
-                                <div class="icon icon-disabled">
-                                    <i class="material-icons">explore</i>
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card card-raised">
+                                <div class="card-title  mt-5">
+                                    <i style={{'fontSize': 73, 'color': 'darkgray'}} class="material-icons">explore</i>
                                 </div>
-                                <h4 class="info-title">{data.service_header_1[0].text}</h4>
-                                <Paragraphs paragraphs={data.service_description_1} />
+                                <div class="row">
+                                  <div class="col-md-1">
+                                  </div>
+                                  <div class="col-md-10">
+                                    <h2 class="card-title text-center caption-text mb-5">{data.service_header_1[0].text}</h2>
+                                  </div>
+                                  <div class="col-md-1">
+                                  </div>
+                                </div>
+                                <div class="mb-5">
+                                  <Paragraphs paragraphs={data.service_description_1} />
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="info">
-                                <div class="icon icon-disabled">
-                                    <i class="material-icons">devices</i>
+                        <div class="col-md-5">
+                            <div class="card card-raised">
+                                <div class="card-title  mt-5">
+                                    <i style={{'fontSize': 73, 'color': 'darkgray'}} class="material-icons">devices</i>
                                 </div>
-                                <h4 class="info-title">{data.service_header_2[0].text}</h4>
-                                <Paragraphs paragraphs={data.service_description_2} />
+                                <div class="row">
+                                  <div class="col-md-1">
+                                  </div>
+                                  <div class="col-md-10">
+                                    <h2 class="card-title text-center caption-text mb-5">{data.service_header_2[0].text}</h2>
+                                  </div>
+                                  <div class="col-md-1">
+                                  </div>
+                                </div>
+                                <div class="mb-5">
+                                  <Paragraphs paragraphs={data.service_description_2} />
+                                </div>
                             </div>
+                        </div>
+                        <div class="col-md-1">
                         </div>
                     </div>
                 </div>
@@ -140,44 +164,40 @@ export default class Home extends React.Component {
               <div class="container" >
                 <div class="features-1 home-about-section pt-0 pb-5">
                   <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto mb-5">
+                    <div class="col-md-12 ml-auto mr-auto mb-3">
                         <h1 class="title">Contact Us</h1>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-3">
-                      <div class="card card-profile card-raised mt-1">
-                                <div class="card-title mb-0 pb-0">
-                                  <p>Prabin</p>
-                                </div>
-                                <div class="card-body mt-o pt-0">
-                                  <div class="row">
-                                      <a href="tel:+610420984257" class="btn btn-inverse btn-round text-white  text-center" style={{'fontSize': '16px', 'fontWeight': '900', 'textTransform': 'none'}}>
-                                        <i class="fa fa-phone fa-inverse" />
-                                        &nbsp;0420 984 257
-                                        <div class="ripple-container"></div>
-                                      </a>
-                                  </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-3">
-                      <div class="card card-profile card-raised mt-1">
+                      <div class="card card-collapse mt-1">
                                 <div class="card-title  mb-0 pb-0">
                                   <p>Nick</p>
                                 </div>
                                 <div class="card-body  mt-0 pt-0">
-                                  <div class="row">
                                     <a href="tel:+61411030202" class="btn btn-inverse btn-round text-white" style={{'fontSize': '16px', 'fontWeight': '900', 'textTransform': 'none'}}>
                                       <i class="fa fa-phone fa-inverse" />
                                       &nbsp;0411 030 202
                                       <div class="ripple-container"></div>
                                     </a>
-                                  </div>
                                 </div>
                                 <div class="card-footer mt-o pt-0">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                      <div class="card card-collapse mt-1">
+                                <div class="card-title mb-0 pb-0">
+                                  <p>Prabin</p>
+                                </div>
+                                <div class="card-body mt-o pt-0">
+                                      <a href="tel:+610420984257" class="btn btn-inverse btn-round text-white  text-center" style={{'fontSize': '16px', 'fontWeight': '900', 'textTransform': 'none'}}>
+                                        <i class="fa fa-phone fa-inverse" />
+                                        &nbsp;0420 984 257
+                                        <div class="ripple-container"></div>
+                                      </a>
                                 </div>
                             </div>
                     </div>

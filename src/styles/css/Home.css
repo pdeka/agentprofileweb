@@ -28,13 +28,12 @@ a:hover, a:visited, a:active, a:link {
   line-height: 26.4px; }
 
 .home-heading {
-  font-size: 44px;
+  font-size: 60px;
   font-weight: 1000;
   line-height: 60px; }
 
 .caption-text {
   font-size: 36px;
-  text-transform: lowercase;
   background: yellow;
   padding: 5px 5px 5px 5px !important; }
 
