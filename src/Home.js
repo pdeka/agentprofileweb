@@ -204,7 +204,7 @@ export default class Home extends React.Component {
                     <div class="col-md-2"></div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto mb-0 mt-0">
+                    <div class="col-md-12 ml-auto mr-auto mb-0 mt-4">
                       <a href="mailto:info@kenekt.com.au" target="_blank" rel="noopener noreferrer">
                         <button class="btn btn-just-icon btn-round btn-default">
                             <i class="fa fa-envelope"></i>

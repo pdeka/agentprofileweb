@@ -7,8 +7,9 @@ body {
   min-height: 80vh; }
 
 @media all and (max-width: 991px) {
-  .hero-text-margin {
-    margin-top: 100px; }
+  .home-heading {
+    font-size: 34px;
+    margin-top: 37px; }
 
   .home-about-section {
     padding-bottom: 21px;

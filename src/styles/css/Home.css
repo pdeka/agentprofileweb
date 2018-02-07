@@ -35,7 +35,8 @@ a:hover, a:visited, a:active, a:link {
 .caption-text {
   font-size: 36px;
   background: yellow;
-  padding: 5px 5px 5px 5px !important; }
+  padding: 5px 5px 5px 5px !important;
+  line-height: 50px !important; }
 
 .header-filter::before {
   background-color: rgba(0, 0, 0, 0.3) !important; }
