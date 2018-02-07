@@ -48,3 +48,7 @@ a:hover,a:visited,a:active,a:link {
   background: yellow;
   padding: 5px 5px 5px 5px !important;
 }
+
+.header-filter::before{
+        background-color: rgba(0,0,0,.3) !important;
+}
