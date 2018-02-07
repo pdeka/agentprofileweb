@@ -95,7 +95,7 @@ export default class Home extends React.Component {
               <div class="container" >
                 <div class="features-1 home-about-section pt-5 pb-5">
                   <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
+                    <div class="col-md-10 ml-auto mr-auto">
                         <h1 class="title">{data.about_us_header[0].text}</h1>
                         <Paragraphs paragraphs={data.about_us_text} clazz={"description"}/>
                         <h1 class="caption-text">{data.about_us_caption[0].text}</h1>
