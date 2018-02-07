@@ -93,7 +93,7 @@ export default class Home extends React.Component {
         <div class="main main-raised-for-home" style={{'zIndex': 4}}>
             <div class="cd-section" id="about">
               <div class="container">
-                <div class="features-1 home-about-section pt-5 pb-3">
+                <div class="features-1 home-about-section pt-5 pb-0">
                   <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
                         <h1 class="caption-text">{data.about_us_caption[0].text}</h1>
@@ -106,7 +106,7 @@ export default class Home extends React.Component {
             </div>
             <div class="cd-section" id="services">
               <div class="container" >
-                <div class="features-1 pt-0 pb-4">
+                <div class="features-1 pt-5 pb-4">
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto">
                             <h1 class="title">{data.services_header[0].text}</h1>
@@ -162,7 +162,7 @@ export default class Home extends React.Component {
             </div>
             <div class="cd-section" id="contact">
               <div class="container" >
-                <div class="features-1 home-about-section pt-0 pb-5">
+                <div class="features-1 home-about-section pt-2 pb-5">
                   <div class="row">
                     <div class="col-md-12 ml-auto mr-auto mb-3">
                         <h1 class="title">Contact Us</h1>
@@ -206,7 +206,7 @@ export default class Home extends React.Component {
                   <div class="row">
                     <div class="col-md-12 ml-auto mr-auto mb-0 mt-0">
                       <a href="mailto:info@kenekt.com.au" target="_blank" rel="noopener noreferrer">
-                        <button class="btn btn-disabled btn-round">
+                        <button class="btn btn-just-icon btn-round btn-default">
                             <i class="fa fa-envelope"></i>
                         </button>
                       </a>
