@@ -98,6 +98,7 @@ export default class Home extends React.Component {
                     <div class="col-md-12 ml-auto mr-auto">
                         <h1 class="title">{data.about_us_header[0].text}</h1>
                         <Paragraphs paragraphs={data.about_us_text} clazz={"description"}/>
+                        <h1 class="caption-text">{data.about_us_caption[0].text}</h1>
                     </div>
                   </div>
                 </div>

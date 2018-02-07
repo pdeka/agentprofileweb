@@ -32,4 +32,10 @@ a:hover, a:visited, a:active, a:link {
   font-weight: 1000;
   line-height: 60px; }
 
+.caption-text {
+  font-size: 36px;
+  text-transform: lowercase;
+  background: yellow;
+  padding: 5px 5px 5px 5px !important; }
+
 /*# sourceMappingURL=Home.css.map */
