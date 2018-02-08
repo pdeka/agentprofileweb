@@ -3,13 +3,9 @@ import {RichText, Date} from 'prismic-reactjs';
 import Prismic from 'prismic-javascript';
 import Truncate from 'react-truncate';
 import MainNavigation from './partials/MainNavigation';
-import FooterLinkedToContactUs from './partials/FooterLinkedToContactUs';
 import classNames from 'classnames';
 import Chance from 'chance';
-import ArticlePreview from './partials/ArticlePreview';
-import FormatDate from './partials/FormatDate';
 import PageFooter from "./partials/PageFooter";
-import TestimonialCardBody from "./partials/TestimonialCardBody";
 import Paragraphs from "./partials/Paragraphs";
 import {Link} from 'react-router-dom';
 

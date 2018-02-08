@@ -8,12 +8,6 @@ import {
 import Preview from './Preview';
 import NotFound from './NotFound';
 import Home from './Home';
-import ContactUs from './ContactUs';
-import About from './About';
-import Team from './Team';
-import Testimonials from './Testimonials';
-import Community from './Community';
-import Properties from './Properties';
 import './styles/css/App.css';
 
 const App = (props) => (
