@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import "../styles/css/PageFooter.css";
 
@@ -6,13 +7,13 @@ import "../styles/css/PageFooter.css";
 export default class PageFooter extends React.Component {
 
   render() {
-    return <footer class="footer">
-          <div class="container">
-              <nav class="float-left">
+    return <footer className={classNames('footer')}>
+          <div className={classNames('container')}>
+              <nav className={classNames('float-left')}>
               </nav>
-              <div class="copyright float-left">
+              <div className={classNames('copyright', 'float-left')}>
                 &copy; 2018, made with &nbsp;
-                <i class="material-icons">favorite</i>
+                <i className={classNames('material-icons')}>favorite</i>
                 &nbsp; by &nbsp;
                 <a href="https://www.kenekt.com.au" target="_blank" rel="noopener noreferrer">Kenekt</a>
               </div>

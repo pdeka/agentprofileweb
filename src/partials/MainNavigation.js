@@ -19,25 +19,25 @@ export default class MainNavigation extends React.Component {
     navClassNames['navbar-transparent'] = this.props.navBarTransparent;
 
     return <nav className={classNames(navClassNames)} color-on-scroll="100" id="sectionsNav">
-      <div class="container">
-        <div class="navbar-translate">
-          <a class="navbar-brand logo-font" href="/">/kəˈnɛkt/</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
+      <div className={classNames('container')}>
+        <div className={classNames('navbar-translate')}>
+          <a className={classNames('navbar-brand', 'logo-font')} href="/">/kəˈnɛkt/</a>
+          <button className={classNames('navbar-toggler')} type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span className={classNames('navbar-toggler-icon')}></span>
+            <span className={classNames('navbar-toggler-icon')}></span>
+            <span className={classNames('navbar-toggler-icon')}></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="#about" class="nav-link bold-navigation nav-project-specfic">About</a>
+        <div className={classNames('collapse', 'navbar-collapse')}>
+          <ul className={classNames('navbar-nav', 'ml-auto')}>
+            <li className={classNames('nav-item')}>
+              <a href="#about" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>About</a>
             </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link bold-navigation nav-project-specfic">Services</a>
+            <li className={classNames('nav-item')}>
+              <a href="#services" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Services</a>
             </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link bold-navigation nav-project-specfic">Contact</a>
+            <li className={classNames('nav-item')}>
+              <a href="#contact" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Contact</a>
             </li>
           </ul>
         </div>
