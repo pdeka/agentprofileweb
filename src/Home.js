@@ -67,7 +67,7 @@ export default class Home extends React.Component {
 
       return <div className={classNames('sections-page', 'section-white')}>
         <MainNavigation thisProp={data} navBarTransparent={true}/>
-        <div className={classNames('main')} id="home">
+        <header className='main' id="home">
           <div className={classNames('page-header', 'header-medium-large', 'header-filter', 'home-background')} data-parallax="true">
               <div className={classNames('container')}>
                   <div className={classNames('row')}>
@@ -81,9 +81,9 @@ export default class Home extends React.Component {
                   </div>
               </div>
           </div>
-        </div>
+        </header>
         <div className={classNames('main', 'main-raised-for-home')} style={{'zIndex': 4}}>
-            <div className={classNames('cd-section', 'home-background')} id="about">
+            <section className={classNames('cd-section', 'home-background')} id="about">
               <div className={classNames('container')}>
                 <div className={classNames('features-1', 'home-about-section', 'pt-5', 'pb-0')}>
                   <div className={classNames('row')}>
@@ -99,8 +99,8 @@ export default class Home extends React.Component {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className={classNames('cd-section', 'home-background')} id="services">
+            </section>
+            <section className={classNames('cd-section', 'home-background')} id="services">
               <div className={classNames('container')} >
                 <div className={classNames('features-1', 'pt-5', 'pb-4')}>
                     <div className={classNames('row')}>
@@ -155,8 +155,8 @@ export default class Home extends React.Component {
                     </div>
                 </div>
               </div>
-            </div>
-            <div className={classNames('cd-section', 'home-background')} id="contact">
+            </section>
+            <section className={classNames('cd-section', 'home-background')} id="contact">
               <div className={classNames('container')} >
                 <div className={classNames('features-1', 'home-about-section', 'pt-2', 'pb-5')}>
                   <div className={classNames('row')}>
@@ -210,7 +210,7 @@ export default class Home extends React.Component {
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
         </div>
         <div className={classNames('main', 'main-raised-for-home')} style={{'zIndex': 3}}>
           <PageFooter />
