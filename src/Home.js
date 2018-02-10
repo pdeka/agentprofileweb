@@ -1,16 +1,11 @@
 import React from 'react';
-import {RichText, Date} from 'prismic-reactjs';
+import {RichText} from 'prismic-reactjs';
 import Prismic from 'prismic-javascript';
-import Truncate from 'react-truncate';
 import MainNavigation from './partials/MainNavigation';
 import classNames from 'classnames';
-import Chance from 'chance';
 import PageFooter from "./partials/PageFooter";
-import Paragraphs from "./partials/Paragraphs";
-import {Link} from 'react-router-dom';
 
 import './styles/css/Home.css';
-
 
 export default class Home extends React.Component {
 
@@ -72,7 +67,7 @@ export default class Home extends React.Component {
 
       return <div className={classNames('sections-page', 'section-white')}>
         <MainNavigation thisProp={data} navBarTransparent={true}/>
-        <div className={classNames('main')}>
+        <div className={classNames('main')} id="home">
           <div className={classNames('page-header', 'header-medium-large', 'header-filter', 'home-background')} data-parallax="true">
               <div className={classNames('container')}>
                   <div className={classNames('row')}>

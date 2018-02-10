@@ -7,7 +7,6 @@ import "../styles/css/MainNavigation.css"
 export default class MainNavigation extends React.Component {
 
   render() {
-    let data = this.props.thisProp;
     let navClassNames = {
       'navbar': true,
       'navbar-color-on-scroll': true,
@@ -30,6 +29,9 @@ export default class MainNavigation extends React.Component {
         </div>
         <div className={classNames('collapse', 'navbar-collapse')}>
           <ul className={classNames('navbar-nav', 'ml-auto')}>
+            <li className={classNames('nav-item')}>
+              <a href="#home" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Home</a>
+            </li>
             <li className={classNames('nav-item')}>
               <a href="#about" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>About</a>
             </li>
