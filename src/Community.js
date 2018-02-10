@@ -7,7 +7,6 @@ import PageFooter from "./partials/PageFooter";
 import ArticleTabCards from "./partials/ArticleTabCards";
 import ArticlePreview from "./partials/ArticlePreview";
 import FormatDate from "./partials/FormatDate";
-import {Link} from 'react-router-dom';
 
 import './styles/css/About.css';
 
@@ -75,59 +74,59 @@ export default class Community extends React.Component {
     if (this.state.doc && this.state.aboutpage && this.state.articles) {
 
       let data = this.state.doc.results[0].data;
-      let aboutpageResults = this.state.aboutpage.results;
+      // let aboutpageResults = this.state.aboutpage.results;
 
       let articleResults = this.state.articles.results;
 
-      return <div class="sections-page">
+      return <div className={classNames('sections-page')}>
         <MainNavigation thisProp={data} navBarTransparent={true}/>
-        <div class="page-header header-small header-filter" data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F52219df8-9af5-4681-a719-be9132fbf5c1_photo-collage-vector-background.jpg)'}}>
-        <div class="container hero-text-margin">
-              <div class="row justify-content-center mt-5">
-                <h2 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+        <div className={classNames('page-header', 'header-small', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F52219df8-9af5-4681-a719-be9132fbf5c1_photo-collage-vector-background.jpg)'}}>
+        <div className={classNames('container', 'hero-text-margin')}>
+              <div className={classNames('row', 'justify-content-center', 'mt-5')}>
+                <h2 className={classNames('title')}>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
               </div>
         </div>
 
         </div>
-        <div class="main main-raised">
-          <div class="features-1 pt-5 pb-3">
-            <div class="container">
-              <div class="row">
-                  <div class="col-md-8 ml-auto mr-auto">
-                      <h3 class="title">Ruma in the Community</h3>
-                      <p class="description"  >
+        <div className={classNames('main', 'main-raised')}>
+          <div className={classNames('features-1', 'pt-5', 'pb-3')}>
+            <div className={classNames('container')}>
+              <div className={classNames('row')}>
+                  <div className={classNames('col-md-8', 'ml-auto', 'mr-auto')}>
+                      <h3 className={classNames('title')}>Ruma in the Community</h3>
+                      <p className={classNames('description')}  >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                       </p>
-                      <p class="description"  >
+                      <p className={classNames('description')}  >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                       </p>
-                      <div class="icon">
-                        <i class="material-icons">format_quote</i>
+                      <div className={classNames('icon')}>
+                        <i className={classNames('material-icons')}>format_quote</i>
                       </div>
-                      <blockquote class="blockquote text-center">
-                        <p class="mb-0">
+                      <blockquote className={classNames('blockquote', 'text-center')}>
+                        <p className={classNames('mb-0')}>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
-                        <footer class="blockquote-footer">Ruma</footer>
+                        <footer className={classNames('blockquote-footer')}>Ruma</footer>
                       </blockquote>
                   </div>
               </div>
             </div>
           </div>
-          <div class="cd-section section-dark">
-            <div class="container" >
-                <div class="row">
-                  <div class="col-md-8 ml-auto mr-auto">
-                    <div class="card card-plain card-profile mt-5 mb-0">
+          <div className={classNames('cd-section', 'section-dark')}>
+            <div className={classNames('container')} >
+                <div className={classNames('row')}>
+                  <div className={classNames('col-md-8', 'ml-auto', 'mr-auto')}>
+                    <div className={classNames('card', 'card-plain', 'card-profile', 'mt-5', 'mb-0')}>
                           <ArticlePreview data={articleResults[0].data}/>
-                          <div class="card-body">
-                                <h3 class="card-title">
+                          <div className={classNames('card-body')}>
+                                <h3 className={classNames('card-title')}>
                                   {articleResults[0].data.article_title[0].text}
                                 </h3>
-                                <p class="card-description">
+                                <p className={classNames('card-description')}>
                                   {articleResults[0].data.article_summary[0].text}
                                 </p>
-                                <p class="author text-white">
+                                <p className={classNames('author', 'text-white')}>
                                   by &nbsp;<b>Ruma</b>,&nbsp;
                                   <FormatDate data={articleResults[0].data.date}/>
                                 </p>
@@ -137,13 +136,13 @@ export default class Community extends React.Component {
                 </div>
             </div>
           </div>
-          <div class="cd-section">
-            <div class="features-1 articlepage-tabs">
-              <div class="container">
-                <div class="row">
-                  <div class="container">
-                      <div class="row">
-                          <ArticleTabCards articleResults={articleResults} tab={"My Community"} />
+          <div className={classNames('cd-section')}>
+            <div className={classNames('features-1', 'articlepage-tabs')}>
+              <div className={classNames('container')}>
+                <div className={classNames('row')}>
+                  <div className={classNames('container')}>
+                      <div className={classNames('row')}>
+                          <ArticleTabCards key= "0" articleResults={articleResults} tab={"My Community"} />
                       </div>
                   </div>
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import ArticlePreview from './ArticlePreview';
 import FormatDate from "./FormatDate";
+import classNames from 'classnames';
 
 export default class ArticleTabCards extends React.Component {
 
@@ -9,21 +10,21 @@ export default class ArticleTabCards extends React.Component {
   }
 
   renderPreview(article) {
-    return <div class="col-md-4">
+    return <div className={classNames('col-md-4')}>
       <ArticlePreview data={article.data}/>
     </div>;
 
   }
 
   renderSummary(article) {
-    return <div class="col-md-8">
-      <h3 class="card-title">
+    return <div className={classNames('col-md-8')}>
+      <h3 className={classNames('card-title')}>
         {article.data.article_title[0].text}
       </h3>
-      <p class="card-description">
+      <p className={classNames('card-description')}>
         {article.data.article_summary[0].text}
       </p>
-      <p class="author">
+      <p className={classNames('author')}>
         by
         <b>Ruma</b>,&nbsp;
         <FormatDate data={article.data.date}/>
@@ -33,9 +34,9 @@ export default class ArticleTabCards extends React.Component {
 
   renderCards(articles, tab) {
     if (articles.length === 0) {
-      return <div class="card card-plain card-blog">
-        <div class="card-body">
-          <h3 class="card-title">
+      return <div key="0" className={classNames('card', 'card-plain', 'card-blog')}>
+        <div className={classNames('card-body')}>
+          <h3 className={classNames('card-title')}>
             Sorry, Ruma has no '{tab}' content at the moment.
             <br/>
             Watch this space!
@@ -45,18 +46,18 @@ export default class ArticleTabCards extends React.Component {
     }
     return articles.map((article, index) => {
 
-      if(index === 0){ return;}
+      if(index === 0){ return <span key="0"/>;}
 
       if (this.isOdd(index)) {
-        return <div class="card card-plain card-blog" key={index}>
-          <div class="row">
+        return <div className={classNames('card', 'card-plain', 'card-blog')} key={index}>
+          <div className={classNames('row')}>
             {this.renderSummary(article)}
             {this.renderPreview(article)}
           </div>
         </div>
       } else {
-        return <div class="card card-plain card-blog" key={index}>
-          <div class="row">
+        return <div className={classNames('card', 'card-plain', 'card-blog')} key={index}>
+          <div className={classNames('row')}>
             {this.renderPreview(article)}
             {this.renderSummary(article)}
           </div>

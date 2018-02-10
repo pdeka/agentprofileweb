@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 export default class ArticleTabHeader extends React.Component {
 
@@ -14,9 +15,9 @@ export default class ArticleTabHeader extends React.Component {
   renderHeader(descriptions, tab) {
       let tabItem = descriptions[tab];
 
-      return  <div class="col-md-12 ml-auto mr-auto mt-4">
-          <h3 class="title">{tabItem.header}</h3>
-          <p class="description">
+      return  <div className={classNames('col-md-12', 'ml-auto', 'mr-auto', 'mt-4')}>
+          <h3 className={classNames('title')}>{tabItem.header}</h3>
+          <p className={classNames('description')}>
             {tabItem.desc}
           </p>
         </div>;

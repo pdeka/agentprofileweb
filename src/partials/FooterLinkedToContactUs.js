@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import classNames from 'classnames';
 
 export default class FooterLinkedToContactUs extends React.Component {
 
@@ -9,17 +10,17 @@ export default class FooterLinkedToContactUs extends React.Component {
 
   render() {
     let data = this.props.data;
-    return <div class="subscribe-line">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 ml-auto mr-auto">
+    return <div className={classNames('subscribe-line')}>
+        <div className={classNames('container')}>
+          <div className={classNames('row')}>
+            <div className={classNames('col-md-12', 'ml-auto', 'mr-auto')}>
               <div style={{'textAlign': 'center'}}>
-                <h5 class="title  footer-question-text">{data}
+                <h5 className={classNames('title', 'footer-question-text')}>{data}
                 </h5>
                 <Link to="/home">
-                  <button class="btn btn-primary btn-round" onClick={this.onClick()}>
+                  <button className={classNames('btn', 'btn-primary', 'btn-round')} onClick={this.onClick()}>
                     Contact Us
-                    <div class="ripple-container"></div>
+                    <div className={classNames('ripple-container')}></div>
                   </button>
                 </Link>
               </div>
