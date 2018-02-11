@@ -63,7 +63,7 @@ export default class Home extends React.Component {
       let data = this.state.doc.results[0].data;
       // let contactInfo = this.state.contactInfo.results[0].data;
 
-      console.log("Here is the doc:" + JSON.stringify(data));
+      // console.log("Here is the doc:" + JSON.stringify(data));
 
       return <div className={classNames('sections-page', 'section-white')}>
         <MainNavigation thisProp={data} navBarTransparent={true}/>
