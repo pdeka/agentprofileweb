@@ -81,7 +81,7 @@ export default class Testimonials extends React.Component {
 
       return <div className={classNames('sections-page')}>
         <MainNavigation thisProp={data} navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-filter', 'header-small')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
+        <div className={classNames('page-header', 'header-filter', 'header-small')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F0a293f9e-3d9b-482f-9cfc-8334155c0fd5_51+hastings+street+the+ponds3.jpg)'}}>
           <div className={classNames('container', 'hero-text-margin')}>
               <div className={classNames('row', 'justify-content-center')}>
                   <div className={classNames('col-md-12')}>
@@ -189,7 +189,7 @@ export default class Testimonials extends React.Component {
                     </div>
                 </div>
             </div>
-            <div className={classNames('cd-section', 'section-image')} style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
+            <div className={classNames('cd-section', 'section-image')} style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F9a5f2729-1cdc-4a35-902d-e0331565f816_ruma+mundi+profile.jpg)'}}>
               <div className={classNames('blogs-2')} id="blogs-2">
                   <div className={classNames('container', 'mb-5')}>
                       <div className={classNames('row')}>

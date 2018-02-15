@@ -65,26 +65,43 @@ export default class About extends React.Component {
 
       return <div className={classNames('sections-page')}>
         <MainNavigation thisProp={data} navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
-        <div className={classNames('container', 'hero-text-margin')}>
-              <div className={classNames('row')}>
-                <div className={classNames('col-md-3')}>
-                </div>
-                <div className={classNames('col-md-6')}>
-                  <div className={classNames('iframe-container')}>
-                      <iframe title="about ruma mundi stanhope garden sydney" height="300" src="https://www.youtube.com/embed/IN6QnLpVEPI" frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>
+        <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F33169785-8d7d-4fc4-a605-8efe80901fc1_133+ridgeline+drv+the+ponds.jpg)'}}>
+          <div className={classNames('container', 'hero-text-margin')}>
+                <div className={classNames('row')}>
+                  <div className={classNames('col-md-6')}>
+                    <div className={classNames('iframe-container')}>
+                        <iframe title="about ruma mundi stanhope garden sydney" height="300" src="https://www.youtube.com/embed/FVZ0OB4WkPs" frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>
+                    </div>
+                  </div>
+                  <div className={classNames('col-md-3')}>
+                  </div>
+                  <div className={classNames('col-md-3')}>
                   </div>
                 </div>
-                <div className={classNames('col-md-3')}>
-                </div>
-              </div>
-              <div className={classNames('row', 'justify-content-center', 'mt-5')}>
-                <h2 className={classNames('title')}>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-              </div>
-        </div>
-
+          </div>
         </div>
         <div className={classNames('main', 'main-raised')}>
+          <div className={classNames('cd-section')}>
+            <div className={classNames('container', 'pt-5')}>
+              <div className={classNames('row')}>
+                <div className={classNames('col-md-12', 'ml-auto', 'mr-auto')}>
+                <div className={classNames('card', 'card-profile', 'card-plain')}>
+                    <div className={classNames('row')}>
+                        <div className={classNames('col-md-12', 'testimonialpage-first-video')}>
+                          <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
+                            <div>
+                              <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
+                                <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={"https://www.youtube.com/embed/FVZ0OB4WkPs"} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className={classNames('features-1', 'pt-5', 'pb-3')}>
             <div className={classNames('container')}>
               <div className={classNames('row')}>
@@ -114,7 +131,7 @@ export default class About extends React.Component {
               </div>
             </div>
           </div>
-          <div className={classNames('team-2', 'section-image', 'pt-5', 'pb-3')} id="team-5" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
+          <div className={classNames('team-2', 'section-image', 'pt-5', 'pb-3')} id="team-5" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F2e8fb7d4-1748-440e-ac17-ffc5ee9ce986_23+fantail+lane+the+ponds.jpg)'}}>
               <div className={classNames('container')}>
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
