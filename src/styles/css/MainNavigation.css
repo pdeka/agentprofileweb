@@ -3,6 +3,13 @@
   font-size: 2.125rem !important;
   font-weight: 500; }
 
+.nav-project-specfic {
+  font-size: 17px !important;
+  font-style: italic !important;
+  font-family: "Lora", "Times New Roman", serif !important;
+  text-transform: none !important;
+  font-weight: 400 !important; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?m7vt2");

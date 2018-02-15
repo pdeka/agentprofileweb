@@ -31,25 +31,25 @@ export default class MainNavigation extends React.Component {
         <div className={classNames('collapse', 'navbar-collapse')}>
           <ul className={classNames('navbar-nav', 'ml-auto')}>
             <li className={classNames('nav-item')}>
-              <Link to="/home" className={classNames('nav-link', 'bold-navigation')}>Home</Link>
+              <Link to="/home" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Home</Link>
             </li>
             <li className={classNames('nav-item')}>
-              <Link to="/about" className={classNames('nav-link', 'bold-navigation')}>Meet Ruma</Link>
+              <Link to="/about" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Meet Ruma</Link>
             </li>
             <li className={classNames('nav-item')}>
-              <Link to="/team" className={classNames('nav-link', 'bold-navigation')}>The Team</Link>
+              <Link to="/team" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>The Team</Link>
             </li>
             <li className={classNames('nav-item')}>
-              <Link to="/community" className={classNames('nav-link', 'bold-navigation')}>Our Community</Link>
+              <Link to="/community" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Our Community</Link>
             </li>
             <li className={classNames('nav-item')}>
-              <Link to="/testimonials" className={classNames('nav-link', 'bold-navigation')}>Client Stories</Link>
+              <Link to="/testimonials" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Client Stories</Link>
             </li>
             <li className={classNames('nav-item')}>
-              <Link to="/properties" className={classNames('nav-link', 'bold-navigation')}>Properties</Link>
+              <Link to="/properties" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Properties</Link>
             </li>
             <li className={classNames('nav-item')} style={{'display': 'none'}}>
-              <Link to="/contactus" className={classNames('nav-link', 'bold-navigation')}>Contact Us</Link>
+              <Link to="/contactus" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Contact Us</Link>
             </li>
           </ul>
         </div>
