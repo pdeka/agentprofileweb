@@ -10,6 +10,10 @@ import FormatDate from './partials/FormatDate';
 import PageFooter from "./partials/PageFooter";
 import TestimonialCardBody from "./partials/TestimonialCardBody";
 import {Link} from 'react-router-dom';
+import RegularButton from './components/CustomButtons/RegularButton';
+// import $ from 'jquery';
+// import bootstrapMaterialDesign from './vendor/js/BootstrapMaterialDesign';
+// import materialKit from './vendor/js/MaterialKit';
 
 import './styles/css/Home.css';
 
@@ -193,11 +197,14 @@ export default class Home extends React.Component {
                                     She is among the REB top 50, a director, a business owner, but above all a mother of 2 beautiful daughters, Samara and Safira, and a person renowned in the community for her dedication, her integrity and her compassion.
                                   </p>
                                   <Link to="/about" style={{'marginLeft' : '25px'}} className={classNames('nav-link')}>
-                                    <button className={classNames('btn', 'btn-primary', 'btn-round')}>
-                                      Meet Ruma
-                                      <div className={classNames('ripple-container')}></div>
-                                    </button>
+                                    <RegularButton
+                                        color="primary"
+                                        round
+                                        aria-label="Meet Ruma">
+                                        Meet Ruma
+                                    </RegularButton>
                                   </Link>
+
                               </div>
                           </div>
                       </div>
@@ -225,10 +232,12 @@ export default class Home extends React.Component {
                                       with a deep understanding that being the agent you can trust and seek advice from, has been a core competency of our endeavour so far.
                                     </p>
                                     <Link to="/team" style={{'marginLeft' : '25px'}}>
-                                        <button className={classNames('btn', 'btn-primary', 'btn-round')}>
+                                      <RegularButton
+                                          color="primary"
+                                          round
+                                          aria-label="team">
                                           Meet The Team
-                                          <div className={classNames('ripple-container')}></div>
-                                        </button>
+                                      </RegularButton>
                                     </Link>
                                 </div>
                             </div>
@@ -295,10 +304,12 @@ export default class Home extends React.Component {
                     </div>
                     <div className={classNames('row', 'justify-content-center', 'mt-5')} >
                       <Link to="/testimonials" style={{'marginLeft' : '25px'}}>
-                          <button className={classNames('btn', 'btn-primary', 'btn-round')}>
-                            See More
-                            <div className={classNames('ripple-container')}></div>
-                          </button>
+                          <RegularButton
+                              color="primary"
+                              round
+                              aria-label="testimonials">
+                              See More
+                          </RegularButton>
                       </Link>
                     </div>
                 </div>

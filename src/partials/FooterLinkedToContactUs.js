@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import classNames from 'classnames';
+import RegularButton from '../components/CustomButtons/RegularButton';
+
 
 export default class FooterLinkedToContactUs extends React.Component {
 
@@ -18,10 +20,13 @@ export default class FooterLinkedToContactUs extends React.Component {
                 <h5 className={classNames('title', 'footer-question-text')}>{data}
                 </h5>
                 <Link to="/home">
-                  <button className={classNames('btn', 'btn-primary', 'btn-round')} onClick={this.onClick()}>
-                    Contact Us
-                    <div className={classNames('ripple-container')}></div>
-                  </button>
+                  <RegularButton
+                      color="primary"
+                      round
+                      aria-label="home"
+                      onClick={this.onClick()} >
+                      Contact Us
+                  </RegularButton>
                 </Link>
               </div>
             </div>

@@ -67,11 +67,15 @@
 
   </head>
   <body class="sections-page  section-white ">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
     <div id="root"></div>
     <!--   Core JS Files   -->
     <script src="./vendor/creativetim/js/core/jquery.min.js"></script>
-    <script src="./vendor/creativetim/js/core/popper.min.js"></script>
-    <script src="./vendor/creativetim/js/bootstrap-material-design.js"></script>
+    <!-- <script src="./vendor/creativetim/js/core/popper.min.js"></script> -->
+    <!-- <script src="./vendor/creativetim/js/bootstrap-material-design.js"></script> -->
     <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
     <!-- <script src="./vendor/creativetim/js/plugins/moment.min.js"></script> -->
     <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
@@ -86,14 +90,14 @@
     <!-- <script src="./vendor/creativetim/js/plugins/bootstrap-datetimepicker.min.js"></script> -->
     <!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
     <!-- <script src="./vendor/creativetim/js/plugins/nouislider.min.js"></script> -->
-    <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
-    <script src="./vendor/creativetim/js/material-kit.js?v=2.0.0"></script>
     <!-- Plugins for presentation and navigation  -->
-    <script src="./vendor/creativetim/assets-for-demo/js/modernizr.js"></script>
+    <!-- <script src="./vendor/creativetim/assets-for-demo/js/modernizr.js"></script> -->
+    <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
+    <script src="./js/material-kit.js"></script>
 
     <!-- todo: Material kit should do this -->
     <script>
-      window.addEventListener('scroll',materialKit.checkScrollForTransparentNavbar);
+      window.addEventListener('scroll', materialKit.checkScrollForTransparentNavbar);
     </script>
   </body>
 </html>

@@ -5,6 +5,8 @@ import classNames from 'classnames';
 import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
 import PageFooter from "./partials/PageFooter";
 import {Link} from 'react-router-dom';
+import RegularButton from './components/CustomButtons/RegularButton';
+
 
 import './styles/css/About.css';
 
@@ -324,10 +326,12 @@ export default class About extends React.Component {
                   <div className={classNames('row')}>
                     <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
                       <Link to="/community" className={classNames('nav-link')}>
-                        <button className={classNames('btn', 'btn-primary', 'btn-round')}>
-                          Read More
-                          <div className={classNames('ripple-container')}></div>
-                        </button>
+                        <RegularButton
+                            color="primary"
+                            round
+                            aria-label="community">
+                            Read More
+                        </RegularButton>
                       </Link>
                     </div>
                   </div>
