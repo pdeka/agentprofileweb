@@ -121,6 +121,7 @@ $(document).on('click', '.navbar-toggler', function() {
     $toggle = $(this);
 
     if (materialKit.misc.navbar_menu_visible == 1) {
+        console.log("nav bar is visible");
         $('html').removeClass('nav-open');
         materialKit.misc.navbar_menu_visible = 0;
         $('#bodyClick').remove();
@@ -130,13 +131,18 @@ $(document).on('click', '.navbar-toggler', function() {
 
         $('html').removeClass('nav-open-absolute');
     } else {
+        console.log("nav bar is NOT visible");
+
+
         setTimeout(function() {
             $toggle.addClass('toggled');
         }, 580);
 
+        var clickedFunction = function() {
 
-        div = '<div id="bodyClick"></div>';
-        $(div).appendTo("body").click(function() {
+            console.log("Body clicked");
+
+
             $('html').removeClass('nav-open');
 
             if ($('nav').hasClass('navbar-absolute')) {
@@ -147,7 +153,11 @@ $(document).on('click', '.navbar-toggler', function() {
             setTimeout(function() {
                 $toggle.removeClass('toggled');
             }, 550);
-        });
+        };
+
+        div = '<div id="bodyClick"></div>';
+        $(div).appendTo("body").click(clickedFunction);
+        $('nav').click(clickedFunction);
 
         if ($('nav').hasClass('navbar-absolute')) {
             $('html').addClass('nav-open-absolute');
