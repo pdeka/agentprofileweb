@@ -73,7 +73,11 @@
 
     <div id="root"></div>
     <!--   Core JS Files   -->
-    <script src="./vendor/creativetim/js/core/jquery.min.js"></script>
+    <script async
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
     <!-- <script src="./vendor/creativetim/js/core/popper.min.js"></script> -->
     <!-- <script src="./vendor/creativetim/js/bootstrap-material-design.js"></script> -->
     <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
@@ -95,7 +99,7 @@
     <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
     <script src="./js/material-kit.js"></script>
 
-    <!-- todo: Material kit should do this -->
+    <!-- todo: Material kit UI react should do this. This is needed for the menu -->
     <script>
       window.addEventListener('scroll', materialKit.checkScrollForTransparentNavbar);
     </script>
