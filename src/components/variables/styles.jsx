@@ -45,6 +45,7 @@ const successColor = '#4caf50';
 const infoColor = '#00acc1';
 const roseColor = '#e91e63';
 const grayColor = '#999999';
+const whiteColor = '#ffffff';
 
 // ##############################
 // // // App styles
@@ -245,7 +246,7 @@ const buttonStyle = {
     }
 };
 
-const navButtonStyle = {
+let navButtonStyle = {
     button: {
         backgroundColor: grayColor,
         color: '#FFFFFF',
@@ -270,8 +271,8 @@ const navButtonStyle = {
         MsTouchAction: 'manipulation',
         touchAction: 'manipulation',
         cursor: 'pointer',
-        '&:hover': {
-            backgroundColor: primaryColor,
+        '&:hover,&:focus': {
+            backgroundColor: grayColor,
             boxShadow: '0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2)'
         }
     },
@@ -291,6 +292,13 @@ const navButtonStyle = {
     }
 };
 
+
+if (window.screen.availWidth < 991){
+  navButtonStyle.button['&:hover,&:focus'] = {
+              backgroundColor: whiteColor,
+              boxShadow: '0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2)'
+  };
+}
 
 // ##############################
 // // // IconButton styles
