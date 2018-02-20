@@ -108,7 +108,7 @@ export default class About extends React.Component {
               </div>
             </div>
           </div>
-          <div className={classNames('team-2', 'section-image', 'pt-5', 'pb-3')} id="team-5" style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F2e8fb7d4-1748-440e-ac17-ffc5ee9ce986_23+fantail+lane+the+ponds.jpg)'}}>
+          <div className={classNames('team-2', 'section-image', 'pt-5', 'pb-3')} id="team-5" style={{'backgroundImage': 'url('+aboutpage.awards_background.url+')'}}>
               <div className={classNames('container')}>
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
