@@ -11,9 +11,6 @@ import PageFooter from "./partials/PageFooter";
 import TestimonialCardBody from "./partials/TestimonialCardBody";
 import {Link} from 'react-router-dom';
 import RegularButton from './components/CustomButtons/RegularButton';
-// import $ from 'jquery';
-// import bootstrapMaterialDesign from './vendor/js/BootstrapMaterialDesign';
-// import materialKit from './vendor/js/MaterialKit';
 
 import './styles/css/Home.css';
 
