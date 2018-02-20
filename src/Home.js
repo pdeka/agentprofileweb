@@ -107,6 +107,8 @@ export default class Home extends React.Component {
       let data = this.state.doc.results[0].data;
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
+
+      console.log("This is the home page:" + JSON.stringify(data));
       // let contactInfo = this.state.contactInfo.results[0].data;
 
       // const headerSummaryParagraphs = data.top_level_text_1.map((para, index) => {return <div key={index}>{para.text}</div>})
@@ -118,10 +120,9 @@ export default class Home extends React.Component {
               <div className={classNames('container', 'hero-text-margin')}>
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-8')}>
-                          <h2 className={classNames('title')}>Real estate, done differently</h2>
-                          <h5 className={classNames('text-white', 'hero-paragraph-text')}>Ruma’s professional approach has led to unparalleled results for her clients.
-                            She invests in long term relationships with her clients, being deeply aware that selling or buying a house
-                            is a significant decision, that extends far beyond a financial transaction
+                          <h2 className={classNames('title')}>{data.homepage_header.text}</h2>
+                          <h5 className={classNames('text-white', 'hero-paragraph-text')}>
+                            {data.top_level_text_1.text}
                           </h5>
                           <br/>
                       </div>
@@ -254,7 +255,7 @@ export default class Home extends React.Component {
                 <div className={classNames('container')}>
                     <div className={classNames('row')}>
                         <div className={classNames('col-md-12', 'ml-auto', 'mr-auto')}>
-                            <h3 className={classNames('card-title', 'home-article-desktop-title')}>{data.homepage_articles_header[0].text}</h3>
+                            <h3 className={classNames('card-title', 'home-article-desktop-title')}>Prabin</h3>
                             <h3 className={classNames('card-title', 'home-article-mobile-title')}>Monthly Wrap-up</h3>
                             <p className={classNames('card-description')}>
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

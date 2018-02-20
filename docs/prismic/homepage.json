@@ -1,115 +1,124 @@
 {
-  "id": "WlxzrikAAFZEwgvG",
-  "uid": "homepage_ruma_mundi",
-  "type": "homepage",
-  "href": "https://rumamundi.prismic.io/api/v2/documents/search?ref=Wl_L3iQAACUAhG6d&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WlxzrikAAFZEwgvG%22%29+%5D%5D",
-  "tags": [],
-  "first_publication_date": "2018-01-15T09:51:48+0000",
-  "last_publication_date": "2018-01-17T22:19:10+0000",
-  "slugs": ["ruma-mundi"],
-  "linked_documents": [],
-  "lang": "en-au",
-  "alternate_languages": [],
-  "data": {
-    "facebook_link": {
-      "link_type": "Web",
-      "url": "https://www.facebook.com/ruma.mundi"
+  "facebook_link": {
+    "link_type": "Web",
+    "url": "https://www.facebook.com/ruma.mundi"
+  },
+  "instagram_link": {
+    "link_type": "Web",
+    "url": "https://www.instagram.com/rumamundi/"
+  },
+  "linkedin_link": {
+    "link_type": "Web",
+    "url": "https://au.linkedin.com/in/ruma-mundi-0344a4b6"
+  },
+  "youtube_link": {
+    "link_type": "Web",
+    "url": "https://www.youtube.com/channel/UCyKhjcW2Ca57SooI5zAcIgg"
+  },
+  "rate_my_agent_link": {
+    "link_type": "Web",
+    "url": "https://www.ratemyagent.com.au/real-estate-agent/ruma-mundi-br828/reviews"
+  },
+  "properties_link": {
+    "link_type": "Web",
+    "url": "https://www.realestate.com.au/agent/ruma-mundi-1519230"
+  },
+  "homepage_header": [{
+    "type": "heading1",
+    "text": "Real estate, done differently",
+    "spans": []
+  }],
+  "top_level_text_1": [{
+    "type": "paragraph",
+    "text": "Ruma’s professional approach has led to unparalleled results for her clients. She invests in long term relationships with her clients, being deeply aware that selling or buying a house is a significant decision, that extends far beyond a financial transaction",
+    "spans": []
+  }],
+  "homepage_video_link": {
+    "link_type": "Media",
+    "name": "RUMA WEBSITE VIDEO V2.mp4",
+    "kind": "document",
+    "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Ffafbff33-efae-411d-8bb4-01ed574cb22f_ruma+website+video+v2.mp4",
+    "size": "15595101"
+  },
+  "video_poster_image": {
+    "link_type": "Media",
+    "name": "videoversion2-poster.png",
+    "kind": "image",
+    "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2F311dd30e-7826-4c90-ae05-4cf3141ecff6_videoversion2-poster.png",
+    "size": "2377483",
+    "height": "1052",
+    "width": "1874"
+  },
+  "about_header": [{
+    "type": "heading1",
+    "text": "Passion Integrity Care",
+    "spans": []
+  }],
+  "about_you_text": [{
+    "type": "paragraph",
+    "text": "Ruma's name is synonymous with the real estate industry in the Hills District. She is among the REB top 50, a director, a business owner, but above all a mother of 2 beautiful daughters, Samara and Safira, and a person renowned in the community for her dedication, her integrity and her compassion.",
+    "spans": []
+  }],
+  "about_you_section_image": {
+    "dimensions": {
+      "width": 1369,
+      "height": 900
     },
-    "instagram_link": {
-      "link_type": "Web",
-      "url": "https://www.instagram.com/rumamundi/"
+    "alt": null,
+    "copyright": null,
+    "url": "https://prismic-io.s3.amazonaws.com/rumamundi/9c84b57fd7adf87957b3442def057efb58cb7d8e_180131_nknight_ruma_0017.jpg"
+  },
+  "the_team_header": [{
+    "type": "heading1",
+    "text": "The Team",
+    "spans": []
+  }],
+  "the_team_text": [{
+    "type": "paragraph",
+    "text": "People rarely achieve much without a good supportive team around them. We truely believe that we have the best team in the North West of Sydney. Our extensive experience, local knowledge, attention to details and determination to do the best for our clients, has been the bed rock of our success. However, our true strength is in our positivity and humility. We pride ourselves with the fact that we have managed to preserve a sense of approachability and hospitality, with a deep understanding that being the agent you can trust and seek advice from, has been a core competency of our endeavour so far.",
+    "spans": []
+  }],
+  "the_team_image": {
+    "dimensions": {
+      "width": 800,
+      "height": 601
     },
-    "linkedin_link": {
-      "link_type": "Web",
-      "url": "https://au.linkedin.com/in/ruma-mundi-0344a4b6"
-    },
-    "youtube_link": {
-      "link_type": "Web",
-      "url": "https://www.youtube.com/channel/UCyKhjcW2Ca57SooI5zAcIgg"
-    },
-    "address_line_1": [{
-      "type": "paragraph",
-      "text": "Shop 64-65/2 Sentry Dr",
-      "spans": []
-    }],
-    "address_line_2": [{
-      "type": "paragraph",
-      "text": "Stanhope Gardens",
-      "spans": []
-    }],
-    "address_line_3": [{
-      "type": "paragraph",
-      "text": "NSW 2768",
-      "spans": []
-    }],
-    "email": [{
-      "type": "paragraph",
-      "text": "rumamundi@gmail.com",
-      "spans": []
-    }],
-    "phone": [{
-      "type": "paragraph",
-      "text": "+61 9876 1234",
-      "spans": []
-    }],
-    "office_opening_hours": [{
-      "type": "paragraph",
-      "text": "Mon - Fri, 9:00-15:00",
-      "spans": []
-    }],
-    "properties_link": {
-      "link_type": "Web",
-      "url": "https://www.realestate.com.au/agent/ruma-mundi-1519230"
-    },
-    "homepage_header": [{
-      "type": "heading1",
-      "text": "Ruma Mundi",
-      "spans": []
-    }],
-    "top_level_text_1": [{
-      "type": "paragraph",
-      "text": "Unparalleled Results, Integrity and Professionalism. ",
-      "spans": []
-    }, {
-      "type": "paragraph",
-      "text": "Your Trusted Real Estate Partner.",
-      "spans": []
-    }, {
-      "type": "paragraph",
-      "text": "The Hills District Specialist.",
-      "spans": []
-    }],
-    "our_difference_header": [{
-      "type": "heading1",
-      "text": "How are we different?",
-      "spans": []
-    }],
-    "our_difference_text": [{
-      "type": "paragraph",
-      "text": "Ruma is approachable and highly successful. ",
-      "spans": []
-    }],
-    "our_difference_image": {},
-    "homepage_articles_header": [{
-      "type": "heading1",
-      "text": "Content of the Week",
-      "spans": []
-    }],
-    "homepage_testimonials_header": [{
-      "type": "heading1",
-      "text": "Meet our Clients",
-      "spans": []
-    }],
-    "homepage_testimonials_text": [{
-      "type": "paragraph",
-      "text": "Check what other people are saying.",
-      "spans": []
-    }],
-    "contact_us_name": [{
-      "type": "paragraph",
-      "text": "Ruma Mundi",
-      "spans": []
-    }]
-  }
+    "alt": null,
+    "copyright": null,
+    "url": "https://prismic-io.s3.amazonaws.com/rumamundi/57e2cdf0ec444185bd3c56e8dcbe52cb1537f5f2_ruma-in-group.jpg"
+  },
+  "monthly_wrap_up_header": [{
+    "type": "heading1",
+    "text": "The month in our communities",
+    "spans": []
+  }],
+  "monthly_wrap_up_text": [{
+    "type": "paragraph",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "spans": []
+  }],
+  "client_section_header": [{
+    "type": "heading1",
+    "text": "Meet our Clients",
+    "spans": []
+  }],
+  "client_section_text": [{
+    "type": "paragraph",
+    "text": "What our clients say is a testament to the value and quality of our service. We enthusiastically gather feedback, and endeavour to continously improve our services based on what they tell us.",
+    "spans": []
+  }],
+  "client_section_image": {
+    "link_type": "Media",
+    "name": "51 Hastings Street The Ponds3.jpg",
+    "kind": "image",
+    "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2F0a293f9e-3d9b-482f-9cfc-8334155c0fd5_51+hastings+street+the+ponds3.jpg",
+    "size": "231299",
+    "height": "1080",
+    "width": "1920"
+  },
+  "footer_remark": [{
+    "type": "heading6",
+    "text": "We would love to have a coffee with you.",
+    "spans": []
+  }]
 }
-home: 1
