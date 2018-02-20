@@ -1,11 +1,20 @@
 import React from 'react';
 import Truncate from 'react-truncate';
 import classNames from 'classnames';
+import onFontFaceLoad from 'fontfaceonload';
 
 import "../styles/css/PageFooter.css";
 
 
 export default class TestimonialCardBody extends React.Component {
+
+  componentDidMount () {
+    onFontFaceLoad("Lora", {
+      success: () => {
+         this.forceUpdate();
+      }
+    });
+  }
 
   heroTestimonialQuote(data, index){
     return <span>
