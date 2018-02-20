@@ -23,7 +23,7 @@ export default class MainNavigation extends React.Component {
     return <nav className={classNames(navClassNames)} color-on-scroll="100" id="sectionsNav">
       <div className={classNames('container')}>
         <div className={classNames('navbar-translate')}>
-          <a className={classNames('navbar-brand', 'logo-font')} href="/">Ruma Mundi</a>
+          <a className={classNames('navbar-brand', 'logo-font')} href="/">Logo</a>
           <button className={classNames('navbar-toggler')} type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span className={classNames('navbar-toggler-icon')}></span>
             <span className={classNames('navbar-toggler-icon')}></span>

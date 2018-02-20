@@ -8,36 +8,36 @@ export default class PageFooter extends React.Component {
 
   render() {
     return <footer className={classNames('footer','footer-white')}>
-          <div class="container">
-              <ul class="social-buttons">
+          <div className={classNames('container')}>
+              <ul className={classNames('social-buttons')}>
                   <li>
-                      <a href="#pablo" class="btn btn-just-icon btn-link btn-twitter" target="_blank">
-                          <i class="fa fa-twitter"  style={{'fontSize': '24px'}} ></i>
+                      <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-twitter')} target="_blank">
+                          <i className={classNames('fa', 'fa-twitter')}  style={{'fontSize': '24px'}} ></i>
                       </a>
                   </li>
                   <li>
-                      <a href="#pablo" class="btn btn-just-icon btn-link btn-facebook"  target="_blank">
-                          <i class="fa fa-facebook-square"  style={{'fontSize': '24px'}}></i>
+                      <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-facebook')}  target="_blank">
+                          <i className={classNames('fa', 'fa-facebook-square')}  style={{'fontSize': '24px'}}></i>
                       </a>
                   </li>
                   <li>
-                      <a href="#pablo" class="btn btn-just-icon btn-link btn-linkedin"  target="_blank">
-                          <i class="fa fa-linkedin"  style={{'fontSize': '24px'}}></i>
+                      <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-linkedin')}  target="_blank">
+                          <i className={classNames('fa', 'fa-linkedin')}  style={{'fontSize': '24px'}}></i>
                       </a>
                   </li>
                   <li>
-                      <a href="#pablo" class="btn btn-just-icon btn-link btn-instagram"  target="_blank">
-                          <i class="fa fa-instagram"  style={{'fontSize': '24px'}}></i>
+                      <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-instagram')}  target="_blank">
+                          <i className={classNames('fa', 'fa-instagram')}  style={{'fontSize': '24px'}}></i>
                       </a>
                   </li>
                   <li>
-                      <a href="#pablo" class="btn btn-just-icon btn-link btn-youtube"  target="_blank">
-                          <i class="fa fa-youtube-play"  style={{'fontSize': '24px'}}></i>
+                      <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-youtube')}  target="_blank">
+                          <i className={classNames('fa', 'fa-youtube-play')}  style={{'fontSize': '24px'}}></i>
                       </a>
                   </li>
                   <li>
-                      <a href="#pablo" class="btn btn-just-icon btn-link btn-youtube"  target="_blank">
-                          <i class="fa icon-ratemyagent"  style={{'fontSize': '18px', 'color': '#37474f'}}></i>
+                      <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-youtube')}  target="_blank">
+                          <i className={classNames('fa', 'icon-ratemyagent')}  style={{'fontSize': '18px', 'color': '#37474f'}}></i>
                       </a>
                   </li>
               </ul>
