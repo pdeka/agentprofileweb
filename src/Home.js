@@ -116,8 +116,12 @@ export default class Home extends React.Component {
           <div className={classNames('page-header', 'header-filter')} data-parallax="true">
               <div className={classNames('container', 'hero-text-margin')}>
                   <div className={classNames('row')}>
+                      <div className={classNames('col-md-10')}>
+                          <h1 className={classNames('title')}>{data.homepage_header[0].text}</h1>
+                      </div>
+                  </div>
+                  <div className={classNames('row')}>
                       <div className={classNames('col-md-8')}>
-                          <h2 className={classNames('title')}>{data.homepage_header[0].text}</h2>
                           <h5 className={classNames('text-white', 'hero-paragraph-text')}>
                             {data.top_level_text[0].text}
                           </h5>
@@ -134,28 +138,6 @@ export default class Home extends React.Component {
                                         <i className={classNames('fa', 'fa-phone', 'fa-inverse')} />
                                         &nbsp;0411 030 202
                                         <div className={classNames('ripple-container')}></div>
-                                      </a>
-                                  </div>
-                                  <div className={classNames('card-footer', 'pb-0', 'pt-0')}>
-                                      <a href={data.facebook_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-facebook')} target="_blank">
-                                          <i className={classNames('fa', 'fa-facebook', 'fa-inverse')}></i>
-                                      </a>
-                                      <a href={data.instagram_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-instagram')} target="_blank">
-                                          <i className={classNames('fa', 'fa-instagram', 'fa-inverse')}></i>
-                                      </a>
-                                      <a href={data.youtube_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-youtube')} target="_blank">
-                                          <i className={classNames('fa', 'fa-youtube', 'fa-inverse')}></i>
-                                      </a>
-                                      <a href={data.linkedin_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-linkedin')} target="_blank">
-                                          <i className={classNames('fa', 'fa-linkedin', 'fa-inverse')}></i>
-                                      </a>
-                                      <a href={data.rate_my_agent_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link')} target="_blank">
-                                        <div style={{'marginBottom': '-1px'}}>
-                                          <i className={classNames('fa', 'icon-ratemyagent', 'fa-inverse')} style={{'fontSize': '17px'}}></i>
-                                        </div>
-                                      </a>
-                                      <a className={classNames('btn', 'btn-just-icon', 'btn-link')} href="mailto:name@email.com" target="_blank" rel="noopener noreferrer">
-                                        <i className={classNames('fa', 'fa-envelope', 'fa-inverse')}/>
                                       </a>
                                   </div>
                               </div>
@@ -320,3 +302,27 @@ export default class Home extends React.Component {
     }
   }
 }
+
+
+// <div className={classNames('card-footer', 'pb-0', 'pt-0')}>
+//     <a href={data.facebook_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-facebook')} target="_blank">
+//         <i className={classNames('fa', 'fa-facebook', 'fa-inverse')}></i>
+//     </a>
+//     <a href={data.instagram_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-instagram')} target="_blank">
+//         <i className={classNames('fa', 'fa-instagram', 'fa-inverse')}></i>
+//     </a>
+//     <a href={data.youtube_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-youtube')} target="_blank">
+//         <i className={classNames('fa', 'fa-youtube', 'fa-inverse')}></i>
+//     </a>
+//     <a href={data.linkedin_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-linkedin')} target="_blank">
+//         <i className={classNames('fa', 'fa-linkedin', 'fa-inverse')}></i>
+//     </a>
+//     <a href={data.rate_my_agent_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link')} target="_blank">
+//       <div style={{'marginBottom': '-1px'}}>
+//         <i className={classNames('fa', 'icon-ratemyagent', 'fa-inverse')} style={{'fontSize': '17px'}}></i>
+//       </div>
+//     </a>
+//     <a className={classNames('btn', 'btn-just-icon', 'btn-link')} href="mailto:name@email.com" target="_blank" rel="noopener noreferrer">
+//       <i className={classNames('fa', 'fa-envelope', 'fa-inverse')}/>
+//     </a>
+// </div>
