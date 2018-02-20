@@ -208,7 +208,7 @@ export default class Testimonials extends React.Component {
                   </div>
               </div>
             </div>
-            <FooterLinkedToContactUs data={data.footer_content[0].text}/>
+            <FooterLinkedToContactUs data={"Some content here"}/>
         </div>
         <PageFooter />
       </div>;

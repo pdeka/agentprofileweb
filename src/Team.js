@@ -10,7 +10,6 @@ import './styles/css/Team.css';
 export default class Team extends React.Component {
 
   state = {
-    doc: null,
     teampage: null,
     notFound: false
   }
@@ -34,16 +33,6 @@ export default class Team extends React.Component {
   fetchPage(props) {
     if (props.prismicCtx) {
 
-      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'homepage')).then((doc) => {
-        if (doc) {
-          this.setState({doc});
-        } else {
-          this.setState({
-            notFound: !doc
-          });
-        }
-      });
-
       props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'teampage')).then((teampage) => {
         if (teampage) {
           this.setState({teampage});
@@ -57,13 +46,12 @@ export default class Team extends React.Component {
   }
 
   render() {
-    if (this.state.doc && this.state.teampage) {
+    if (this.state.teampage) {
 
-      let data = this.state.doc.results[0].data;
-      // let teampageResults = this.state.teampage.results;
+      let teampage = this.state.teampage.results;
 
       return <div className={classNames('sections-page')}>
-        <MainNavigation thisProp={data} navBarTransparent={true}/>
+        <MainNavigation navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-filter', 'header-small')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
           <div className={classNames('container', 'hero-text-margin')}>
               <div className={classNames('row')}>
@@ -190,7 +178,7 @@ export default class Team extends React.Component {
                     </div>
                   </div>
               </div>
-            <FooterLinkedToContactUs data={data.footer_content[0].text}/>
+            <FooterLinkedToContactUs data={"Some text here"}/>
         </div>
         <PageFooter />
       </div>;
