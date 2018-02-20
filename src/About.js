@@ -6,6 +6,8 @@ import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
 import PageFooter from "./partials/PageFooter";
 import {Link} from 'react-router-dom';
 import RegularButton from './components/CustomButtons/RegularButton';
+import {RichText} from 'prismic-reactjs';
+import YoutubeURL from './lib/YoutubeURL';
 
 
 import './styles/css/About.css';
@@ -13,7 +15,7 @@ import './styles/css/About.css';
 export default class About extends React.Component {
 
   state = {
-    doc: null,
+    homepage: null,
     aboutpage: null,
     notFound: false
   }
@@ -37,12 +39,12 @@ export default class About extends React.Component {
   fetchPage(props) {
     if (props.prismicCtx) {
 
-      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'homepage')).then((doc) => {
-        if (doc) {
-          this.setState({doc});
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'homepage')).then((homepage) => {
+        if (homepage) {
+          this.setState({homepage});
         } else {
           this.setState({
-            notFound: !doc
+            notFound: !homepage
           });
         }
       });
@@ -60,19 +62,21 @@ export default class About extends React.Component {
   }
 
   render() {
-    if (this.state.doc && this.state.aboutpage) {
+    if (this.state.homepage && this.state.aboutpage) {
 
-      let data = this.state.doc.results[0].data;
-      // let aboutpageResults = this.state.aboutpage.results;
+      let homepage = this.state.homepage.results[0].data;
+      let aboutpage = this.state.aboutpage.results[0].data;
+
+      console.log("about page: " + JSON.stringify(aboutpage));
 
       return <div className={classNames('sections-page')}>
-        <MainNavigation thisProp={data} navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F33169785-8d7d-4fc4-a605-8efe80901fc1_133+ridgeline+drv+the+ponds.jpg)'}}>
+        <MainNavigation thisProp={homepage} navBarTransparent={true}/>
+        <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url('+aboutpage.header_background_image.url+')'}}>
           <div className={classNames('container', 'hero-text-margin')}>
                 <div className={classNames('row')}>
                   <div className={classNames('col-md-6')}>
                     <div className={classNames('iframe-container')}>
-                        <iframe title="about ruma mundi stanhope garden sydney" height="300" src="https://www.youtube.com/embed/FVZ0OB4WkPs" frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>
+                        <iframe title="about ruma mundi stanhope garden sydney" height="300" src={new YoutubeURL().getFormattedEmbedUrl(aboutpage.about_video_link.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>
                     </div>
                   </div>
                   <div className={classNames('col-md-3')}>
@@ -83,51 +87,22 @@ export default class About extends React.Component {
           </div>
         </div>
         <div className={classNames('main', 'main-raised')}>
-          <div className={classNames('cd-section')}>
-            <div className={classNames('container', 'pt-5')}>
-              <div className={classNames('row')}>
-                <div className={classNames('col-md-12', 'ml-auto', 'mr-auto')}>
-                <div className={classNames('card', 'card-profile', 'card-plain')}>
-                    <div className={classNames('row')}>
-                        <div className={classNames('col-md-12', 'testimonialpage-first-video')}>
-                          <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
-                            <div>
-                              <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
-                                <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={"https://www.youtube.com/embed/FVZ0OB4WkPs"} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div className={classNames('features-1', 'pt-5', 'pb-3')}>
             <div className={classNames('container')}>
               <div className={classNames('row')}>
                   <div className={classNames('col-md-8', 'ml-auto', 'mr-auto')}>
-                      <h3 className={classNames('title')}>Serving you with love and care</h3>
-                      <p className={classNames('description')}  >
-                      Ruma Mundi's name has become synonymous with real estate in the Hills District. During her dynamic career spanning close to 20 years, Ruma has succeeded in bringing about a positive and refreshing change to customer service in the real estate industry, not just in the North West of Sydney, but in the country as a whole. She has earned her place in an elite group of agents, through highly effective negotiating strategies that time and again have produced exceptional sale prices for her clients. Her integrity and professionalism has earned her respect not just among her peers, but with the community as a whole. Behind her personable manner and respectful approach is a sharp and strategic thinker with exemplary sales skills. Displaying absolute integrity  Ruma’s dedication to each individual campaign is reflected in the consistency of her results.
-                      </p>
-                      <p className={classNames('description')}  >
-                      She is a hard working mom of 2 beautiful daughters, Samara and Safira. Being a mom gives her a perspective on what a growing family needs. Nick, her husband helps her out between his work as an executive at Woolworths, and making time for the family. Ruma is keenly aware of the juggles of everyday life in the North West of Sydney, and the pressures families today have to work with to live happy and stay healthy.
-                      </p>
-
-                      <p className={classNames('description')}  >
-
-                      Principal of First National Hills Direct, Ruma is a hard-working director who has an unwavering dedication for her Agency and her staff. With an Master’s degree in business administration and a bachelor’s degree in commerce, she has the education to back her up. Ruma and her team's success are driven by a strong market knowledge of the Hills District and a passion for people, coupled with care and integrity in all their dealings.
-                      </p>
+                      <h3 className={classNames('title')}>{aboutpage.header[0].text}</h3>
+                      <div className={classNames('description')}  >
+                        {RichText.render(aboutpage.about_text)}
+                      </div>
                       <div className={classNames('icon')}>
                         <i className={classNames('material-icons')}>format_quote</i>
                       </div>
                       <blockquote className={classNames('blockquote', 'text-center')}>
                         <p className={classNames('mb-0')}>
-                          I have been selling real estate in Sydney’s Hills District for nearly 20 years. A major portion of the homes that I sell are either past clients, or referrals. My passion and motivation is continually driven forward by the satisfaction I receive when I secure an exceptional outcome for my clients.
+                          {aboutpage.quotation[0].text}
                         </p>
-                        <footer className={classNames('blockquote-footer')}>Ruma Mundi</footer>
+                        <footer className={classNames('blockquote-footer')}>{aboutpage.quotation_author[0].text}</footer>
                       </blockquote>
                   </div>
               </div>
@@ -137,12 +112,12 @@ export default class About extends React.Component {
               <div className={classNames('container')}>
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-                          <h3 className={classNames('title')}>Awards and Recognitions</h3>
+                          <h3 className={classNames('title')}>{aboutpage.awards_header[0].text}</h3>
                           <blockquote className={classNames('blockquote-without-left-line', 'text-center', 'text-white')}>
                             <p className={classNames('mb-0')}>
-                              While it is an honour&nbsp;to be recognised both nationally and globally, my true reward comes from the satisfaction that I gain from a good result for my clients.&nbsp;
+                              {aboutpage.awards_quotation[0].text}
                             </p>
-                            <footer className={classNames('blockquote-footer', 'text-white')}>Ruma</footer>
+                            <footer className={classNames('blockquote-footer', 'text-white')}>{aboutpage.awards_quotation_author[0].text}</footer>
                           </blockquote>
                       </div>
                   </div>
@@ -337,7 +312,7 @@ export default class About extends React.Component {
                   </div>
               </div>
           </div>
-          <FooterLinkedToContactUs data={"Contact Ruma for a market appraisal"}/>
+          <FooterLinkedToContactUs data={aboutpage.footer_remark[0].text}/>
         </div>
         <PageFooter />
       </div>;
@@ -354,3 +329,26 @@ export default class About extends React.Component {
     }
   }
 }
+
+
+// <div className={classNames('cd-section')}>
+//   <div className={classNames('container', 'pt-5')}>
+//     <div className={classNames('row')}>
+//       <div className={classNames('col-md-12', 'ml-auto', 'mr-auto')}>
+//       <div className={classNames('card', 'card-profile', 'card-plain')}>
+//           <div className={classNames('row')}>
+//               <div className={classNames('col-md-12', 'testimonialpage-first-video')}>
+//                 <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
+//                   <div>
+//                     <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
+//                       <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={"https://www.youtube.com/embed/FVZ0OB4WkPs"} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
+//                     </div>
+//                   </div>
+//                 </div>
+//               </div>
+//           </div>
+//       </div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
