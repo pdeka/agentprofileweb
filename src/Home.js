@@ -11,6 +11,7 @@ import PageFooter from "./partials/PageFooter";
 import TestimonialCardBody from "./partials/TestimonialCardBody";
 import {Link} from 'react-router-dom';
 import RegularButton from './components/CustomButtons/RegularButton';
+import {RichText} from 'prismic-reactjs';
 
 import './styles/css/Home.css';
 
@@ -107,9 +108,9 @@ export default class Home extends React.Component {
       let data = this.state.doc.results[0].data;
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
+      // let contactInfo = this.state.contactInfo.results[0].data;
 
       console.log("This is the home page:" + JSON.stringify(data));
-      // let contactInfo = this.state.contactInfo.results[0].data;
 
       // const headerSummaryParagraphs = data.top_level_text_1.map((para, index) => {return <div key={index}>{para.text}</div>})
 
@@ -120,9 +121,9 @@ export default class Home extends React.Component {
               <div className={classNames('container', 'hero-text-margin')}>
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-8')}>
-                          <h2 className={classNames('title')}>{data.homepage_header.text}</h2>
+                          <h2 className={classNames('title')}>{data.homepage_header[0].text}</h2>
                           <h5 className={classNames('text-white', 'hero-paragraph-text')}>
-                            {data.top_level_text_1.text}
+                            {data.top_level_text[0].text}
                           </h5>
                           <br/>
                       </div>
@@ -140,16 +141,16 @@ export default class Home extends React.Component {
                                       </a>
                                   </div>
                                   <div className={classNames('card-footer', 'pb-0', 'pt-0')}>
-                                      <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-facebook')} target="_blank">
+                                      <a href={data.facebook_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-facebook')} target="_blank">
                                           <i className={classNames('fa', 'fa-facebook', 'fa-inverse')}></i>
                                       </a>
-                                      <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-instagram')} target="_blank">
+                                      <a href={data.instagram_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-instagram')} target="_blank">
                                           <i className={classNames('fa', 'fa-instagram', 'fa-inverse')}></i>
                                       </a>
-                                      <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-youtube')} target="_blank">
+                                      <a href={data.youtube_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-youtube')} target="_blank">
                                           <i className={classNames('fa', 'fa-youtube', 'fa-inverse')}></i>
                                       </a>
-                                      <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-linkedin')} target="_blank">
+                                      <a href={data.linkedin_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-linkedin')} target="_blank">
                                           <i className={classNames('fa', 'fa-linkedin', 'fa-inverse')}></i>
                                       </a>
                                       <a href={data.rate_my_agent_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link')} target="_blank">
@@ -167,8 +168,8 @@ export default class Home extends React.Component {
                     </div>
                   </div>
               </div>
-              <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster="https://prismic-io.s3.amazonaws.com/rumamundi%2F311dd30e-7826-4c90-ae05-4cf3141ecff6_videoversion2-poster.png">
-                <source src="https://prismic-io.s3.amazonaws.com/rumamundi%2Ffafbff33-efae-411d-8bb4-01ed574cb22f_ruma+website+video+v2.mp4" type="video/mp4"/>
+              <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster={data.video_poster_image.url}>
+                <source src={data.homepage_video_link.url} type="video/mp4"/>
               </video>
           </div>
         </div>
@@ -182,18 +183,15 @@ export default class Home extends React.Component {
                       <div className={classNames('row')}>
                           <div className={classNames('col-md-5')}>
                               <div className={classNames('card-header', 'card-header-image')}>
-                                  <a href="#pablo">
-                                      <img className={classNames('img')} src="./images/180131_NKnight_Ruma_0017.jpg" alt="please fill" />
-                                  </a>
+                                <img className={classNames('img')} src={data.about_you_section_image.url} alt={data.about_you_section_image.alt} />
                               </div>
                           </div>
                           <div className={classNames('col-md-7')}>
                               <div className={classNames('card-body')}>
-                                  <h3 className={classNames('card-title')}>Passion Integrity Care</h3>
-                                  <p className={classNames('card-description', 'text-black')}>
-                                    Ruma's name is synonymous with the real estate industry in the Hills District.
-                                    She is among the REB top 50, a director, a business owner, but above all a mother of 2 beautiful daughters, Samara and Safira, and a person renowned in the community for her dedication, her integrity and her compassion.
-                                  </p>
+                                  <h3 className={classNames('card-title')}>{data.about_header[0].text}</h3>
+                                  <div className={classNames('card-description', 'text-black')}>
+                                    {RichText.render(data.about_you_text)}
+                                  </div>
                                   <Link to="/about" style={{'marginLeft' : '25px'}} className={classNames('nav-link')}>
                                     <RegularButton
                                         color="primary"
@@ -221,14 +219,10 @@ export default class Home extends React.Component {
                         <div className={classNames('row')}>
                             <div className={classNames('col-md-4')}>
                                 <div className={classNames('card-body', 'pt-0', 'mt-0', 'pb-5')}>
-                                    <h3 className={classNames('card-title')}>The Team</h3>
-                                    <p className={classNames('card-description')}>
-                                      People rarely achieve much without a good supportive team around them. We truely believe that we have the best team in the North West of Sydney.
-                                      Our extensive experience, local knowledge, attention to details and determination to do the best for our clients, has been the bed rock of our success.
-                                      However, our true strength is in our positivity and humility.
-                                      We pride ourselves with the fact that we have managed to preserve a sense of approachability and hospitality,
-                                      with a deep understanding that being the agent you can trust and seek advice from, has been a core competency of our endeavour so far.
-                                    </p>
+                                    <h3 className={classNames('card-title')}>{data.the_team_header[0].text}</h3>
+                                    <div className={classNames('card-description')}>
+                                      {RichText.render(data.the_team_text)}
+                                    </div>
                                     <Link to="/team" style={{'marginLeft' : '25px'}}>
                                       <RegularButton
                                           color="primary"
@@ -241,7 +235,7 @@ export default class Home extends React.Component {
                             </div>
                             <div className={classNames('col-md-8')}>
                                 <div className={classNames('card-header', 'card-header-image')}>
-                                        <img className={classNames('img')} src="https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg" alt="please fill" />
+                                        <img className={classNames('img')} src={data.the_team_image.url} alt={data.the_team_image.alt} />
                                 </div>
                             </div>
                         </div>
@@ -255,11 +249,11 @@ export default class Home extends React.Component {
                 <div className={classNames('container')}>
                     <div className={classNames('row')}>
                         <div className={classNames('col-md-12', 'ml-auto', 'mr-auto')}>
-                            <h3 className={classNames('card-title', 'home-article-desktop-title')}>Prabin</h3>
+                            <h3 className={classNames('card-title', 'home-article-desktop-title')}>{data.monthly_wrap_up_header[0].text}</h3>
                             <h3 className={classNames('card-title', 'home-article-mobile-title')}>Monthly Wrap-up</h3>
-                            <p className={classNames('card-description')}>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
+                            <div className={classNames('card-description')}>
+                              {RichText.render(data.monthly_wrap_up_text)}
+                            </div>
                             <div className={classNames('card', 'card-plain', 'card-blog')}>
                               <div className={classNames('row')}>
                                 <div className={classNames('col-md-8')}>
@@ -291,10 +285,10 @@ export default class Home extends React.Component {
                 <div className={classNames('container')}>
                     <div className={classNames('row')}>
                         <div className={classNames('col-md-6', 'ml-auto', 'mr-auto', 'text-center')}>
-                            <h3 className={classNames('title')}>{data.homepage_testimonials_header[0].text}</h3>
-                            <p className={classNames('description', 'text-white')}>
-                              What our clients say is a testament to the value and quality of our service. We enthusiastically gather feedback, and endeavour to continously improve our services based on what they tell us.
-                            </p>
+                            <h3 className={classNames('title')}>{data.client_section_header[0].text}</h3>
+                            <div className={classNames('description', 'text-white')}>
+                              {RichText.render(data.client_section_text)}
+                            </div>
                         </div>
                     </div>
                     <div className={classNames('row')}>
@@ -312,7 +306,7 @@ export default class Home extends React.Component {
                     </div>
                 </div>
             </div>
-            <FooterLinkedToContactUs data={"We would love to have a coffee with you."}/>
+            <FooterLinkedToContactUs data={data.footer_remark[0].text}/>
         </div>
         <div className={classNames('main', 'main-raised-for-home')} style={{'zIndex': 3}}>
           <PageFooter />
