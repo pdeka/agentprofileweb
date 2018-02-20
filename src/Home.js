@@ -125,7 +125,6 @@ export default class Home extends React.Component {
                           <h5 className={classNames('text-white', 'hero-paragraph-text')}>
                             {data.top_level_text[0].text}
                           </h5>
-                          <br/>
                       </div>
                   </div>
                   <div className={classNames('row')}>
