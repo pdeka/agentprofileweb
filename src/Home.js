@@ -258,7 +258,7 @@ export default class Home extends React.Component {
                     </div>
                 </div>
             </div>
-            <div className={classNames('testimonials-1', 'section-image', 'home-client-section', 'pb-5')} style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
+            <div className={classNames('testimonials-1', 'section-image', 'home-client-section', 'pb-5')} style={{'backgroundImage': 'url('+data.client_section_image.url+')'}}>
                 <div className={classNames('container')}>
                     <div className={classNames('row')}>
                         <div className={classNames('col-md-6', 'ml-auto', 'mr-auto', 'text-center')}>
