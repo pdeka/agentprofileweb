@@ -53,7 +53,7 @@ export default class Team extends React.Component {
 
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-filter', 'header-small')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
+        <div className={classNames('page-header', 'header-filter', 'header-small')} data-parallax="true" style={{backgroundImage: "url(" +teampage.header_background_image.url+")"}}>
           <div className={classNames('container', 'hero-text-margin')}>
               <div className={classNames('row')}>
                   <div className={classNames('col-md-12')}>

@@ -77,12 +77,9 @@ export default class Properties extends React.Component {
       let propertiespage = this.state.propertiespage.results[0].data;
       let articleResults = this.state.articles.results;
 
-      console.log("This is the properties: " + JSON.stringify(propertiespage));
-
-
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-small', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F52219df8-9af5-4681-a719-be9132fbf5c1_photo-collage-vector-background.jpg)'}}>
+        <div className={classNames('page-header', 'header-small', 'header-filter')} data-parallax="true" style={{backgroundImage: "url(" +propertiespage.header_background_image.url+")"}}>
         <div className={classNames('container', 'hero-text-margin')}>
               <div className={classNames('row', 'justify-content-center', 'mt-5')}>
                 <h2 className={classNames('title')}>{propertiespage.header[0].text}</h2>
