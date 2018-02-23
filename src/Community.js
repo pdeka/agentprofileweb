@@ -93,9 +93,9 @@ export default class Community extends React.Component {
                         <i className={classNames('material-icons')}>format_quote</i>
                       </div>
                       <blockquote className={classNames('blockquote', 'text-center')}>
-                        <div className={classNames('mb-0')}>
+                        <p className={classNames('mb-0')}>
                           {communitypage.quotation[0].text}
-                        </div>
+                        </p>
                         <footer className={classNames('blockquote-footer')}>{communitypage.quotation_author[0].text}</footer>
                       </blockquote>
                   </div>
