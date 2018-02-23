@@ -286,7 +286,7 @@ export default class Home extends React.Component {
             <FooterLinkedToContactUs data={data.footer_remark[0].text}/>
         </div>
         <div className={classNames('main', 'main-raised-for-home')} style={{'zIndex': 3}}>
-          <PageFooter />
+          <PageFooter prismicCtx={this.props.prismicCtx}/>
         </div>
       </div>
     }else{
