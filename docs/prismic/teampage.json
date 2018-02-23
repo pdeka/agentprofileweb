@@ -1,0 +1,140 @@
+{
+  "header": [{
+    "type": "heading1",
+    "text": "She has the support she needs",
+    "spans": []
+  }],
+  "footer_remark": [{
+    "type": "heading6",
+    "text": "Want to meet ruma?",
+    "spans": []
+  }],
+  "body": [{
+    "slice_type": "team_members",
+    "slice_label": null,
+    "items": [{
+      "full_name": [{
+        "type": "heading6",
+        "text": "Brad Norrie",
+        "spans": []
+      }],
+      "job": [{
+        "type": "heading6",
+        "text": "Sales Executive",
+        "spans": []
+      }],
+      "profile_summary": [{
+        "type": "paragraph",
+        "text": "As a fully licensed real estate agent and local resident with over 15 years’ experience in the real estate industry, Brad is committed to exceeding expectations. An invaluable asset to Brad’s success is his years of knowledge and practice, his attention to detail and his drive and determination to achieve nothing less than the best for all of his clients. Brad believes that above all else the vendors and buyers deserve his undivided attention, which is exactly what they receive.",
+        "spans": []
+      }, {
+        "type": "paragraph",
+        "text": "Brad thrives on the dynamic nature of the business overall and has a positive attitude which is received by his clients. His communication and relationship building abilities are matched by outstanding local area knowledge and exceptional attention to detail.",
+        "spans": []
+      }, {
+        "type": "paragraph",
+        "text": "Brad has an outstanding ability to understand each client’s goals and priorities. He has brought enthusiasm, organisational skills and a natural ability to communicate, into the world of real estate.",
+        "spans": []
+      }],
+      "photo": {
+        "link_type": "Media",
+        "name": "brad-profile-full-length.jpg",
+        "kind": "image",
+        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Fc4f01682-7818-45aa-8bb4-16477b3663c2_brad-profile-full-length.jpg",
+        "size": "307456",
+        "height": "800",
+        "width": "534"
+      },
+      "facebook_link": {
+        "link_type": "Any"
+      },
+      "linkedin_link": {
+        "link_type": "Any"
+      },
+      "rate_my_agent_link": {
+        "link_type": "Any"
+      }
+    }, {
+      "full_name": [{
+        "type": "heading6",
+        "text": "Ian Williamson",
+        "spans": []
+      }],
+      "job": [{
+        "type": "heading6",
+        "text": "Sales Executive",
+        "spans": []
+      }],
+      "profile_summary": [{
+        "type": "paragraph",
+        "text": "To achieve a positive and impressive sale result Ian focuses on correctly pricing a property based on thorough research and recent sales. He believes that marketing the property in a strategic manner and employing a smart sale method that best suits your property will appeal to a wider range of potential buyers.",
+        "spans": []
+      }, {
+        "type": "paragraph",
+        "text": "Ian places an importance on training, ongoing professional development and mentoring, he is always adapting to the changing real estate world. Ian ongoing knowledge and training have only helped him acquire the correct approach to all client’s needs. Ian ensures that he has the best foundation possible to service his clients. Ian has the knowledge and experience that buyers and sellers need in a market that requires an agent who knows the market and has the most effective tools at his fingertips.",
+        "spans": []
+      }, {
+        "type": "paragraph",
+        "text": "Ian sets fourth groundwork for excellence which allows him to provide a level of service rarely seen in the real estate world, that is why he loves his work. Ian takes pride in his achievements and finds enjoyment in working with all of his clients to provide a selling or purchasing experience unsurpassed by any other agent.",
+        "spans": []
+      }],
+      "photo": {
+        "link_type": "Media",
+        "name": "ian-profile-full-length.jpg",
+        "kind": "image",
+        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Ffdc936ea-2b8d-422f-9d59-d006725e0aa1_ian-profile-full-length.jpg",
+        "size": "322681",
+        "height": "800",
+        "width": "534"
+      },
+      "facebook_link": {
+        "link_type": "Any"
+      },
+      "linkedin_link": {
+        "link_type": "Any"
+      },
+      "rate_my_agent_link": {
+        "link_type": "Any"
+      }
+    }, {
+      "full_name": [{
+        "type": "heading6",
+        "text": "Bailey Abela",
+        "spans": []
+      }],
+      "job": [{
+        "type": "heading6",
+        "text": "PA to Ruma Mundi",
+        "spans": []
+      }],
+      "profile_summary": [{
+        "type": "paragraph",
+        "text": "Having started his real estate career at the beginning of 2017, Bailey joins the team here at First National Hills Direct looking to take his development in the industry to the next level. Being a proud Hills resident for his entire life Bailey has a strong grasp on the growth of the area as well as the residents who call it home. Bailey likes to pride himself on being a young, highly motivated and professional individual with strong ethics, an eagerness to succeed and maturity beyond his years. Always with a bright and contagious smile on his face, Bailey loves connecting with anyone he comes by.",
+        "spans": []
+      }, {
+        "type": "paragraph",
+        "text": "Bailey understands the importance of knowledge and keeping up to date with the dynamic marketplace, which sees him undertaking constant professional and personal training. Working closely next to Ruma and Brad, Bailey thoroughly enjoys any challenge that is set out for him to achieve. Without any hesitation, Bailey is always glad to help with his 'can-do' attitude which is so rarely seen of someone of his age.",
+        "spans": []
+      }],
+      "photo": {
+        "link_type": "Media",
+        "name": "bailey-profile-full-length.jpg",
+        "kind": "image",
+        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2F1df645f3-dc94-46e8-9e54-bc9daf4283da_bailey-profile-full-length.jpg",
+        "size": "326749",
+        "height": "800",
+        "width": "534"
+      },
+      "facebook_link": {
+        "link_type": "Any"
+      },
+      "linkedin_link": {
+        "link_type": "Any"
+      },
+      "rate_my_agent_link": {
+        "link_type": "Any"
+      }
+    }],
+    "primary": {}
+  }]
+}
