@@ -51,8 +51,6 @@ export default class Team extends React.Component {
 
       let teampage = this.state.teampage.results[0].data;
 
-      console.log("This is the team: " + JSON.stringify(teampage));
-
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-filter', 'header-small')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
