@@ -72,16 +72,14 @@ export default class About extends React.Component {
       return <div className={classNames('sections-page')}>
         <MainNavigation thisProp={homepage} navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url('+aboutpage.header_background_image.url+')'}}>
-          <div className={classNames('container', 'hero-text-margin')}>
+          <div className={classNames('container', 'hero-text-margin', 'about-video-text-margin')}>
                 <div className={classNames('row')}>
-                  <div className={classNames('col-md-6')}>
-                    <div className={classNames('iframe-container')}>
-                        <iframe title="about ruma mundi stanhope garden sydney" height="300" src={new YoutubeURL().getFormattedEmbedUrl(aboutpage.about_video_link.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>
+                  <div className={classNames('col-md-7')}>
+                    <div className={classNames('iframe-container', 'embed-responsive', 'embed-responsive-16by9')}>
+                        <iframe title="about ruma mundi stanhope garden sydney" height="300" src={new YoutubeURL().getFormattedEmbedUrl(aboutpage.about_video_link.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true" id="iframe-rounded-corner"></iframe>
                     </div>
                   </div>
-                  <div className={classNames('col-md-3')}>
-                  </div>
-                  <div className={classNames('col-md-3')}>
+                  <div className={classNames('col-md-5')}>
                   </div>
                 </div>
           </div>

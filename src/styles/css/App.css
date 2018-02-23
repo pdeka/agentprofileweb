@@ -6,7 +6,13 @@ body {
   height: 80vh;
   min-height: 80vh; }
 
+.about-video-text-margin {
+  margin-top: 100px; }
+
 @media all and (max-width: 991px) {
+  .about-video-text-margin {
+    margin-top: 0; }
+
   .hero-text-margin {
     margin-top: 100px; }
 
