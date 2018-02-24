@@ -89,7 +89,7 @@ export default class Home extends React.Component {
     return uniques.map((key, index) => {
       return <div key={index} className={classNames('col-md-4')}>
             <div className={classNames('card', 'card-testimonial')}>
-                <TestimonialCardBody truncateLines={9} data={testimonialResults[key].data} />
+                <TestimonialCardBody truncateLines={2} data={testimonialResults[key].data} truncateHeaderChars={75} />
                 <div className={classNames('card-footer')}>
                     <div className={classNames('card-avatar')}>
                       <a target="_blank" href={testimonialResults[key].data.external_link.url}>

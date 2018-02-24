@@ -16,22 +16,33 @@ export default class TestimonialCardBody extends React.Component {
     });
   }
 
-  heroTestimonialQuote(data, index){
-    return <span>
+  heroTestimonialQuote(quote, truncateHeaderChars = 75){
+    if(!quote) {
+      return;
+    }
+
+    console.log("trunscate header lines :" + truncateHeaderChars);
+    let quoteHeader = quote.text;
+    if (quote.text.length > truncateHeaderChars) {
+      quoteHeader = quote.text.substring(0,truncateHeaderChars-1) + "...";
+    }
+
+    return <h2>
+          <span>
             <i className={classNames('fa', 'fa-quote-left', 'testimonialpage-quote-format', 'pr-2')}/>
-            {data.quote[0] && data.quote[0].text}
+                {quoteHeader}
             <i className={classNames('fa', 'fa-quote-right', 'testimonialpage-quote-format', 'pl-2')}></i>
-          </span>;
+          </span>
+          </h2>;
   }
 
   render() {
     let data = this.props.data;
     let truncateLines = this.props.truncateLines;
+    let truncateHeaderChars = this.props.truncateHeaderChars;
 
     return <div className={classNames('card-body')}>
-        <h2>
-          {this.heroTestimonialQuote(data, 3)}
-        </h2>
+        {this.heroTestimonialQuote(data.quote[0], truncateHeaderChars)}
         <p className={classNames('card-description')}>
           <Truncate lines={truncateLines}
             ellipsis={<span>... <a target="_blank" style={{'fontWeight': 600}} href={data.external_link.url}>Read More</a></span>}>
