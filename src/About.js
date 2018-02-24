@@ -284,30 +284,6 @@ export default class About extends React.Component {
                   </div>
               </div>
           </div>
-          <div className={classNames('team-3', 'pt-5', 'pb-0')}>
-              <div className={classNames('container')}>
-                  <div className={classNames('row')}>
-                      <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-                          <h3 className={classNames('title')}>Ruma in the community</h3>
-                          <p className={classNames('description')}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                          </p>
-                      </div>
-                  </div>
-                  <div className={classNames('row')}>
-                    <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-                      <Link to="/community" className={classNames('nav-link')}>
-                        <RegularButton
-                            color="primary"
-                            round
-                            aria-label="community">
-                            Read More
-                        </RegularButton>
-                      </Link>
-                    </div>
-                  </div>
-              </div>
-          </div>
           <FooterLinkedToContactUs data={aboutpage.footer_remark[0].text}/>
         </div>
         <PageFooter prismicCtx={this.props.prismicCtx}/>
@@ -347,4 +323,30 @@ export default class About extends React.Component {
 //       </div>
 //     </div>
 //   </div>
+// </div>
+
+// 
+// <div className={classNames('team-3', 'pt-5', 'pb-0')}>
+//     <div className={classNames('container')}>
+//         <div className={classNames('row')}>
+//             <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
+//                 <h3 className={classNames('title')}>Ruma in the community</h3>
+//                 <p className={classNames('description')}>
+//                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+//                 </p>
+//             </div>
+//         </div>
+//         <div className={classNames('row')}>
+//           <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
+//             <Link to="/community" className={classNames('nav-link')}>
+//               <RegularButton
+//                   color="primary"
+//                   round
+//                   aria-label="community">
+//                   Read More
+//               </RegularButton>
+//             </Link>
+//           </div>
+//         </div>
+//     </div>
 // </div>
