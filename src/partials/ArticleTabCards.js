@@ -2,11 +2,12 @@ import React from 'react';
 import ArticlePreview from './ArticlePreview';
 import FormatDate from "./FormatDate";
 import classNames from 'classnames';
+import FormFactor from "../lib/FormFactor"
 
 export default class ArticleTabCards extends React.Component {
 
-  isOdd(num) {
-    return num % 2;
+  isEven(num) {
+    return !(num % 2);
   }
 
   renderPreview(article) {
@@ -17,18 +18,20 @@ export default class ArticleTabCards extends React.Component {
   }
 
   renderSummary(article) {
-    return <div className={classNames('col-md-6')}>
-      <h3 className={classNames('card-title')}>
-        {article.data.article_title[0].text}
-      </h3>
-      <p className={classNames('card-description')}>
-        {article.data.article_summary[0].text}
-      </p>
-      <p className={classNames('author')}>
-        by
-        <b>Ruma</b>,&nbsp;
-        <FormatDate data={article.data.date}/>
-      </p>
+    return <div className={classNames('col-md-6', 'text-left')}>
+        <div className={classNames('col-md-10', 'text-left')}>
+          <h3 className={classNames('card-title')}>
+            {article.data.article_title[0].text}
+          </h3>
+          <p className={classNames('card-description')}>
+            {article.data.article_summary[0].text}
+          </p>
+          <p className={classNames('author')}>
+            by
+            <b>Ruma</b>,&nbsp;
+            <FormatDate data={article.data.date}/>
+          </p>
+      </div>
     </div>;
   }
 
@@ -48,12 +51,12 @@ export default class ArticleTabCards extends React.Component {
 
       if(index === 0){ return <span key="0"/>;}
 
-      if (this.isOdd(index)) {
+      if (new FormFactor().isMobile() || this.isEven(index)) {
         return <div className={classNames('row')}>
           <div className={classNames('card', 'card-plain', 'card-blog')} key={index}>
             <div className={classNames('row')}>
-              {this.renderSummary(article)}
               {this.renderPreview(article)}
+              {this.renderSummary(article)}
             </div>
           </div>
         </div>
@@ -61,8 +64,8 @@ export default class ArticleTabCards extends React.Component {
         return <div className={classNames('row')}>
           <div className={classNames('card', 'card-plain', 'card-blog')} key={index}>
             <div className={classNames('row')}>
-              {this.renderPreview(article)}
               {this.renderSummary(article)}
+              {this.renderPreview(article)}
             </div>
           </div>
         </div>
