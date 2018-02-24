@@ -42,8 +42,9 @@ a:hover,a:visited,a:active,a:link {
 }
 
 .hero-paragraph-text {
-  font-weight: 400;
-  font-size: 22px;
+  font-weight: 400 !important;
+  font-size: 17px !important;
+  font-style: italic !important;
 }
 
 

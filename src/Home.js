@@ -122,9 +122,9 @@ export default class Home extends React.Component {
                   </div>
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-8')}>
-                          <h5 className={classNames('text-white', 'hero-paragraph-text')}>
+                          <p className={classNames('text-white', 'hero-paragraph-text')}>
                             {data.top_level_text[0].text}
-                          </h5>
+                          </p>
                       </div>
                   </div>
                   <div className={classNames('row')}>
