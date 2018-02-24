@@ -48,7 +48,7 @@ export default class Testimonials extends React.Component {
         }
       });
 
-      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'testimonial'), { orderings : '[my.testimonial.sort_order desc]',pageSize : 10  }).then(
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'testimonial'), { orderings : '[my.testimonial.sort_order desc]',pageSize : 12  }).then(
         (testimonials) => {
           if (testimonials) {
             this.setState({ testimonials });
