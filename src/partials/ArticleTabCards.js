@@ -52,8 +52,8 @@ export default class ArticleTabCards extends React.Component {
       if(index === 0){ return <span key="0"/>;}
 
       if (new FormFactor().isMobile() || this.isEven(index)) {
-        return <div className={classNames('row')}>
-          <div className={classNames('card', 'card-plain', 'card-blog')} key={index}>
+        return <div className={classNames('row')} key={index}>
+          <div className={classNames('card', 'card-plain', 'card-blog')}>
             <div className={classNames('row')}>
               {this.renderPreview(article)}
               {this.renderSummary(article)}
@@ -61,8 +61,8 @@ export default class ArticleTabCards extends React.Component {
           </div>
         </div>
       } else {
-        return <div className={classNames('row')}>
-          <div className={classNames('card', 'card-plain', 'card-blog')} key={index}>
+        return <div className={classNames('row')} key={index}>
+          <div className={classNames('card', 'card-plain', 'card-blog')}>
             <div className={classNames('row')}>
               {this.renderSummary(article)}
               {this.renderPreview(article)}
