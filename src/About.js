@@ -67,8 +67,6 @@ export default class About extends React.Component {
       let homepage = this.state.homepage.results[0].data;
       let aboutpage = this.state.aboutpage.results[0].data;
 
-      console.log("about page: " + JSON.stringify(aboutpage));
-
       return <div className={classNames('sections-page')}>
         <MainNavigation thisProp={homepage} navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url('+aboutpage.header_background_image.url+')'}}>

@@ -72,8 +72,6 @@ export default class Testimonials extends React.Component {
       let testimonialspage = this.state.testimonialspage.results[0].data;
       let testimonialResults = this.state.testimonials.results;
 
-      console.log("Testimonials :" + JSON.stringify(testimonialspage));
-
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-filter', 'header-small')} data-parallax="true" style={{backgroundImage: "url(" +testimonialspage.header_background_image.url+")"}}>

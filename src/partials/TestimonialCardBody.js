@@ -21,7 +21,6 @@ export default class TestimonialCardBody extends React.Component {
       return;
     }
 
-    console.log("trunscate header lines :" + truncateHeaderChars);
     let quoteHeader = quote.text;
     if (quote.text.length > truncateHeaderChars) {
       quoteHeader = quote.text.substring(0,truncateHeaderChars-1) + "...";
