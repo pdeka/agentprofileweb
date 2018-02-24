@@ -121,7 +121,6 @@ $(document).on('click', '.navbar-toggler', function() {
     $toggle = $(this);
 
     if (materialKit.misc.navbar_menu_visible == 1) {
-        console.log("nav bar is visible");
         $('html').removeClass('nav-open');
         materialKit.misc.navbar_menu_visible = 0;
         $('#bodyClick').remove();
@@ -131,17 +130,12 @@ $(document).on('click', '.navbar-toggler', function() {
 
         $('html').removeClass('nav-open-absolute');
     } else {
-        console.log("nav bar is NOT visible");
-
 
         setTimeout(function() {
             $toggle.addClass('toggled');
         }, 580);
 
         var clickedFunction = function() {
-
-            console.log("Body clicked");
-
 
             $('html').removeClass('nav-open');
 
