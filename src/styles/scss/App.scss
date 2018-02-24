@@ -14,13 +14,29 @@ body {
   margin-top: 100px;
 }
 
+.mobile-display {
+  display: none;
+}
+
+.desktop-display {
+  display: block;
+}
+
 @media all and (max-width: 991px) {
+  .mobile-display {
+    display: block;
+  }
+
+  .desktop-display {
+    display: none;
+  }
+
   .about-video-text-margin{
     margin-top: 0;
   }
 
   .hero-text-margin{
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .home-about-section{

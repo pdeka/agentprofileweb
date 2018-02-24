@@ -99,7 +99,7 @@ export default class Team extends React.Component {
                       <div className={classNames('col-md-12', 'ml-auto', 'mr-auto')}>
                         <div className={classNames('card', 'card-profile', 'card-plain')}>
                             <div className={classNames('row')}>
-                                <div className={classNames('col-md-5')}>
+                                <div className={classNames('col-md-5', 'desktop-display')}>
                                     <div className={classNames('card-header', 'card-header-image')}>
                                         <a href="#pablo">
                                             <img className={classNames('img')} src={teampage.body[0].items[1].photo.url} alt={teampage.body[0].items[1].photo.alt}/>
@@ -118,6 +118,13 @@ export default class Team extends React.Component {
                                         <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-twitter')}></i></a>
                                         <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-facebook-square')}></i></a>
                                         <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-google')}></i></a>
+                                    </div>
+                                </div>
+                                <div className={classNames('col-md-5', 'mobile-display')}>
+                                    <div className={classNames('card-header', 'card-header-image')}>
+                                        <a href="#pablo">
+                                            <img className={classNames('img')} src={teampage.body[0].items[1].photo.url} alt={teampage.body[0].items[1].photo.alt}/>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -169,7 +169,7 @@ export default class Home extends React.Component {
                                   <div className={classNames('card-description', 'text-black')}>
                                     {RichText.render(data.about_you_text)}
                                   </div>
-                                  <Link to="/about" style={{'marginLeft' : '25px'}} className={classNames('nav-link')}>
+                                  <Link to="/about" className={classNames('nav-link')}>
                                     <RegularButton
                                         color="primary"
                                         round
@@ -200,7 +200,7 @@ export default class Home extends React.Component {
                                     <div className={classNames('card-description')}>
                                       {RichText.render(data.the_team_text)}
                                     </div>
-                                    <Link to="/team" style={{'marginLeft' : '25px'}}>
+                                    <Link to="/team">
                                       <RegularButton
                                           color="primary"
                                           round
@@ -272,7 +272,7 @@ export default class Home extends React.Component {
                         {this.showTestimonials(testimonialResults)}
                     </div>
                     <div className={classNames('row', 'justify-content-center', 'mt-5')} >
-                      <Link to="/testimonials" style={{'marginLeft' : '25px'}}>
+                      <Link to="/testimonials">
                           <RegularButton
                               color="primary"
                               round
