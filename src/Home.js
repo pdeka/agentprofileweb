@@ -129,7 +129,7 @@ export default class Home extends React.Component {
                   </div>
                   <div className={classNames('row')}>
                     <div className={classNames('col-md-7')}>
-                      <div className={classNames('card', 'card-profile', 'card-plain', 'mt-1')}>
+                      <div className={classNames('card', 'card-profile', 'card-plain', 'mt-2')}>
                           <div className={classNames('row')}>
                               <div className={classNames('col-md-7', 'pl-0', 'ml-0')}>
                                   <div className={classNames('card-footer', 'pb-0', 'pt-0')} style={{'paddingLeft': '14px'}}>
@@ -164,12 +164,13 @@ export default class Home extends React.Component {
                               </div>
                           </div>
                           <div className={classNames('col-md-7')}>
+                            <div className={classNames('col-md-10')}>
                               <div className={classNames('card-body')}>
                                   <h3 className={classNames('card-title')}>{data.about_header[0].text}</h3>
                                   <div className={classNames('card-description', 'text-black')}>
                                     {RichText.render(data.about_you_text)}
                                   </div>
-                                  <Link to="/about" className={classNames('nav-link')}>
+                                  <Link to="/about">
                                     <RegularButton
                                         color="primary"
                                         round
@@ -177,8 +178,8 @@ export default class Home extends React.Component {
                                         Meet Ruma
                                     </RegularButton>
                                   </Link>
-
                               </div>
+                            </div>
                           </div>
                       </div>
                   </div>
