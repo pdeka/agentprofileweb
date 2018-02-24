@@ -10,14 +10,14 @@ export default class ArticleTabCards extends React.Component {
   }
 
   renderPreview(article) {
-    return <div className={classNames('col-md-4')}>
+    return <div className={classNames('col-md-6')}>
       <ArticlePreview data={article.data}/>
     </div>;
 
   }
 
   renderSummary(article) {
-    return <div className={classNames('col-md-8')}>
+    return <div className={classNames('col-md-6')}>
       <h3 className={classNames('card-title')}>
         {article.data.article_title[0].text}
       </h3>
@@ -49,17 +49,21 @@ export default class ArticleTabCards extends React.Component {
       if(index === 0){ return <span key="0"/>;}
 
       if (this.isOdd(index)) {
-        return <div className={classNames('card', 'card-plain', 'card-blog')} key={index}>
-          <div className={classNames('row')}>
-            {this.renderSummary(article)}
-            {this.renderPreview(article)}
+        return <div className={classNames('row')}>
+          <div className={classNames('card', 'card-plain', 'card-blog')} key={index}>
+            <div className={classNames('row')}>
+              {this.renderSummary(article)}
+              {this.renderPreview(article)}
+            </div>
           </div>
         </div>
       } else {
-        return <div className={classNames('card', 'card-plain', 'card-blog')} key={index}>
-          <div className={classNames('row')}>
-            {this.renderPreview(article)}
-            {this.renderSummary(article)}
+        return <div className={classNames('row')}>
+          <div className={classNames('card', 'card-plain', 'card-blog')} key={index}>
+            <div className={classNames('row')}>
+              {this.renderPreview(article)}
+              {this.renderSummary(article)}
+            </div>
           </div>
         </div>
       }

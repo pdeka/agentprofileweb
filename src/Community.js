@@ -130,9 +130,7 @@ export default class Community extends React.Component {
               <div className={classNames('container')}>
                 <div className={classNames('row')}>
                   <div className={classNames('container')}>
-                      <div className={classNames('row')}>
-                          <ArticleTabCards key= "0" articleResults={articleResults} tab={"My Community"} />
-                      </div>
+                      <ArticleTabCards key= "0" articleResults={articleResults} tab={"My Community"} />
                   </div>
                 </div>
               </div>

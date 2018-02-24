@@ -142,9 +142,7 @@ export default class Properties extends React.Component {
               <div className={classNames('container')}>
                 <div className={classNames('row')}>
                   <div className={classNames('container')}>
-                      <div className={classNames('row')}>
-                          <ArticleTabCards articleResults={articleResults} tab={"Properties"} />
-                      </div>
+                      <ArticleTabCards articleResults={articleResults} tab={"Properties"} />
                   </div>
                 </div>
               </div>
