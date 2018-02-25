@@ -26,13 +26,13 @@ export default class TestimonialCardBody extends React.Component {
       quoteHeader = quote.text.substring(0,truncateHeaderChars-1) + "...";
     }
 
-    return <h2>
-          <span>
+    return <h3>
             <i className={classNames('fa', 'fa-quote-left', 'testimonialpage-quote-format', 'pr-2')}/>
-                {quoteHeader}
+              <span style={{'fontSize': '30px'}}>
+                  {quoteHeader}
+              </span>
             <i className={classNames('fa', 'fa-quote-right', 'testimonialpage-quote-format', 'pl-2')}></i>
-          </span>
-          </h2>;
+          </h3>;
   }
 
   render() {
