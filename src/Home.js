@@ -136,7 +136,6 @@ export default class Home extends React.Component {
                                       <a href="tel:+61411030202" className={classNames('btn', 'btn-inverse', 'btn-round', 'text-white')} style={{'fontSize': '16px', 'fontWeight': '900', 'textTransform': 'none'}}>
                                         <i className={classNames('fa', 'fa-phone', 'fa-inverse')} />
                                         &nbsp;0411 030 202
-                                        <div className={classNames('ripple-container')}></div>
                                       </a>
                                   </div>
                               </div>
@@ -164,7 +163,7 @@ export default class Home extends React.Component {
                               </div>
                           </div>
                           <div className={classNames('col-md-7')}>
-                            <div className={classNames('col-md-10')}>
+                            <div className={classNames('col-md-12')}>
                               <div className={classNames('card-body')}>
                                   <h3 className={classNames('card-title')}>{data.about_header[0].text}</h3>
                                   <div className={classNames('card-description', 'text-black')}>
@@ -226,32 +225,32 @@ export default class Home extends React.Component {
             <div className={classNames('blogs-1', 'home-article-section')} id="blogs-1">
                 <div className={classNames('container')}>
                     <div className={classNames('row')}>
-                        <div className={classNames('col-md-12', 'ml-auto', 'mr-auto')}>
-                            <h3 className={classNames('card-title', 'home-article-desktop-title')}>{data.monthly_wrap_up_header[0].text}</h3>
-                            <h3 className={classNames('card-title', 'home-article-mobile-title')}>Monthly Wrap-up</h3>
-                            <div className={classNames('card-description')}>
-                              {RichText.render(data.monthly_wrap_up_text)}
-                            </div>
+                        <div className={classNames('col-md-12', 'pl-1')}>
+                              <h3 className={classNames('card-title', 'home-article-desktop-title')}>{data.monthly_wrap_up_header[0].text}</h3>
+                              <h3 className={classNames('card-title', 'home-article-mobile-title')}>Monthly Wrap-up</h3>
+                              <div className={classNames('card-description')}>
+                                {RichText.render(data.monthly_wrap_up_text)}
+                              </div>
                             <div className={classNames('card', 'card-plain', 'card-blog')}>
                               <div className={classNames('row')}>
                                 <div className={classNames('col-md-8')}>
                                   <ArticlePreview data={articleResults[0].data}/>
                                 </div>
-                                <div className={classNames('col-md-4', 'pt-4')}>
-                                  <h3 className={classNames('card-title')}>
-                                    <a href="#pablo">{articleResults[0].data.article_title[0].text}</a>
-                                  </h3>
-                                  <p className={classNames('card-description')}>
-                                    <Truncate lines={3} ellipsis={< span > ...<a href="#pablo">
-                                      Read More
-                                    </a> < /span>}>
-                                      {articleResults[0].data.article_summary[0].text}
-                                    </Truncate>
-                                  </p>
-                                  <p className={classNames('author')}>
-                                    by <b>Ruma</b>,&nbsp;
-                                    <FormatDate data={articleResults[0].data.date}/>
-                                  </p>
+                                <div className={classNames('col-md-4', 'pt-4', 'pl-4')}>
+                                    <h3 className={classNames('card-title')}>
+                                      <a href="#pablo">{articleResults[0].data.article_title[0].text}</a>
+                                    </h3>
+                                    <p className={classNames('card-description')}>
+                                      <Truncate lines={3} ellipsis={< span > ...<a href="#pablo">
+                                        Read More
+                                      </a> < /span>}>
+                                        {articleResults[0].data.article_summary[0].text}
+                                      </Truncate>
+                                    </p>
+                                    <p className={classNames('author')}>
+                                      by <b>Ruma</b>,&nbsp;
+                                      <FormatDate data={articleResults[0].data.date}/>
+                                    </p>
                                 </div>
                               </div>
                             </div>
