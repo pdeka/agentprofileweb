@@ -28,7 +28,7 @@ export default class TestimonialCardBody extends React.Component {
 
     return <h3>
             <i className={classNames('fa', 'fa-quote-left', 'testimonialpage-quote-format', 'pr-2')}/>
-              <span style={{'fontSize': '36px'}}>
+              <span className={classNames('testimonial-card-header')}>
                   {quoteHeader}
               </span>
             <i className={classNames('fa', 'fa-quote-right', 'testimonialpage-quote-format', 'pl-2')}></i>

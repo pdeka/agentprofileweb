@@ -162,8 +162,7 @@ export default class Home extends React.Component {
                                 <img className={classNames('img')} src={data.about_you_section_image.url} alt={data.about_you_section_image.alt} />
                               </div>
                           </div>
-                          <div className={classNames('col-md-7')}>
-                            <div className={classNames('col-md-12')}>
+                          <div className={classNames('col-md-6')}>
                               <div className={classNames('card-body')}>
                                   <h3 className={classNames('card-title')}>{data.about_header[0].text}</h3>
                                   <div className={classNames('card-description', 'text-black')}>
@@ -178,7 +177,6 @@ export default class Home extends React.Component {
                                     </RegularButton>
                                   </Link>
                               </div>
-                            </div>
                           </div>
                       </div>
                   </div>
@@ -224,10 +222,9 @@ export default class Home extends React.Component {
             </div>
             <div className={classNames('blogs-1', 'home-article-section', 'pb-4')}>
                 <div className={classNames('container')}>
-                    <div className={classNames('row')}>
                         <div className={classNames('col-md-12', 'pl-1')}>
-                              <h3 className={classNames('card-title', 'home-article-desktop-title')}>{data.monthly_wrap_up_header[0].text}</h3>
-                              <h3 className={classNames('card-title', 'home-article-mobile-title')}>Monthly Wrap-up</h3>
+                              <h3 className={classNames('card-title', 'home-article-desktop-title', 'text-center')}>{data.monthly_wrap_up_header[0].text}</h3>
+                              <h3 className={classNames('card-title', 'home-article-mobile-title', 'text-center')}>Monthly Wrap-up</h3>
                               <div className={classNames('card-description')}>
                                 {RichText.render(data.monthly_wrap_up_text)}
                               </div>
@@ -236,7 +233,7 @@ export default class Home extends React.Component {
                                 <div className={classNames('col-md-8')}>
                                   <ArticlePreview data={articleResults[0].data}/>
                                 </div>
-                                <div className={classNames('col-md-4', 'pt-4', 'pl-4')}>
+                                <div className={classNames('col-md-4', 'pt-4')}>
                                     <h3 className={classNames('card-title')}>
                                       <a href="#pablo">{articleResults[0].data.article_title[0].text}</a>
                                     </h3>
@@ -255,15 +252,14 @@ export default class Home extends React.Component {
                               </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
             <div className={classNames('testimonials-1', 'section-image', 'home-client-section', 'pb-5')} style={{'backgroundImage': 'url('+data.client_section_image.url+')'}}>
                 <div className={classNames('container')}>
                     <div className={classNames('row')}>
-                        <div className={classNames('col-md-6', 'ml-auto', 'mr-auto', 'text-center')}>
-                            <h3 className={classNames('title')}>{data.client_section_header[0].text}</h3>
-                            <div className={classNames('description', 'text-white')}>
+                        <div className={classNames('col-md-12', 'text-center')}>
+                            <h3 className={classNames('card-title', 'text-white', 'text-center')}>{data.client_section_header[0].text}</h3>
+                            <div className={classNames('card-description', 'text-white')}>
                               {RichText.render(data.client_section_text)}
                             </div>
                         </div>

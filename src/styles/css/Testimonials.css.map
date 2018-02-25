@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,6BAA6B;EAC3B,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,KAAK",
+"mappings": "AAAA,6BAA6B;EAC3B,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,KAAK;;AAGvB,wBAAyB;EACvB,SAAS,EAAE,eAAe",
 "sources": ["../scss/Testimonials.scss"],
 "names": [],
 "file": "Testimonials.css"
