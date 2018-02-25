@@ -109,12 +109,9 @@ export default class About extends React.Component {
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
                           <h3 className={classNames('title')}>{aboutpage.awards_header[0].text}</h3>
-                          <blockquote className={classNames('blockquote-without-left-line', 'text-center', 'text-white')}>
-                            <p className={classNames('mb-0')}>
+                            <p className={classNames('mb-0', 'text-white')}>
                               {aboutpage.awards_quotation[0].text}
                             </p>
-                            <footer className={classNames('blockquote-footer', 'text-white')}>{aboutpage.awards_quotation_author[0].text}</footer>
-                          </blockquote>
                       </div>
                   </div>
                   <div className={classNames('row')}>
@@ -325,7 +322,7 @@ export default class About extends React.Component {
 //   </div>
 // </div>
 
-// 
+//
 // <div className={classNames('team-3', 'pt-5', 'pb-0')}>
 //     <div className={classNames('container')}>
 //         <div className={classNames('row')}>

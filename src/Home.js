@@ -187,7 +187,7 @@ export default class Home extends React.Component {
               </div>
             </div>
             </div>
-            <div className={classNames('cd-section', 'section-dark')}>
+            <div className={classNames('cd-section', 'section-dark', 'mb-4')}>
               <div className={classNames('container')} >
                 <div className={classNames('features-3', 'home-team-section')}>
                   <div className={classNames('row')}>
@@ -222,7 +222,7 @@ export default class Home extends React.Component {
                 </div>
               </div>
             </div>
-            <div className={classNames('blogs-1', 'home-article-section')} id="blogs-1">
+            <div className={classNames('blogs-1', 'home-article-section', 'pb-4')}>
                 <div className={classNames('container')}>
                     <div className={classNames('row')}>
                         <div className={classNames('col-md-12', 'pl-1')}>
