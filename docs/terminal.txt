@@ -1,0 +1,21 @@
+<Terminal
+    color='black'
+    backgroundColor='transparent'
+    barColor='black'
+    prompt='black'
+    style={{ fontWeight: "bold", fontSize: "1em" }}
+    height= '100vh'
+    showActions= 'false'
+    hideTopBar= 'true'
+    allowTabs= 'false'
+    barColor= 'transparent'
+    promptSymbol= 'kenekt via ⬢ v9.3.0'
+    commands={{
+      "reboot": (args, print, runCommand) => {
+        setTimeout(() => {
+            print('how are you');
+        }, 500);
+      }
+    }}
+    runCommand= 'reboot'
+  />
