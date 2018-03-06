@@ -20,7 +20,7 @@ export default class MainNavigation extends React.Component {
       <div className={classNames('container')}>
         <div className={classNames('navbar-translate')}>
           <a className={classNames('navbar-brand')} href="/">
-            <img src="./images/kenekt-logo2-dark.png" style={{'maxWidth': '200px'}}/>
+            <img src="./images/kenekt-logo2-dark.png" style={{'maxWidth': '200px'}} alt="Kenekt Logo"/>
           </a>
           <button className={classNames('navbar-toggler')} type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span className={classNames('navbar-toggler-icon')}></span>
