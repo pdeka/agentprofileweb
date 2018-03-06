@@ -84,24 +84,54 @@ export default class Testimonials extends React.Component {
           </div>
         </div>
         <div className={classNames('main', 'main-raised')}>
-            <div className={classNames('features-1', 'pt-5', 'pb-3')}>
-              <div className={classNames('container')}>
+            <div className={classNames('cd-section')}>
+              <div className={classNames('container', 'pt-5')}>
                 <div className={classNames('row')}>
-                    <div className={classNames('col-md-8', 'ml-auto', 'mr-auto')}>
-                        <h3 className={classNames('title')}>{testimonialspage.second_level_header[0].text}</h3>
-                        <div className={classNames('description')}  >
-                          {RichText.render(testimonialspage.testimonial_summary)}
-                        </div>
-                        <div className={classNames('icon')}>
-                          <i className={classNames('material-icons')}>format_quote</i>
-                        </div>
-                        <blockquote className={classNames('blockquote', 'text-center')}>
-                          <p className={classNames('mb-0')}>
-                            {testimonialspage.quotation[0].text}
-                          </p>
-                          <footer className={classNames('blockquote-footer')}>{testimonialspage.quotation_author[0].text}</footer>
-                        </blockquote>
-                    </div>
+                  <div className={classNames('col-md-12', 'ml-auto', 'mr-auto')}>
+                  <div className={classNames('card', 'card-profile', 'card-plain')}>
+                      <div className={classNames('row')}>
+                          <div className={classNames('col-md-6')}>
+                            <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
+                              <div>
+                                <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
+                                  <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialspage.video1.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className={classNames('col-md-6')}>
+                            <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
+                              <div>
+                                <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
+                                  <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialspage.video2.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <br/>
+                      <div className={classNames('row')}>
+                          <div className={classNames('col-md-6')}>
+                            <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
+                              <div>
+                                <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
+                                  <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialspage.video3.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className={classNames('col-md-6')}>
+                            <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
+                              <div>
+                                <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
+                                  <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialspage.video4.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -208,33 +238,27 @@ export default class Testimonials extends React.Component {
   }
 }
 
-// <div className={classNames('cd-section')}>
-//   <div className={classNames('container', 'pt-5')}>
+
+
+//
+// <div className={classNames('features-1', 'pt-5', 'pb-3')}>
+//   <div className={classNames('container')}>
 //     <div className={classNames('row')}>
-//       <div className={classNames('col-md-12', 'ml-auto', 'mr-auto')}>
-//       <div className={classNames('card', 'card-profile', 'card-plain')}>
-//           <div className={classNames('row')}>
-//               <div className={classNames('col-md-6', 'testimonialspage-first-video')}>
-//                 <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
-//                   <div>
-//                     <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
-//                       <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialspageResults[0].data.video_1.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//               <div className={classNames('col-md-6')}>
-//                 <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
-//                   <div>
-//                     <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
-//                       <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialspageResults[0].data.video_2.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//           </div>
-//       </div>
-//       </div>
+//         <div className={classNames('col-md-8', 'ml-auto', 'mr-auto')}>
+//             <h3 className={classNames('title')}>{testimonialspage.second_level_header[0].text}</h3>
+//             <div className={classNames('description')}  >
+//               {RichText.render(testimonialspage.testimonial_summary)}
+//             </div>
+//             <div className={classNames('icon')}>
+//               <i className={classNames('material-icons')}>format_quote</i>
+//             </div>
+//             <blockquote className={classNames('blockquote', 'text-center')}>
+//               <p className={classNames('mb-0')}>
+//                 {testimonialspage.quotation[0].text}
+//               </p>
+//               <footer className={classNames('blockquote-footer')}>{testimonialspage.quotation_author[0].text}</footer>
+//             </blockquote>
+//         </div>
 //     </div>
 //   </div>
 // </div>
