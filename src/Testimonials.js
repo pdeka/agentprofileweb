@@ -74,7 +74,7 @@ export default class Testimonials extends React.Component {
 
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-filter', 'header-small')} data-parallax="true" style={{backgroundImage: "url(" +testimonialspage.header_background_image.url+")"}}>
+        <div className={classNames('page-header', 'header-filter', 'header-medium')} data-parallax="true" style={{backgroundImage: "url(" +testimonialspage.header_background_image.url+")"}}>
           <div className={classNames('container')}>
               <div className={classNames('row', 'justify-content-center')}>
                   <div className={classNames('col-md-12')}>

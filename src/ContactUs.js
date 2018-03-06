@@ -74,7 +74,7 @@ export default class ContactUs extends React.Component {
 
       return <div className={classNames('contact-us')}>
         <MainNavigation thisProp={homepage} navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-filter', 'header-small')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
+        <div className={classNames('page-header', 'header-filter', 'header-medium')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
           <div className={classNames('container')}>
               <div className={classNames('row')}>
                 <div className={classNames('col-md-12')}>

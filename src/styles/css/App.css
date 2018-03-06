@@ -5,6 +5,9 @@ body {
 .page-header.header-medium {
   height: 80vh;
   min-height: 80vh; }
+.page-header.header-medium-large {
+  height: 90vh;
+  min-height: 90vh; }
 
 .about-video-text-margin {
   margin-top: 0px; }

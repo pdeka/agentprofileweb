@@ -69,7 +69,7 @@ export default class About extends React.Component {
 
       return <div className={classNames('sections-page')}>
         <MainNavigation thisProp={homepage} navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url('+aboutpage.header_background_image.url+')'}}>
+        <div className={classNames('page-header', 'header-medium-large', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url('+aboutpage.header_background_image.url+')'}}>
           <div className={classNames('container', 'about-video-text-margin')}>
                 <div className={classNames('row')}>
                   <div className={classNames('col-md-10')}>
