@@ -35,7 +35,7 @@ const container = {
     marginLeft: 'auto',
 };
 
-const fontFamilySansSerif = "'Open Sans', 'Helvetica', 'Arial', sans-serif";
+const fontFamilySansSerif = "'Oswald', 'Helvetica', 'Arial', sans-serif";
 const fontFamilySerif = "'Lora', 'Times New Roman', serif";
 
 const primaryColor = '#616161';

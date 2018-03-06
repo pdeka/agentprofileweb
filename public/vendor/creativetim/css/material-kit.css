@@ -35,7 +35,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "Oswald", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -352,7 +352,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "Oswald", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -4256,7 +4256,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "Oswald", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -4338,7 +4338,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "Oswald", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -12192,7 +12192,7 @@ thead.thead-inverse th,
   color: #e91e63; }
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "Oswald", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   line-height: 1.5em; }
 
@@ -13151,7 +13151,7 @@ h2.title {
     width: 100%; }
 
 .media .media-heading small {
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif; }
+  font-family: "Oswald", "Helvetica", "Arial", sans-serif; }
 
 .media .media-body {
   padding-right: 10px; }
@@ -15460,7 +15460,7 @@ p {
   text-align: left; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "Oswald", "Helvetica", "Arial", sans-serif;
   color: #3C4858; }
 
 .title,
@@ -15471,7 +15471,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
 .footer-big h4,
 .media .media-heading {
   font-weight: 700;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif; }
+  font-family: "Oswald", "Helvetica", "Arial", sans-serif; }
   .title,
   .title a,
   .card-title,
