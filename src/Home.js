@@ -63,7 +63,7 @@ export default class Home extends React.Component {
 
 
       let data = this.state.doc.results[0].data;
-      let textDelay=2000;
+      let textDelay=3000;
 
       return <div className={classNames('sections-page', 'section-white')}>
         <MainNavigation thisProp={data} navBarTransparent={true}/>
@@ -97,16 +97,13 @@ export default class Home extends React.Component {
                                     .then(sleep(textDelay))
                                     .then(() => print('...and help implement them too'))
                                     .then(sleep(textDelay))
-                                    .then(() => runCommand(`clear`))
-                                    .then(sleep(textDelay))
                                     .then(() => print('I have 40 years of experience in digital'))
                                     .then(sleep(textDelay))
                                     .then(() => print('I know real estate'))
                                     .then(sleep(textDelay))
                                     .then(() => print('...and retail, gaming, healthcare, insurance too'))
-                                    .then(sleep(textDelay))
+                                    .then(sleep(textDelay+2000))
                                     .then(() => runCommand(`clear`))
-                                    .then(sleep(textDelay))
                                     .then(() => print("Type 'help' to explore more"))
                               },
                               "profile": (args, print, runCommand) => {
@@ -118,7 +115,6 @@ export default class Home extends React.Component {
                                   print(args[1] + ': Computer says no...');
                                 }
                               },
-                              "services": () => {window.scrollTo(0, 500)},
                               "phone": (args, print, runCommand) => print('Nick:0420984257   Prabin:0420984257'),
                               "email": (args, print, runCommand) => print('info@kenekt.com.au')
                             }}
@@ -129,7 +125,6 @@ export default class Home extends React.Component {
                               help: "'help' shows more commands",
                               start: "'start' to start again",
                               profile: "'profile <nick or prabin>' to see profiles",
-                              services: "'services' to see services",
                               phone: "'phone' to see phone numbers",
                               email: "'email' to see emails"
                             }}
