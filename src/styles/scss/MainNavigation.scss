@@ -4,6 +4,22 @@
   font-weight: 500;
 }
 
+.navbar-transparent {
+  .logo-light {
+    display: block;
+  }
+  .logo-dark {
+    display: none;
+  }
+}
+
+.logo-light {
+  display: none;
+}
+.logo-dark {
+  display: block;
+}
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?m7vt2');
