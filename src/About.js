@@ -74,7 +74,7 @@ export default class About extends React.Component {
                 <div className={classNames('row')}>
                   <div className={classNames('col-md-10')}>
                     <div className={classNames('iframe-container', 'embed-responsive', 'embed-responsive-16by9')}>
-                        <iframe title="about ruma mundi stanhope garden sydney" height="300" src={new YoutubeURL().getFormattedEmbedUrl(aboutpage.about_video_link.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true" id="iframe-rounded-corner"></iframe>
+                        <iframe title="about ruma mundi stanhope garden sydney" height="300" src={new YoutubeURL().getFormattedEmbedUrl(aboutpage.about_video_link.url, true)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true" id="iframe-rounded-corner"></iframe>
                     </div>
                   </div>
                   <div className={classNames('col-md-2')}>

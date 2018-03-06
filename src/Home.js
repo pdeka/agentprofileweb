@@ -137,7 +137,7 @@ export default class Home extends React.Component {
                                         <i className={classNames('fa', 'fa-phone', 'fa-inverse')} />
                                         &nbsp;0411 030 202
                                       </a>
-                                      <span class="pl-2">
+                                      <span className="pl-2">
                                         <Link to="/about" className={classNames('btn', 'btn-inverse', 'btn-round', 'text-white')} style={{'fontSize': '16px', 'fontWeight': '900', 'textTransform': 'none'}}>
                                           <i className={classNames('fa', 'fa-caret-right', 'fa-inverse')} />
                                            &nbsp;Meet Ruma
