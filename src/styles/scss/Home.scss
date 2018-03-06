@@ -54,11 +54,17 @@ a:hover,a:visited,a:active,a:link {
 }
 
 .header-medium-large {
-  height: 73vh;
-  min-height: 73vh;
+  height: 86vh;
+  min-height: 86vh;
 }
 
 .service-description > div > p {
   text-align: center !important;
   line-height: 24px;
+}
+
+.blCJWW {
+  max-height: 400px;
+  height: 400px;
+  min-height: 400px;
 }

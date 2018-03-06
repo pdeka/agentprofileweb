@@ -20,7 +20,9 @@
     "classnames": "~2.2.5",
     "react-truncate": "~2.3.0",
     "moment": "~2.20.1",
-    "chance": "~1.0.13"
+    "chance": "~1.0.13",
+    "terminal-in-react": "~4.3.0",
+    "sleep-promise": "~2.0.0"
   },
   "devDependencies": {
     "react-scripts": "~1.0.14"
