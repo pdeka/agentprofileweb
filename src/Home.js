@@ -247,15 +247,23 @@ export default class Home extends React.Component {
                                 <FormatDate data={articleResults[0].data.date}/>
                               </span>
                             </h3>
-                            <div className={classNames('card', 'card-plain', 'card-blog', 'mt-5')}>
-                                <ArticlePreview data={articleResults[0].data}/>
-                                <div className={classNames('card-body', 'mt-4')}>
-                                  <div className={classNames('card-description-blog')}>
-                                    {RichText.render(articleResults[0].data.article_text)}
-                                  </div>
-                                </div>
-                            </div>
                         </div>
+                  </div>
+                  <div className={classNames('card', 'card-plain', 'card-blog', 'mt-5')}>
+                    <div className={classNames('row')}>
+                      <div className={classNames('col-md-12', 'pl-1')}>
+                        <ArticlePreview data={articleResults[0].data}/>
+                      </div>
+                    </div>
+                    <div className={classNames('row')}>
+                      <div className={classNames('col-md-12', 'pl-1')}>
+                        <div className={classNames('card-body', 'mt-4')}>
+                          <div className={classNames('card-description-blog')}>
+                            {RichText.render(articleResults[0].data.article_text)}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
             </div>
