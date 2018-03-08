@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 import "../styles/css/MainNavigation.css"
 
@@ -31,16 +32,16 @@ export default class MainNavigation extends React.Component {
         <div className={classNames('collapse', 'navbar-collapse')}>
           <ul className={classNames('navbar-nav', 'ml-auto')}>
             <li className={classNames('nav-item')}>
-              <a href="#home" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Home</a>
+              <Link to="home" spy={false} smooth={true} duration={1000} delay={300} className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Home</Link>
             </li>
             <li className={classNames('nav-item')}>
-              <a href="#about" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>About</a>
+              <Link to="about" spy={false} smooth={true} duration={1000} delay={300} className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>About</Link>
             </li>
             <li className={classNames('nav-item')}>
-              <a href="#services" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Services</a>
+              <Link to="services" spy={false} smooth={true} duration={1000} delay={300} className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Services</Link>
             </li>
             <li className={classNames('nav-item')}>
-              <a href="#contact" className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Contact</a>
+              <Link to="contact" spy={false} smooth={true} duration={1000} delay={300} className={classNames('nav-link', 'bold-navigation', 'nav-project-specfic')}>Contact</Link>
             </li>
           </ul>
         </div>
