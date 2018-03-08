@@ -23,10 +23,10 @@ export default class MainNavigation extends React.Component {
     return <nav className={classNames(navClassNames)} color-on-scroll="100" id="sectionsNav">
       <div className={classNames('container')}>
         <div className={classNames('navbar-translate')}>
-          <Link to="/home" class='logo-light'>
+          <Link to="/home" className='logo-light'>
             <img src="./images/ruma-logo1.png" />
           </Link>
-          <Link to="/home" class='logo-dark'>
+          <Link to="/home" className='logo-dark'>
             <img src="./images/ruma-logo1-dark.png" />
           </Link>
           <button className={classNames('navbar-toggler')} type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
