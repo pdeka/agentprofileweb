@@ -242,7 +242,7 @@ export default class Home extends React.Component {
                             </h3>
                             <h3 className={classNames('card-title', 'home-article-mobile-title', 'text-center')}>
                               Monthly Wrap-up
-                              <span className={classNames('author')} style={{'fontStyle': 'italic', 'fontSize': '12px', 'paddingLeft': '21px'}}>
+                              <span className={classNames('author')} style={{'fontStyle': 'italic', 'fontSize': '18px', 'paddingLeft': '21px'}}>
                                 - <b>Ruma</b>,&nbsp;
                                 <FormatDate data={articleResults[0].data.date}/>
                               </span>
@@ -250,7 +250,7 @@ export default class Home extends React.Component {
                             <div className={classNames('card', 'card-plain', 'card-blog', 'mt-5')}>
                                 <ArticlePreview data={articleResults[0].data}/>
                                 <div className={classNames('card-body', 'mt-4')}>
-                                  <div className={classNames('card-description')}>
+                                  <div className={classNames('card-description-blog')}>
                                     {RichText.render(articleResults[0].data.article_text)}
                                   </div>
                                 </div>

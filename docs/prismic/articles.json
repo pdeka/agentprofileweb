@@ -1,18 +1,76 @@
 [{
+  "id": "WqDavycAACcAidCe",
+  "uid": "march-market-update",
+  "type": "article",
+  "href": "https://rumamundi.prismic.io/api/v2/documents/search?ref=WqDgaycAAIgBiemP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WqDavycAACcAidCe%22%29+%5D%5D",
+  "tags": [],
+  "first_publication_date": "2018-03-08T06:40:04+0000",
+  "last_publication_date": "2018-03-08T07:04:11+0000",
+  "slugs": ["north-west-property-and-community-in-focus", "north-west-property-and-community-in-focus---with-ruma-mundi", "2018-03-07"],
+  "linked_documents": [],
+  "lang": "en-au",
+  "alternate_languages": [],
+  "data": {
+    "date": "2018-03-07",
+    "article_title": [{
+      "type": "heading1",
+      "text": "North West Property and Community in Focus",
+      "spans": []
+    }],
+    "article_summary": [{
+      "type": "paragraph",
+      "text": "Here is a community and market update for The Ponds and Kelliville Ridge. We met up with Alex Hughes from The Ponds Community. The market has picked up in Feb with my team doing close to a 1000 buyer inspections in the month. ",
+      "spans": []
+    }],
+    "article_text": [{
+      "type": "paragraph",
+      "text": "There is a lot happening in Ponds and Kellyville Ridge. Autum is around the corner.   ",
+      "spans": []
+    }, {
+      "type": "paragraph",
+      "text": "We spoke with Alex Hughes, from the Ponds and Kellyville Ridge community association about events around the community and how the association help us. The association does a lot of work to help grow a sense of belongingness, and he was gracious enough to take us through some of the activities it organises. We discussed the ‘Meet your neighbour night’ thats happening on the 23rd of March, at 7:15 PM and how it can help you know people around the neighbourhood. Everyone is welcome to join, and have a good time. It start at 7:15 PM and will only go for a couple of hours. Catch all the details in the community website Thepondscommunity.com.au . There are other, more regular, events that you can join in on as well, which are mentioned in the site. Be sure to join the weekly park run at 8 AM each Saturday - parkrun.com.au/theponds ",
+      "spans": []
+    }, {
+      "type": "paragraph",
+      "text": "",
+      "spans": []
+    }, {
+      "type": "paragraph",
+      "text": "We get question on how the market is doing around Ponds and Kellyville ridge, with the slow down in the later half of last year. The market has picked up in Feb, with around 65% auction clearance rates across sydney. My team has attended close to a 1000 buyer inspections in Feb.  ",
+      "spans": []
+    }, {
+      "type": "paragraph",
+      "text": "",
+      "spans": []
+    }, {
+      "type": "paragraph",
+      "text": "On a different note, my team and I are very thankful for the recognition we received from First National in the national gala. Read more about it here.  ",
+      "spans": []
+    }, {
+      "type": "paragraph",
+      "text": "",
+      "spans": []
+    }],
+    "top_level_image": {},
+    "youtube_link": {
+      "link_type": "Web",
+      "url": "https://www.youtube.com/watch?v=LUOWIzea0uE"
+    }
+  }
+}, {
   "id": "Wl7h8SQAACQAgGqV",
   "uid": "some-new-article",
   "type": "article",
-  "href": "https://rumamundi.prismic.io/api/v2/documents/search?ref=WmBlKiQAACYAhxDu&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22Wl7h8SQAACQAgGqV%22%29+%5D%5D",
-  "tags": [],
+  "href": "https://rumamundi.prismic.io/api/v2/documents/search?ref=WqDgaycAAIgBiemP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22Wl7h8SQAACQAgGqV%22%29+%5D%5D",
+  "tags": ["Our Community"],
   "first_publication_date": "2018-01-17T05:41:19+0000",
-  "last_publication_date": "2018-01-18T07:17:55+0000",
+  "last_publication_date": "2018-02-05T05:35:17+0000",
   "slugs": ["rumas-2017-christmas-community-campaign", "this-is-a-selling-tip"],
   "linked_documents": [],
   "lang": "en-au",
   "alternate_languages": [],
   "data": {
     "date": "2018-01-25",
-    "article_tag": "My Community",
     "article_title": [{
       "type": "heading1",
       "text": "Ruma's 2017 Christmas Community Campaign",
@@ -66,58 +124,9 @@
       "copyright": null,
       "url": "https://prismic-io.s3.amazonaws.com/rumamundi/5abd5ead37b6bdd62d869a07789f1e97e8a13fe7_ruma-background.jpg"
     },
-    "youtube_link": null
-  }
-}, {
-  "id": "Wl6UeSQAACUAfxW_",
-  "uid": "thirdarticles",
-  "type": "article",
-  "href": "https://rumamundi.prismic.io/api/v2/documents/search?ref=WmBlKiQAACYAhxDu&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22Wl6UeSQAACUAfxW_%22%29+%5D%5D",
-  "tags": [],
-  "first_publication_date": "2018-01-17T00:10:38+0000",
-  "last_publication_date": "2018-01-18T09:13:14+0000",
-  "slugs": ["this-is-a-buying-tip"],
-  "linked_documents": [],
-  "lang": "en-au",
-  "alternate_languages": [],
-  "data": {
-    "date": "2018-01-23",
-    "article_tag": "Buying Tip",
-    "article_title": [{
-      "type": "heading1",
-      "text": "This is a buying tip",
-      "spans": []
-    }],
-    "article_summary": [{
-      "type": "paragraph",
-      "text": "This is a summary. The MCA makes the political contributions detailed above because they provide additional opportunities for the MCA to meet with members of parliament.",
-      "spans": []
-    }],
-    "article_text": [{
-      "type": "paragraph",
-      "text": "The Minerals Council of Australia has admitted it makes donations to political parties to gain access to politicians, an unusually candid statement from a donor about the influence of money in politics.",
-      "spans": []
-    }, {
-      "type": "paragraph",
-      "text": "The mining lobby group's submission to a Senate committee examining the role of donations in Australia's political system contrasts with the explanations given by other lobby groups and businesses, which said their donations were intended to support democratic processes.",
-      "spans": []
-    }, {
-      "type": "paragraph",
-      "text": "This is a list...",
-      "spans": []
-    }, {
-      "type": "list-item",
-      "text": "item 1",
-      "spans": []
-    }, {
-      "type": "list-item",
-      "text": "item 2",
-      "spans": []
-    }],
-    "top_level_image": {},
     "youtube_link": {
       "link_type": "Web",
-      "url": "https://www.youtube.com/watch?v=3rZWhOYLzAo"
+      "url": "https://www.youtube.com/watch?v=C-G183cKqVI"
     }
   }
 }]
