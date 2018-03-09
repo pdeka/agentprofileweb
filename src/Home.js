@@ -117,8 +117,13 @@ export default class Home extends React.Component {
           <div className={classNames('page-header', 'header-filter')} data-parallax="true">
               <div className={classNames('container', 'hero-text-margin')}>
                   <div className={classNames('row')}>
+                      <div className={classNames('col-md-8')}>
+                          <h1 className={classNames('text-white', 'title-text-ruma-top')}>Welcome to</h1>
+                      </div>
+                  </div>
+                  <div className={classNames('row')}>
                       <div className={classNames('col-md-10')}>
-                          <h1 className={classNames('title')}>{data.homepage_header[0].text}</h1>
+                          <h1 className={classNames('text-white', 'title-text-ruma')}>{data.homepage_header[0].text}</h1>
                       </div>
                   </div>
                   <div className={classNames('row')}>

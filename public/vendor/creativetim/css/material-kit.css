@@ -9602,7 +9602,7 @@ legend {
   border-bottom: 0; }
 
 .serif-font {
-  font-family: "Lora", "Times New Roman", serif; }
+  font-family: "Alegreya", "Times New Roman", serif; }
 
 * {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -12254,7 +12254,7 @@ small,
 .footer-big h4,
 .media .media-heading {
   font-weight: 700;
-  font-family: "Lora", "Times New Roman", serif; }
+  font-family: "Alegreya", "Times New Roman", serif; }
   .title,
   .title a,
   .card-title,
@@ -15466,7 +15466,7 @@ footer {
 
 p {
   font-size: 16px;
-  font-family: "Lora", "Times New Roman", serif;
+  font-family: "Alegreya", "Times New Roman", serif;
   text-align: left; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {

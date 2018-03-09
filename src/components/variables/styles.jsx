@@ -36,7 +36,7 @@ const container = {
 };
 
 const fontFamilySansSerif = "'Oswald', 'Helvetica', 'Arial', sans-serif";
-const fontFamilySerif = "'Lora', 'Times New Roman', serif";
+const fontFamilySerif = "'Alegreya', 'Times New Roman', serif";
 
 const primaryColor = '#616161';
 const warningColor = '#ff9800';
@@ -256,9 +256,8 @@ let navButtonStyle = {
         position: 'relative',
         padding: '0px 5px',
         margin: '0px 1px',
-        fontFamily: fontFamilySerif,
+        fontFamily: fontFamilySansSerif,
         fontSize: '17px',
-        fontStyle: 'italic',
         fontWeight: '400',
         textTransform: 'none',
         letterSpacing: '0',
