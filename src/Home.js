@@ -4,8 +4,9 @@ import Prismic from 'prismic-javascript';
 import MainNavigation from './partials/MainNavigation';
 import classNames from 'classnames';
 import PageFooter from "./partials/PageFooter";
-import Terminal from 'terminal-in-react';
-import sleep from 'sleep-promise';
+import RegularButton from './components/CustomButtons/RegularButton';
+import {Splash} from './components/animation/Splash';
+import SplashButton from './components/CustomButtons/SplashButton';
 
 import './styles/css/Home.css';
 
@@ -80,20 +81,6 @@ export default class Home extends React.Component {
                         <div style={{'height': '150px', 'textAlign': 'center', 'justifyContent':  'center'}}>
                           <Splash slides={slides} />
                         </div>
-                      </div>
-                  </div>
-                  <div className={classNames('row')}>
-                      <div className={classNames('col-md-12', 'mt-4')}>
-                          <div style={{'text-align': 'center'}}>
-                            <a href="tel:+61411030202">
-                              <SplashButton aria-label="0411 030 202">0411 030 202</SplashButton>
-                            </a>
-                            &nbsp;
-                            &nbsp;
-                            <Link to="/about">
-                              <SplashButton aria-label="Meet Ruma">Meet Ruma</SplashButton>
-                            </Link>
-                          </div>
                       </div>
                   </div>
               </div>
