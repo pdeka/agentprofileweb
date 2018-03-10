@@ -12,6 +12,9 @@ import TestimonialCardBody from "./partials/TestimonialCardBody";
 import {Link} from 'react-router-dom';
 import RegularButton from './components/CustomButtons/RegularButton';
 import {RichText} from 'prismic-reactjs';
+import {Splash} from './components/animation/Splash';
+import SplashButton from './components/CustomButtons/SplashButton';
+
 
 import './styles/css/Home.css';
 
@@ -111,49 +114,36 @@ export default class Home extends React.Component {
 
       // let contactInfo = this.state.contactInfo.results[0].data;
 
+      let slides= [{title: 'RUMA MUNDI', 'topText': 'Welcome to', 'bottomText': "Real Estate done with Passion"},
+                 {title: 'ELITE AGENT', 'topText': 'Award winning', 'bottomText': "Real Estate done with Passion"},
+                 {title: 'MARKETING', 'topText': 'Outstanding', 'bottomText': "Real Estate done with Passion"},
+                 {title: 'KNOWLEDGE', 'topText': 'Unparalleled', 'bottomText': "Real Estate done with Passion"}];
+
       return <div className={classNames('sections-page', 'section-white')}>
         <MainNavigation thisProp={data} navBarTransparent={true}/>
         <div className={classNames('main')}>
           <div className={classNames('page-header', 'header-filter')} data-parallax="true">
               <div className={classNames('container', 'hero-text-margin')}>
                   <div className={classNames('row')}>
-                      <div className={classNames('col-md-8')}>
-                          <h1 className={classNames('text-white', 'title-text-ruma-top')}>Welcome to</h1>
+                      <div className={classNames('col-md-12')} >
+                        <div style={{'height': '150px', 'textAlign': 'center', 'justifyContent':  'center'}}>
+                          <Splash slides={slides} />
+                        </div>
                       </div>
                   </div>
                   <div className={classNames('row')}>
-                      <div className={classNames('col-md-10')}>
-                          <h1 className={classNames('text-white', 'title-text-ruma')}>{data.homepage_header[0].text}</h1>
-                      </div>
-                  </div>
-                  <div className={classNames('row')}>
-                      <div className={classNames('col-md-8')}>
-                          <p className={classNames('text-white', 'hero-paragraph-text')}>
-                            {data.top_level_text[0].text}
-                          </p>
-                      </div>
-                  </div>
-                  <div className={classNames('row')}>
-                    <div className={classNames('col-md-7')}>
-                      <div className={classNames('card', 'card-profile', 'card-plain', 'mt-2')}>
-                          <div className={classNames('row')}>
-                              <div className={classNames('col-md-7', 'pl-0', 'ml-0')}>
-                                  <div className={classNames('card-footer', 'pb-0', 'pt-0')} style={{'paddingLeft': '14px'}}>
-                                      <a href="tel:+61411030202" className={classNames('btn', 'btn-inverse', 'btn-round', 'text-white')} style={{'fontSize': '16px', 'fontWeight': '900', 'textTransform': 'none'}}>
-                                        <i className={classNames('fa', 'fa-phone', 'fa-inverse')} />
-                                        &nbsp;0411 030 202
-                                      </a>
-                                      <span className="pl-2">
-                                        <Link to="/about" className={classNames('btn', 'btn-inverse', 'btn-round', 'text-white')} style={{'fontSize': '16px', 'fontWeight': '900', 'textTransform': 'none'}}>
-                                          <i className={classNames('fa', 'fa-caret-right', 'fa-inverse')} />
-                                           &nbsp;Meet Ruma
-                                        </Link>
-                                      </span>
-                                  </div>
-                              </div>
+                      <div className={classNames('col-md-12', 'mt-4')}>
+                          <div style={{'text-align': 'center'}}>
+                            <a href="tel:+61411030202">
+                              <SplashButton aria-label="0411 030 202">0411 030 202</SplashButton>
+                            </a>
+                            &nbsp;
+                            &nbsp;
+                            <Link to="/about">
+                              <SplashButton aria-label="Meet Ruma">Meet Ruma</SplashButton>
+                            </Link>
                           </div>
                       </div>
-                    </div>
                   </div>
               </div>
               <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster={data.video_poster_image.url}>

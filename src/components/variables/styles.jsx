@@ -291,6 +291,38 @@ let navButtonStyle = {
     }
 };
 
+let splashButtonStyle = {
+    button: {
+        backgroundColor: 'transparent',
+        color: '#FFFFFF !important',
+        background: 'transparent',
+        boxShadow: '0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12)',
+        border:'1px solid white',
+        borderRadius: '0',
+        position: 'relative',
+        padding: '0px 5px',
+        margin: '0px 1px',
+        fontFamily: fontFamilySansSerif,
+        fontSize: '17px',
+        fontWeight: '400',
+        textTransform: 'none',
+        letterSpacing: '0',
+        willChange: 'box-shadow, transform',
+        transition: 'box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
+        lineHeight: '1.42857143',
+        textAlign: 'center',
+        whiteSpace: 'nowrap',
+        verticalAlign: 'middle',
+        MsTouchAction: 'manipulation',
+        touchAction: 'manipulation',
+        cursor: 'pointer',
+        '&:hover,&:focus': {
+            backgroundColor: '#616161',
+            boxShadow: '0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2)'
+        }
+    }
+};
+
 
 if (window.screen.availWidth < 991){
   navButtonStyle.button['&:hover,&:focus'] = {
@@ -330,4 +362,5 @@ module.exports = {
     buttonStyle,
     navButtonStyle,
     appStyle,
+    splashButtonStyle,
 }
