@@ -71,6 +71,108 @@ export default class Home extends React.Component {
           <div className={classNames('page-header', 'header-medium-large', 'header-filter', 'home-background')} data-parallax="true">
               <div className={classNames('container')} style={{'paddingTop': '100px'}}>
                   <div className={classNames('row')}>
+                      <div className={classNames('col-md-6')}>
+                        <Terminal
+                            color='#3C4858'
+                            backgroundColor='transparent'
+                            barColor='#3C4858'
+                            prompt='#3C4858'
+                            style={{ fontWeight: "bold", fontSize: "1.2em" }}
+                            showActions={true}
+                            hideTopBar={false}
+                            watchConsoleLogging={false}
+                            allowTabs={false}
+                            promptSymbol= 'kenekt via ⬢ v9.3.0 >'
+                            commandPassThrough={cmd => `${cmd}: Computer says no...`}
+                            commands={{
+                              "start": (args, print, runCommand) => {
+                                sleep(1000)
+                                    .then(() => print('Hello! I am Kenekt'))
+                                    .then(sleep(textDelay))
+                                    .then(() => print('I make hard things simple'))
+                                    .then(sleep(textDelay))
+                                    .then(() => print('I know a great user experience, leads to success'))
+                                    .then(sleep(textDelay))
+                                    .then(() => print('I provide advice'))
+                                    .then(sleep(textDelay))
+                                    .then(() => print('...and help implement them too'))
+                                    .then(sleep(textDelay))
+                                    .then(() => print('I have 40 years of experience in digital'))
+                                    .then(sleep(textDelay))
+                                    .then(() => print('I know real estate'))
+                                    .then(sleep(textDelay))
+                                    .then(() => print('...and retail, gaming, healthcare, insurance too'))
+                                    .then(sleep(textDelay+2000))
+                                    .then(() => runCommand(`clear`))
+                                    .then(() => print("Type 'help' to explore more"))
+                              },
+                              "profile": (args, print, runCommand) => {
+                                if(args[1] === 'prabin') {
+                                  window.open('https://www.prabindeka.com.au/', '_blank');
+                                } else if(args[1] === 'nick') {
+                                  window.open('https://www.linkedin.com/in/nickmundi/', '_blank');
+                                } else {
+                                  print(args[1] + ': Computer says no...');
+                                }
+                              },
+                              "phone": (args, print, runCommand) => print('Nick:0420984257   Prabin:0420984257'),
+                              "email": (args, print, runCommand) => print('info@kenekt.com.au')
+                            }}
+                            descriptions={{
+                              color: false,
+                              show: false,
+                              clear: "'clear' clears the screen",
+                              help: "'help' shows more commands",
+                              start: "'start' to start again",
+                              profile: "'profile <nick or prabin>' to see profiles",
+                              phone: "'phone' to see phone numbers",
+                              email: "'email' to see emails"
+                            }}
+                            msg="Type 'start' to explore Kenekt"
+                          />
+                      </div>
+                      <div className={classNames('col-md-6')}>
+                        <div className={classNames('row')}>
+                          <div className={classNames('col-md-2')}>
+                          </div>
+                          <div className={classNames('col-md-8', 'text-center')}>
+                            <div className={classNames('card', 'card-profile', 'card-plain mt-0')}>
+                              <div className={classNames('card-header', 'card-header-image')}>
+                                <a href="#pablo">
+                                  <img className="img" src="./images/ruma.png" alt="fill me"/>
+                                </a>
+                                <div className="colored-shadow" style={{'backgroundImage': 'url(./images/orange-background.png)', 'opacity': '50'}}>
+                                </div>
+                              </div>
+                              <div className="card-body ">
+                                  <h4 className="card-title" style={{'fontSize': '12px'}}>Designing an online brand for a REB top 50 agent</h4>
+                              </div>
+                            </div>
+                          </div>
+                          <div className={classNames('col-md-2')}>
+                          </div>
+                        </div>
+                        <div className={classNames('row')}>
+                          <div className={classNames('col-md-2')}>
+                          </div>
+                          <div className={classNames('col-md-8', 'text-center')}>
+                            <div className={classNames('card', 'card-profile', 'card-plain mt-0')}>
+                              <div className={classNames('card-header', 'card-header-image')}>
+                                <a href="#pablo">
+                                  <img className={classNames('img')} src="./images/slide.png" alt="fill me"/>
+                                </a>
+                                <div className="colored-shadow" style={{'backgroundImage': 'url(./images/orange-background.png)', 'opacity': '50'}}>
+                                </div>
+                              </div>
+                              <div className="card-body ">
+                                  <h4 className="card-title" style={{'fontSize': '12px'}}>Roadmap for a large groceries retailer</h4>
+                              </div>
+                            </div>
+                          </div>
+                          <div className={classNames('col-md-2')}>
+                          </div>
+                        </div>
+                      </div>
                   </div>
               </div>
           </div>
