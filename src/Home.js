@@ -65,16 +65,43 @@ export default class Home extends React.Component {
       let data = this.state.doc.results[0].data;
       let textDelay=3000;
 
+      let slides= [{title: 'RUMA MUNDI', 'topText': 'Welcome to', 'bottomText': "Real Estate done with Passion"},
+                 {title: 'ELITE AGENT', 'topText': 'Award winning', 'bottomText': "Real Estate done with Passion"},
+                 {title: 'MARKETING', 'topText': 'Outstanding', 'bottomText': "Real Estate done with Passion"},
+                 {title: 'KNOWLEDGE', 'topText': 'Unparalleled', 'bottomText': "Real Estate done with Passion"}];
+
       return <div className={classNames('sections-page', 'section-white')}>
         <MainNavigation thisProp={data} navBarTransparent={true}/>
-        <header className='main' id="home">
-          <div className={classNames('page-header', 'header-medium-large', 'header-filter', 'home-background')} data-parallax="true">
-              <div className={classNames('container')} style={{'paddingTop': '100px'}}>
+        <div className={classNames('main')}>
+          <div className={classNames('page-header', 'header-filter')} data-parallax="true">
+              <div className={classNames('container', 'hero-text-margin')}>
                   <div className={classNames('row')}>
+                      <div className={classNames('col-md-12')} >
+                        <div style={{'height': '150px', 'textAlign': 'center', 'justifyContent':  'center'}}>
+                          <Splash slides={slides} />
+                        </div>
+                      </div>
+                  </div>
+                  <div className={classNames('row')}>
+                      <div className={classNames('col-md-12', 'mt-4')}>
+                          <div style={{'text-align': 'center'}}>
+                            <a href="tel:+61411030202">
+                              <SplashButton aria-label="0411 030 202">0411 030 202</SplashButton>
+                            </a>
+                            &nbsp;
+                            &nbsp;
+                            <Link to="/about">
+                              <SplashButton aria-label="Meet Ruma">Meet Ruma</SplashButton>
+                            </Link>
+                          </div>
+                      </div>
                   </div>
               </div>
+              <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster="https://prismic-io.s3.amazonaws.com/kenekt%2F6034c081-8488-4826-b919-1c2687b3209b_spacious.jpg">
+                <source src="https://prismic-io.s3.amazonaws.com/kenekt%2F05f8fb54-869a-4b42-a4ab-a6bfc7a308f4_spacious.mp4" type="video/mp4"/>
+              </video>
           </div>
-        </header>
+        </div>
         <div className={classNames('main', 'main-raised-for-home')} style={{'zIndex': 4}}>
             <section className={classNames('cd-section', 'home-background')} id="about">
               <div className={classNames('container')}>
