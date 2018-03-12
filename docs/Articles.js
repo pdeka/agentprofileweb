@@ -180,14 +180,7 @@ export default class Articles extends React.Component {
       </div>;
 
     } else {
-      return <div className={classNames('sections-page', 'section-white')}>
-        <div id="spinner-middle">
-          <div>
-            <i className={classNames('fa', 'fa-refresh', 'fa-spin', 'fa-5x', 'fa-fw')}></i>
-          </div>
-        </div>
-      </div>;
-
+      return  <Loading/>
     }
   }
 }

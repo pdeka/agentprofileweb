@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 import RegularButton from './components/CustomButtons/RegularButton';
 import {RichText} from 'prismic-reactjs';
 import YoutubeURL from './lib/YoutubeURL';
-
+import Loading from "./partials/Loading";
 
 import './styles/css/About.css';
 
@@ -287,14 +287,7 @@ export default class About extends React.Component {
       </div>;
 
     } else {
-      return <div className={classNames('sections-page', 'section-white')}>
-        <div id="spinner-middle">
-          <div>
-            <i className={classNames('fa', 'fa-refresh', 'fa-spin', 'fa-5x', 'fa-fw')}></i>
-          </div>
-        </div>
-      </div>;
-
+      return  <Loading/>
     }
   }
 }

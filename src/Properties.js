@@ -8,6 +8,7 @@ import ArticleTabCards from "./partials/ArticleTabCards";
 import ArticlePreview from "./partials/ArticlePreview";
 import FormatDate from "./partials/FormatDate";
 import {RichText} from 'prismic-reactjs';
+import Loading from "./partials/Loading";
 
 import './styles/css/About.css';
 
@@ -154,14 +155,7 @@ export default class Properties extends React.Component {
       </div>;
 
     } else {
-      return <div className={classNames('sections-page', 'section-white')}>
-        <div id="spinner-middle">
-          <div>
-            <i className={classNames('fa', 'fa-refresh', 'fa-spin', 'fa-5x', 'fa-fw')}></i>
-          </div>
-        </div>
-      </div>;
-
+      return  <Loading/>
     }
   }
 }

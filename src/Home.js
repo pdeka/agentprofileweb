@@ -8,13 +8,13 @@ import Chance from 'chance';
 import ArticlePreview from './partials/ArticlePreview';
 import FormatDate from './partials/FormatDate';
 import PageFooter from "./partials/PageFooter";
+import Loading from "./partials/Loading";
 import TestimonialCardBody from "./partials/TestimonialCardBody";
 import {Link} from 'react-router-dom';
 import RegularButton from './components/CustomButtons/RegularButton';
 import {RichText} from 'prismic-reactjs';
 import {Splash} from './components/animation/Splash';
 import SplashButton from './components/CustomButtons/SplashButton';
-
 
 import './styles/css/Home.css';
 
@@ -294,14 +294,7 @@ export default class Home extends React.Component {
         </div>
       </div>
     }else{
-      return   <div className={classNames('sections-page',  'section-white')}>
-        <div id="spinner-middle">
-          <div>
-              <i className={classNames('fa', 'fa-refresh', 'fa-spin', 'fa-5x', 'fa-fw')}></i>
-          </div>
-        </div>
-      </div>
-
+      return  <Loading/>
     }
   }
 }

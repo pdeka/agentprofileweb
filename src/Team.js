@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
 import PageFooter from "./partials/PageFooter";
 import {RichText} from 'prismic-reactjs';
+import Loading from "./partials/Loading";
 
 import './styles/css/Team.css';
 
@@ -168,14 +169,7 @@ export default class Team extends React.Component {
       </div>;
 
     } else {
-      return <div className={classNames('sections-page', 'section-white')}>
-        <div id="spinner-middle">
-          <div>
-            <i className={classNames('fa', 'fa-refresh', 'fa-spin', 'fa-5x', 'fa-fw')}></i>
-          </div>
-        </div>
-      </div>;
-
+      return  <Loading/>
     }
   }
 }

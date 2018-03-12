@@ -8,6 +8,7 @@ import YoutubeURL from './lib/YoutubeURL';
 import WebTestimonialRow from './partials/WebTestimonialRow';
 import TestimonialCardBody from "./partials/TestimonialCardBody";
 import {RichText} from 'prismic-reactjs';
+import Loading from "./partials/Loading";
 
 import './styles/css/Testimonials.css';
 
@@ -226,14 +227,7 @@ export default class Testimonials extends React.Component {
       </div>;
 
     } else {
-      return <div className={classNames('sections-page', 'section-white')}>
-        <div id="spinner-middle">
-          <div>
-            <i className={classNames('fa', 'fa-refresh', 'fa-spin', 'fa-5x', 'fa-fw')}></i>
-          </div>
-        </div>
-      </div>;
-
+      return  <Loading/>
     }
   }
 }

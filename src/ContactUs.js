@@ -4,6 +4,7 @@ import MapContainer from './partials/MapContainer';
 import MainNavigation from './partials/MainNavigation';
 import PageFooter from "./partials/PageFooter";
 import classNames from 'classnames';
+import Loading from "./partials/Loading";
 
 import './styles/css/ContactUs.css';
 
@@ -165,14 +166,7 @@ export default class ContactUs extends React.Component {
         <PageFooter />
       </div>
     } else {
-      return <div className={classNames('sections-page', 'section-white')}>
-        <div id="spinner-middle">
-          <div>
-            <i className={classNames('fa', 'fa-refresh', 'fa-spin', 'fa-5x', 'fa-fw')}></i>
-          </div>
-        </div>
-      </div>
-
+      return  <Loading/>
     }
   }
 }
