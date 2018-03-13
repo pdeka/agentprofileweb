@@ -79,9 +79,7 @@ export default class ContactUs extends React.Component {
           <div className={classNames('container')}>
               <div className={classNames('row')}>
                 <div className={classNames('col-md-12')}>
-                  <h2 className={classNames('title', 'mb-0')}>We would love a coffee with you</h2>
-                  <h5 className={classNames('text-white', 'hero-paragraph-text', 'mt-0')}>Give us a ring at the number below or visit us at the office
-                  </h5>
+                  <h2 className={classNames('title', 'text-center')}>We would love a coffee with you</h2>
                 </div>
               </div>
               <div className={classNames('row')}>

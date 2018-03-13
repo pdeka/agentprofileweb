@@ -67,8 +67,10 @@ export default class MainNavigation extends React.Component {
                 <NavButton color="transparent" aria-label="Properties">Properties</NavButton>
               </Link>
             </li>
-            <li className={classNames('nav-item')} style={{'display': 'none'}}>
-              <Link to="/contactus" className={classNames('nav-link')}>Contact Us</Link>
+            <li className={classNames('nav-item')} >
+              <Link to="/contactus" className={classNames('nav-link', 'text-center')}>
+                <NavButton color="transparent" aria-label="Contact">Contact</NavButton>
+              </Link>
             </li>
           </ul>
         </div>
