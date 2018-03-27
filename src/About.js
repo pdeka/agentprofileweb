@@ -281,7 +281,6 @@ export default class About extends React.Component {
                   </div>
               </div>
           </div>
-          <FooterLinkedToContactUs data={aboutpage.footer_remark[0].text}/>
         </div>
         <PageFooter prismicCtx={this.props.prismicCtx}/>
       </div>;

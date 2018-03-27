@@ -221,7 +221,6 @@ export default class Testimonials extends React.Component {
                   </div>
               </div>
             </div>
-            <FooterLinkedToContactUs data={testimonialspage.footer_remark[0].text}/>
         </div>
         <PageFooter prismicCtx={this.props.prismicCtx}/>
       </div>;

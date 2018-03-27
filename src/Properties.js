@@ -149,7 +149,6 @@ export default class Properties extends React.Component {
               </div>
             </div>
           </div>
-          <FooterLinkedToContactUs data={propertiespage.footer_remark[0].text}/>
         </div>
         <PageFooter prismicCtx={this.props.prismicCtx}/>
       </div>;

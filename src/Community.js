@@ -137,7 +137,6 @@ export default class Community extends React.Component {
               </div>
             </div>
           </div>
-          <FooterLinkedToContactUs data={communitypage.footer_remark[0].text}/>
         </div>
         <PageFooter prismicCtx={this.props.prismicCtx}/>
       </div>;

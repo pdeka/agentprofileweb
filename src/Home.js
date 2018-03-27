@@ -165,15 +165,14 @@ export default class Home extends React.Component {
                               </div>
                           </div>
                           <div className={classNames('col-md-6')}>
+                              <h2 className={classNames('card-title')}>{data.about_header[0].text}</h2>
                               <div className={classNames('card-body')}>
-                                  <h3 className={classNames('card-title')}>{data.about_header[0].text}</h3>
                                   <div className={classNames('card-description', 'text-black')}>
                                     {RichText.render(data.about_you_text)}
                                   </div>
                                   <Link to="/about">
                                     <RegularButton
                                         color="primary"
-                                        round
                                         aria-label="Meet Ruma">
                                         Meet Ruma
                                     </RegularButton>
@@ -196,14 +195,13 @@ export default class Home extends React.Component {
                         <div className={classNames('row')}>
                             <div className={classNames('col-md-4')}>
                                 <div className={classNames('card-body', 'pt-0', 'mt-0', 'pb-5')}>
-                                    <h3 className={classNames('card-title')}>{data.the_team_header[0].text}</h3>
+                                    <h2 className={classNames('card-title')}>{data.the_team_header[0].text}</h2>
                                     <div className={classNames('card-description')}>
                                       {RichText.render(data.the_team_text)}
                                     </div>
                                     <Link to="/team">
                                       <RegularButton
                                           color="primary"
-                                          round
                                           aria-label="team">
                                           Meet The Team
                                       </RegularButton>
@@ -223,53 +221,39 @@ export default class Home extends React.Component {
               </div>
             </div>
             <div className={classNames('blogs-4', 'home-article-section', 'pb-4')}>
-                <div className={classNames('container')}>
-                  <div className={classNames('row')}>
-                        <div className={classNames('col-md-2')}>
-                        </div>
-                        <div className={classNames('col-md-8', 'pl-1')}>
-                            <h3 className={classNames('card-title', 'home-article-desktop-title', 'text-center', 'mt-0', 'pt-0')}>
-                              {articleResults[0].data.article_title[0].text}
-                              <span className={classNames('author')} style={{'fontStyle': 'italic', 'fontSize': '18px', 'paddingLeft': '21px'}}>
-                                - <b>Ruma</b>,&nbsp;
-                                <FormatDate data={articleResults[0].data.date}/>
-                              </span>
-                            </h3>
-                            <h3 className={classNames('card-title', 'home-article-mobile-title', 'text-center')}>
-                              Monthly Wrap-up
-                              <span className={classNames('author')} style={{'fontStyle': 'italic', 'fontSize': '18px', 'paddingLeft': '21px'}}>
-                                - <b>Ruma</b>,&nbsp;
-                                <FormatDate data={articleResults[0].data.date}/>
-                              </span>
-                            </h3>
-                        </div>
-                  </div>
-                  <div className={classNames('card', 'card-plain', 'card-blog', 'mt-5')}>
-                    <div className={classNames('row')}>
-                      <div className={classNames('col-md-12', 'pl-1')}>
-                        <ArticlePreview data={articleResults[0].data}/>
+                <div className={classNames('container')} >
+                      <div className={classNames('row')}>
+                            <div className={classNames('col-md-12')}>
+                                <h2 className={classNames('title', 'home-article-desktop-title', 'text-center')}>
+                                  {articleResults[0].data.article_title[0].text}
+                                </h2>
+                            </div>
                       </div>
-                    </div>
-                    <div className={classNames('row')}>
-                      <div className={classNames('col-md-12', 'pl-1')}>
-                        <div className={classNames('card-body', 'mt-4')}>
-                          <div className={classNames('card-description-blog')}>
-                            {RichText.render(articleResults[0].data.article_text)}
+                      <div className={classNames('card', 'card-profile', 'card-plain')}>
+                          <div className={classNames('row')}>
+                              <div className={classNames('col-md-8')}>
+                                  <div className={classNames('card-header', 'card-header-image')}>
+                                  <ArticlePreview data={articleResults[0].data}/>
+                                  </div>
+                              </div>
+
+                              <div className={classNames('col-md-4')}>
+                                  <div className={classNames('card-body', 'pt-0', 'mt-0')}>
+                                      <div className={classNames('card-description')}>
+                                      {RichText.render(articleResults[0].data.article_text)}
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
-                        </div>
                       </div>
-                    </div>
-                  </div>
+
                 </div>
             </div>
-            <div className={classNames('testimonials-1', 'section-image', 'home-client-section', 'pb-5')} style={{'backgroundImage': 'url('+data.client_section_image.url+')'}}>
+            <div className={classNames('blogs-4', 'section-image', 'home-client-section', 'pb-5')} style={{'backgroundImage': 'url('+data.client_section_image.url+')'}}>
                 <div className={classNames('container')}>
                     <div className={classNames('row')}>
                         <div className={classNames('col-md-12', 'text-center')}>
-                            <h3 className={classNames('card-title', 'text-white', 'text-center')}>{data.client_section_header[0].text}</h3>
-                            <div className={classNames('card-description', 'text-white')}>
-                              {RichText.render(data.client_section_text)}
-                            </div>
+                            <h2 className={classNames('title', 'text-white', 'text-center')}>Our clients say it best</h2>
                         </div>
                     </div>
                     <div className={classNames('row')}>
@@ -279,7 +263,6 @@ export default class Home extends React.Component {
                       <Link to="/testimonials">
                           <RegularButton
                               color="primary"
-                              round
                               aria-label="testimonials">
                               See More
                           </RegularButton>
@@ -287,7 +270,6 @@ export default class Home extends React.Component {
                     </div>
                 </div>
             </div>
-            <FooterLinkedToContactUs data={data.footer_remark[0].text}/>
         </div>
         <div className={classNames('main', 'main-raised-for-home')} style={{'zIndex': 3}}>
           <PageFooter prismicCtx={this.props.prismicCtx}/>
@@ -322,3 +304,40 @@ export default class Home extends React.Component {
 //       <i className={classNames('fa', 'fa-envelope', 'fa-inverse')}/>
 //     </a>
 // </div>
+
+
+
+                // <div className={classNames('container')}>
+                //   <div className={classNames('row')}>
+                //         <div className={classNames('col-md-2')}>
+                //         </div>
+                //         <div className={classNames('col-md-8', 'pl-1')}>
+                //             <h3 className={classNames('card-title', 'home-article-desktop-title', 'text-center', 'mt-0', 'pt-0')}>
+                //               {articleResults[0].data.article_title[0].text}
+                //             </h3>
+                //             <h3 className={classNames('card-title', 'home-article-mobile-title', 'text-center')}>
+                //               Monthly Wrap-up
+                //               <span className={classNames('author')} style={{'fontStyle': 'italic', 'fontSize': '18px', 'paddingLeft': '21px'}}>
+                //                 - <b>Ruma</b>,&nbsp;
+                //                 <FormatDate data={articleResults[0].data.date}/>
+                //               </span>
+                //             </h3>
+                //         </div>
+                //   </div>
+                //   <div className={classNames('card', 'card-plain', 'card-blog', 'mt-5')}>
+                //     <div className={classNames('row')}>
+                //       <div className={classNames('col-md-12', 'pl-1')}>
+                //         <ArticlePreview data={articleResults[0].data}/>
+                //       </div>
+                //     </div>
+                //     <div className={classNames('row')}>
+                //       <div className={classNames('col-md-12', 'pl-1')}>
+                //         <div className={classNames('card-body', 'mt-4')}>
+                //           <div className={classNames('card-description-blog')}>
+                //             {RichText.render(articleResults[0].data.article_text)}
+                //           </div>
+                //         </div>
+                //       </div>
+                //     </div>
+                //   </div>
+                // </div>

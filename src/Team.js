@@ -163,7 +163,6 @@ export default class Team extends React.Component {
                     </div>
                   </div>
               </div>
-            <FooterLinkedToContactUs data={teampage.footer_remark[0].text}/>
         </div>
         <PageFooter prismicCtx={this.props.prismicCtx}/>
       </div>;
