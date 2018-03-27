@@ -82,45 +82,6 @@ export default class ContactUs extends React.Component {
                   <h2 className={classNames('title', 'text-center')}>We would love a coffee with you</h2>
                 </div>
               </div>
-              <div className={classNames('row')}>
-                <div className={classNames('col-md-7')}>
-                  <div className={classNames('card', 'card-profile', 'card-plain', 'mt-1')}>
-                      <div className={classNames('row')}>
-                          <div className={classNames('col-md-7', 'pl-0', 'ml-0')}>
-                              <div className={classNames('card-footer', 'pb-0', 'pt-0')} style={{'paddingLeft': '14px'}}>
-                                  <a href="tel:+61411030202" className={classNames('btn', 'btn-inverse', 'btn-round')} style={{'fontSize': '16px', 'fontWeight': '900', 'color': 'white', 'textTransform': 'none'}}>
-                                    <i className={classNames('fa', 'fa-phone', 'fa-inverse')} />
-                                    &nbsp;0411 030 202
-                                    <div className={classNames('ripple-container')}></div>
-                                  </a>
-                              </div>
-                              <div className={classNames('card-footer', 'pb-0', 'pt-0')}>
-                                  <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-facebook')} target="_blank">
-                                      <i className={classNames('fa', 'fa-facebook', 'fa-inverse')}></i>
-                                  </a>
-                                  <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-instagram')} target="_blank">
-                                      <i className={classNames('fa', 'fa-instagram', 'fa-inverse')}></i>
-                                  </a>
-                                  <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-youtube')} target="_blank">
-                                      <i className={classNames('fa', 'fa-youtube', 'fa-inverse')}></i>
-                                  </a>
-                                  <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-linkedin')} target="_blank">
-                                      <i className={classNames('fa', 'fa-linkedin', 'fa-inverse')}></i>
-                                  </a>
-                                  <a href="" className={classNames('btn', 'btn-just-icon', 'btn-link')} target="_blank">
-                                    <div style={{'marginBottom': '-1px'}}>
-                                      <i className={classNames('fa', 'icon-ratemyagent', 'fa-inverse')} style={{'fontSize': '17px'}}></i>
-                                    </div>
-                                  </a>
-                                  <a className={classNames('btn', 'btn-just-icon', 'btn-link')} href="mailto:name@email.com" target="_blank" rel="noopener noreferrer">
-                                    <i className={classNames('fa', 'fa-envelope', 'fa-inverse')}/>
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
           </div>
 
         </div>
