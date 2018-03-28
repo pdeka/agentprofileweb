@@ -15,6 +15,7 @@ import RegularButton from './components/CustomButtons/RegularButton';
 import {RichText} from 'prismic-reactjs';
 import {Splash} from './components/animation/Splash';
 import SplashButton from './components/CustomButtons/SplashButton';
+import Slice from './lib/Slice';
 
 import './styles/css/Home.css';
 
@@ -112,14 +113,13 @@ export default class Home extends React.Component {
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
 
-      console.log(JSON.stringify(data));
-
-      // let contactInfo = this.state.contactInfo.results[0].data;
-
-      let slides= [{title: 'RUMA MUNDI', 'topText': 'Welcome to', 'bottomText': "Real Estate done with Passion"},
-                 {title: 'ELITE AGENT', 'topText': 'Award winning', 'bottomText': "Real Estate done with Passion"},
-                 {title: 'MARKETING', 'topText': 'Outstanding', 'bottomText': "Real Estate done with Passion"},
-                 {title: 'KNOWLEDGE', 'topText': 'Unparalleled', 'bottomText': "Real Estate done with Passion"}];
+      let slice = new Slice().findSlice(data.body, "rolling_text");
+      let slides = []
+      slice.items.forEach((item) => { slides.push({
+        'topText': item.top_text[0].text,
+        'title': item.middle_text[0].text,
+        'bottomText': item.bottom_text[0].text
+      })})
 
       return <div className={classNames('sections-page', 'section-white')}>
         <MainNavigation thisProp={data} navBarTransparent={true}/>
