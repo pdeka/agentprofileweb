@@ -135,7 +135,7 @@ export default class Home extends React.Component {
                   </div>
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-12', 'mt-4')}>
-                          <div style={{'text-align': 'center'}}>
+                          <div style={{'textAlign': 'center'}}>
                             <a href="tel:+61411030202">
                               <SplashButton aria-label="0411 030 202">0411 030 202</SplashButton>
                             </a>
