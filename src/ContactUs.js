@@ -5,6 +5,7 @@ import MainNavigation from './partials/MainNavigation';
 import PageFooter from "./partials/PageFooter";
 import classNames from 'classnames';
 import Loading from "./partials/Loading";
+import RegularButton from './components/CustomButtons/RegularButton';
 
 import './styles/css/ContactUs.css';
 
@@ -101,7 +102,13 @@ export default class ContactUs extends React.Component {
                     </div>
                     <div className={classNames('description')}>
                       <h4 className={classNames('info-title')}>Give us a ring</h4>
-                      <a href="tel:+61411030202" className={classNames('btn', 'btn-primary', 'btn-round')} style={{'fontSize': '16px', 'fontWeight': '900', 'color': 'white', 'textTransform': 'none'}}>0411 030 202<div className={classNames('ripple-container')}></div></a>
+                      <a href="tel:+61411030202" >
+                        <RegularButton
+                            color="primary"
+                            aria-label="Meet Ruma">
+                            0411 030 202
+                        </RegularButton>
+                      </a>
                     </div>
                   </div>
                   <div className={classNames('info', 'info-horizontal')}>

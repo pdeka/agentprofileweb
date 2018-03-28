@@ -9,6 +9,8 @@ import ArticlePreview from "./partials/ArticlePreview";
 import FormatDate from "./partials/FormatDate";
 import {RichText} from 'prismic-reactjs';
 import Loading from "./partials/Loading";
+import RegularButton from './components/CustomButtons/RegularButton';
+
 
 import './styles/css/About.css';
 
@@ -106,9 +108,12 @@ export default class Properties extends React.Component {
                         </p>
                         <footer className={classNames('blockquote-footer')}>{propertiespage.quotation_author[0].text}</footer>
                       </blockquote>
-                      <a href={propertiespage.properties_external_link.url} target="_blank" >
-                        <button className={classNames('btn', 'btn-primary', 'btn-round')}>Our Properties
-                        </button>
+                      <a href={propertiespage.properties_external_link.url} target="_blank">
+                        <RegularButton
+                            color="primary"
+                            aria-label="Our Properties">
+                            Our Properties
+                        </RegularButton>
                       </a>
                   </div>
               </div>
