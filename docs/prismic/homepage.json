@@ -1,44 +1,10 @@
 {
-  "facebook_link": {
-    "link_type": "Web",
-    "url": "https://www.facebook.com/ruma.mundi"
-  },
-  "instagram_link": {
-    "link_type": "Web",
-    "url": "https://www.instagram.com/rumamundi/"
-  },
-  "linkedin_link": {
-    "link_type": "Web",
-    "url": "https://au.linkedin.com/in/ruma-mundi-0344a4b6"
-  },
-  "youtube_link": {
-    "link_type": "Web",
-    "url": "https://www.youtube.com/channel/UCyKhjcW2Ca57SooI5zAcIgg"
-  },
-  "rate_my_agent_link": {
-    "link_type": "Web",
-    "url": "https://www.ratemyagent.com.au/real-estate-agent/ruma-mundi-br828/reviews"
-  },
-  "properties_link": {
-    "link_type": "Web",
-    "url": "https://www.realestate.com.au/agent/ruma-mundi-1519230"
-  },
-  "homepage_header": [{
-    "type": "heading1",
-    "text": "Real estate, done differently",
-    "spans": []
-  }],
-  "top_level_text_1": [{
-    "type": "paragraph",
-    "text": "Ruma’s professional approach has led to unparalleled results for her clients. She invests in long term relationships with her clients, being deeply aware that selling or buying a house is a significant decision, that extends far beyond a financial transaction",
-    "spans": []
-  }],
   "homepage_video_link": {
     "link_type": "Media",
-    "name": "RUMA WEBSITE VIDEO V2.mp4",
+    "name": "RUMA WEBSITE VIDEO V3.1.mp4",
     "kind": "document",
-    "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Ffafbff33-efae-411d-8bb4-01ed574cb22f_ruma+website+video+v2.mp4",
-    "size": "15595101"
+    "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2F3707e953-96cf-4803-9588-e7fab92600f9_ruma+website+video+v3.1.mp4",
+    "size": "3362062"
   },
   "video_poster_image": {
     "link_type": "Media",
@@ -56,7 +22,7 @@
   }],
   "about_you_text": [{
     "type": "paragraph",
-    "text": "Ruma's name is synonymous with the real estate industry in the Hills District. She is among the REB top 50, a director, a business owner, but above all a mother of 2 beautiful daughters, Samara and Safira, and a person renowned in the community for her dedication, her integrity and her compassion.",
+    "text": "Ruma is a Business Owner and leading agent in the Hills District. Her hard work, dedication and compassion for families in her local area has seen her achieve outstanding accolades in her industry. She is respected by her peers and is constantly ranked amongst the Top 3 agents in her network. Ruma balances her high paced career whilst being a wife and mother of 2 beautiful daughters, Samara and Safira.",
     "spans": []
   }],
   "about_you_section_image": {
@@ -66,16 +32,16 @@
     },
     "alt": null,
     "copyright": null,
-    "url": "https://prismic-io.s3.amazonaws.com/rumamundi/9c84b57fd7adf87957b3442def057efb58cb7d8e_180131_nknight_ruma_0017.jpg"
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/9c84b57fd7adf87957b3442def057efb58cb7d8e_180131_nknight_ruma_0017.jpg"
   },
   "the_team_header": [{
     "type": "heading1",
-    "text": "The Team",
+    "text": "Team Ruma",
     "spans": []
   }],
   "the_team_text": [{
     "type": "paragraph",
-    "text": "People rarely achieve much without a good supportive team around them. We truely believe that we have the best team in the North West of Sydney. Our extensive experience, local knowledge, attention to details and determination to do the best for our clients, has been the bed rock of our success. However, our true strength is in our positivity and humility. We pride ourselves with the fact that we have managed to preserve a sense of approachability and hospitality, with a deep understanding that being the agent you can trust and seek advice from, has been a core competency of our endeavour so far.",
+    "text": "Hard Work, Integrity & Honesty  is the core strength of our team. With ONE Vision, to deliver outstanding results with exceptional service, Team Ruma is the Go To Team in the North West of Sydney. Our referrals, repeat business and testimonials are a testament of the high standard of service from Team Ruma. With highly experienced professionals on the team, you are assured that everything is taken care of.",
     "spans": []
   }],
   "the_team_image": {
@@ -85,26 +51,11 @@
     },
     "alt": null,
     "copyright": null,
-    "url": "https://prismic-io.s3.amazonaws.com/rumamundi/57e2cdf0ec444185bd3c56e8dcbe52cb1537f5f2_ruma-in-group.jpg"
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/57e2cdf0ec444185bd3c56e8dcbe52cb1537f5f2_ruma-in-group.jpg"
   },
-  "monthly_wrap_up_header": [{
-    "type": "heading1",
-    "text": "The month in our communities",
-    "spans": []
-  }],
-  "monthly_wrap_up_text": [{
-    "type": "paragraph",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "spans": []
-  }],
   "client_section_header": [{
     "type": "heading1",
-    "text": "Meet our Clients",
-    "spans": []
-  }],
-  "client_section_text": [{
-    "type": "paragraph",
-    "text": "What our clients say is a testament to the value and quality of our service. We enthusiastically gather feedback, and endeavour to continously improve our services based on what they tell us.",
+    "text": "Our clients say it best",
     "spans": []
   }],
   "client_section_image": {
@@ -116,9 +67,74 @@
     "height": "1080",
     "width": "1920"
   },
-  "footer_remark": [{
-    "type": "heading6",
-    "text": "We would love to have a coffee with you.",
-    "spans": []
+  "body": [{
+    "slice_type": "rolling_text",
+    "slice_label": null,
+    "items": [{
+      "top_text": [{
+        "type": "heading6",
+        "text": "Welcome to",
+        "spans": []
+      }],
+      "middle_text": [{
+        "type": "heading5",
+        "text": "RUMA MUNDI",
+        "spans": []
+      }],
+      "bottom_text": [{
+        "type": "heading6",
+        "text": "Real Estate done with Passion",
+        "spans": []
+      }]
+    }, {
+      "top_text": [{
+        "type": "heading6",
+        "text": "Award winning",
+        "spans": []
+      }],
+      "middle_text": [{
+        "type": "heading5",
+        "text": "ELITE AGENT",
+        "spans": []
+      }],
+      "bottom_text": [{
+        "type": "heading6",
+        "text": "Real Estate done with Passion",
+        "spans": []
+      }]
+    }, {
+      "top_text": [{
+        "type": "heading6",
+        "text": "Outstanding",
+        "spans": []
+      }],
+      "middle_text": [{
+        "type": "heading5",
+        "text": "MARKETING",
+        "spans": []
+      }],
+      "bottom_text": [{
+        "type": "heading6",
+        "text": "Real Estate done with Passion",
+        "spans": []
+      }]
+    }, {
+      "top_text": [{
+        "type": "heading6",
+        "text": "Unparalleled",
+        "spans": []
+      }],
+      "middle_text": [{
+        "type": "heading5",
+        "text": "KNOWLEDGE",
+        "spans": []
+      }],
+      "bottom_text": [{
+        "type": "heading6",
+        "text": "Real Estate done with Passion",
+        "spans": []
+      }]
+    }],
+    "primary": {}
   }]
 }
