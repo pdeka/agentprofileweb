@@ -93,7 +93,7 @@ export default class Properties extends React.Component {
             <div className={classNames('container')}>
               <div className={classNames('row')}>
                   <div className={classNames('col-md-8', 'ml-auto', 'mr-auto')}>
-                      <h3 className={classNames('title')}>{propertiespage.second_level_header[0].text}</h3>
+                      <h2 className={classNames('title')}>{propertiespage.second_level_header[0].text}</h2>
                       <div className={classNames('description')}  >
                         {RichText.render(propertiespage.properties_summary)}
                       </div>
