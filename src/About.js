@@ -87,7 +87,7 @@ export default class About extends React.Component {
             <div className={classNames('container')}>
               <div className={classNames('row')}>
                   <div className={classNames('col-md-8', 'ml-auto', 'mr-auto')}>
-                      <h3 className={classNames('title')}>{aboutpage.header[0].text}</h3>
+                      <h2 className={classNames('title')}>{aboutpage.header[0].text}</h2>
                       <div className={classNames('description')}  >
                         {RichText.render(aboutpage.about_text)}
                       </div>
@@ -108,7 +108,7 @@ export default class About extends React.Component {
               <div className={classNames('container')}>
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-                          <h3 className={classNames('title')}>{aboutpage.awards_header[0].text}</h3>
+                          <h2 className={classNames('title')}>{aboutpage.awards_header[0].text}</h2>
                             <p className={classNames('mb-0', 'text-white')}>
                               {aboutpage.awards_quotation[0].text}
                             </p>
@@ -319,7 +319,7 @@ export default class About extends React.Component {
 //     <div className={classNames('container')}>
 //         <div className={classNames('row')}>
 //             <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-//                 <h3 className={classNames('title')}>Ruma in the community</h3>
+//                 <h2 className={classNames('title')}>Ruma in the community</h2>
 //                 <p className={classNames('description')}>
 //                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 //                 </p>
