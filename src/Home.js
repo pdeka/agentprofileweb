@@ -112,6 +112,8 @@ export default class Home extends React.Component {
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
 
+      console.log(JSON.stringify(data));
+
       // let contactInfo = this.state.contactInfo.results[0].data;
 
       let slides= [{title: 'RUMA MUNDI', 'topText': 'Welcome to', 'bottomText': "Real Estate done with Passion"},
@@ -253,7 +255,7 @@ export default class Home extends React.Component {
                 <div className={classNames('container')}>
                     <div className={classNames('row')}>
                         <div className={classNames('col-md-12', 'text-center')}>
-                            <h2 className={classNames('title', 'text-white', 'text-center')}>Our clients say it best</h2>
+                            <h2 className={classNames('title', 'text-white', 'text-center')}>{data.client_section_header[0].text}</h2>
                         </div>
                     </div>
                     <div className={classNames('row')}>
