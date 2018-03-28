@@ -4,6 +4,15 @@
     "text": "She has the support she needs",
     "spans": []
   }],
+  "header_background_image": {
+    "link_type": "Media",
+    "name": "23 Fantail Lane The Ponds2.jpg",
+    "kind": "image",
+    "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Fd2a5bacd-17dc-42b8-9155-c01b77383a1f_23+fantail+lane+the+ponds2.jpg",
+    "size": "168283",
+    "height": "1080",
+    "width": "1920"
+  },
   "footer_remark": [{
     "type": "heading6",
     "text": "Want to meet ruma?",
@@ -25,34 +34,44 @@
       }],
       "profile_summary": [{
         "type": "paragraph",
-        "text": "As a fully licensed real estate agent and local resident with over 15 years’ experience in the real estate industry, Brad is committed to exceeding expectations. An invaluable asset to Brad’s success is his years of knowledge and practice, his attention to detail and his drive and determination to achieve nothing less than the best for all of his clients. Brad believes that above all else the vendors and buyers deserve his undivided attention, which is exactly what they receive.",
+        "text": "With over 15 years experience in Real Estate, Brad thrives on being busy and on his feet every minute of every day and most nights showing properties, negotiating deals, listings homes and above all having fun whilst he juggles his crazy work along with being the very best Dad to lil Daisy and partner to his gorgeous Mrs. ",
         "spans": []
       }, {
         "type": "paragraph",
-        "text": "Brad thrives on the dynamic nature of the business overall and has a positive attitude which is received by his clients. His communication and relationship building abilities are matched by outstanding local area knowledge and exceptional attention to detail.",
+        "text": "Brad’s cool calm and collected approach puts everyone at ease in his company. He is just a nice guy who is loved by all, especially his team! He is quietly confident and nothing is ever too hard! Besides a wealth of knowledge and great negotiating skills, Brad is a trusted professional who consistently achieves outstanding results for all clients. ",
         "spans": []
       }, {
         "type": "paragraph",
-        "text": "Brad has an outstanding ability to understand each client’s goals and priorities. He has brought enthusiasm, organisational skills and a natural ability to communicate, into the world of real estate.",
+        "text": "Brad loves to ride bikes and tinker with old cars or just have a beer with his mates, if he EVER gets any “Me” time!",
         "spans": []
       }],
       "photo": {
         "link_type": "Media",
-        "name": "brad-profile-full-length.jpg",
+        "name": "brad.jpg",
         "kind": "image",
-        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Fc4f01682-7818-45aa-8bb4-16477b3663c2_brad-profile-full-length.jpg",
-        "size": "307456",
+        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2F32666549-ce0d-413c-a669-a3f4f2dd6692_brad.jpg",
+        "size": "244218",
         "height": "800",
         "width": "534"
       },
       "facebook_link": {
-        "link_type": "Any"
+        "link_type": "Web",
+        "url": "https://www.facebook.com/profile.php?id=100015022004124"
       },
       "linkedin_link": {
         "link_type": "Any"
       },
       "rate_my_agent_link": {
-        "link_type": "Any"
+        "link_type": "Web",
+        "url": "https://www.ratemyagent.com.au/real-estate-agent/brad-norrie-af626/reviews"
+      },
+      "instagram": {
+        "link_type": "Web",
+        "url": "https://www.instagram.com/bravonovember86/"
+      },
+      "twitter": {
+        "link_type": "Web",
+        "url": "https://twitter.com/bradnorrie86"
       }
     }, {
       "full_name": [{
@@ -67,33 +86,42 @@
       }],
       "profile_summary": [{
         "type": "paragraph",
-        "text": "To achieve a positive and impressive sale result Ian focuses on correctly pricing a property based on thorough research and recent sales. He believes that marketing the property in a strategic manner and employing a smart sale method that best suits your property will appeal to a wider range of potential buyers.",
+        "text": "A man of many talents, Ian Williamson is a hard worker who doesnt  known for his ability to make clients feel at ease whilst making their big decision of selling or buying a home. Ask him to mimic any accent and you will be in stitches. A true Aussie through & through, he also speaks fluent Punjabi & Hindi (with the aid of his App). Trusted by his clients to achieve the best possible results, Ian is known for his hardwork and dedication to his career, his family and his team. ",
         "spans": []
       }, {
         "type": "paragraph",
-        "text": "Ian places an importance on training, ongoing professional development and mentoring, he is always adapting to the changing real estate world. Ian ongoing knowledge and training have only helped him acquire the correct approach to all client’s needs. Ian ensures that he has the best foundation possible to service his clients. Ian has the knowledge and experience that buyers and sellers need in a market that requires an agent who knows the market and has the most effective tools at his fingertips.",
+        "text": "A genuinely nice guy with a BIG heart, Ian brings a lot of positivity and laughs wherever he goes. He is an awesome Dad to little Mikayla and baby Owen as well a dedicated husband to beautiful Ellie. ",
         "spans": []
       }, {
         "type": "paragraph",
-        "text": "Ian sets fourth groundwork for excellence which allows him to provide a level of service rarely seen in the real estate world, that is why he loves his work. Ian takes pride in his achievements and finds enjoyment in working with all of his clients to provide a selling or purchasing experience unsurpassed by any other agent.",
+        "text": "In his spare time, he loves being with his wife, playing with his kids and sometimes having a chilled beer with his mates. ",
         "spans": []
       }],
       "photo": {
         "link_type": "Media",
-        "name": "ian-profile-full-length.jpg",
+        "name": "ian-profile.jpg",
         "kind": "image",
-        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Ffdc936ea-2b8d-422f-9d59-d006725e0aa1_ian-profile-full-length.jpg",
-        "size": "322681",
+        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2F4eb22c67-719a-4204-a63f-ef19c83fd37f_ian-profile.jpg",
+        "size": "252539",
         "height": "800",
         "width": "534"
       },
       "facebook_link": {
-        "link_type": "Any"
+        "link_type": "Web",
+        "url": "https://www.facebook.com/ian.williamson.524"
       },
       "linkedin_link": {
         "link_type": "Any"
       },
       "rate_my_agent_link": {
+        "link_type": "Web",
+        "url": "https://www.ratemyagent.com.au/real-estate-agent/ian-williamson-cg968/reviews"
+      },
+      "instagram": {
+        "link_type": "Web",
+        "url": "https://www.instagram.com/ianwilliamsonrealestate/"
+      },
+      "twitter": {
         "link_type": "Any"
       }
     }, {
@@ -118,10 +146,54 @@
       }],
       "photo": {
         "link_type": "Media",
-        "name": "bailey-profile-full-length.jpg",
+        "name": "bailey-profile.jpg",
         "kind": "image",
-        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2F1df645f3-dc94-46e8-9e54-bc9daf4283da_bailey-profile-full-length.jpg",
-        "size": "326749",
+        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Fc34bdf75-4415-4a7f-9e4e-4e678f2c7e02_bailey-profile.jpg",
+        "size": "239432",
+        "height": "800",
+        "width": "534"
+      },
+      "facebook_link": {
+        "link_type": "Web",
+        "url": "https://www.facebook.com/bailey.abela"
+      },
+      "linkedin_link": {
+        "link_type": "Web",
+        "url": "https://au.linkedin.com/in/bailey-abela-935879159"
+      },
+      "rate_my_agent_link": {
+        "link_type": "Any"
+      },
+      "instagram": {
+        "link_type": "Web",
+        "url": "https://www.instagram.com/_baileyabela/"
+      },
+      "twitter": {
+        "link_type": "Web",
+        "url": "https://twitter.com/bailss01"
+      }
+    }, {
+      "full_name": [{
+        "type": "heading6",
+        "text": "Denise Abood",
+        "spans": []
+      }],
+      "job": [{
+        "type": "heading6",
+        "text": "Lorem Ipsum",
+        "spans": []
+      }],
+      "profile_summary": [{
+        "type": "paragraph",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "spans": []
+      }],
+      "photo": {
+        "link_type": "Media",
+        "name": "bailey-profile.jpg",
+        "kind": "image",
+        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Fc34bdf75-4415-4a7f-9e4e-4e678f2c7e02_bailey-profile.jpg",
+        "size": "239432",
         "height": "800",
         "width": "534"
       },
@@ -132,6 +204,12 @@
         "link_type": "Any"
       },
       "rate_my_agent_link": {
+        "link_type": "Any"
+      },
+      "instagram": {
+        "link_type": "Any"
+      },
+      "twitter": {
         "link_type": "Any"
       }
     }],

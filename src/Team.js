@@ -52,6 +52,8 @@ export default class Team extends React.Component {
 
       let teampage = this.state.teampage.results[0].data;
 
+      console.log(JSON.stringify(teampage));
+
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-filter', 'header-medium')} data-parallax="true" style={{backgroundImage: "url(" +teampage.header_background_image.url+")"}}>
@@ -80,9 +82,9 @@ export default class Team extends React.Component {
                                         </div>
                                     </div>
                                     <div className={classNames('card-footer', 'justify-content-center', 'mb-0', 'pb-0')}>
-                                        <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-twitter')}></i></a>
-                                        <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-facebook-square')}></i></a>
-                                        <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-google')}></i></a>
+                                        <a href={teampage.body[0].items[0].twitter.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-twitter')}></i></a>
+                                        <a href={teampage.body[0].items[0].facebook_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-facebook-square')}></i></a>
+                                        <a href={teampage.body[0].items[0].instagram.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-instagram')}></i></a>
                                     </div>
                                 </div>
                                 <div className={classNames('col-md-5')}>
@@ -116,9 +118,8 @@ export default class Team extends React.Component {
                                         </div>
                                     </div>
                                     <div className={classNames('card-footer', 'justify-content-center', 'mb-0', 'pb-0')}>
-                                        <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-twitter')}></i></a>
-                                        <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-facebook-square')}></i></a>
-                                        <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-google')}></i></a>
+                                      <a href={teampage.body[0].items[1].facebook_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-facebook-square')}></i></a>
+                                      <a href={teampage.body[0].items[1].instagram.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-instagram')}></i></a>
                                     </div>
                                 </div>
                                 <div className={classNames('col-md-5', 'mobile-display')}>
@@ -145,9 +146,8 @@ export default class Team extends React.Component {
                                         </div>
                                     </div>
                                     <div className={classNames('card-footer', 'justify-content-center', 'mb-0', 'pb-0')}>
-                                        <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-twitter')}></i></a>
-                                        <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-facebook-square')}></i></a>
-                                        <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-google')}></i></a>
+                                      <a href={teampage.body[0].items[2].facebook_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-facebook-square')}></i></a>
+                                      <a href={teampage.body[0].items[2].instagram.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-instagram')}></i></a>
                                     </div>
                                 </div>
                                 <div className={classNames('col-md-5')}>
@@ -179,11 +179,6 @@ export default class Team extends React.Component {
                                         <div className={classNames('card-description')}>
                                           {RichText.render(teampage.body[0].items[3].profile_summary)}
                                         </div>
-                                    </div>
-                                    <div className={classNames('card-footer', 'justify-content-center', 'mb-0', 'pb-0')}>
-                                        <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-twitter')}></i></a>
-                                        <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-facebook-square')}></i></a>
-                                        <a href="#pablo" className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-google')}></i></a>
                                     </div>
                                 </div>
                                 <div className={classNames('col-md-5', 'mobile-display')}>
