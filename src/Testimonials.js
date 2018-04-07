@@ -186,10 +186,7 @@ export default class Testimonials extends React.Component {
                   <div className={classNames('container', 'mb-5')}>
                       <div className={classNames('row')}>
                           <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-                              <h2 className={classNames('title')}>Feedback across the web does matter</h2>
-                              <h5 className={classNames('description', 'text-white')}>
-                                One generally forgets to ask people for feedback. But feedback across social media does matter, and helps us improve ourselves.
-                              </h5>
+                              <h2 className={classNames('title')}>Feedback Across the Web</h2>
                           </div>
                       </div>
                   </div>
