@@ -6,6 +6,7 @@ import PageFooter from "./partials/PageFooter";
 import classNames from 'classnames';
 import Loading from "./partials/Loading";
 import RegularButton from './components/CustomButtons/RegularButton';
+import ContactForm from './partials/ContactForm';
 
 import './styles/css/ContactUs.css';
 
@@ -74,7 +75,7 @@ export default class ContactUs extends React.Component {
       // let contactuspage = this.state.contactuspageDoc.results[0].data;
       let contactInfo = this.state.contactInfo.results[0].data;
 
-      return <div className={classNames('contact-us')}>
+      return (<div className={classNames('contact-us')}>
         <MainNavigation thisProp={homepage} navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-filter', 'header-medium')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
           <div className={classNames('container')}>
@@ -84,55 +85,65 @@ export default class ContactUs extends React.Component {
                 </div>
               </div>
           </div>
-
         </div>
         <div className={classNames('main', 'main-raised')}>
-          <div className={classNames('contact-content')}>
-            <div className={classNames('container')}>
-              <div className={classNames('row')}>
-                <div className={classNames('col-md-6')}>
-                  <div id="contactUsMap" className={classNames('big-map')}>
-                    <MapContainer/>
+        <div className={classNames('cd-section')} id="contactus">
+          <div className={classNames('contactus-1')} >
+                  <div className={classNames('container')}>
+                      <div className={classNames('row')}>
+                          <div className={classNames('col-md-1')}>
+                          </div>
+                          <div className={classNames('col-md-5')}>
+                              <h2 className={classNames('title')}>Get in Touch</h2>
+                              <p className={classNames('description')}>We would love to have have a chat with you.</p>
+                              <div className={classNames('info', 'info-horizontal')}>
+                                  <div className={classNames('icon', 'icon-primary', 'text-black')}>
+                                      <i className={classNames('material-icons', 'text-black')}>phone</i>
+                                  </div>
+                                  <div className={classNames('description', 'text-black')}>
+                                      <h4 className={classNames('info-title', 'text-black')}>Give us a ring</h4>
+                                      <a href="tel:+61411030202" >
+                                        <RegularButton
+                                            color="primary"
+                                            aria-label="Meet Ruma">
+                                            Ruma: 0411 030 202
+                                        </RegularButton>
+                                      </a>
+                                      <br/>
+                                      <a href="tel:+61411030202" >
+                                        <RegularButton
+                                            color="primary"
+                                            aria-label="Meet Ruma">
+                                            Ruma: 0411 030 202
+                                        </RegularButton>
+                                      </a>
+                                      <br/>
+                                      <a href="tel:+61411030202" >
+                                        <RegularButton
+                                            color="primary"
+                                            aria-label="Meet Ruma">
+                                            Ruma: 0411 030 202
+                                        </RegularButton>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div className={classNames('col-md-5', 'ml-auto')}>
+                              <div className={classNames('card', 'card-contact')}>
+                                <ContactForm />
+                              </div>
+                          </div>
+                          <div className={classNames('col-md-1')}>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <div className={classNames('col-md-4', 'ml-auto')}>
-                  <div className={classNames('info', 'info-horizontal')}>
-                    <div className={classNames('icon', 'icon-disabled')}>
-                      <i className={classNames('fa', 'fa-volume-control-phone')}></i>
-                    </div>
-                    <div className={classNames('description')}>
-                      <h4 className={classNames('info-title')}>Give us a ring</h4>
-                      <a href="tel:+61411030202" >
-                        <RegularButton
-                            color="primary"
-                            aria-label="Meet Ruma">
-                            0411 030 202
-                        </RegularButton>
-                      </a>
-                    </div>
-                  </div>
-                  <div className={classNames('info', 'info-horizontal')}>
-                    <div className={classNames('icon', 'icon-disabled')}>
-                      <i className={classNames('fa', 'fa-location-arrow')}></i>
-                    </div>
-                    <div className={classNames('description')}>
-                      <h4 className={classNames('info-title')}>... Or find us at the office</h4>
-                      <p>
-                        {contactInfo.address_line_1[0].text}
-                        <br/> {contactInfo.address_line_2[0].text}
-                        <br/> {contactInfo.address_line_3[0].text}
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
           </div>
         </div>
         <PageFooter />
-      </div>
+      </div>);
     } else {
-      return  <Loading/>
+      return  (<Loading/>);
     }
   }
 }

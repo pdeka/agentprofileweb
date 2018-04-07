@@ -12596,7 +12596,7 @@ h2.title {
   .card .card-header-primary, .card.bg-primary,
   .card.card-rotate.bg-primary .front,
   .card.card-rotate.bg-primary .back {
-    background: linear-gradient(60deg, #ab47bc, #7b1fa2); }
+    background: linear-gradient(60deg, #bdbdbd, #616161); }
   .card .card-header-info, .card.bg-info,
   .card.card-rotate.bg-info .front,
   .card.card-rotate.bg-info .back {
@@ -15500,10 +15500,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     text-decoration: none; }
 
 .text-black {
-  color: #3C4858; }
+  color: #3C4858 !important; }
 
 .text-white {
-  color: #ffffff; }
+  color: #ffffff !important; }
 
 .card-description, .description, .card-description-blog, .description {
   color: #3C4858; }
