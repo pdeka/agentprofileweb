@@ -60,7 +60,7 @@ export default class Team extends React.Component {
           <div className={classNames('container')}>
               <div className={classNames('row')}>
                   <div className={classNames('col-md-12')}>
-                      <h2 className={classNames('title', 'mb-0', 'text-center')}>{teampage.header[0].text}</h2>
+                      <h2 className={classNames('title', 'text-center')}>{teampage.header[0].text}</h2>
                   </div>
               </div>
           </div>

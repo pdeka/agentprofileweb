@@ -159,29 +159,29 @@ export default class ContactForm extends React.Component {
                   </div>
                   <div id="purposeContent" className={classNames('form-group', 'label-floating', 'is-empty', 'bmd-form-group')}>
                       <label htmlFor="purposeContent" className={classNames('bmd-label-static')} id="radio-label" >What is this About?</label>
-                      <div class="form-check">
-                          <div class="row">
-                            <div class="col-md-4">
-                              <label class="form-check-label">
-                                  <input class="form-check-input" type="radio" name="purpose" id="radio1" value="Buying" onChange={this.updatePurpose.bind(this)} />Buying
-                                  <span class="circle">
-                                      <span class="check"></span>
+                      <div className={classNames('form-check')}>
+                          <div className={classNames('row')}>
+                            <div className={classNames('col-md-4')}>
+                              <label className={classNames('form-check-label')}>
+                                  <input className={classNames('form-check-input')} type="radio" name="purpose" id="radio1" value="Buying" onChange={this.updatePurpose.bind(this)} />Buying
+                                  <span className={classNames('circle')}>
+                                      <span className={classNames('check')}></span>
                                   </span>
                               </label>
                             </div>
-                            <div class="col-md-4">
-                              <label class="form-check-label">
-                                  <input class="form-check-input" type="radio" name="purpose" id="radio2" value="Selling" onChange={this.updatePurpose.bind(this)} />Selling
-                                  <span class="circle">
-                                      <span class="check"></span>
+                            <div className={classNames('col-md-4')}>
+                              <label className={classNames('form-check-label')}>
+                                  <input className={classNames('form-check-input')} type="radio" name="purpose" id="radio2" value="Selling" onChange={this.updatePurpose.bind(this)} />Selling
+                                  <span className={classNames('circle')}>
+                                      <span className={classNames('check')}></span>
                                   </span>
                               </label>
                             </div>
-                            <div class="col-md-4">
-                              <label class="form-check-label">
-                                  <input class="form-check-input" type="radio" name="purpose" id="radio3" value="Renting" onChange={this.updatePurpose.bind(this)} />Renting
-                                  <span class="circle">
-                                      <span class="check"></span>
+                            <div className={classNames('col-md-4')}>
+                              <label className={classNames('form-check-label')}>
+                                  <input className={classNames('form-check-input')} type="radio" name="purpose" id="radio3" value="Renting" onChange={this.updatePurpose.bind(this)} />Renting
+                                  <span className={classNames('circle')}>
+                                      <span className={classNames('check')}></span>
                                   </span>
                               </label>
                             </div>
@@ -206,42 +206,42 @@ export default class ContactForm extends React.Component {
 }
 
 
-// <div class="btn-group bootstrap-select">
-//   <button type="button" class="btn dropdown-toggle bs-placeholder select-with-transition" data-toggle="dropdown" role="button" title="Single Select" aria-expanded="false">
-//     <span class="filter-option pull-left" style={{textTransform: 'none', fontSize: '14px', color: '#999999'}}>What is this about?</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span>
+// <div className={classNames('btn-group', 'bootstrap-select')}>
+//   <button type="button" className={classNames('btn', 'dropdown-toggle', 'bs-placeholder', 'select-with-transition')} data-toggle="dropdown" role="button" title="Single Select" aria-expanded="false">
+//     <span className={classNames('filter-option', 'pull-left')} style={{textTransform: 'none', fontSize: '14px', color: '#999999'}}>What is this about?</span>&nbsp;<span className={classNames('bs-caret')}><span className={classNames('caret')}></span></span>
 //   </button>
-//   <div class="dropdown-menu open" role="combobox" x-placement="bottom-start" style={{position: 'absolute', top: '41px', left: '0px', willChange: 'top, left'}}>
-//     <ul class="dropdown-menu inner" role="listbox" aria-expanded="false">
+//   <div className={classNames('dropdown-menu', 'open')} role="combobox" x-placement="bottom-start" style={{position: 'absolute', top: '41px', left: '0px', willChange: 'top, left'}}>
+//     <ul className={classNames('dropdown-menu', 'inner')} role="listbox" aria-expanded="false">
 //       <li data-original-index="1">
 //         <a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-//           <span class="text">General Enquiry</span>
-//           <span class="material-icons  check-mark"> done </span>
+//           <span className={classNames('text')}>General Enquiry</span>
+//           <span className={classNames('material-icons', 'check-mark')}> done </span>
 //         </a>
 //       </li>
 //       <li data-original-index="2">
 //         <a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-//           <span class="text">Selling your home with Ruma</span><span class="material-icons  check-mark"> done </span>
+//           <span className={classNames('text')}>Selling your home with Ruma</span><span className={classNames('material-icons', 'check-mark')}> done </span>
 //         </a>
 //       </li>
 //       <li data-original-index="3">
 //         <a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-//           <span class="text">Buying property</span><span class="material-icons  check-mark"> done </span>
+//           <span className={classNames('text')}>Buying property</span><span className={classNames('material-icons', 'check-mark')}> done </span>
 //         </a>
 //       </li>
 //       <li data-original-index="4">
 //         <a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-//           <span class="text">Renting your property</span><span class="material-icons  check-mark"> done </span>
+//           <span className={classNames('text')}>Renting your property</span><span className={classNames('material-icons', 'check-mark')}> done </span>
 //         </a>
 //       </li>
 //       <li data-original-index="5">
 //         <a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-//           <span class="text">Looking for rentals</span><span class="material-icons  check-mark"> done </span>
+//           <span className={classNames('text')}>Looking for rentals</span><span className={classNames('material-icons', 'check-mark')}> done </span>
 //         </a>
 //       </li>
 //     </ul>
 //   </div>
-//   <select class="selectpicker" data-style="select-with-transition" title="Single Select" data-size="7" tabindex="-98">
-//     <option class="bs-title-option" value="">What is this about?</option>
+//   <select className={classNames('selectpicker')} data-style="select-with-transition" title="Single Select" data-size="7" tabindex="-98">
+//     <option className={classNames('bs-title-option')} value="">What is this about?</option>
 //     <option value="1">General enquiry</option>
 //     <option value="2">Selling your home with Ruma</option>
 //     <option value="3">Buying property</option>

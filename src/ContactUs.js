@@ -64,9 +64,6 @@ export default class ContactUs extends React.Component {
       let contactuspage = this.state.contactuspageDoc.results[0].data;
       let contactInfo = this.state.contactInfo.results[0].data;
 
-      console.log(JSON.stringify(contactuspage));
-      console.log(JSON.stringify(contactInfo));
-
       return (<div className={classNames('contact-us')}>
         <MainNavigation navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-filter', 'header-medium')} data-parallax="true" style={{backgroundImage: "url(" +contactuspage.header_background_image.url+")"}}>
@@ -87,7 +84,7 @@ export default class ContactUs extends React.Component {
                           </div>
                           <div className={classNames('col-md-5')}>
                               <h2 className={classNames('title')}>{contactuspage.second_level_header[0].text}</h2>
-                              <p className={classNames('description')}>{RichText.render(contactuspage.second_level_content)}</p>
+                              <div className={classNames('description')}>{RichText.render(contactuspage.second_level_content)}</div>
                               <div className={classNames('info', 'info-horizontal')}>
                                   <div className={classNames('icon', 'icon-primary', 'text-black')}>
                                       <i className={classNames('material-icons', 'text-black')}>phone</i>
@@ -114,7 +111,7 @@ export default class ContactUs extends React.Component {
                                         <RegularButton
                                             color="primary"
                                             aria-label="Meet Ruma">
-                                            {contactInfo.third_phone_display_text[0].text}&nbsp;
+                                            {contactInfo.third_phone_display_text[0].text}
                                         </RegularButton>
                                       </a>
                                   </div>
@@ -132,7 +129,7 @@ export default class ContactUs extends React.Component {
               </div>
           </div>
         </div>
-        <PageFooter />
+        <PageFooter prismicCtx={this.props.prismicCtx}/>
       </div>);
     } else {
       return  (<Loading/>);

@@ -86,6 +86,7 @@ export default class Properties extends React.Component {
         <div className={classNames('container')}>
               <div className={classNames('row', 'justify-content-center', 'mt-5')}>
                 <h2 className={classNames('title', 'text-center')}>{propertiespage.header[0].text}</h2>
+                <img src="https://prismic-io.s3.amazonaws.com/rumamundi%2Ff2fb80dc-40da-4e34-a219-9e2acd7cb333_dog100x100.png" />
               </div>
         </div>
 
@@ -99,15 +100,6 @@ export default class Properties extends React.Component {
                       <div className={classNames('description')}  >
                         {RichText.render(propertiespage.properties_summary)}
                       </div>
-                      <div className={classNames('icon')}>
-                        <i className={classNames('material-icons')}>format_quote</i>
-                      </div>
-                      <blockquote className={classNames('blockquote', 'text-center')}>
-                        <p className={classNames('mb-0')}>
-                          {propertiespage.quotation[0].text}
-                        </p>
-                        <footer className={classNames('blockquote-footer')}>{propertiespage.quotation_author[0].text}</footer>
-                      </blockquote>
                       <a href={propertiespage.properties_external_link.url} target="_blank">
                         <RegularButton
                             color="primary"

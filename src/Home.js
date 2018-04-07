@@ -16,6 +16,7 @@ import {RichText} from 'prismic-reactjs';
 import {Splash} from './components/animation/Splash';
 import SplashButton from './components/CustomButtons/SplashButton';
 import Slice from './lib/Slice';
+import Jump from 'react-reveal/Jump';
 
 import './styles/css/Home.css';
 
@@ -147,6 +148,11 @@ export default class Home extends React.Component {
                           </div>
                       </div>
                   </div>
+              </div>
+              <div id="downArrow">
+                <Jump>
+                  <img src="images/down-arrow70X70.png" height="50px"/>
+                </Jump>
               </div>
               <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster={data.video_poster_image.url}>
                 <source src={data.homepage_video_link.url} type="video/mp4"/>

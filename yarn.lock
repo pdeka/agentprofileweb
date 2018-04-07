@@ -1207,7 +1207,7 @@ babel-register@^6.24.1, babel-register@^6.26.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@6.26.0, babel-runtime@^6.11.6, babel-runtime@^6.23.0, babel-runtime@^6.26.0, babel-runtime@^6.6.1:
+babel-runtime@6.26.0, babel-runtime@^6.11.6, babel-runtime@^6.23.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
@@ -5055,10 +5055,6 @@ jodid25519@^1.0.0:
   dependencies:
     jsbn "~0.1.0"
 
-jquery@^3.1.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
-
 jquery@~3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
@@ -7344,6 +7340,12 @@ react-popper@^0.7.4:
     popper.js "^1.12.5"
     prop-types "^15.5.10"
 
+react-reveal@~1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-reveal/-/react-reveal-1.2.1.tgz#b82b04603a095b020720016fa5cc25392fd61d81"
+  dependencies:
+    prop-types "^15.5.10"
+
 react-router-dom@~4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.2.2.tgz#c8a81df3adc58bba8a76782e946cbd4eae649b8d"
@@ -7417,13 +7419,6 @@ react-scrollbar-size@^2.0.2:
     prop-types "^15.6.0"
     react-event-listener "^0.5.1"
     stifle "^1.0.2"
-
-react-simple-contact-form@~0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/react-simple-contact-form/-/react-simple-contact-form-0.0.1.tgz#882a24cca91f0d82dbcaa8a0612a137a75661291"
-  dependencies:
-    babel-runtime "^6.6.1"
-    jquery "^3.1.1"
 
 react-transition-group@^2.2.1:
   version "2.2.1"
