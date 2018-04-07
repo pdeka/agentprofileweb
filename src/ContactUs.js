@@ -7,13 +7,13 @@ import classNames from 'classnames';
 import Loading from "./partials/Loading";
 import RegularButton from './components/CustomButtons/RegularButton';
 import ContactForm from './partials/ContactForm';
+import {RichText} from 'prismic-reactjs';
 
 import './styles/css/ContactUs.css';
 
 export default class ContactUs extends React.Component {
 
   state = {
-    homepageDoc: null,
     contactuspageDoc: null,
     contactInfo: null
   }
@@ -37,16 +37,6 @@ export default class ContactUs extends React.Component {
   fetchPage(props) {
     if (props.prismicCtx) {
 
-      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'homepage')).then((homepageDoc) => {
-        if (homepageDoc) {
-          this.setState({homepageDoc});
-        } else {
-          this.setState({
-            notFound: !homepageDoc
-          });
-        }
-      });
-
       props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'contactuspage')).then((contactuspageDoc) => {
         if (contactuspageDoc) {
           this.setState({contactuspageDoc});
@@ -69,19 +59,21 @@ export default class ContactUs extends React.Component {
   }
 
   render() {
-    if (this.state.homepageDoc && this.state.contactuspageDoc && this.state.contactInfo) {
+    if (this.state.contactuspageDoc && this.state.contactInfo) {
 
-      let homepage = this.state.homepageDoc.results[0].data;
-      // let contactuspage = this.state.contactuspageDoc.results[0].data;
+      let contactuspage = this.state.contactuspageDoc.results[0].data;
       let contactInfo = this.state.contactInfo.results[0].data;
 
+      console.log(JSON.stringify(contactuspage));
+      console.log(JSON.stringify(contactInfo));
+
       return (<div className={classNames('contact-us')}>
-        <MainNavigation thisProp={homepage} navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-filter', 'header-medium')} data-parallax="true" style={{backgroundImage: 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F299afe9b-2b94-4fe8-a7c1-99dbeabee565_ruma-in-group.jpg)'}}>
+        <MainNavigation navBarTransparent={true}/>
+        <div className={classNames('page-header', 'header-filter', 'header-medium')} data-parallax="true" style={{backgroundImage: "url(" +contactuspage.header_background_image.url+")"}}>
           <div className={classNames('container')}>
               <div className={classNames('row')}>
                 <div className={classNames('col-md-12')}>
-                  <h2 className={classNames('title', 'text-center')}>We would love a coffee with you</h2>
+                  <h2 className={classNames('title', 'text-center')}>{contactuspage.header[0].text}</h2>
                 </div>
               </div>
           </div>
@@ -94,35 +86,35 @@ export default class ContactUs extends React.Component {
                           <div className={classNames('col-md-1')}>
                           </div>
                           <div className={classNames('col-md-5')}>
-                              <h2 className={classNames('title')}>Get in Touch</h2>
-                              <p className={classNames('description')}>We would love to have have a chat with you.</p>
+                              <h2 className={classNames('title')}>{contactuspage.second_level_header[0].text}</h2>
+                              <p className={classNames('description')}>{RichText.render(contactuspage.second_level_content)}</p>
                               <div className={classNames('info', 'info-horizontal')}>
                                   <div className={classNames('icon', 'icon-primary', 'text-black')}>
                                       <i className={classNames('material-icons', 'text-black')}>phone</i>
                                   </div>
                                   <div className={classNames('description', 'text-black')}>
-                                      <h4 className={classNames('info-title', 'text-black')}>Give us a ring</h4>
-                                      <a href="tel:+61411030202" >
+                                      <h4 className={classNames('info-title', 'text-black')}>{contactuspage.phone_header[0].text}</h4>
+                                      <a href={"tel:" + contactInfo.phone[0].text}>
                                         <RegularButton
                                             color="primary"
                                             aria-label="Meet Ruma">
-                                            Ruma: 0411 030 202
+                                            {contactInfo.phone_display_text[0].text}
                                         </RegularButton>
                                       </a>
                                       <br/>
-                                      <a href="tel:+61411030202" >
+                                      <a href={"tel:" + contactInfo.second_phone[0].text} >
                                         <RegularButton
                                             color="primary"
                                             aria-label="Meet Ruma">
-                                            Ruma: 0411 030 202
+                                            {contactInfo.second_phone_display_text[0].text}
                                         </RegularButton>
                                       </a>
                                       <br/>
-                                      <a href="tel:+61411030202" >
+                                      <a href={"tel:" + contactInfo.third_phone[0].text} >
                                         <RegularButton
                                             color="primary"
                                             aria-label="Meet Ruma">
-                                            Ruma: 0411 030 202
+                                            {contactInfo.third_phone_display_text[0].text}&nbsp;
                                         </RegularButton>
                                       </a>
                                   </div>

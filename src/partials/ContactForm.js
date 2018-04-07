@@ -82,6 +82,10 @@ export default class ContactForm extends React.Component {
     }
 
     isPhoneValid() {
+        if(!this.state.phone){
+          return true;
+        }
+
         if (this.state.phone && this.state.phone.match(/\d/g) && this.state.phone.match(/\d/g).length === 10) {
           return true;
         } else {
@@ -141,7 +145,7 @@ export default class ContactForm extends React.Component {
                       <span className={classNames('material-input')}></span>
                   </div>
                   <div id="phoneContent" className={classNames('form-group', 'label-floating', 'is-empty', 'bmd-form-group')}>
-                      <label htmlFor="phone" className={classNames('bmd-label-placeholder')} id="phone-label" >Your Phone (10 Digits)</label>
+                      <label htmlFor="phone" className={classNames('bmd-label-placeholder')} id="phone-label" >Your Phone in 10 Digits (optional)</label>
                       <input id="phone" type="phone" value={this.state.phone} onChange={this.updatePhone.bind(this)} className={classNames('form-control')}
                         onFocus={this.inputFocus("#phone-label")} />
                       <span className={classNames('material-input')}></span>
