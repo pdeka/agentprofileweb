@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,2BAA2B;EACzB,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,KAAK",
+"sources": ["../scss/Community.scss"],
+"names": [],
+"file": "Community.css"
+}

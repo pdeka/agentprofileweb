@@ -10,7 +10,7 @@ import FormatDate from "./partials/FormatDate";
 import {RichText} from 'prismic-reactjs';
 import Loading from "./partials/Loading";
 
-import './styles/css/About.css';
+import './styles/css/Community.css';
 
 export default class Community extends React.Component {
 
@@ -75,8 +75,20 @@ export default class Community extends React.Component {
         <MainNavigation navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: "url(" +communitypage.header_background_image.url+")"}}>
         <div className={classNames('container')}>
-              <div className={classNames('row', 'justify-content-center', 'mt-5')}>
-                <h2 className={classNames('title', 'text-center')}>{communitypage.header[0].text}</h2>
+              <div className={classNames('row', 'justify-content-center')}>
+                <div className={classNames('col-md-2')}>
+                </div>
+                <div className={classNames('col-md-8')}>
+                  <h2 class="title text-white m-0 text-center">
+                    <i class="fa fa-quote-left communitypage-quote-format pr-2"></i>
+                      To Move Forward you Have to Give Back
+                    <i class="fa fa-quote-right communitypage-quote-format pl-2"></i>
+                  </h2>
+                  <br/>
+                  <h3  class="text-white text-center m-0">-&nbsp;Oprah Winfrey</h3>
+                </div>
+                <div className={classNames('col-md-2')}>
+                </div>
               </div>
         </div>
 
@@ -90,15 +102,6 @@ export default class Community extends React.Component {
                       <div className={classNames('description')}  >
                           {RichText.render(communitypage.community_summary)}
                       </div>
-                      <div className={classNames('icon')}>
-                        <i className={classNames('material-icons')}>format_quote</i>
-                      </div>
-                      <blockquote className={classNames('blockquote', 'text-center')}>
-                        <p className={classNames('mb-0')}>
-                          {communitypage.quotation[0].text}
-                        </p>
-                        <footer className={classNames('blockquote-footer')}>{communitypage.quotation_author[0].text}</footer>
-                      </blockquote>
                   </div>
               </div>
             </div>
