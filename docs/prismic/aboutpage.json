@@ -1,21 +1,12 @@
 {
   "header_background_image": {
-    "link_type": "Media",
-    "name": "ruma-flipped.png",
-    "kind": "image",
-    "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Ffae2d076-3280-45ef-ad67-94d75aac10b2_ruma-flipped.png",
-    "size": "340662",
-    "height": "800",
-    "width": "1199"
-  },
-  "header_background_image1": {
     "dimensions": {
       "width": 1199,
       "height": 800
     },
     "alt": null,
     "copyright": null,
-    "url": "https://rumamundi.cdn.prismic.io/rumamundi/7116cd8189b69d6a094292355a727ca83348ee93_ruma-flipped.png"
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/4fe27b997dfb20b9f869bd735d4cd720080bca71_ruma-flipped.png"
   },
   "about_video_link": {
     "link_type": "Web",
@@ -28,25 +19,47 @@
   }],
   "about_text": [{
     "type": "paragraph",
-    "text": "Ruma Mundi's name has become synonymous with real estate in the Hills District. During her dynamic career spanning close to 20 years, Ruma has succeeded in bringing about a positive and refreshing change to customer service in the real estate industry, not just in the North West of Sydney, but in the country as a whole. She has earned her place in an elite group of agents, through highly effective negotiating strategies that time and again have produced exceptional sale prices for her clients. Her integrity and professionalism has earned her respect not just among her peers, but with the community as a whole. Behind her personable manner and respectful approach is a sharp and strategic thinker with exemplary sales skills. Displaying absolute integrity Ruma’s dedication to each individual campaign is reflected in the consistency of her results.",
+    "text": "Ruma Mundi is an award winning Licensed Real Estate Professional. She has been the leading agent in her specialist suburbs of Sydney’s North West for the past 15 years. ",
     "spans": []
   }, {
     "type": "paragraph",
-    "text": "She is a hard working mom of 2 beautiful daughters, Samara and Safira. Being a mom gives her a perspective on what a growing family needs. Nick, her husband helps her out between his work as an executive at Woolworths, and making time for the family. Ruma is keenly aware of the juggles of everyday life in the North West of Sydney, and the pressures families today have to work with to live happy and stay healthy.",
+    "text": "Displaying high level of integrity and professionalism, Ruma’s dedication to all her clients is reflected in her results with every campaign that she is honoured to represent. She has an unwavering passion for people coupled with a persona that is caring and approachable. She takes pride in always keeping her clients’ needs first and foremost. After 15 years in Real Estate, most of her clients now are either repeat clients or have been referred to her by previous clients or their families. ",
     "spans": []
   }, {
     "type": "paragraph",
-    "text": "Principal of First National Hills Direct, Ruma is a hard-working director who has an unwavering dedication for her Agency and her staff. With an Master’s degree in business administration and a bachelor’s degree in commerce, she has the education to back her up. Ruma and her team's success are driven by a strong market knowledge of the Hills District and a passion for people, coupled with care and integrity in all their dealings.",
+    "text": "Ruma accredits her successful career to a number of factors:",
     "spans": []
-  }],
-  "quotation": [{
-    "type": "heading6",
-    "text": "I have been selling real estate in Sydney’s Hills District for nearly 20 years. A major portion of the homes that I sell are either past clients, or referrals. My passion and motivation is continually driven forward by the satisfaction I receive when I secure an exceptional outcome for my clients.",
+  }, {
+    "type": "list-item",
+    "text": "Always being authentic and genuine with all her clients and keeping the clients’ needs first",
     "spans": []
-  }],
-  "quotation_author": [{
-    "type": "heading6",
-    "text": "Ruma Mundi",
+  }, {
+    "type": "list-item",
+    "text": "Investing in training and development to enhance her skills & expertise",
+    "spans": []
+  }, {
+    "type": "list-item",
+    "text": "Having a great understanding for Marketing & Branding. This has always resulted in better exposure for the properties she represent. ",
+    "spans": []
+  }, {
+    "type": "list-item",
+    "text": "Giving back and supporting the Community she works in",
+    "spans": []
+  }, {
+    "type": "list-item",
+    "text": "Pure hard work. Loving what she does every day allows her to work passionately to assist her clients and her team ",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "At this stage of her career, whilst she continues to list and sell, Ruma enjoys mentoring her Team and helping each individual in her team reach their highest potential and be successful in their career of choice – Real Estate!",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "Ruma is often invited by industry organisations to speak and train others at conferences and seminars. She also volunteers and is delighted to be considered as an Ambassador for Real Estate Institute – Pathway to Professionalism Program.",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "Ruma is also a loving wife and mother to 2 school going girls – Samara and Safira.",
     "spans": []
   }],
   "awards_header": [{
@@ -54,28 +67,13 @@
     "text": "Awards and Recognitions",
     "spans": []
   }],
-  "awards_quotation": [{
-    "type": "heading6",
-    "text": "While it is an honour to be recognised both nationally and globally, my true reward comes from the satisfaction that I gain from a good result for my clients. ",
-    "spans": []
-  }],
-  "awards_quotation_author": [{
-    "type": "heading6",
-    "text": "Ruma",
-    "spans": []
-  }],
-  "awards_background": {
-    "link_type": "Media",
-    "name": "RUMA MUNDI PROFILE.jpg",
-    "kind": "image",
-    "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2F9a5f2729-1cdc-4a35-902d-e0331565f816_ruma+mundi+profile.jpg",
-    "size": "498998",
-    "height": "1080",
-    "width": "1920"
-  },
-  "footer_remark": [{
-    "type": "heading6",
-    "text": "Contact Ruma for a market appraisal",
-    "spans": []
-  }]
+  "awards_background_image": {
+    "dimensions": {
+      "width": 3600,
+      "height": 2400
+    },
+    "alt": null,
+    "copyright": null,
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/428cb602fda005de859a70550fe96a8f14ee19e9_firstnationalawardsnight2018-16.jpg"
+  }
 }
