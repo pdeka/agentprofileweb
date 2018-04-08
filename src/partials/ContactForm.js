@@ -8,13 +8,12 @@ export default class ContactForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            send: false,
             email: '',
             phone: '',
             purpose: '',
             text: '',
-            to: 'prabin@kenekt.com.au',
-            subject: 'Mail Form From Website'
+            to: this.props.toEmail,
+            subject: ''
         };
     }
 
@@ -106,6 +105,13 @@ export default class ContactForm extends React.Component {
             $('#purposeContent').removeClass('has-danger').addClass('has-success');
             $('#success').addClass('form-control-feedback');
             $('#submitButton').attr('disabled', 'true');
+
+            this.state.subject = `Mail from ${this.state.email}. Purpose: ${this.state.purpose}. Phone: ${this.state.phone}.`;
+            this.state.mail_body = `Note: Someone tried to contact you using the contact form on your website. \n\
+Email: ${this.state.email} \n\
+Purpose: ${this.state.purpose} \n\
+Phone: ${this.state.phone} \n\
+Message: ${this.state.text}`
             console.log("sending message!: " + JSON.stringify(this.state));
             this.sendMail(this.state);
         }

@@ -118,7 +118,7 @@ export default class ContactUs extends React.Component {
                           </div>
                           <div className={classNames('col-md-5', 'ml-auto')}>
                               <div className={classNames('card', 'card-contact')}>
-                                <ContactForm />
+                                <ContactForm toEmail={contactInfo.admin_email[0].text}/>
                               </div>
                           </div>
                           <div className={classNames('col-md-1')}>
