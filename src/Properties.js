@@ -83,7 +83,7 @@ export default class Properties extends React.Component {
         <MainNavigation navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: "url(" +propertiespage.header_background_image.url+")"}}>
         <div className={classNames('container')}>
-              <div className={classNames('row', 'justify-content-center', 'mt-5')}>
+              <div className={classNames('row', 'justify-content-center')}>
                 <h2 className={classNames('title', 'text-center')}>{propertiespage.header[0].text}</h2>
                 <img src="https://prismic-io.s3.amazonaws.com/rumamundi%2Ff2fb80dc-40da-4e34-a219-9e2acd7cb333_dog100x100.png" alt="dog ruma mundi properties"/>
               </div>
