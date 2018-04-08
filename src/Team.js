@@ -2,7 +2,6 @@ import React from 'react';
 import Prismic from 'prismic-javascript';
 import MainNavigation from './partials/MainNavigation';
 import classNames from 'classnames';
-import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
 import PageFooter from "./partials/PageFooter";
 import {RichText} from 'prismic-reactjs';
 import Loading from "./partials/Loading";

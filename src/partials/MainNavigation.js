@@ -24,10 +24,10 @@ export default class MainNavigation extends React.Component {
       <div className={classNames('container')}>
         <div className={classNames('navbar-translate')}>
           <Link to="/home" className='logo-light'>
-            <img src="./images/ruma-logo1.png" />
+            <img src="./images/ruma-logo1.png" alt="ruma mundi logo"/>
           </Link>
           <Link to="/home" className='logo-dark'>
-            <img src="./images/ruma-logo1-dark.png" />
+            <img src="./images/ruma-logo1-dark.png" alt="ruma mundi logo dark"/>
           </Link>
           <button className={classNames('navbar-toggler')} type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span className={classNames('navbar-toggler-icon')}></span>

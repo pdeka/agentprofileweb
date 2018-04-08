@@ -2,7 +2,6 @@ import React from 'react';
 import Prismic from 'prismic-javascript';
 import MainNavigation from './partials/MainNavigation';
 import classNames from 'classnames';
-import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
 import PageFooter from "./partials/PageFooter";
 import ArticleTabCards from "./partials/ArticleTabCards";
 import ArticlePreview from "./partials/ArticlePreview";
@@ -76,7 +75,7 @@ export default class Community extends React.Component {
         <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: "url(" +communitypage.header_background_image.url+")"}}>
         <div className={classNames('container')}>
               <div className={classNames('row', 'justify-content-center')}>
-                <img src={communitypage.header_foreground_image.url} height="500px"/>
+                <img src={communitypage.header_foreground_image.url} height="500px" alt="Ruma Mundi quote about community"/>
               </div>
         </div>
 

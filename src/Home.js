@@ -1,12 +1,9 @@
 import React from 'react';
 import Prismic from 'prismic-javascript';
-import Truncate from 'react-truncate';
 import MainNavigation from './partials/MainNavigation';
-import FooterLinkedToContactUs from './partials/FooterLinkedToContactUs';
 import classNames from 'classnames';
 import Chance from 'chance';
 import ArticlePreview from './partials/ArticlePreview';
-import FormatDate from './partials/FormatDate';
 import PageFooter from "./partials/PageFooter";
 import Loading from "./partials/Loading";
 import TestimonialCardBody from "./partials/TestimonialCardBody";
@@ -151,7 +148,7 @@ export default class Home extends React.Component {
               </div>
               <div id="downArrow">
                 <Jump>
-                  <img src="images/down-arrow70X70.png" height="50px"/>
+                  <img src="images/down-arrow70X70.png" height="50px" alt="ruma see rest of page"/>
                 </Jump>
               </div>
               <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster={data.video_poster_image.url}>

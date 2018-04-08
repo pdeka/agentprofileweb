@@ -2,7 +2,6 @@ import React from 'react';
 import Prismic from 'prismic-javascript';
 import MainNavigation from './partials/MainNavigation';
 import classNames from 'classnames';
-import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
 import PageFooter from "./partials/PageFooter";
 import ArticleTabCards from "./partials/ArticleTabCards";
 import ArticlePreview from "./partials/ArticlePreview";
@@ -86,7 +85,7 @@ export default class Properties extends React.Component {
         <div className={classNames('container')}>
               <div className={classNames('row', 'justify-content-center', 'mt-5')}>
                 <h2 className={classNames('title', 'text-center')}>{propertiespage.header[0].text}</h2>
-                <img src="https://prismic-io.s3.amazonaws.com/rumamundi%2Ff2fb80dc-40da-4e34-a219-9e2acd7cb333_dog100x100.png" />
+                <img src="https://prismic-io.s3.amazonaws.com/rumamundi%2Ff2fb80dc-40da-4e34-a219-9e2acd7cb333_dog100x100.png" alt="dog ruma mundi properties"/>
               </div>
         </div>
 

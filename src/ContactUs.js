@@ -1,6 +1,5 @@
 import React from 'react';
 import Prismic from 'prismic-javascript';
-import MapContainer from './partials/MapContainer';
 import MainNavigation from './partials/MainNavigation';
 import PageFooter from "./partials/PageFooter";
 import classNames from 'classnames';

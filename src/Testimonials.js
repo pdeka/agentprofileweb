@@ -2,12 +2,10 @@ import React from 'react';
 import Prismic from 'prismic-javascript';
 import MainNavigation from './partials/MainNavigation';
 import classNames from 'classnames';
-import FooterLinkedToContactUs from "./partials/FooterLinkedToContactUs";
 import PageFooter from "./partials/PageFooter";
 import YoutubeURL from './lib/YoutubeURL';
 import WebTestimonialRow from './partials/WebTestimonialRow';
 import TestimonialCardBody from "./partials/TestimonialCardBody";
-import {RichText} from 'prismic-reactjs';
 import Loading from "./partials/Loading";
 
 import './styles/css/Testimonials.css';
