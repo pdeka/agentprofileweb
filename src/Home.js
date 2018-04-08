@@ -55,7 +55,10 @@ export default class Home extends React.Component {
         }
       });
 
-      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'article'), { orderings : '[my.article.date desc]', pageSize : 2  }).then(
+      props.prismicCtx.api.query([
+          Prismic.Predicates.at('document.type', 'article'),
+          Prismic.Predicates.at('document.tags', ['Our Community'])
+      ], { orderings : '[my.article.date desc]', pageSize : 1  }).then(
         (articles) => {
           if (articles) {
             this.setState({ articles });
