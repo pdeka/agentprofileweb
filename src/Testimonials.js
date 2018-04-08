@@ -186,7 +186,7 @@ export default class Testimonials extends React.Component {
                   <div className={classNames('container', 'mb-5')}>
                       <div className={classNames('row')}>
                           <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-                              <h2 className={classNames('title')}>Feedback Across the Web</h2>
+                              <h2 className={classNames('title')}>{testimonialspage.web_testimonial_header[0].text}</h2>
                           </div>
                       </div>
                   </div>

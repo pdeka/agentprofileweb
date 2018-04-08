@@ -67,6 +67,8 @@ export default class About extends React.Component {
       let homepage = this.state.homepage.results[0].data;
       let aboutpage = this.state.aboutpage.results[0].data;
 
+      console.log(JSON.stringify(aboutpage));
+
       return <div className={classNames('sections-page')}>
         <MainNavigation thisProp={homepage} navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-medium-large', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url('+aboutpage.header_background_image.url+')'}}>
@@ -91,27 +93,15 @@ export default class About extends React.Component {
                       <div className={classNames('description')}  >
                         {RichText.render(aboutpage.about_text)}
                       </div>
-                      <div className={classNames('icon')}>
-                        <i className={classNames('material-icons')}>format_quote</i>
-                      </div>
-                      <blockquote className={classNames('blockquote', 'text-center')}>
-                        <p className={classNames('mb-0')}>
-                          {aboutpage.quotation[0].text}
-                        </p>
-                        <footer className={classNames('blockquote-footer')}>{aboutpage.quotation_author[0].text}</footer>
-                      </blockquote>
                   </div>
               </div>
             </div>
           </div>
-          <div className={classNames('team-2', 'section-image', 'pt-5', 'pb-3')} id="team-5" style={{'backgroundImage': 'url('+aboutpage.awards_background.url+')'}}>
+          <div className={classNames('team-2', 'section-image', 'pt-5', 'pb-3')} id="team-5" style={{'backgroundImage': 'url('+aboutpage.awards_background_image.url+')'}}>
               <div className={classNames('container')}>
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
                           <h2 className={classNames('title')}>{aboutpage.awards_header[0].text}</h2>
-                            <p className={classNames('mb-0', 'text-white')}>
-                              {aboutpage.awards_quotation[0].text}
-                            </p>
                       </div>
                   </div>
                   <div className={classNames('row')}>

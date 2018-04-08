@@ -1,16 +1,25 @@
 {
   "header_background_image": {
     "link_type": "Media",
-    "name": "133 Ridgeline Drv The Ponds.jpg",
+    "name": "ruma-flipped.png",
     "kind": "image",
-    "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2F33169785-8d7d-4fc4-a605-8efe80901fc1_133+ridgeline+drv+the+ponds.jpg",
-    "size": "117121",
-    "height": "720",
-    "width": "1280"
+    "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Ffae2d076-3280-45ef-ad67-94d75aac10b2_ruma-flipped.png",
+    "size": "340662",
+    "height": "800",
+    "width": "1199"
+  },
+  "header_background_image1": {
+    "dimensions": {
+      "width": 1199,
+      "height": 800
+    },
+    "alt": null,
+    "copyright": null,
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/7116cd8189b69d6a094292355a727ca83348ee93_ruma-flipped.png"
   },
   "about_video_link": {
     "link_type": "Web",
-    "url": "https://www.youtube.com/watch?v=FVZ0OB4WkPs&feature=youtu.be"
+    "url": "https://https://www.youtube.com/watch?v=Iz8-NDzXklI"
   },
   "header": [{
     "type": "heading1",
@@ -55,6 +64,15 @@
     "text": "Ruma",
     "spans": []
   }],
+  "awards_background": {
+    "link_type": "Media",
+    "name": "RUMA MUNDI PROFILE.jpg",
+    "kind": "image",
+    "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2F9a5f2729-1cdc-4a35-902d-e0331565f816_ruma+mundi+profile.jpg",
+    "size": "498998",
+    "height": "1080",
+    "width": "1920"
+  },
   "footer_remark": [{
     "type": "heading6",
     "text": "Contact Ruma for a market appraisal",

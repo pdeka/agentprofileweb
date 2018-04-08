@@ -76,7 +76,7 @@ export default class Community extends React.Component {
         <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: "url(" +communitypage.header_background_image.url+")"}}>
         <div className={classNames('container')}>
               <div className={classNames('row', 'justify-content-center')}>
-                <img src="https://prismic-io.s3.amazonaws.com/rumamundi%2F566834a0-6d0a-4fc3-95ec-62fc44165f41_oprah.png" height="500px"/>
+                <img src={communitypage.header_foreground_image.url} height="500px"/>
               </div>
         </div>
 
