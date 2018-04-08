@@ -27,8 +27,7 @@ export default class ArticleTabCards extends React.Component {
             {article.data.article_summary[0].text}
           </p>
           <p className={classNames('author')}>
-            by
-            <b>Ruma</b>,&nbsp;
+            by&nbsp;<b>Ruma</b>,&nbsp;
             <FormatDate data={article.data.date}/>
           </p>
       </div>
