@@ -52,8 +52,6 @@ export default class Team extends React.Component {
 
       let teampage = this.state.teampage.results[0].data;
 
-      console.log(JSON.stringify(teampage));
-
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-filter', 'header-medium')} data-parallax="true" style={{backgroundImage: "url(" +teampage.header_background_image.url+")"}}>
