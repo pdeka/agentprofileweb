@@ -84,7 +84,7 @@ export default class Properties extends React.Component {
         <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: "url(" +propertiespage.header_background_image.url+")"}}>
         <div className={classNames('container')}>
               <div className={classNames('row', 'justify-content-center')}>
-                <h2 className={classNames('title', 'text-center')}>{propertiespage.header[0].text}</h2>
+                <h1 className={classNames('title', 'text-center')}>{propertiespage.header[0].text}</h1>
                 <img src="https://prismic-io.s3.amazonaws.com/rumamundi%2Ff2fb80dc-40da-4e34-a219-9e2acd7cb333_dog100x100.png" alt="dog ruma mundi properties"/>
               </div>
         </div>
@@ -121,9 +121,9 @@ export default class Properties extends React.Component {
                                 <h3 className={classNames('card-title')}>
                                   {articleResults[0].data.article_title[0].text}
                                 </h3>
-                                <p className={classNames('card-description')}>
-                                  {articleResults[0].data.article_summary[0].text}
-                                </p>
+                                <div className={classNames('card-description')}>
+                                  {RichText.render(articleResults[0].data.article_text)}
+                                </div>
                                 <p className={classNames('author', 'text-white')}>
                                   by &nbsp;<b>Ruma</b>,&nbsp;
                                   <FormatDate data={articleResults[0].data.date}/>
