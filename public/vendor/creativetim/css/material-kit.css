@@ -15469,6 +15469,11 @@ p {
   font-family: "Alegreya", "Times New Roman", serif;
   text-align: left; }
 
+li {
+  font-size: 16px;
+  font-family: "Alegreya", "Times New Roman", serif;
+  text-align: left; }
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
   font-family: "Oswald", "Helvetica", "Arial", sans-serif;
   color: #3C4858; }
@@ -15504,6 +15509,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
 
 .text-white {
   color: #ffffff !important; }
+
+.max-font-weight {
+  font-weight: 900 !important; }
 
 .card-description, .description, .card-description-blog, .description {
   color: #3C4858; }

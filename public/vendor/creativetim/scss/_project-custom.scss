@@ -1,8 +1,16 @@
-p{
+p {
     font-size: $font-paragraph +2;
     font-family: $font-family-serif;
     text-align: left;
 }
+
+li {
+    font-size: $font-paragraph +2;
+    font-family: $font-family-serif;
+    text-align: left;
+}
+
+
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
   font-family: $font-family-sans-serif;
@@ -32,6 +40,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
 
 .text-white{
   color: $white !important;
+}
+
+.max-font-weight {
+  font-weight: 900 !important;
 }
 
 .card-description, .description{
