@@ -93,7 +93,7 @@ export default class ContactUs extends React.Component {
                                       <a href={"tel:" + contactInfo.phone[0].text}>
                                         <RegularButton
                                             color="primary"
-                                            aria-label="Meet Ruma">
+                                            aria-label="phone1">
                                             {contactInfo.phone_display_text[0].text}
                                         </RegularButton>
                                       </a>
@@ -101,16 +101,16 @@ export default class ContactUs extends React.Component {
                                       <a href={"tel:" + contactInfo.second_phone[0].text} >
                                         <RegularButton
                                             color="primary"
-                                            aria-label="Meet Ruma">
-                                            {contactInfo.second_phone_display_text[0].text}
+                                            aria-label="phone2">
+                                            {contactInfo.second_phone_display_text[0].text}&nbsp;
                                         </RegularButton>
                                       </a>
                                       <br/>
                                       <a href={"tel:" + contactInfo.third_phone[0].text} >
                                         <RegularButton
                                             color="primary"
-                                            aria-label="Meet Ruma">
-                                            {contactInfo.third_phone_display_text[0].text}
+                                            aria-label="phone3">
+                                            {contactInfo.third_phone_display_text[0].text}&nbsp;&nbsp;&nbsp;&nbsp;
                                         </RegularButton>
                                       </a>
                                   </div>
