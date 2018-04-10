@@ -14,6 +14,7 @@ import {Splash} from './components/animation/Splash';
 import SplashButton from './components/CustomButtons/SplashButton';
 import Slice from './lib/Slice';
 import Jump from 'react-reveal/Jump';
+import { Link as LinkScroll} from 'react-scroll';
 
 import './styles/css/Home.css';
 
@@ -149,7 +150,9 @@ export default class Home extends React.Component {
               </div>
               <div id="downArrow">
                 <Jump>
-                  <img src="images/down-arrow70X70.png" height="50px" alt="ruma see rest of page"/>
+                  <LinkScroll to="about" spy={false} smooth={true} duration={1000} delay={300}>
+                    <img src="images/down-arrow70X70.png" height="50px" alt="ruma see rest of page"/>
+                  </LinkScroll>
                 </Jump>
               </div>
               <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster={data.video_poster_image.url}>
@@ -157,7 +160,7 @@ export default class Home extends React.Component {
               </video>
           </div>
         </div>
-        <div className={classNames('main', 'main-raised-for-home')} style={{'zIndex': 4}}>
+        <div className={classNames('main', 'main-raised-for-home')} style={{'zIndex': 4}}  id="about">
             <div className={classNames('cd-section')}>
             <div className={classNames('container')} >
               <div className={classNames('features-3', 'home-about-section')}>
