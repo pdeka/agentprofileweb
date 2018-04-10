@@ -12,7 +12,6 @@ import './styles/css/About.css';
 export default class About extends React.Component {
 
   state = {
-    homepage: null,
     aboutpage: null,
     notFound: false
   }
@@ -36,16 +35,6 @@ export default class About extends React.Component {
   fetchPage(props) {
     if (props.prismicCtx) {
 
-      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'homepage')).then((homepage) => {
-        if (homepage) {
-          this.setState({homepage});
-        } else {
-          this.setState({
-            notFound: !homepage
-          });
-        }
-      });
-
       props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'aboutpage')).then((aboutpage) => {
         if (aboutpage) {
           this.setState({aboutpage});
@@ -59,15 +48,12 @@ export default class About extends React.Component {
   }
 
   render() {
-    if (this.state.homepage && this.state.aboutpage) {
+    if (this.state.aboutpage) {
 
-      let homepage = this.state.homepage.results[0].data;
       let aboutpage = this.state.aboutpage.results[0].data;
 
-      console.log(JSON.stringify(aboutpage));
-
       return <div className={classNames('sections-page')}>
-        <MainNavigation thisProp={homepage} navBarTransparent={true}/>
+        <MainNavigation navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-medium-large', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url('+aboutpage.header_background_image.url+')'}}>
           <div className={classNames('container', 'about-video-text-margin')}>
                 <div className={classNames('row')}>
