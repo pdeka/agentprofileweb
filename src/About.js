@@ -80,7 +80,7 @@ export default class About extends React.Component {
           </div>
         </div>
         <div className={classNames('main', 'main-raised')}>
-          <div className={classNames('features-1', 'pt-5', 'pb-3')}>
+          <div className={classNames('features-1', 'pt-5')}>
             <div className={classNames('container')}>
               <div className={classNames('row')}>
                   <div className={classNames('col-md-8', 'ml-auto', 'mr-auto')}>
@@ -181,6 +181,73 @@ export default class About extends React.Component {
                               </div>
                               <h4 class="info-title">Centurion Producer</h4>
                               <p>(Top 2% Producer Globally) 2009, 2010, 2011 & 2012</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="team-2" id="team-2">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-8 ml-auto mr-auto text-center">
+                          <h2 class="title">Pro Bono Work</h2>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card card-profile card-plain">
+                              <div class="card-header card-header-image">
+                                  <a href="#pablo">
+                                      <img class="img" src={aboutpage.logo_1.url}/>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card card-profile card-plain">
+                              <div class="card-header card-header-image">
+                                  <a href="#pablo">
+                                      <img class="img" src={aboutpage.logo_2.url}/>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card card-profile card-plain">
+                              <div class="card-header card-header-image">
+                                  <a href="#pablo">
+                                      <img class="img" src={aboutpage.logo_3.url}/>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card card-profile card-plain">
+                              <div class="card-header card-header-image">
+                                  <a href="#pablo">
+                                      <img class="img" src={aboutpage.logo_4.url}/>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card card-profile card-plain">
+                              <div class="card-header card-header-image">
+                                  <a href="#pablo">
+                                      <img class="img" src={aboutpage.logo_5.url}/>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card card-profile card-plain">
+                              <div class="card-header card-header-image">
+                                  <a href="#pablo">
+                                      <img class="img" src={aboutpage.logo_6.url}/>
+                                  </a>
+                              </div>
                           </div>
                       </div>
                   </div>
