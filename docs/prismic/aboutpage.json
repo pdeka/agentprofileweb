@@ -26,6 +26,38 @@
     "text": "Displaying high level of integrity and professionalism, Ruma’s dedication to all her clients is reflected in her results with every campaign that she is honoured to represent. She has an unwavering passion for people coupled with a persona that is caring and approachable. She takes pride in always keeping her clients’ needs first and foremost. After 15 years in Real Estate, most of her clients now are either repeat clients or have been referred to her by previous clients or their families. ",
     "spans": []
   }, {
+    "type": "heading3",
+    "text": "Skills and Expertise",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "",
+    "spans": []
+  }, {
+    "type": "list-item",
+    "text": "MBA | Master of Business Administration(Major: Marketing & IT)",
+    "spans": []
+  }, {
+    "type": "list-item",
+    "text": "Bachelor of Commerce (B.Com)",
+    "spans": []
+  }, {
+    "type": "list-item",
+    "text": "Licensed Real Estate Professional",
+    "spans": []
+  }, {
+    "type": "list-item",
+    "text": "Languages Spoken: English, Hindi & Punjabi",
+    "spans": []
+  }, {
+    "type": "heading3",
+    "text": "More About Ruma",
+    "spans": []
+  }, {
+    "type": "paragraph",
+    "text": "",
+    "spans": []
+  }, {
     "type": "paragraph",
     "text": "Ruma accredits her successful career to a number of factors:",
     "spans": []
@@ -64,16 +96,125 @@
   }],
   "awards_header": [{
     "type": "heading6",
-    "text": "Awards and Recognitions",
+    "text": "Awards",
     "spans": []
+  }],
+  "awards_text": [{
+    "type": "paragraph",
+    "text": "Ruma has a Master of Business Administration, with a major in Marketing and IT. She has a Bachelors degree in Commerce (B.Com). She is a licensed Real Estate professional who speaks fluent Hindi, Punjabi and English. ",
+    "spans": [{
+      "start": 90,
+      "end": 118,
+      "type": "strong"
+    }, {
+      "start": 189,
+      "end": 215,
+      "type": "strong"
+    }]
+  }, {
+    "type": "paragraph",
+    "text": "The following are some of the awards she has received in the recent years:",
+    "spans": []
+  }],
+  "pro_bono_header": [{
+    "type": "heading6",
+    "text": "Pro Bono Work",
+    "spans": []
+  }],
+  "pro_bono_text": [{
+    "type": "paragraph",
+    "text": "Ruma and her team are passionately involved in local charities including Variety Children’s Foundation, Cancer Council’s Pink Ribbon, Harman Foundation, and sporting clubs including The Ponds Little Athletics Club, The Ponds Cricket Club, Quakers Hill Bombers Junior AFL Club and Christmas Give Back Campaigns.",
+    "spans": [{
+      "start": 73,
+      "end": 102,
+      "type": "strong"
+    }, {
+      "start": 104,
+      "end": 132,
+      "type": "strong"
+    }, {
+      "start": 134,
+      "end": 151,
+      "type": "strong"
+    }, {
+      "start": 182,
+      "end": 213,
+      "type": "strong"
+    }, {
+      "start": 215,
+      "end": 237,
+      "type": "strong"
+    }, {
+      "start": 239,
+      "end": 275,
+      "type": "strong"
+    }, {
+      "start": 280,
+      "end": 309,
+      "type": "strong"
+    }]
   }],
   "awards_background_image": {
     "dimensions": {
-      "width": 3600,
-      "height": 2400
+      "width": 448,
+      "height": 336
     },
     "alt": null,
     "copyright": null,
-    "url": "https://rumamundi.cdn.prismic.io/rumamundi/428cb602fda005de859a70550fe96a8f14ee19e9_firstnationalawardsnight2018-16.jpg"
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/a035c6d96944310e47f2ab26c971fd95c35e2c80_ruma-award-2015.jpg"
+  },
+  "logo_1": {
+    "dimensions": {
+      "width": 800,
+      "height": 533
+    },
+    "alt": "harman foundation",
+    "copyright": null,
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/fcb72176158d2ac069869374f37606223bb2bd18_harman-foundation.png"
+  },
+  "logo_2": {
+    "dimensions": {
+      "width": 800,
+      "height": 533
+    },
+    "alt": "quakers hill bombers",
+    "copyright": null,
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/b0211a583d157667309af3e6f55c970242e9e2ce_bombers.png"
+  },
+  "logo_3": {
+    "dimensions": {
+      "width": 800,
+      "height": 533
+    },
+    "alt": "ponds athletics",
+    "copyright": null,
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/ddfa7870c0de27fd1a3a9f7290f145fde236f004_athletics-club.png"
+  },
+  "logo_4": {
+    "dimensions": {
+      "width": 800,
+      "height": 533
+    },
+    "alt": "ponds cricket club",
+    "copyright": null,
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/e4bb14c6fcaf1714df26d6c147a14986f2b57c47_the-ponds-cricket-club.png"
+  },
+  "logo_5": {
+    "dimensions": {
+      "width": 800,
+      "height": 533
+    },
+    "alt": "pink ribbon",
+    "copyright": null,
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/e681528ddb75b8438b4280084fc703243520cb37_pink-ribbon-day-logo.png"
+  },
+  "logo_6": {
+    "dimensions": {
+      "width": 800,
+      "height": 533
+    },
+    "alt": "variety children foundation",
+    "copyright": null,
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/3cbba72609cfd4ab26559781bcfbd8067c63a440_varietyclublogo.png"
   }
 }

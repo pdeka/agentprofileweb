@@ -64,6 +64,8 @@ export default class About extends React.Component {
       let homepage = this.state.homepage.results[0].data;
       let aboutpage = this.state.aboutpage.results[0].data;
 
+      console.log(JSON.stringify(aboutpage));
+
       return <div className={classNames('sections-page')}>
         <MainNavigation thisProp={homepage} navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-medium-large', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url('+aboutpage.header_background_image.url+')'}}>
@@ -92,160 +94,160 @@ export default class About extends React.Component {
               </div>
             </div>
           </div>
-          <div class="features-5" style={{'backgroundImage': 'url('+aboutpage.awards_background_image.url+')'}}>
-              <div class="col-md-8 ml-auto mr-auto text-center">
-                  <h2 class="title">Awards</h2>
+          <div className={classNames('features-5')} style={{'backgroundImage': 'url('+aboutpage.awards_background_image.url+')'}}>
+              <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
+                  <h2 className={classNames('title')}>Awards</h2>
               </div>
-              <div class="container">
-                  <div class="row">
-                      <div class="col-sm-4">
-                          <div class="info">
-                              <div class="icon">
-                                  <span  class="award-number">29<sup>th</sup></span>
+              <div className={classNames('container')}>
+                  <div className={classNames('row')}>
+                      <div className={classNames('col-sm-4')}>
+                          <div className={classNames('info')}>
+                              <div className={classNames('icon')}>
+                                  <span  className={classNames('award-number')}>29<sup>th</sup></span>
                               </div>
-                              <h4 class="info-title">Top 50 Women in the Real Estate</h4>
+                              <h4 className={classNames('info-title')}>Top 50 Women in the Real Estate</h4>
                               <p>REB Awards - Real Estate Network for Australia</p>
                           </div>
                       </div>
-                      <div class="col-sm-4">
-                          <div class="info">
-                              <div class="icon">
-                                <span  class="award-number">2<sup>nd</sup></span>
+                      <div className={classNames('col-sm-4')}>
+                          <div className={classNames('info')}>
+                              <div className={classNames('icon')}>
+                                <span  className={classNames('award-number')}>2<sup>nd</sup></span>
                               </div>
-                              <h4 class="info-title">Combined Highest Gross Sales</h4>
+                              <h4 className={classNames('info-title')}>Combined Highest Gross Sales</h4>
                               <p>First National Real Estate NSW Network</p>
                           </div>
                       </div>
-                      <div class="col-sm-4">
-                          <div class="info">
-                              <div class="icon">
-                                <span  class="award-number">3<sup>rd</sup></span>
+                      <div className={classNames('col-sm-4')}>
+                          <div className={classNames('info')}>
+                              <div className={classNames('icon')}>
+                                <span  className={classNames('award-number')}>3<sup>rd</sup></span>
                               </div>
-                              <h4 class="info-title">Combined Highest Gross Sales</h4>
+                              <h4 className={classNames('info-title')}>Combined Highest Gross Sales</h4>
                               <p>First National Real Estate Network (AUS & NZ)</p>
                           </div>
                       </div>
                   </div>
-                  <div class="row">
-                      <div class="col-sm-4">
-                          <div class="info">
-                              <div class="icon">
-                                <span class="award-number">3<sup>rd</sup></span>
+                  <div className={classNames('row')}>
+                      <div className={classNames('col-sm-4')}>
+                          <div className={classNames('info')}>
+                              <div className={classNames('icon')}>
+                                <span className={classNames('award-number')}>3<sup>rd</sup></span>
                               </div>
-                              <h4 class="info-title">Top Salesperson - Residental</h4>
+                              <h4 className={classNames('info-title')}>Top Salesperson - Residental</h4>
                               <p>GEM Awards - First National Real Estate Australia - 2016 & 2017</p>
                           </div>
                       </div>
-                      <div class="col-sm-4">
-                          <div class="info">
-                              <div class="icon">
-                                <span class="icon-laurel" ></span>
+                      <div className={classNames('col-sm-4')}>
+                          <div className={classNames('info')}>
+                              <div className={classNames('icon')}>
+                                <span className={classNames('icon-laurel')} ></span>
                               </div>
-                              <h4 class="info-title">Diamond Award</h4>
+                              <h4 className={classNames('info-title')}>Diamond Award</h4>
                               <p>Residental Commission - First National Real Estate (NSW) - 2016 & 2017</p>
                           </div>
                       </div>
-                      <div class="col-sm-4">
-                          <div class="info">
-                              <div class="icon">
-                                <span class="icon-laurel" ></span>
+                      <div className={classNames('col-sm-4')}>
+                          <div className={classNames('info')}>
+                              <div className={classNames('icon')}>
+                                <span className={classNames('icon-laurel')} ></span>
                               </div>
-                              <h4 class="info-title">Grand Centurion</h4>
+                              <h4 className={classNames('info-title')}>Grand Centurion</h4>
                               <p>Top 1% Producer Globally – 2015 – Century 21</p>
                           </div>
                       </div>
                   </div>
-                  <div class="row">
-                      <div class="col-sm-4">
-                          <div class="info">
-                              <div class="icon">
-                                <span class="icon-laurel" ></span>
+                  <div className={classNames('row')}>
+                      <div className={classNames('col-sm-4')}>
+                          <div className={classNames('info')}>
+                              <div className={classNames('icon')}>
+                                <span className={classNames('icon-laurel')} ></span>
                               </div>
-                              <h4 class="info-title">Double Centurion 2014</h4>
+                              <h4 className={classNames('info-title')}>Double Centurion 2014</h4>
                               <p></p>
                           </div>
                       </div>
-                      <div class="col-sm-4">
-                          <div class="info">
-                              <div class="icon">
-                                <span class="icon-laurel" ></span>
+                      <div className={classNames('col-sm-4')}>
+                          <div className={classNames('info')}>
+                              <div className={classNames('icon')}>
+                                <span className={classNames('icon-laurel')} ></span>
                               </div>
-                              <h4 class="info-title">Grand Centurion Producer</h4>
+                              <h4 className={classNames('info-title')}>Grand Centurion Producer</h4>
                               <p>Top 1% Producer Globally - 2013</p>
                           </div>
                       </div>
-                      <div class="col-sm-4">
-                          <div class="info">
-                              <div class="icon">
-                                <span class="icon-laurel" ></span>
+                      <div className={classNames('col-sm-4')}>
+                          <div className={classNames('info')}>
+                              <div className={classNames('icon')}>
+                                <span className={classNames('icon-laurel')} ></span>
                               </div>
-                              <h4 class="info-title">Centurion Producer</h4>
+                              <h4 className={classNames('info-title')}>Centurion Producer</h4>
                               <p>(Top 2% Producer Globally) 2009, 2010, 2011 & 2012</p>
                           </div>
                       </div>
                   </div>
               </div>
           </div>
-          <div class="team-2" id="team-2">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-8 ml-auto mr-auto text-center">
-                          <h2 class="title">Pro Bono Work</h2>
+          <div className={classNames('team-2')} id="team-2">
+              <div className={classNames('container')}>
+                  <div className={classNames('row')}>
+                      <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
+                          <h2 className={classNames('title')}>Pro Bono Work</h2>
                       </div>
                   </div>
-                  <div class="row">
-                      <div class="col-md-4">
-                          <div class="card card-profile card-plain">
-                              <div class="card-header card-header-image">
+                  <div className={classNames('row')}>
+                      <div className={classNames('col-md-4')}>
+                          <div className={classNames('card', 'card-profile', 'card-plain')}>
+                              <div className={classNames('card-header', 'card-header-image')}>
                                   <a href="#pablo">
-                                      <img class="img" src={aboutpage.logo_1.url}/>
+                                      <img className={classNames('img')} src={aboutpage.logo_1.url} alt={aboutpage.logo_1.alt}/>
                                   </a>
                               </div>
                           </div>
                       </div>
-                      <div class="col-md-4">
-                          <div class="card card-profile card-plain">
-                              <div class="card-header card-header-image">
+                      <div className={classNames('col-md-4')}>
+                          <div className={classNames('card', 'card-profile', 'card-plain')}>
+                              <div className={classNames('card-header', 'card-header-image')}>
                                   <a href="#pablo">
-                                      <img class="img" src={aboutpage.logo_2.url}/>
+                                      <img className={classNames('img')} src={aboutpage.logo_2.url} alt={aboutpage.logo_2.alt}/>
                                   </a>
                               </div>
                           </div>
                       </div>
-                      <div class="col-md-4">
-                          <div class="card card-profile card-plain">
-                              <div class="card-header card-header-image">
+                      <div className={classNames('col-md-4')}>
+                          <div className={classNames('card', 'card-profile', 'card-plain')}>
+                              <div className={classNames('card-header', 'card-header-image')}>
                                   <a href="#pablo">
-                                      <img class="img" src={aboutpage.logo_3.url}/>
+                                      <img className={classNames('img')} src={aboutpage.logo_3.url} alt={aboutpage.logo_3.alt}/>
                                   </a>
                               </div>
                           </div>
                       </div>
                   </div>
-                  <div class="row">
-                      <div class="col-md-4">
-                          <div class="card card-profile card-plain">
-                              <div class="card-header card-header-image">
+                  <div className={classNames('row')}>
+                      <div className={classNames('col-md-4')}>
+                          <div className={classNames('card', 'card-profile', 'card-plain')}>
+                              <div className={classNames('card-header', 'card-header-image')}>
                                   <a href="#pablo">
-                                      <img class="img" src={aboutpage.logo_4.url}/>
+                                      <img className={classNames('img')} src={aboutpage.logo_4.url} alt={aboutpage.logo_4.alt}/>
                                   </a>
                               </div>
                           </div>
                       </div>
-                      <div class="col-md-4">
-                          <div class="card card-profile card-plain">
-                              <div class="card-header card-header-image">
+                      <div className={classNames('col-md-4')}>
+                          <div className={classNames('card', 'card-profile', 'card-plain')}>
+                              <div className={classNames('card-header', 'card-header-image')}>
                                   <a href="#pablo">
-                                      <img class="img" src={aboutpage.logo_5.url}/>
+                                      <img className={classNames('img')} src={aboutpage.logo_5.url} alt={aboutpage.logo_5.alt}/>
                                   </a>
                               </div>
                           </div>
                       </div>
-                      <div class="col-md-4">
-                          <div class="card card-profile card-plain">
-                              <div class="card-header card-header-image">
+                      <div className={classNames('col-md-4')}>
+                          <div className={classNames('card', 'card-profile', 'card-plain')}>
+                              <div className={classNames('card-header', 'card-header-image')}>
                                   <a href="#pablo">
-                                      <img class="img" src={aboutpage.logo_6.url}/>
+                                      <img className={classNames('img')} src={aboutpage.logo_6.url} alt={aboutpage.logo_6.alt}/>
                                   </a>
                               </div>
                           </div>
@@ -262,193 +264,3 @@ export default class About extends React.Component {
     }
   }
 }
-
-<div className={classNames('row', 'awards-image-section')}>
-    <div className={classNames('col-md-4')}>
-        <div className={classNames('card', 'card-profile', 'card-plain')}>
-
-            <div className={classNames('card-header', 'card-header-image', 'mb-0')} style={{'height': '166px'}}>
-                <a href="#pablo">
-                    <img className={classNames('img')} src="./images/REB-top-50.png" style={{'height': '166px'}} alt="REB top 50 Ruma Mundi North West Sydney"/>
-                </a>
-            </div>
-            <div className={classNames('card-body')}>
-                <h4 className={classNames('card-title')}>#29 | REB Awards, 2017</h4>
-            </div>
-
-        </div>
-    </div>
-    <div className={classNames('col-md-4')}>
-        <div className={classNames('card', 'card-profile', 'card-plain', 'mb-0')}>
-            <div className={classNames('card-header', 'card-header-image')} style={{'height': '166px'}}>
-                <a href="#pablo">
-                    <img className={classNames('img')} src="./images/First-National-Real-Estate-SEQA-441x269.png" style={{'height': '166px'}} alt="First National Real Estate Ruma Mundi Sydney"/>
-                </a>
-            </div>
-            <div className={classNames('card-body')}>
-                <h4 className={classNames('card-title')}>#2 | Combined Highest Gross Sales</h4>
-                <p className={classNames('text-white')}>First National Real Estate NSW Network</p>
-            </div>
-        </div>
-    </div>
-    <div className={classNames('col-md-4')}>
-        <div className={classNames('card', 'card-profile', 'card-plain')}>
-            <div className={classNames('card-header', 'card-header-image')} style={{'height': '166px'}}>
-                <a href="#pablo">
-                    <img className={classNames('img')} src="./images/REBsalesagentoftheyear.jpeg" style={{'height': '166px'}} alt="REB sales agent of the year Ruma Mundi Sydney"/>
-                </a>
-            </div>
-            <div className={classNames('card-body')}>
-                <h4 className={classNames('card-title')}>Finalist | Sales Agent of the Year</h4>
-                <p className={classNames('text-white')}>REB Awards 2017 (Metropolitan)</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-// <div className={classNames('team-2', 'section-image', 'pt-5', 'pb-3')} id="team-5" style={{'backgroundImage': 'url('+aboutpage.awards_background_image.url+')'}}>
-//     <div className={classNames('container')}>
-//         <div className={classNames('row')}>
-//             <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-//                 <h2 className={classNames('title')}>{aboutpage.awards_header[0].text}</h2>
-//                 <div className={classNames('description', 'max-font-weight')}  >
-//                   {RichText.render(aboutpage.awards_text)}
-//                 </div>
-//             </div>
-//         </div>
-//         <div className={classNames('row')}>
-//             <div className={classNames('col-md-4')}>
-//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-//                     <div className={classNames('icon', 'icon-default')}>
-//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
-//                     </div>
-//                     <div className={classNames('description')}>
-//                         <h4 className={classNames('info-title', 'text-white')}>#29 | Top 50 Women in the Real Estate</h4>
-//                         <p className={classNames('text-white', 'nothing')}>
-//                            REB Awards
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//             <div className={classNames('col-md-4')}>
-//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-//                     <div className={classNames('icon', 'icon-default')}>
-//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
-//                     </div>
-//                     <div className={classNames('description')}>
-//                         <h4 className={classNames('info-title', 'text-white')}>#2 | Combined Highest Gross Sales</h4>
-//                         <p className={classNames('text-white', 'nothing')}>
-//                           First National Real Estate NSW Network
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//             <div className={classNames('col-md-4')}>
-//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-//                     <div className={classNames('icon', 'icon-default')}>
-//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
-//                     </div>
-//                     <div className={classNames('description')}>
-//                         <h4 className={classNames('info-title', 'text-white')}>#3 | Combined Highest Gross Sales</h4>
-//                         <p className={classNames('text-white', 'nothing')}>
-//                           First National Real Estate Network (AUS & NZ)
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//         <div className={classNames('row')}>
-//             <div className={classNames('col-md-4')}>
-//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-//                     <div className={classNames('icon', 'icon-default')}>
-//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
-//                     </div>
-//                     <div className={classNames('description')}>
-//                         <h4 className={classNames('info-title', 'text-white')}>#3 | Top Salesperson - Residental</h4>
-//                         <p className={classNames('text-white', 'nothing')}>
-//                           GEM Awards - First National Real Estate - 2016 & 2017
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//             <div className={classNames('col-md-4')}>
-//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-//                     <div className={classNames('icon', 'icon-default')}>
-//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
-//                     </div>
-//                     <div className={classNames('description')}>
-//                         <h4 className={classNames('info-title', 'text-white')}>Diamond Award - Residental Commission</h4>
-//                         <p className={classNames('text-white', 'nothing')}>
-//                           First National Real Estate (NSW) - 2016 & 2017
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//             <div className={classNames('col-md-4')}>
-//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-//                     <div className={classNames('icon', 'icon-default')}>
-//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
-//                     </div>
-//                     <div className={classNames('description')}>
-//                         <h4 className={classNames('info-title', 'text-white')}>Grand Centurion – 2015</h4>
-//                         <p className={classNames('text-white', 'nothing')}>
-//                           Top 1% Producer Globally - Century 21
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//         <div className={classNames('row')}>
-//             <div className={classNames('col-md-4')}>
-//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-//                     <div className={classNames('icon', 'icon-default')}>
-//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
-//                     </div>
-//                     <div className={classNames('description')}>
-//                         <h4 className={classNames('info-title', 'text-white')}>Double Centurion Award 2014</h4>
-//                         <p className={classNames('text-white', 'nothing')}>
-//
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//             <div className={classNames('col-md-4')}>
-//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-//                     <div className={classNames('icon', 'icon-default')}>
-//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
-//                     </div>
-//                     <div className={classNames('description')}>
-//                         <h4 className={classNames('info-title', 'text-white')}>Grand Centurion Producer</h4>
-//                         <p className={classNames('text-white', 'nothing')}>
-//                           Top 1% Producer Globally - 2013
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//             <div className={classNames('col-md-4')}>
-//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-//                     <div className={classNames('icon', 'icon-default')}>
-//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
-//                     </div>
-//                     <div className={classNames('description')}>
-//                         <h4 className={classNames('info-title', 'text-white')}>Centurion Producer</h4>
-//                         <p className={classNames('text-white', 'nothing')}>
-//                           Top 2% Producer Globally - 2009, 2010, 2011 & 2012
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//         <div className={classNames('row')}>
-//           <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-//               <h2 className={classNames('title')}>{aboutpage.pro_bono_header[0].text}</h2>
-//               <div className={classNames('description', 'max-font-weight')}  >
-//                 {RichText.render(aboutpage.pro_bono_text)}
-//               </div>
-//           </div>
-//         </div>
-//
-//     </div>
-// </div>
