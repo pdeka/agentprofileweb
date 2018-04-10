@@ -103,8 +103,8 @@ export default class About extends React.Component {
                               <div class="icon">
                                   <span  class="award-number">29<sup>th</sup></span>
                               </div>
-                              <h4 class="info-title">REB Awards</h4>
-                              <p>Top 50 Women in the Real Estate Network for Australia</p>
+                              <h4 class="info-title">Top 50 Women in the Real Estate</h4>
+                              <p>REB Awards - Real Estate Network for Australia</p>
                           </div>
                       </div>
                       <div class="col-sm-4">
