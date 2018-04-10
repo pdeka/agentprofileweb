@@ -35,12 +35,19 @@ export default class TestimonialCardBody extends React.Component {
           </h3>;
   }
 
+  externalLink(exlcudeExternalLink) {
+    if(!exlcudeExternalLink) {
+      return <h6 className={classNames('card-category', 'mt-0', 'pt-0')}>@&nbsp;Rate My Agent</h6>
+    }
+  }
+
   render() {
     let data = this.props.data;
     let truncateLines = this.props.truncateLines;
     let truncateHeaderChars = this.props.truncateHeaderChars;
+    let exlcudeExternalLink = this.props.exlcudeExternalLink;
 
-    return <div className={classNames('card-body')}>
+    return (<div className={classNames('card-body')}>
         {this.heroTestimonialQuote(data.quote[0], truncateHeaderChars)}
         <p className={classNames('card-description')}>
           <Truncate lines={truncateLines}
@@ -50,9 +57,9 @@ export default class TestimonialCardBody extends React.Component {
         </p>
         <a href={data.external_link.url}>
           <h4 className={classNames('card-title', 'mb-0', 'pb-0')}> - {data.full_name[0].text}</h4>
-          <h6 className={classNames('card-category', 'mt-0', 'pt-0')}>@&nbsp;Rate My Agent</h6>
+          {this.externalLink(exlcudeExternalLink)}
         </a>
-    </div>
+    </div>);
 
   }
 }

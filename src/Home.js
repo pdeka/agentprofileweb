@@ -94,12 +94,10 @@ export default class Home extends React.Component {
     return uniques.map((key, index) => {
       return <div key={index} className={classNames('col-md-4')}>
             <div className={classNames('card', 'card-testimonial')}>
-                <TestimonialCardBody truncateLines={2} data={testimonialResults[key].data} truncateHeaderChars={75} />
-                <div className={classNames('card-footer')}>
+                <TestimonialCardBody exlcudeExternalLink={true} truncateLines={2} data={testimonialResults[key].data} truncateHeaderChars={75} />
+                <div className={classNames('card-footer', 'pt-2')}>
                     <div className={classNames('card-avatar')}>
-                      <a target="_blank" href={testimonialResults[key].data.external_link.url}>
-                          <img className={classNames('img')} src={testimonialResults[key].data.photo.url} alt="testimonial ruma mundi stanhope gardens sydney"/>
-                      </a>
+                      <img className={classNames('img')} src={testimonialResults[key].data.photo.url} alt="testimonial ruma mundi stanhope gardens sydney"/>
                     </div>
                 </div>
             </div>
@@ -288,64 +286,3 @@ export default class Home extends React.Component {
     }
   }
 }
-
-
-// <div className={classNames('card-footer', 'pb-0', 'pt-0')}>
-//     <a href={data.facebook_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-facebook')} target="_blank">
-//         <i className={classNames('fa', 'fa-facebook', 'fa-inverse')}></i>
-//     </a>
-//     <a href={data.instagram_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-instagram')} target="_blank">
-//         <i className={classNames('fa', 'fa-instagram', 'fa-inverse')}></i>
-//     </a>
-//     <a href={data.youtube_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-youtube')} target="_blank">
-//         <i className={classNames('fa', 'fa-youtube', 'fa-inverse')}></i>
-//     </a>
-//     <a href={data.linkedin_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-linkedin')} target="_blank">
-//         <i className={classNames('fa', 'fa-linkedin', 'fa-inverse')}></i>
-//     </a>
-//     <a href={data.rate_my_agent_link.url} className={classNames('btn', 'btn-just-icon', 'btn-link')} target="_blank">
-//       <div style={{'marginBottom': '-1px'}}>
-//         <i className={classNames('fa', 'icon-ratemyagent', 'fa-inverse')} style={{'fontSize': '17px'}}></i>
-//       </div>
-//     </a>
-//     <a className={classNames('btn', 'btn-just-icon', 'btn-link')} href="mailto:name@email.com" target="_blank" rel="noopener noreferrer">
-//       <i className={classNames('fa', 'fa-envelope', 'fa-inverse')}/>
-//     </a>
-// </div>
-
-
-
-                // <div className={classNames('container')}>
-                //   <div className={classNames('row')}>
-                //         <div className={classNames('col-md-2')}>
-                //         </div>
-                //         <div className={classNames('col-md-8', 'pl-1')}>
-                //             <h3 className={classNames('card-title', 'home-article-desktop-title', 'text-center', 'mt-0', 'pt-0')}>
-                //               {articleResults[0].data.article_title[0].text}
-                //             </h3>
-                //             <h3 className={classNames('card-title', 'home-article-mobile-title', 'text-center')}>
-                //               Monthly Wrap-up
-                //               <span className={classNames('author')} style={{'fontStyle': 'italic', 'fontSize': '18px', 'paddingLeft': '21px'}}>
-                //                 - <b>Ruma</b>,&nbsp;
-                //                 <FormatDate data={articleResults[0].data.date}/>
-                //               </span>
-                //             </h3>
-                //         </div>
-                //   </div>
-                //   <div className={classNames('card', 'card-plain', 'card-blog', 'mt-5')}>
-                //     <div className={classNames('row')}>
-                //       <div className={classNames('col-md-12', 'pl-1')}>
-                //         <ArticlePreview data={articleResults[0].data}/>
-                //       </div>
-                //     </div>
-                //     <div className={classNames('row')}>
-                //       <div className={classNames('col-md-12', 'pl-1')}>
-                //         <div className={classNames('card-body', 'mt-4')}>
-                //           <div className={classNames('card-description-blog')}>
-                //             {RichText.render(articleResults[0].data.article_text)}
-                //           </div>
-                //         </div>
-                //       </div>
-                //     </div>
-                //   </div>
-                // </div>

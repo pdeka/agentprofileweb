@@ -85,7 +85,6 @@ export default class Properties extends React.Component {
         <div className={classNames('container')}>
               <div className={classNames('row', 'justify-content-center')}>
                 <h1 className={classNames('title', 'text-center')}>{propertiespage.header[0].text}</h1>
-                <img src="https://prismic-io.s3.amazonaws.com/rumamundi%2Ff2fb80dc-40da-4e34-a219-9e2acd7cb333_dog100x100.png" alt="dog ruma mundi properties"/>
               </div>
         </div>
 
