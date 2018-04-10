@@ -73,7 +73,7 @@ export default class Team extends React.Component {
                                 <div className={classNames('col-md-7')}>
                                     <div className={classNames('card-body')}>
                                         <h3 className={classNames('card-title')}>{teampage.body[0].items[0].full_name[0].text}</h3>
-                                        <h4 className={classNames('card-category', 'text-muted')}>{teampage.body[0].items[0].job.text}</h4>
+                                        <h4 className={classNames('card-category', 'text-muted')}>{teampage.body[0].items[0].job[0].text}</h4>
                                         <div className={classNames('card-description')}>
                                           {RichText.render(teampage.body[0].items[0].profile_summary)}
                                         </div>
