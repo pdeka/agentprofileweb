@@ -2,6 +2,7 @@ import React from 'react';
 import $ from "jquery";
 import axios from 'axios';
 import classNames from 'classnames';
+import { ToastContainer, toast } from 'react-toastify';
 
 export default class ContactForm extends React.Component {
 
@@ -93,6 +94,9 @@ export default class ContactForm extends React.Component {
         }
     }
 
+    success = () => toast("Mail sent. Thank you!", { type: toast.TYPE.SUCCESS, autoClose: 15000, position: toast.POSITION.BOTTOM_RIGHT });
+    failure = () => toast("Computer says no! Check inputs please.", { type: toast.TYPE.ERROR, autoClose: 15000, position: toast.POSITION.BOTTOM_RIGHT });
+
 
     _handleSubmit(event)  {
         event.preventDefault();
@@ -115,6 +119,9 @@ Phone: ${this.state.phone} \n\
 Message: ${this.state.text}`
             console.log("sending message!: " + JSON.stringify(this.state));
             this.sendMail(this.state);
+            this.success();
+        } else {
+          this.failure();
         }
       }
 
@@ -141,6 +148,7 @@ Message: ${this.state.text}`
     render() {
         return (
           <form id="contact-form" method="post">
+              <ToastContainer />
               <div className={classNames('card-header', 'card-header-raised', 'card-header-primary', 'text-center')}>
                   <h4 className={classNames('card-title')}>Contact Us</h4>
               </div>
