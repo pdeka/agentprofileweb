@@ -92,148 +92,98 @@ export default class About extends React.Component {
               </div>
             </div>
           </div>
-          <div className={classNames('team-2', 'section-image', 'pt-5', 'pb-3')} id="team-5" style={{'backgroundImage': 'url('+aboutpage.awards_background_image.url+')'}}>
-              <div className={classNames('container')}>
-                  <div className={classNames('row')}>
-                      <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-                          <h2 className={classNames('title')}>{aboutpage.awards_header[0].text}</h2>
-                          <div className={classNames('description', 'max-font-weight')}  >
-                            {RichText.render(aboutpage.awards_text)}
+          <div class="features-5" style={{'backgroundImage': 'url('+aboutpage.awards_background_image.url+')'}}>
+              <div class="col-md-8 ml-auto mr-auto text-center">
+                  <h2 class="title">Awards</h2>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-4">
+                          <div class="info">
+                              <div class="icon">
+                                  <span  class="award-number">29<sup>th</sup></span>
+                              </div>
+                              <h4 class="info-title">REB Awards</h4>
+                              <p>Top 50 Women in the Real Estate Network for Australia</p>
+                          </div>
+                      </div>
+                      <div class="col-sm-4">
+                          <div class="info">
+                              <div class="icon">
+                                <span  class="award-number">2<sup>nd</sup></span>
+                              </div>
+                              <h4 class="info-title">Combined Highest Gross Sales</h4>
+                              <p>First National Real Estate NSW Network</p>
+                          </div>
+                      </div>
+                      <div class="col-sm-4">
+                          <div class="info">
+                              <div class="icon">
+                                <span  class="award-number">3<sup>rd</sup></span>
+                              </div>
+                              <h4 class="info-title">Combined Highest Gross Sales</h4>
+                              <p>First National Real Estate Network (AUS & NZ)</p>
                           </div>
                       </div>
                   </div>
-                  <div className={classNames('row')}>
-                      <div className={classNames('col-md-4')}>
-                          <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-                              <div className={classNames('icon', 'icon-default')}>
-                                  <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+                  <div class="row">
+                      <div class="col-sm-4">
+                          <div class="info">
+                              <div class="icon">
+                                <span class="award-number">3<sup>rd</sup></span>
                               </div>
-                              <div className={classNames('description')}>
-                                  <h4 className={classNames('info-title', 'text-white')}>#29 | Top 50 Women in the Real Estate</h4>
-                                  <p className={classNames('text-white', 'nothing')}>
-                                     REB Awards
-                                  </p>
-                              </div>
+                              <h4 class="info-title">Top Salesperson - Residental</h4>
+                              <p>GEM Awards - First National Real Estate Australia - 2016 & 2017</p>
                           </div>
                       </div>
-                      <div className={classNames('col-md-4')}>
-                          <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-                              <div className={classNames('icon', 'icon-default')}>
-                                  <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+                      <div class="col-sm-4">
+                          <div class="info">
+                              <div class="icon">
+                                <span class="icon-laurel" ></span>
                               </div>
-                              <div className={classNames('description')}>
-                                  <h4 className={classNames('info-title', 'text-white')}>#2 | Combined Highest Gross Sales</h4>
-                                  <p className={classNames('text-white', 'nothing')}>
-                                    First National Real Estate NSW Network
-                                  </p>
-                              </div>
+                              <h4 class="info-title">Diamond Award</h4>
+                              <p>Residental Commission - First National Real Estate (NSW) - 2016 & 2017</p>
                           </div>
                       </div>
-                      <div className={classNames('col-md-4')}>
-                          <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-                              <div className={classNames('icon', 'icon-default')}>
-                                  <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+                      <div class="col-sm-4">
+                          <div class="info">
+                              <div class="icon">
+                                <span class="icon-laurel" ></span>
                               </div>
-                              <div className={classNames('description')}>
-                                  <h4 className={classNames('info-title', 'text-white')}>#3 | Combined Highest Gross Sales</h4>
-                                  <p className={classNames('text-white', 'nothing')}>
-                                    First National Real Estate Network (AUS & NZ)
-                                  </p>
-                              </div>
+                              <h4 class="info-title">Grand Centurion</h4>
+                              <p>Top 1% Producer Globally – 2015 – Century 21</p>
                           </div>
                       </div>
                   </div>
-                  <div className={classNames('row')}>
-                      <div className={classNames('col-md-4')}>
-                          <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-                              <div className={classNames('icon', 'icon-default')}>
-                                  <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+                  <div class="row">
+                      <div class="col-sm-4">
+                          <div class="info">
+                              <div class="icon">
+                                <span class="icon-laurel" ></span>
                               </div>
-                              <div className={classNames('description')}>
-                                  <h4 className={classNames('info-title', 'text-white')}>#3 | Top Salesperson - Residental</h4>
-                                  <p className={classNames('text-white', 'nothing')}>
-                                    GEM Awards - First National Real Estate - 2016 & 2017
-                                  </p>
-                              </div>
+                              <h4 class="info-title">Double Centurion 2014</h4>
+                              <p></p>
                           </div>
                       </div>
-                      <div className={classNames('col-md-4')}>
-                          <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-                              <div className={classNames('icon', 'icon-default')}>
-                                  <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+                      <div class="col-sm-4">
+                          <div class="info">
+                              <div class="icon">
+                                <span class="icon-laurel" ></span>
                               </div>
-                              <div className={classNames('description')}>
-                                  <h4 className={classNames('info-title', 'text-white')}>Diamond Award - Residental Commission</h4>
-                                  <p className={classNames('text-white', 'nothing')}>
-                                    First National Real Estate (NSW) - 2016 & 2017
-                                  </p>
-                              </div>
+                              <h4 class="info-title">Grand Centurion Producer</h4>
+                              <p>Top 1% Producer Globally - 2013</p>
                           </div>
                       </div>
-                      <div className={classNames('col-md-4')}>
-                          <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-                              <div className={classNames('icon', 'icon-default')}>
-                                  <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+                      <div class="col-sm-4">
+                          <div class="info">
+                              <div class="icon">
+                                <span class="icon-laurel" ></span>
                               </div>
-                              <div className={classNames('description')}>
-                                  <h4 className={classNames('info-title', 'text-white')}>Grand Centurion – 2015</h4>
-                                  <p className={classNames('text-white', 'nothing')}>
-                                    Top 1% Producer Globally - Century 21
-                                  </p>
-                              </div>
+                              <h4 class="info-title">Centurion Producer</h4>
+                              <p>(Top 2% Producer Globally) 2009, 2010, 2011 & 2012</p>
                           </div>
                       </div>
                   </div>
-                  <div className={classNames('row')}>
-                      <div className={classNames('col-md-4')}>
-                          <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-                              <div className={classNames('icon', 'icon-default')}>
-                                  <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
-                              </div>
-                              <div className={classNames('description')}>
-                                  <h4 className={classNames('info-title', 'text-white')}>Double Centurion Award 2014</h4>
-                                  <p className={classNames('text-white', 'nothing')}>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={classNames('col-md-4')}>
-                          <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-                              <div className={classNames('icon', 'icon-default')}>
-                                  <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
-                              </div>
-                              <div className={classNames('description')}>
-                                  <h4 className={classNames('info-title', 'text-white')}>Grand Centurion Producer</h4>
-                                  <p className={classNames('text-white', 'nothing')}>
-                                    Top 1% Producer Globally - 2013
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={classNames('col-md-4')}>
-                          <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
-                              <div className={classNames('icon', 'icon-default')}>
-                                  <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
-                              </div>
-                              <div className={classNames('description')}>
-                                  <h4 className={classNames('info-title', 'text-white')}>Centurion Producer</h4>
-                                  <p className={classNames('text-white', 'nothing')}>
-                                    Top 2% Producer Globally - 2009, 2010, 2011 & 2012
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div className={classNames('row')}>
-                    <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-                        <h2 className={classNames('title')}>{aboutpage.pro_bono_header[0].text}</h2>
-                        <div className={classNames('description', 'max-font-weight')}  >
-                          {RichText.render(aboutpage.pro_bono_text)}
-                        </div>
-                    </div>
-                  </div>
-
               </div>
           </div>
         </div>
@@ -288,3 +238,150 @@ export default class About extends React.Component {
         </div>
     </div>
 </div>
+
+
+
+// <div className={classNames('team-2', 'section-image', 'pt-5', 'pb-3')} id="team-5" style={{'backgroundImage': 'url('+aboutpage.awards_background_image.url+')'}}>
+//     <div className={classNames('container')}>
+//         <div className={classNames('row')}>
+//             <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
+//                 <h2 className={classNames('title')}>{aboutpage.awards_header[0].text}</h2>
+//                 <div className={classNames('description', 'max-font-weight')}  >
+//                   {RichText.render(aboutpage.awards_text)}
+//                 </div>
+//             </div>
+//         </div>
+//         <div className={classNames('row')}>
+//             <div className={classNames('col-md-4')}>
+//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
+//                     <div className={classNames('icon', 'icon-default')}>
+//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+//                     </div>
+//                     <div className={classNames('description')}>
+//                         <h4 className={classNames('info-title', 'text-white')}>#29 | Top 50 Women in the Real Estate</h4>
+//                         <p className={classNames('text-white', 'nothing')}>
+//                            REB Awards
+//                         </p>
+//                     </div>
+//                 </div>
+//             </div>
+//             <div className={classNames('col-md-4')}>
+//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
+//                     <div className={classNames('icon', 'icon-default')}>
+//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+//                     </div>
+//                     <div className={classNames('description')}>
+//                         <h4 className={classNames('info-title', 'text-white')}>#2 | Combined Highest Gross Sales</h4>
+//                         <p className={classNames('text-white', 'nothing')}>
+//                           First National Real Estate NSW Network
+//                         </p>
+//                     </div>
+//                 </div>
+//             </div>
+//             <div className={classNames('col-md-4')}>
+//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
+//                     <div className={classNames('icon', 'icon-default')}>
+//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+//                     </div>
+//                     <div className={classNames('description')}>
+//                         <h4 className={classNames('info-title', 'text-white')}>#3 | Combined Highest Gross Sales</h4>
+//                         <p className={classNames('text-white', 'nothing')}>
+//                           First National Real Estate Network (AUS & NZ)
+//                         </p>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//         <div className={classNames('row')}>
+//             <div className={classNames('col-md-4')}>
+//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
+//                     <div className={classNames('icon', 'icon-default')}>
+//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+//                     </div>
+//                     <div className={classNames('description')}>
+//                         <h4 className={classNames('info-title', 'text-white')}>#3 | Top Salesperson - Residental</h4>
+//                         <p className={classNames('text-white', 'nothing')}>
+//                           GEM Awards - First National Real Estate - 2016 & 2017
+//                         </p>
+//                     </div>
+//                 </div>
+//             </div>
+//             <div className={classNames('col-md-4')}>
+//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
+//                     <div className={classNames('icon', 'icon-default')}>
+//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+//                     </div>
+//                     <div className={classNames('description')}>
+//                         <h4 className={classNames('info-title', 'text-white')}>Diamond Award - Residental Commission</h4>
+//                         <p className={classNames('text-white', 'nothing')}>
+//                           First National Real Estate (NSW) - 2016 & 2017
+//                         </p>
+//                     </div>
+//                 </div>
+//             </div>
+//             <div className={classNames('col-md-4')}>
+//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
+//                     <div className={classNames('icon', 'icon-default')}>
+//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+//                     </div>
+//                     <div className={classNames('description')}>
+//                         <h4 className={classNames('info-title', 'text-white')}>Grand Centurion – 2015</h4>
+//                         <p className={classNames('text-white', 'nothing')}>
+//                           Top 1% Producer Globally - Century 21
+//                         </p>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//         <div className={classNames('row')}>
+//             <div className={classNames('col-md-4')}>
+//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
+//                     <div className={classNames('icon', 'icon-default')}>
+//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+//                     </div>
+//                     <div className={classNames('description')}>
+//                         <h4 className={classNames('info-title', 'text-white')}>Double Centurion Award 2014</h4>
+//                         <p className={classNames('text-white', 'nothing')}>
+//
+//                         </p>
+//                     </div>
+//                 </div>
+//             </div>
+//             <div className={classNames('col-md-4')}>
+//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
+//                     <div className={classNames('icon', 'icon-default')}>
+//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+//                     </div>
+//                     <div className={classNames('description')}>
+//                         <h4 className={classNames('info-title', 'text-white')}>Grand Centurion Producer</h4>
+//                         <p className={classNames('text-white', 'nothing')}>
+//                           Top 1% Producer Globally - 2013
+//                         </p>
+//                     </div>
+//                 </div>
+//             </div>
+//             <div className={classNames('col-md-4')}>
+//                 <div className={classNames('info', 'info-horizontal')} style={{'padding': 0}}>
+//                     <div className={classNames('icon', 'icon-default')}>
+//                         <i className={classNames('fa', 'fa-trophy', 'fa-inverse')}></i>
+//                     </div>
+//                     <div className={classNames('description')}>
+//                         <h4 className={classNames('info-title', 'text-white')}>Centurion Producer</h4>
+//                         <p className={classNames('text-white', 'nothing')}>
+//                           Top 2% Producer Globally - 2009, 2010, 2011 & 2012
+//                         </p>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//         <div className={classNames('row')}>
+//           <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
+//               <h2 className={classNames('title')}>{aboutpage.pro_bono_header[0].text}</h2>
+//               <div className={classNames('description', 'max-font-weight')}  >
+//                 {RichText.render(aboutpage.pro_bono_text)}
+//               </div>
+//           </div>
+//         </div>
+//
+//     </div>
+// </div>
