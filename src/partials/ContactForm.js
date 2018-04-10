@@ -105,6 +105,7 @@ export default class ContactForm extends React.Component {
             $('#purposeContent').removeClass('has-danger').addClass('has-success');
             $('#success').addClass('form-control-feedback');
             $('#submitButton').attr('disabled', 'true');
+            this.state.text = this.state.text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
             this.state.subject = `Mail from ${this.state.email}. Purpose: ${this.state.purpose}. Phone: ${this.state.phone}.`;
             this.state.mail_body = `Note: Someone tried to contact you using the contact form on your website. \n\
