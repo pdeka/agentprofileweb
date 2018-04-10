@@ -103,7 +103,7 @@ export default class Community extends React.Component {
                                 <h3 className={classNames('card-title')}>
                                   {articleResults[0].data.article_title[0].text}
                                 </h3>
-                                <div className={classNames('card-description')}>
+                                <div className={classNames('card-description-white')}>
                                   {RichText.render(articleResults[0].data.article_text)}
                                 </div>
                                 <p className={classNames('author', 'text-white')}>

@@ -12278,7 +12278,7 @@ h2.title {
 .description,
 .card-description,
 .description,
-.card-description-blog,
+.card-description-white,
 .footer-big p {
   color: #999; }
 
@@ -12650,12 +12650,12 @@ h2.title {
     .card [class*="header-"] .card-category,
     .card [class*="header-"] .card-description,
     .card [class*="header-"] .description,
-    .card [class*="header-"] .card-description-blog, .card[class*="bg-"] .author a,
+    .card [class*="header-"] .card-description-white, .card[class*="bg-"] .author a,
     .card[class*="bg-"] .stats,
     .card[class*="bg-"] .card-category,
     .card[class*="bg-"] .card-description,
     .card[class*="bg-"] .description,
-    .card[class*="bg-"] .card-description-blog {
+    .card[class*="bg-"] .card-description-white {
       color: rgba(255, 255, 255, 0.8); }
     .card [class*="header-"] .author a:hover, .card [class*="header-"] .author a:focus, .card [class*="header-"] .author a:active, .card[class*="bg-"] .author a:hover, .card[class*="bg-"] .author a:focus, .card[class*="bg-"] .author a:active {
       color: #fff; }
@@ -12764,9 +12764,9 @@ h2.title {
     margin-top: 10px;
     margin-bottom: -50px; }
 
-.card-testimonial .card-description, .card-testimonial .description, .card-testimonial .card-description-blog {
+.card-testimonial .card-description, .card-testimonial .description, .card-testimonial .card-description-white {
   font-style: italic; }
-  .card-testimonial .card-description + .card-title, .card-testimonial .description + .card-title, .card-testimonial .card-description-blog + .card-title {
+  .card-testimonial .card-description + .card-title, .card-testimonial .description + .card-title, .card-testimonial .card-description-white + .card-title {
     margin-top: 30px; }
 
 .card-testimonial .icon {
@@ -12786,7 +12786,7 @@ h2.title {
   .card-product .card-category,
   .card-product .card-description,
   .card-product .description,
-  .card-product .card-description-blog {
+  .card-product .card-description-white {
     text-align: center; }
   .card-product .category {
     margin-bottom: 0; }
@@ -12989,17 +12989,17 @@ h2.title {
   .card-background .card-category,
   .card-background .card-description,
   .card-background .description,
-  .card-background .card-description-blog,
+  .card-background .card-description-white,
   .card-background small,
   .back-background .card-category,
   .back-background .card-description,
   .back-background .description,
-  .back-background .card-description-blog,
+  .back-background .card-description-white,
   .back-background small,
   .front-background .card-category,
   .front-background .card-description,
   .front-background .description,
-  .front-background .card-description-blog,
+  .front-background .card-description-white,
   .front-background small {
     color: rgba(255, 255, 255, 0.7) !important; }
   .card-background .card-title,
@@ -13994,12 +13994,12 @@ h2.title {
 .section-dark .description,
 .section-dark .card-plain .card-description,
 .section-dark .card-plain .description,
-.section-dark .card-plain .card-description-blog,
+.section-dark .card-plain .card-description-white,
 .section-dark .card-plain .icon,
 .section-image .description,
 .section-image .card-plain .card-description,
 .section-image .card-plain .description,
-.section-image .card-plain .card-description-blog,
+.section-image .card-plain .card-description-white,
 .section-image .card-plain .icon {
   color: rgba(255, 255, 255, 0.76); }
 
@@ -14357,10 +14357,10 @@ h2.title {
   .presentation-page .section-testimonials .card .content,
   .index-page .section-testimonials .card .content {
     padding-top: 0px; }
-  .presentation-page .section-testimonials .card-description, .presentation-page .section-testimonials .description, .presentation-page .section-testimonials .card-description-blog,
+  .presentation-page .section-testimonials .card-description, .presentation-page .section-testimonials .description, .presentation-page .section-testimonials .card-description-white,
   .index-page .section-testimonials .card-description,
   .index-page .section-testimonials .description,
-  .index-page .section-testimonials .card-description-blog {
+  .index-page .section-testimonials .card-description-white {
     font-size: 16px;
     line-height: 1.6em; }
   .presentation-page .section-testimonials .our-clients,
@@ -15161,7 +15161,7 @@ footer {
 .card-blog .row .card-category {
   margin-bottom: 0; }
 
-.card-blog .row .card-description, .card-blog .row .description, .card-blog .row .card-description-blog {
+.card-blog .row .card-description, .card-blog .row .description, .card-blog .row .card-description-white {
   line-height: 1.313rem; }
 
 .projects-1 .title {
@@ -15183,7 +15183,7 @@ footer {
   color: #999999;
   margin-top: 5px; }
 
-.projects-2 .card-description, .projects-2 .description, .projects-2 .card-description-blog {
+.projects-2 .card-description, .projects-2 .description, .projects-2 .card-description-white {
   margin-top: 20px; }
 
 .projects-2 .card {
@@ -15226,7 +15226,7 @@ footer {
 .projects-4 .card {
   margin-top: 0; }
 
-.testimonials-1 .card-description, .testimonials-1 .description, .testimonials-1 .card-description-blog {
+.testimonials-1 .card-description, .testimonials-1 .description, .testimonials-1 .card-description-white {
   margin-bottom: 50px; }
 
 .testimonials-2 .carousel .carousel-inner .carousel-item .card {
@@ -15513,11 +15513,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
 .max-font-weight {
   font-weight: 900 !important; }
 
-.card-description, .description, .card-description-blog, .description {
+.card-description, .description, .card-description-white, .description {
   color: #3C4858; }
 
-.card-description-blog a {
-  background-color: #cfd8dc; }
+.card-description-white div p a {
+  color: #fff;
+  text-decoration: underline; }
 
 .blockquote-without-left-line {
   padding: 10px 20px;
