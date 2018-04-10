@@ -178,7 +178,7 @@ export default class About extends React.Component {
               <div className={classNames('container')}>
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-                          <h2 className={classNames('title')}>Pro Bono Work</h2>
+                          <h2 className={classNames('title')}>{aboutpage.sponsorships_header[0].text}</h2>
                       </div>
                   </div>
                   <div className={classNames('row')}>
