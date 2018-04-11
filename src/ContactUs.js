@@ -69,7 +69,12 @@ export default class ContactUs extends React.Component {
           <div className={classNames('container')}>
               <div className={classNames('row')}>
                 <div className={classNames('col-md-12')}>
-                  <h1 className={classNames('title', 'text-center')}>{contactuspage.header[0].text}</h1>
+                  <h1 className={classNames('title', 'text-center', 'desktop-display')}>{contactuspage.header[0].text}</h1>
+                  <div className={classNames('title', 'text-center', 'mobile-display')}>
+                    <h1 className={classNames('title', 'text-center', 'mobile-display')}>We</h1>
+                    <h2 className={classNames('title', 'text-center', 'mobile-display')}>Look Forward to</h2>
+                    <h1 className={classNames('title', 'text-center', 'mobile-display')}>Meeting You</h1>
+                  </div>
                 </div>
               </div>
           </div>
