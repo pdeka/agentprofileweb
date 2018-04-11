@@ -121,17 +121,17 @@ export default class Testimonials extends React.Component {
                           <div className={classNames('row')}>
                               <div className={classNames('card', 'card-testimonial')}>
                                   <div className={classNames('card-header', 'card-header-image')}>
-                                      <img className={classNames('img', 'img-raised')} src={testimonialResults[0].data.photo.url} alt=""/>
+                                      <img className={classNames('img', 'img-raised')} src={testimonialResults[0].data.photo.url} alt={testimonialResults[0].data.photo.alt}/>
                                   </div>
-                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[0].data} />
+                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[0].data} excludeExternalLink={true}/>
                               </div>
                           </div>
                           <div className={classNames('row')}>
                               <div className={classNames('card', 'card-testimonial')}>
                                   <div className={classNames('card-header', 'card-header-image')}>
-                                      <img className={classNames('img', 'img-raised')} src={testimonialResults[3].data.photo.url} alt=""/>
+                                      <img className={classNames('img', 'img-raised')} src={testimonialResults[3].data.photo.url} alt={testimonialResults[3].data.photo.alt}/>
                                   </div>
-                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[3].data} />
+                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[3].data}  excludeExternalLink={true}/>
                               </div>
                           </div>
                         </div>
@@ -140,17 +140,17 @@ export default class Testimonials extends React.Component {
                         <div className={classNames('container')}>
                           <div className={classNames('row')}>
                               <div className={classNames('card', 'card-testimonial')}>
-                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[1].data} />
+                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[1].data}  excludeExternalLink={true}/>
                                   <div className={classNames('card-header', 'card-header-image', 'mt-2', 'mb-4')}>
-                                      <img className={classNames('img', 'img-raised')} src={testimonialResults[1].data.photo.url} alt=""/>
+                                      <img className={classNames('img', 'img-raised')} src={testimonialResults[1].data.photo.url} alt={testimonialResults[1].data.photo.alt}/>
                                   </div>
                               </div>
                           </div>
                           <div className={classNames('row')}>
                               <div className={classNames('card', 'card-testimonial')}>
-                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[4].data} />
+                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[4].data}  excludeExternalLink={true}/>
                                   <div className={classNames('card-header', 'card-header-image', 'mt-2', 'mb-4')}>
-                                      <img className={classNames('img', 'img-raised')} src={testimonialResults[4].data.photo.url} alt=""/>
+                                      <img className={classNames('img', 'img-raised')} src={testimonialResults[4].data.photo.url} alt={testimonialResults[4].data.photo.alt}/>
                                   </div>
                               </div>
                           </div>
@@ -161,17 +161,17 @@ export default class Testimonials extends React.Component {
                           <div className={classNames('row')}>
                               <div className={classNames('card', 'card-testimonial')}>
                                   <div className={classNames('card-header', 'card-header-image')}>
-                                      <img className={classNames('img', 'img-raised')} src={testimonialResults[2].data.photo.url} alt=""/>
+                                      <img className={classNames('img', 'img-raised')} src={testimonialResults[2].data.photo.url} alt={testimonialResults[2].data.photo.alt}/>
                                   </div>
-                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[2].data} />
+                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[2].data} excludeExternalLink={true}/>
                               </div>
                           </div>
                           <div className={classNames('row')}>
                               <div className={classNames('card', 'card-testimonial')}>
                                   <div className={classNames('card-header', 'card-header-image')}>
-                                      <img className={classNames('img', 'img-raised')} src={testimonialResults[5].data.photo.url} alt=""/>
+                                      <img className={classNames('img', 'img-raised')} src={testimonialResults[5].data.photo.url} alt={testimonialResults[5].data.photo.alt}/>
                                   </div>
-                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[5].data} />
+                                  <TestimonialCardBody truncateLines={20} data={testimonialResults[5].data} excludeExternalLink={true}/>
                               </div>
                           </div>
                         </div>
@@ -204,51 +204,3 @@ export default class Testimonials extends React.Component {
     }
   }
 }
-
-
-
-//
-// <div className={classNames('features-1', 'pt-5', 'pb-3')}>
-//   <div className={classNames('container')}>
-//     <div className={classNames('row')}>
-//         <div className={classNames('col-md-8', 'ml-auto', 'mr-auto')}>
-//             <h3 className={classNames('title')}>{testimonialspage.second_level_header[0].text}</h3>
-//             <div className={classNames('description')}  >
-//               {RichText.render(testimonialspage.testimonial_summary)}
-//             </div>
-//             <div className={classNames('icon')}>
-//               <i className={classNames('material-icons')}>format_quote</i>
-//             </div>
-//             <blockquote className={classNames('blockquote', 'text-center')}>
-//               <p className={classNames('mb-0')}>
-//                 {testimonialspage.quotation[0].text}
-//               </p>
-//               <footer className={classNames('blockquote-footer')}>{testimonialspage.quotation_author[0].text}</footer>
-//             </blockquote>
-//         </div>
-//     </div>
-//   </div>
-// </div>
-
-
-
-// <div className={classNames('row')}>
-//     <div className={classNames('col-md-6')}>
-//       <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
-//         <div>
-//           <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
-//             <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialspage.video3.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//     <div className={classNames('col-md-6')}>
-//       <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
-//         <div>
-//           <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>
-//             <iframe title="video ruma mundi stanhope garden sydney" id={'iframe-rounded-corner'} src={this.getFormattedEmbedUrl(testimonialspage.video4.url)} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen="true"></iframe>"
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-// </div>
