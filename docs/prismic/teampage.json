@@ -1,27 +1,49 @@
 {
   "header": [{
     "type": "heading1",
-    "text": "She has the support she needs",
+    "text": "Hard Work, Integrity & Honesty  is Our Strength",
     "spans": []
   }],
   "header_background_image": {
-    "link_type": "Media",
-    "name": "23 Fantail Lane The Ponds2.jpg",
-    "kind": "image",
-    "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Fd2a5bacd-17dc-42b8-9155-c01b77383a1f_23+fantail+lane+the+ponds2.jpg",
-    "size": "168283",
-    "height": "1080",
-    "width": "1920"
+    "dimensions": {
+      "width": 1250,
+      "height": 800
+    },
+    "alt": null,
+    "copyright": null,
+    "url": "https://rumamundi.cdn.prismic.io/rumamundi/411ba78dd25fd3e824b44ccd56149807681ffff0_team-ruma-try2.jpg",
+    "Mobile": {
+      "dimensions": {
+        "width": 400,
+        "height": 300
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://rumamundi.cdn.prismic.io/rumamundi/2c54e28a4ad21e0cc8790e113721274acbdb46b2_team-ruma-try2.jpg"
+    },
+    "Tablet": {
+      "dimensions": {
+        "width": 900,
+        "height": 300
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://rumamundi.cdn.prismic.io/rumamundi/f22cbdb573ab499871c79fbeca1e1bf7614e1035_team-ruma-try2.jpg"
+    }
   },
-  "footer_remark": [{
-    "type": "heading6",
-    "text": "Want to meet ruma?",
-    "spans": []
-  }],
   "body": [{
     "slice_type": "team_members",
     "slice_label": null,
     "items": [{
+      "photo": {
+        "dimensions": {
+          "width": 534,
+          "height": 800
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://rumamundi.cdn.prismic.io/rumamundi/22cfd4baed913f90c17679608150c99836aef073_brad.jpg"
+      },
       "full_name": [{
         "type": "heading6",
         "text": "Brad Norrie",
@@ -34,7 +56,7 @@
       }],
       "profile_summary": [{
         "type": "paragraph",
-        "text": "With over 15 years experience in Real Estate, Brad thrives on being busy and on his feet every minute of every day and most nights showing properties, negotiating deals, listings homes and above all having fun whilst he juggles his crazy work along with being the very best Dad to lil Daisy and partner to his gorgeous Mrs. ",
+        "text": "With over 15 years experience in Real Estate, Brad thrives on being busy and on his feet every minute of every day and most nights showing properties, negotiating deals, listing homes and above all having fun whilst he juggles his work along with being the very best Dad to lil Daisy and partner to his gorgeous Mrs. ",
         "spans": []
       }, {
         "type": "paragraph",
@@ -45,15 +67,6 @@
         "text": "Brad loves to ride bikes and tinker with old cars or just have a beer with his mates, if he EVER gets any “Me” time!",
         "spans": []
       }],
-      "photo": {
-        "link_type": "Media",
-        "name": "brad.jpg",
-        "kind": "image",
-        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2F32666549-ce0d-413c-a669-a3f4f2dd6692_brad.jpg",
-        "size": "244218",
-        "height": "800",
-        "width": "534"
-      },
       "facebook_link": {
         "link_type": "Web",
         "url": "https://www.facebook.com/profile.php?id=100015022004124"
@@ -74,6 +87,15 @@
         "url": "https://twitter.com/bradnorrie86"
       }
     }, {
+      "photo": {
+        "dimensions": {
+          "width": 534,
+          "height": 800
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://rumamundi.cdn.prismic.io/rumamundi/9ef74e46a3b095c9a29d92dfdb2aa31d7306927f_ian-profile.jpg"
+      },
       "full_name": [{
         "type": "heading6",
         "text": "Ian Williamson",
@@ -86,7 +108,7 @@
       }],
       "profile_summary": [{
         "type": "paragraph",
-        "text": "A man of many talents, Ian Williamson is a hard worker who doesnt  known for his ability to make clients feel at ease whilst making their big decision of selling or buying a home. Ask him to mimic any accent and you will be in stitches. A true Aussie through & through, he also speaks fluent Punjabi & Hindi (with the aid of his App). Trusted by his clients to achieve the best possible results, Ian is known for his hardwork and dedication to his career, his family and his team. ",
+        "text": "A man of many talents, Ian Williamson is a hard worker who is known for his ability to make clients feel at ease whilst making their big decision of selling or buying a home. Ask him to mimic any accent and you will be in stitches. A true Aussie through & through, he also speaks fluent Punjabi & Hindi (with the aid of his App). Trusted by his clients to achieve the best possible results, Ian is known for his hard work and dedication to his career, his family and his team. ",
         "spans": []
       }, {
         "type": "paragraph",
@@ -97,15 +119,6 @@
         "text": "In his spare time, he loves being with his wife, playing with his kids and sometimes having a chilled beer with his mates. ",
         "spans": []
       }],
-      "photo": {
-        "link_type": "Media",
-        "name": "ian-profile.jpg",
-        "kind": "image",
-        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2F4eb22c67-719a-4204-a63f-ef19c83fd37f_ian-profile.jpg",
-        "size": "252539",
-        "height": "800",
-        "width": "534"
-      },
       "facebook_link": {
         "link_type": "Web",
         "url": "https://www.facebook.com/ian.williamson.524"
@@ -125,6 +138,15 @@
         "link_type": "Any"
       }
     }, {
+      "photo": {
+        "dimensions": {
+          "width": 534,
+          "height": 800
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://rumamundi.cdn.prismic.io/rumamundi/089f822c02fc6d406ae19bb9de7e5a3b6573c552_bailey-profile.jpg"
+      },
       "full_name": [{
         "type": "heading6",
         "text": "Bailey Abela",
@@ -137,22 +159,13 @@
       }],
       "profile_summary": [{
         "type": "paragraph",
-        "text": "Having started his real estate career at the beginning of 2017, Bailey joins the team here at First National Hills Direct looking to take his development in the industry to the next level. Being a proud Hills resident for his entire life Bailey has a strong grasp on the growth of the area as well as the residents who call it home. Bailey likes to pride himself on being a young, highly motivated and professional individual with strong ethics, an eagerness to succeed and maturity beyond his years. Always with a bright and contagious smile on his face, Bailey loves connecting with anyone he comes by.",
+        "text": "Having started his real estate career at the beginning of 2017, Bailey joins the team here at First National Hills Direct looking to take his development in the industry to the next level. Being a proud Hills resident for his entire life, Bailey has a strong grasp on the growth of the area as well as the residents who call it home. Bailey likes to pride himself on being a young, highly motivated and professional individual with strong ethics, an eagerness to succeed and maturity beyond his years. Always with a bright and contagious smile on his face, Bailey loves connecting with anyone who comes by.",
         "spans": []
       }, {
         "type": "paragraph",
-        "text": "Bailey understands the importance of knowledge and keeping up to date with the dynamic marketplace, which sees him undertaking constant professional and personal training. Working closely next to Ruma and Brad, Bailey thoroughly enjoys any challenge that is set out for him to achieve. Without any hesitation, Bailey is always glad to help with his 'can-do' attitude which is so rarely seen of someone of his age.",
+        "text": "Bailey understands the importance of knowledge and keeping up to date with the dynamic marketplace, which sees him undertake constant professional and personal training. Working closely next to Ruma and Brad, Bailey thoroughly enjoys any challenge that is set out for him to achieve. Bailey is always glad to help with his 'can-do' attitude, which is so rarely seen of someone of his age.",
         "spans": []
       }],
-      "photo": {
-        "link_type": "Media",
-        "name": "bailey-profile.jpg",
-        "kind": "image",
-        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Fc34bdf75-4415-4a7f-9e4e-4e678f2c7e02_bailey-profile.jpg",
-        "size": "239432",
-        "height": "800",
-        "width": "534"
-      },
       "facebook_link": {
         "link_type": "Web",
         "url": "https://www.facebook.com/bailey.abela"
@@ -171,46 +184,6 @@
       "twitter": {
         "link_type": "Web",
         "url": "https://twitter.com/bailss01"
-      }
-    }, {
-      "full_name": [{
-        "type": "heading6",
-        "text": "Denise Abood",
-        "spans": []
-      }],
-      "job": [{
-        "type": "heading6",
-        "text": "Lorem Ipsum",
-        "spans": []
-      }],
-      "profile_summary": [{
-        "type": "paragraph",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "spans": []
-      }],
-      "photo": {
-        "link_type": "Media",
-        "name": "bailey-profile.jpg",
-        "kind": "image",
-        "url": "https://prismic-io.s3.amazonaws.com/rumamundi%2Fc34bdf75-4415-4a7f-9e4e-4e678f2c7e02_bailey-profile.jpg",
-        "size": "239432",
-        "height": "800",
-        "width": "534"
-      },
-      "facebook_link": {
-        "link_type": "Any"
-      },
-      "linkedin_link": {
-        "link_type": "Any"
-      },
-      "rate_my_agent_link": {
-        "link_type": "Any"
-      },
-      "instagram": {
-        "link_type": "Any"
-      },
-      "twitter": {
-        "link_type": "Any"
       }
     }],
     "primary": {}

@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import PageFooter from "./partials/PageFooter";
 import {RichText} from 'prismic-reactjs';
 import Loading from "./partials/Loading";
+import ImageURL from "./lib/ImageURL";
 
 import './styles/css/Team.css';
 
@@ -53,7 +54,7 @@ export default class Team extends React.Component {
 
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-filter', 'header-medium')} data-parallax="true" style={{backgroundImage: "url(" +teampage.header_background_image.url+")"}}>
+        <div className={classNames('page-header', 'header-filter', 'header-medium')} data-parallax="true" style={{backgroundImage: "url(" + new ImageURL(teampage.header_background_image).getURL()+")"}}>
           <div className={classNames('container')}>
               <div className={classNames('row')}>
                   <div className={classNames('col-md-12')}>
