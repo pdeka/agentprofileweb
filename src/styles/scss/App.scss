@@ -14,10 +14,6 @@ body {
   }
 }
 
-.about-video-text-margin {
-  margin-top: 0px;
-}
-
 .mobile-display {
   display: none;
 }
@@ -39,12 +35,12 @@ body {
     padding-top: 40px !important;
   }
 
-  #downArrow {
-    display: none;
+  h2 {
+    font-size: 29px;
   }
 
-  .about-video-text-margin{
-    margin-top: 0px;
+  #downArrow {
+    display: none;
   }
 
   .hero-text-margin{

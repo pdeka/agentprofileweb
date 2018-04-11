@@ -9,9 +9,6 @@ body {
   height: 90vh;
   min-height: 90vh; }
 
-.about-video-text-margin {
-  margin-top: 0px; }
-
 .mobile-display {
   display: none; }
 
@@ -28,11 +25,11 @@ body {
   .mobile-home-page-article {
     padding-top: 40px !important; }
 
+  h2 {
+    font-size: 29px; }
+
   #downArrow {
     display: none; }
-
-  .about-video-text-margin {
-    margin-top: 0px; }
 
   .hero-text-margin {
     margin-top: 63px; }
