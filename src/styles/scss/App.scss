@@ -104,4 +104,20 @@ body {
   .articlepage-tabs {
     padding-top: 56px !important;
   }
+
+  .features-5 {
+    .container {
+      [class*="col-"] {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35) !important;
+      }
+
+      .mobile-last-item {
+        border-bottom: 0 !important;
+      }
+    }
+  }
+
 }

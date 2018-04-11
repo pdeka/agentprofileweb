@@ -74,6 +74,14 @@ body {
     margin-bottom: 3em !important; }
 
   .articlepage-tabs {
-    padding-top: 56px !important; } }
+    padding-top: 56px !important; }
+
+  .features-5 .container [class*="col-"] {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35) !important; }
+  .features-5 .container .mobile-last-item {
+    border-bottom: 0 !important; } }
 
 /*# sourceMappingURL=App.css.map */

@@ -162,7 +162,7 @@ export default class About extends React.Component {
                               <p>Top 1% Producer Globally - 2013</p>
                           </div>
                       </div>
-                      <div className={classNames('col-sm-4')}>
+                      <div className={classNames('col-sm-4', 'mobile-last-item')}>
                           <div className={classNames('info')}>
                               <div className={classNames('icon')}>
                                 <span className={classNames('icon-laurel')} ></span>
