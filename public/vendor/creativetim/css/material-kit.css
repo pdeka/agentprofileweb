@@ -14195,8 +14195,9 @@ h2.title {
   -webkit-box-shadow: 0 5px 5px -2px rgba(31, 31, 31, 0.4);
           box-shadow: 0 5px 5px -2px rgba(31, 31, 31, 0.4); }
 
-.presentation-page .header-filter:after,
-.index-page .header-filter:after {
+.presentation-page .header-filter:after, .presentation-page .header-filter-lighter:after,
+.index-page .header-filter:after,
+.index-page .header-filter-lighter:after {
   background: rgba(132, 13, 121, 0.88);
   background: linear-gradient(45deg, rgba(132, 13, 121, 0.88) 0%, rgba(208, 44, 180, 0.31) 100%);
   background: -webkit-linear-gradient(135deg, rgba(132, 13, 121, 0.88) 0%, rgba(208, 44, 180, 0.31) 100%); }
@@ -14757,9 +14758,9 @@ h2.title {
     -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
             box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
 
-.header-filter {
+.header-filter, .header-filter-lighter {
   position: relative; }
-  .header-filter:before, .header-filter:after {
+  .header-filter:before, .header-filter-lighter:before, .header-filter:after, .header-filter-lighter:after {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -14768,12 +14769,12 @@ h2.title {
     left: 0;
     top: 0;
     content: ""; }
-  .header-filter::before {
+  .header-filter::before, .header-filter-lighter::before {
     background-color: rgba(0, 0, 0, 0.5); }
-  .header-filter .container {
+  .header-filter .container, .header-filter-lighter .container {
     z-index: 2;
     position: relative; }
-  .header-filter[filter-color="purple"]:after, .header-filter[filter-color="primary"]:after {
+  .header-filter[filter-color="purple"]:after, [filter-color="purple"].header-filter-lighter:after, .header-filter[filter-color="primary"]:after, [filter-color="primary"].header-filter-lighter:after {
     background: rgba(225, 190, 231, 0.56);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
@@ -14781,7 +14782,7 @@ h2.title {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(60deg, rgba(225, 190, 231, 0.56), rgba(186, 104, 200, 0.95));
     /* Standard syntax */ }
-  .header-filter[filter-color="blue"]:after, .header-filter[filter-color="info"]:after {
+  .header-filter[filter-color="blue"]:after, [filter-color="blue"].header-filter-lighter:after, .header-filter[filter-color="info"]:after, [filter-color="info"].header-filter-lighter:after {
     background: rgba(178, 235, 242, 0.56);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
@@ -14789,7 +14790,7 @@ h2.title {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(60deg, rgba(178, 235, 242, 0.56), rgba(77, 208, 225, 0.95));
     /* Standard syntax */ }
-  .header-filter[filter-color="green"]:after, .header-filter[filter-color="success"]:after {
+  .header-filter[filter-color="green"]:after, [filter-color="green"].header-filter-lighter:after, .header-filter[filter-color="success"]:after, [filter-color="success"].header-filter-lighter:after {
     background: rgba(165, 214, 167, 0.56);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
@@ -14797,7 +14798,7 @@ h2.title {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(60deg, rgba(165, 214, 167, 0.56), rgba(102, 187, 106, 0.95));
     /* Standard syntax */ }
-  .header-filter[filter-color="orange"]:after, .header-filter[filter-color="warning"]:after {
+  .header-filter[filter-color="orange"]:after, [filter-color="orange"].header-filter-lighter:after, .header-filter[filter-color="warning"]:after, [filter-color="warning"].header-filter-lighter:after {
     background: rgba(255, 224, 178, 0.56);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
@@ -14805,7 +14806,7 @@ h2.title {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(60deg, rgba(255, 224, 178, 0.56), rgba(255, 183, 77, 0.95));
     /* Standard syntax */ }
-  .header-filter[filter-color="red"]:after, .header-filter[filter-color="danger"]:after {
+  .header-filter[filter-color="red"]:after, [filter-color="red"].header-filter-lighter:after, .header-filter[filter-color="danger"]:after, [filter-color="danger"].header-filter-lighter:after {
     background: rgba(239, 154, 154, 0.56);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
@@ -14813,7 +14814,7 @@ h2.title {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(60deg, rgba(239, 154, 154, 0.56), rgba(239, 83, 80, 0.95));
     /* Standard syntax */ }
-  .header-filter[filter-color="rose"]:after {
+  .header-filter[filter-color="rose"]:after, [filter-color="rose"].header-filter-lighter:after {
     background: rgba(248, 187, 208, 0.56);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
@@ -15473,6 +15474,9 @@ li {
   font-size: 16px;
   font-family: "Alegreya", "Times New Roman", serif;
   text-align: left; }
+
+.header-filter-lighter::before {
+  background-color: rgba(0, 0, 0, 0.2); }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
   font-family: "Oswald", "Helvetica", "Arial", sans-serif;

@@ -10,6 +10,13 @@ li {
     text-align: left;
 }
 
+.header-filter-lighter {
+  @extend .header-filter;
+  &::before{
+    background-color: rgba(0,0,0,.2);
+  }
+}
+
 
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
