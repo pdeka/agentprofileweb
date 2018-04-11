@@ -98,7 +98,7 @@ export default class Testimonials extends React.Component {
                               </div>
                             </div>
                           </div>
-                          <div className={classNames('col-md-6')}>
+                          <div className={classNames('col-md-6', 'mobile-gap-testimonial-page-video')}>
                             <div className={classNames('card-header', 'card-header-image', 'card-raised')}>
                               <div>
                                 <div className={classNames('embed-responsive', 'embed-responsive-16by9')}>

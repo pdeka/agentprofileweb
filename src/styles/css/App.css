@@ -82,6 +82,9 @@ body {
     border-right: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.35) !important; }
   .features-5 .container .mobile-last-item {
-    border-bottom: 0 !important; } }
+    border-bottom: 0 !important; }
+
+  .mobile-gap-testimonial-page-video {
+    padding-top: 40px; } }
 
 /*# sourceMappingURL=App.css.map */
