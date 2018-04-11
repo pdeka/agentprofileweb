@@ -8,7 +8,7 @@ import ArticlePreview from "./partials/ArticlePreview";
 import FormatDate from "./partials/FormatDate";
 import {RichText} from 'prismic-reactjs';
 import Loading from "./partials/Loading";
-import ImageURL from "./lib/ImageURL";
+import Image from "./partials/Image";
 
 import './styles/css/Community.css';
 
@@ -71,14 +71,12 @@ export default class Community extends React.Component {
       let communitypage = this.state.communitypage.results[0].data;
       let articleResults = this.state.articles.results;
 
-      let foregroundImage = new ImageURL(communitypage.header_foreground_image)
-
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
         <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: "url(" +communitypage.header_background_image.url+")"}}>
         <div className={classNames('container')}>
               <div className={classNames('row', 'justify-content-center')}>
-                <img src={foregroundImage.getURL()} alt={foregroundImage.getAlt()}/>
+                <Image src={communitypage.header_foreground_image} />
               </div>
         </div>
 

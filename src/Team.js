@@ -6,6 +6,7 @@ import PageFooter from "./partials/PageFooter";
 import {RichText} from 'prismic-reactjs';
 import Loading from "./partials/Loading";
 import ImageURL from "./lib/ImageURL";
+import Image from "./partials/Image";
 
 import './styles/css/Team.css';
 
@@ -87,9 +88,7 @@ export default class Team extends React.Component {
                                 </div>
                                 <div className={classNames('col-md-5')}>
                                     <div className={classNames('card-header', 'card-header-image')}>
-                                        <a href="#pablo">
-                                            <img className={classNames('img')} src={teampage.body[0].items[0].photo.url} alt={teampage.body[0].items[0].photo.alt}/>
-                                        </a>
+                                      <Image clazz={'img'} src={teampage.body[0].items[0].photo} />
                                     </div>
                                 </div>
                             </div>
@@ -102,9 +101,7 @@ export default class Team extends React.Component {
                             <div className={classNames('row')}>
                                 <div className={classNames('col-md-5', 'desktop-display')}>
                                     <div className={classNames('card-header', 'card-header-image')}>
-                                        <a href="#pablo">
-                                            <img className={classNames('img')} src={teampage.body[0].items[1].photo.url} alt={teampage.body[0].items[1].photo.alt}/>
-                                        </a>
+                                      <Image clazz={'img'} src={teampage.body[0].items[1].photo} />
                                     </div>
                                 </div>
                                 <div className={classNames('col-md-7')}>
@@ -122,9 +119,7 @@ export default class Team extends React.Component {
                                 </div>
                                 <div className={classNames('col-md-5', 'mobile-display')}>
                                     <div className={classNames('card-header', 'card-header-image')}>
-                                        <a href="#pablo">
-                                            <img className={classNames('img')} src={teampage.body[0].items[1].photo.url} alt={teampage.body[0].items[1].photo.alt}/>
-                                        </a>
+                                      <Image clazz={'img'} src={teampage.body[0].items[1].photo} />
                                     </div>
                                 </div>
                             </div>
@@ -150,9 +145,7 @@ export default class Team extends React.Component {
                                 </div>
                                 <div className={classNames('col-md-5')}>
                                     <div className={classNames('card-header', 'card-header-image')}>
-                                        <a href="#pablo">
-                                            <img className={classNames('img')} src={teampage.body[0].items[2].photo.url} alt={teampage.body[0].items[2].photo.alt}/>
-                                        </a>
+                                      <Image clazz={'img'} src={teampage.body[0].items[2].photo} />
                                     </div>
                                 </div>
                             </div>

@@ -12,7 +12,7 @@
     "alt": null,
     "copyright": null,
     "url": "https://rumamundi.cdn.prismic.io/rumamundi/411ba78dd25fd3e824b44ccd56149807681ffff0_team-ruma-try2.jpg",
-    "Mobile": {
+    "mobile": {
       "dimensions": {
         "width": 400,
         "height": 300
@@ -21,14 +21,14 @@
       "copyright": null,
       "url": "https://rumamundi.cdn.prismic.io/rumamundi/2c54e28a4ad21e0cc8790e113721274acbdb46b2_team-ruma-try2.jpg"
     },
-    "Tablet": {
+    "tablet": {
       "dimensions": {
         "width": 900,
         "height": 300
       },
       "alt": null,
       "copyright": null,
-      "url": "https://rumamundi.cdn.prismic.io/rumamundi/f22cbdb573ab499871c79fbeca1e1bf7614e1035_team-ruma-try2.jpg"
+      "url": "https://rumamundi.cdn.prismic.io/rumamundi/4049bc4139eb7aa3fa47d92769cbcce9555e016e_team-ruma-try2.jpg"
     }
   },
   "body": [{
