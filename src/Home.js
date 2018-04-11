@@ -247,7 +247,7 @@ export default class Home extends React.Component {
                               </div>
 
                               <div className={classNames('col-md-4')}>
-                                  <div className={classNames('card-body', 'pt-0', 'mt-0')}>
+                                  <div className={classNames('card-body', 'pt-0', 'mt-0', 'mobile-home-page-article')}>
                                       <div className={classNames('card-description')}>
                                       {RichText.render(articleResults[0].data.article_text)}
                                       </div>
