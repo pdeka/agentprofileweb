@@ -94,8 +94,8 @@ export default class ContactForm extends React.Component {
         }
     }
 
-    success = () => toast("Mail sent. Thank you!", { type: toast.TYPE.SUCCESS, autoClose: 15000, position: toast.POSITION.BOTTOM_RIGHT });
-    failure = () => toast("Computer says no! Check inputs please.", { type: toast.TYPE.ERROR, autoClose: 15000, position: toast.POSITION.BOTTOM_RIGHT });
+    success = () => toast("Thank you! Your message has been sent.", { type: toast.TYPE.SUCCESS, autoClose: 15000, position: toast.POSITION.BOTTOM_RIGHT });
+    failure = () => toast("Please correct highlighted input(s).", { type: toast.TYPE.ERROR, autoClose: 15000, position: toast.POSITION.BOTTOM_RIGHT });
 
 
     _handleSubmit(event)  {
