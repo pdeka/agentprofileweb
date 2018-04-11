@@ -56,6 +56,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
 .card-description, .description{
   @extend .card-description;
   color: $black-color;
+  div {
+    p {
+      a{
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .card-description-white {

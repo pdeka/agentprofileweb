@@ -15519,6 +15519,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
 
 .card-description, .description, .card-description-white, .description {
   color: #3C4858; }
+  .card-description div p a, .description div p a, .card-description-white div p a, .description div p a {
+    text-decoration: underline; }
 
 .card-description-white div p a {
   color: #fff;
