@@ -236,7 +236,7 @@ export default class Home extends React.Component {
                 <div className={classNames('container')} >
                       <div className={classNames('row')}>
                             <div className={classNames('col-md-12')}>
-                                <h2 className={classNames('title', 'home-article-desktop-title', 'text-center')}>
+                                <h2 className={classNames('title', 'text-center')}>
                                   {articleResults[0].data.article_title[0].text}
                                 </h2>
                             </div>
