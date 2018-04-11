@@ -158,7 +158,7 @@ export default class Home extends React.Component {
                   </LinkScroll>
                 </Jump>
               </div>
-              <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster={data.video_poster_image.url}>
+              <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster={new ImageURL(data.video_poster_image).getURL()}>
                 <source src={data.homepage_video_link.url} type="video/mp4"/>
               </video>
           </div>
@@ -261,7 +261,7 @@ export default class Home extends React.Component {
 
                 </div>
             </div>
-            <div className={classNames('blogs-4', 'section-image', 'home-client-section', 'pb-5')} style={{'backgroundImage': 'url('+data.client_section_image.url+')'}}>
+            <div className={classNames('blogs-4', 'section-image', 'home-client-section', 'pb-5')} style={{'backgroundImage': 'url('+new ImageURL(data.client_section_image).getURL()+')'}}>
                 <div className={classNames('container')}>
                     <div className={classNames('row')}>
                         <div className={classNames('col-md-12', 'text-center')}>
