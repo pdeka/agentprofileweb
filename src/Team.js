@@ -158,37 +158,6 @@ export default class Team extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <div className={classNames('row')}>
-                      <div className={classNames('col-md-12', 'ml-auto', 'mr-auto')}>
-                        <div className={classNames('card', 'card-profile', 'card-plain')}>
-                            <div className={classNames('row')}>
-                                <div className={classNames('col-md-5', 'desktop-display')}>
-                                    <div className={classNames('card-header', 'card-header-image')}>
-                                        <a href="#pablo">
-                                            <img className={classNames('img')} src={teampage.body[0].items[3].photo.url} alt={teampage.body[0].items[3].photo.alt}/>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className={classNames('col-md-7')}>
-                                    <div className={classNames('card-body')}>
-                                        <h3 className={classNames('card-title')}>{teampage.body[0].items[3].full_name[0].text}</h3>
-                                        <h4 className={classNames('card-category', 'text-muted')}>{teampage.body[0].items[3].job[0].text}</h4>
-                                        <div className={classNames('card-description')}>
-                                          {RichText.render(teampage.body[0].items[3].profile_summary)}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={classNames('col-md-5', 'mobile-display')}>
-                                    <div className={classNames('card-header', 'card-header-image')}>
-                                        <a href="#pablo">
-                                            <img className={classNames('img')} src={teampage.body[0].items[3].photo.url} alt={teampage.body[0].items[3].photo.alt}/>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
                     <br/>
                     <br/>
                   </div>
