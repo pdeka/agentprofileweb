@@ -6,6 +6,9 @@ import PageFooter from "./partials/PageFooter";
 import {RichText} from 'prismic-reactjs';
 import YoutubeURL from './lib/YoutubeURL';
 import Loading from "./partials/Loading";
+import ImageURL from "./lib/ImageURL";
+import Image from "./partials/Image";
+
 
 import './styles/css/About.css';
 
@@ -54,7 +57,7 @@ export default class About extends React.Component {
 
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-medium-large', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url('+aboutpage.header_background_image.url+')'}}>
+        <div className={classNames('page-header', 'header-medium-large', 'header-filter')} data-parallax="true" style={{backgroundImage: 'url('+ new ImageURL(aboutpage.header_background_image).getURL()+')'}}>
           <div className={classNames('container', 'about-video-text-margin')}>
                 <div className={classNames('row')}>
                   <div className={classNames('col-md-10')}>
@@ -80,7 +83,7 @@ export default class About extends React.Component {
               </div>
             </div>
           </div>
-          <div className={classNames('features-5')} style={{'backgroundImage': 'url('+aboutpage.awards_background_image.url+')'}}>
+          <div className={classNames('features-5')} style={{'backgroundImage': 'url('+ new ImageURL(aboutpage.awards_background_image).getURL() +')'}}>
               <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
                   <h2 className={classNames('title')}>Awards</h2>
               </div>
@@ -185,27 +188,21 @@ export default class About extends React.Component {
                       <div className={classNames('col-md-4')}>
                           <div className={classNames('card', 'card-profile', 'card-plain')}>
                               <div className={classNames('card-header', 'card-header-image')}>
-                                  <a href="#pablo">
-                                      <img className={classNames('img')} src={aboutpage.logo_1.url} alt={aboutpage.logo_1.alt}/>
-                                  </a>
+                                      <Image clazz={'img'} src={aboutpage.logo_1} />
                               </div>
                           </div>
                       </div>
                       <div className={classNames('col-md-4')}>
                           <div className={classNames('card', 'card-profile', 'card-plain')}>
                               <div className={classNames('card-header', 'card-header-image')}>
-                                  <a href="#pablo">
-                                      <img className={classNames('img')} src={aboutpage.logo_2.url} alt={aboutpage.logo_2.alt}/>
-                                  </a>
+                                  <Image clazz={'img'} src={aboutpage.logo_2} />
                               </div>
                           </div>
                       </div>
                       <div className={classNames('col-md-4')}>
                           <div className={classNames('card', 'card-profile', 'card-plain')}>
                               <div className={classNames('card-header', 'card-header-image')}>
-                                  <a href="#pablo">
-                                      <img className={classNames('img')} src={aboutpage.logo_3.url} alt={aboutpage.logo_3.alt}/>
-                                  </a>
+                                <Image clazz={'img'} src={aboutpage.logo_3} />
                               </div>
                           </div>
                       </div>
@@ -214,27 +211,21 @@ export default class About extends React.Component {
                       <div className={classNames('col-md-4')}>
                           <div className={classNames('card', 'card-profile', 'card-plain')}>
                               <div className={classNames('card-header', 'card-header-image')}>
-                                  <a href="#pablo">
-                                      <img className={classNames('img')} src={aboutpage.logo_4.url} alt={aboutpage.logo_4.alt}/>
-                                  </a>
+                                <Image clazz={'img'} src={aboutpage.logo_4} />
                               </div>
                           </div>
                       </div>
                       <div className={classNames('col-md-4')}>
                           <div className={classNames('card', 'card-profile', 'card-plain')}>
                               <div className={classNames('card-header', 'card-header-image')}>
-                                  <a href="#pablo">
-                                      <img className={classNames('img')} src={aboutpage.logo_5.url} alt={aboutpage.logo_5.alt}/>
-                                  </a>
+                                <Image clazz={'img'} src={aboutpage.logo_5} />
                               </div>
                           </div>
                       </div>
                       <div className={classNames('col-md-4')}>
                           <div className={classNames('card', 'card-profile', 'card-plain')}>
                               <div className={classNames('card-header', 'card-header-image')}>
-                                  <a href="#pablo">
-                                      <img className={classNames('img')} src={aboutpage.logo_6.url} alt={aboutpage.logo_6.alt}/>
-                                  </a>
+                                <Image clazz={'img'} src={aboutpage.logo_6} />
                               </div>
                           </div>
                       </div>
