@@ -15,6 +15,9 @@ import SplashButton from './components/CustomButtons/SplashButton';
 import Slice from './lib/Slice';
 import Jump from 'react-reveal/Jump';
 import { Link as LinkScroll} from 'react-scroll';
+import ImageURL from "./lib/ImageURL";
+import Image from "./partials/Image";
+
 
 import './styles/css/Home.css';
 
@@ -98,7 +101,7 @@ export default class Home extends React.Component {
                 <TestimonialCardBody excludeExternalLink={true} truncateLines={2} data={testimonialResults[key].data} truncateHeaderChars={75} />
                 <div className={classNames('card-footer', 'pt-2')}>
                     <div className={classNames('card-avatar')}>
-                      <img className={classNames('img')} src={testimonialResults[key].data.photo.url} alt="testimonial ruma mundi stanhope gardens sydney"/>
+                      <Image clazz={'img'} src={testimonialResults[key].data.photo}/>
                     </div>
                 </div>
             </div>
@@ -170,7 +173,7 @@ export default class Home extends React.Component {
                       <div className={classNames('row')}>
                           <div className={classNames('col-md-5')}>
                               <div className={classNames('card-header', 'card-header-image')}>
-                                <img className={classNames('img')} src={data.about_you_section_image.url} alt={data.about_you_section_image.alt} />
+                                <Image clazz={'img'} src={data.about_you_section_image} />
                               </div>
                           </div>
                           <div className={classNames('col-md-6')}>
@@ -219,7 +222,7 @@ export default class Home extends React.Component {
                             </div>
                             <div className={classNames('col-md-8')}>
                                 <div className={classNames('card-header', 'card-header-image')}>
-                                        <img className={classNames('img')} src={data.the_team_image.url} alt={data.the_team_image.alt} />
+                                    <Image clazz={'img'} src={data.the_team_image} />
                                 </div>
                             </div>
                         </div>
