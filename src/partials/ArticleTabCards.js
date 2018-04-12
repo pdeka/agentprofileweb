@@ -2,7 +2,9 @@ import React from 'react';
 import ArticlePreview from './ArticlePreview';
 import FormatDate from "./FormatDate";
 import classNames from 'classnames';
-import FormFactor from "../lib/FormFactor"
+import FormFactor from "../lib/FormFactor";
+import {RichText} from 'prismic-reactjs';
+
 
 export default class ArticleTabCards extends React.Component {
 
@@ -25,9 +27,9 @@ export default class ArticleTabCards extends React.Component {
           <h3 className={classNames('card-title')}>
             {article.data.article_title[0].text}
           </h3>
-          <p className={classNames('card-description')}>
-            {article.data.article_summary[0].text}
-          </p>
+          <div className={classNames('card-description')}>
+            {RichText.render(article.data.article_summary)}
+          </div>
           <p className={classNames('author')}>
             by&nbsp;<b>Ruma</b>,&nbsp;
             <FormatDate data={article.data.date}/>
