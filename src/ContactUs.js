@@ -8,7 +8,6 @@ import RegularButton from './components/CustomButtons/RegularButton';
 import ContactForm from './partials/ContactForm';
 import {RichText} from 'prismic-reactjs';
 import ImageURL from "./lib/ImageURL";
-import Image from "./partials/Image";
 
 import './styles/css/ContactUs.css';
 

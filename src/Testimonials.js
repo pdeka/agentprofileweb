@@ -8,7 +8,6 @@ import WebTestimonialRow from './partials/WebTestimonialRow';
 import TestimonialCardBody from "./partials/TestimonialCardBody";
 import Loading from "./partials/Loading";
 import ImageURL from "./lib/ImageURL";
-import Image from "./partials/Image";
 
 
 import './styles/css/Testimonials.css';

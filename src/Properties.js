@@ -10,8 +10,6 @@ import {RichText} from 'prismic-reactjs';
 import Loading from "./partials/Loading";
 import RegularButton from './components/CustomButtons/RegularButton';
 import ImageURL from "./lib/ImageURL";
-import Image from "./partials/Image";
-
 
 import './styles/css/About.css';
 
