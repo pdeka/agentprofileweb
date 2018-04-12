@@ -7,6 +7,9 @@ import YoutubeURL from './lib/YoutubeURL';
 import WebTestimonialRow from './partials/WebTestimonialRow';
 import TestimonialCardBody from "./partials/TestimonialCardBody";
 import Loading from "./partials/Loading";
+import ImageURL from "./lib/ImageURL";
+import Image from "./partials/Image";
+
 
 import './styles/css/Testimonials.css';
 
@@ -73,7 +76,7 @@ export default class Testimonials extends React.Component {
 
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-filter-lighter', 'header-medium')} data-parallax="true" style={{backgroundImage: "url(" +testimonialspage.header_background_image.url+")"}}>
+        <div className={classNames('page-header', 'header-filter-lighter', 'header-medium')} data-parallax="true" style={{backgroundImage: "url(" +new ImageURL(testimonialspage.header_background_image).getURL()+")"}}>
           <div className={classNames('container')}>
               <div className={classNames('row', 'justify-content-center')}>
                   <div className={classNames('col-md-12')}>
@@ -179,7 +182,7 @@ export default class Testimonials extends React.Component {
                     </div>
                 </div>
             </div>
-            <div className={classNames('cd-section', 'section-image')} style={{'backgroundImage': 'url(https://prismic-io.s3.amazonaws.com/rumamundi%2F9a5f2729-1cdc-4a35-902d-e0331565f816_ruma+mundi+profile.jpg)'}}>
+            <div className={classNames('cd-section', 'section-image')} style={{backgroundImage: "url(" +new ImageURL(testimonialspage.web_testimonial_header_background_image).getURL()+")"}}>
               <div className={classNames('blogs-2')} id="blogs-2">
                   <div className={classNames('container', 'mb-5')}>
                       <div className={classNames('row')}>
