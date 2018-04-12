@@ -9,6 +9,8 @@ import FormatDate from "./partials/FormatDate";
 import {RichText} from 'prismic-reactjs';
 import Loading from "./partials/Loading";
 import RegularButton from './components/CustomButtons/RegularButton';
+import ImageURL from "./lib/ImageURL";
+import Image from "./partials/Image";
 
 
 import './styles/css/About.css';
@@ -81,7 +83,7 @@ export default class Properties extends React.Component {
 
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: "url(" +propertiespage.header_background_image.url+")"}}>
+        <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: "url(" +new ImageURL(propertiespage.header_background_image).getURL() +")"}}>
         <div className={classNames('container')}>
               <div className={classNames('row', 'justify-content-center')}>
                 <h1 className={classNames('title', 'text-center', 'desktop-display')}>{propertiespage.header[0].text}</h1>

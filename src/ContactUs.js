@@ -7,6 +7,8 @@ import Loading from "./partials/Loading";
 import RegularButton from './components/CustomButtons/RegularButton';
 import ContactForm from './partials/ContactForm';
 import {RichText} from 'prismic-reactjs';
+import ImageURL from "./lib/ImageURL";
+import Image from "./partials/Image";
 
 import './styles/css/ContactUs.css';
 
@@ -65,7 +67,7 @@ export default class ContactUs extends React.Component {
 
       return (<div className={classNames('contact-us')}>
         <MainNavigation navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-filter', 'header-medium')} data-parallax="true" style={{backgroundImage: "url(" +contactuspage.header_background_image.url+")"}}>
+        <div className={classNames('page-header', 'header-filter', 'header-medium')} data-parallax="true" style={{backgroundImage: "url(" + new ImageURL(contactuspage.header_background_image).getURL() +")"}}>
           <div className={classNames('container')}>
               <div className={classNames('row')}>
                 <div className={classNames('col-md-12')}>
