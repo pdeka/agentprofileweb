@@ -16,6 +16,7 @@ import Slice from './lib/Slice';
 import Jump from 'react-reveal/Jump';
 import { Link as LinkScroll} from 'react-scroll';
 import ImageURL from "./lib/ImageURL";
+import VideoURL from "./lib/VideoURL";
 import Image from "./partials/Image";
 
 
@@ -159,7 +160,7 @@ export default class Home extends React.Component {
                 </Jump>
               </div>
               <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster={new ImageURL(data.video_poster_image).getURL()}>
-                <source src={data.homepage_video_link.url} type="video/mp4"/>
+                <source src={new VideoURL(data.homepage_video_link).getURL()} type="video/mp4"/>
               </video>
           </div>
         </div>
