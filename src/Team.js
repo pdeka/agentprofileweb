@@ -91,7 +91,7 @@ export default class Team extends React.Component {
                                         <a href={teampage.body[0].items[0].instagram.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-instagram')}></i></a>
                                     </div>
                                 </div>
-                                <div className={classNames('col-md-5')}>
+                                <div className={classNames('col-md-5', 'mobile-teamruma-photo-header')}>
                                     <div className={classNames('card-header', 'card-header-image')}>
                                       <Image clazz={'img'} src={teampage.body[0].items[0].photo} />
                                     </div>
@@ -122,7 +122,7 @@ export default class Team extends React.Component {
                                       <a href={teampage.body[0].items[1].instagram.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-instagram')}></i></a>
                                     </div>
                                 </div>
-                                <div className={classNames('col-md-5', 'mobile-display')}>
+                                <div className={classNames('col-md-5', 'mobile-display', 'mobile-teamruma-photo-header')}>
                                     <div className={classNames('card-header', 'card-header-image')}>
                                       <Image clazz={'img'} src={teampage.body[0].items[1].photo} />
                                     </div>
@@ -148,7 +148,7 @@ export default class Team extends React.Component {
                                       <a href={teampage.body[0].items[2].instagram.url} className={classNames('btn', 'btn-just-icon', 'btn-link', 'btn-default')}><i className={classNames('fa', 'fa-instagram')}></i></a>
                                     </div>
                                 </div>
-                                <div className={classNames('col-md-5')}>
+                                <div className={classNames('col-md-5', 'mobile-teamruma-photo-header')}>
                                     <div className={classNames('card-header', 'card-header-image')}>
                                       <Image clazz={'img'} src={teampage.body[0].items[2].photo} />
                                     </div>
