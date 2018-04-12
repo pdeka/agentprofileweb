@@ -15468,12 +15468,17 @@ footer {
 p {
   font-size: 16px;
   font-family: "Alegreya", "Times New Roman", serif;
-  text-align: left; }
+  text-align: left;
+  text-rendering: optimizeLegibility; }
 
 li {
   font-size: 16px;
   font-family: "Alegreya", "Times New Roman", serif;
   text-align: left; }
+
+b,
+strong {
+  font-weight: 900; }
 
 .header-filter-lighter::before {
   background-color: rgba(0, 0, 0, 0.2); }

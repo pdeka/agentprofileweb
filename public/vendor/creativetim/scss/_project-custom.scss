@@ -2,12 +2,18 @@ p {
     font-size: $font-paragraph +2;
     font-family: $font-family-serif;
     text-align: left;
+    text-rendering: optimizeLegibility;
 }
 
 li {
     font-size: $font-paragraph +2;
     font-family: $font-family-serif;
     text-align: left;
+}
+
+b,
+strong {
+  font-weight: 900; // Add the correct font weight in Chrome, Edge, and Safari
 }
 
 .header-filter-lighter {
