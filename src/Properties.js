@@ -95,7 +95,7 @@ export default class Properties extends React.Component {
 
         </div>
         <div className={classNames('main', 'main-raised')}>
-          <div className={classNames('features-1', 'pt-5', 'pb-3')}>
+          <div className={classNames('features-1', 'pt-5')}>
             <div className={classNames('container')}>
               <div className={classNames('row')}>
                   <div className={classNames('col-md-8', 'ml-auto', 'mr-auto')}>
