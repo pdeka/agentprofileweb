@@ -49,8 +49,8 @@ body {
     font-size: 29px; }
 
   .page-header.header-medium, .page-header.header-medium-large {
-    height: 80vh;
-    min-height: 80vh; }
+    height: 100vh;
+    min-height: 100vh; }
 
   #downArrow {
     display: none; }
