@@ -41,6 +41,10 @@ body {
   .mobile-teamruma-photo-header {
     padding-top: 16px; }
 
+  .mobile-articlepreview {
+    margin-left: 16px !important;
+    margin-right: 16px !important; }
+
   h2 {
     font-size: 29px; }
 

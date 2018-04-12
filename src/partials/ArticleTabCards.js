@@ -11,15 +11,17 @@ export default class ArticleTabCards extends React.Component {
   }
 
   renderPreview(article) {
-    return <div className={classNames('col-md-6')}>
+    return <div className={classNames('col-md-6', 'mobile-articlepreview')}>
       <ArticlePreview data={article.data}/>
     </div>;
 
   }
 
   renderSummary(article) {
-    return <div className={classNames('col-md-6', 'text-left')}>
-        <div className={classNames('col-md-10', 'text-left')}>
+    return <div className={classNames('col-md-6')}>
+        <div className={classNames('col-md-10')}>
+        <div className={classNames('card-body', 'text-left')}>
+
           <h3 className={classNames('card-title')}>
             {article.data.article_title[0].text}
           </h3>
@@ -30,6 +32,7 @@ export default class ArticleTabCards extends React.Component {
             by&nbsp;<b>Ruma</b>,&nbsp;
             <FormatDate data={article.data.date}/>
           </p>
+      </div>
       </div>
     </div>;
   }
