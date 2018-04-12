@@ -233,7 +233,7 @@ export default class Home extends React.Component {
                 </div>
               </div>
             </div>
-            <div className={classNames('blogs-4', 'home-article-section', 'pb-4')}>
+            <div className={classNames('blogs-4', 'home-article-section')}>
                 <div className={classNames('container')} >
                       <div className={classNames('row')}>
                             <div className={classNames('col-md-12')}>
