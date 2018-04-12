@@ -31,8 +31,25 @@ body {
     display: none;
   }
 
+  .mobile-padding-home-about-section {
+    padding-top: 16px !important;
+  }
+
+  .mobile-padding-teamruma-section {
+    padding: 0 0 13px 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .mobile-padding-communityruma-section {
+    margin: 0 !important;
+  }
+
   .mobile-home-page-article {
     padding-top: 40px !important;
+  }
+
+  .mobile-aboutpage-awards-section {
+    margin: 0 !important;
   }
 
   h2 {

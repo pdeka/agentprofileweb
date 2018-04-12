@@ -85,7 +85,7 @@ export default class About extends React.Component {
           </div>
           <div className={classNames('features-5', 'pt-5')} style={{'backgroundImage': 'url('+ new ImageURL(aboutpage.awards_background_image).getURL() +')'}}>
               <div className={classNames('col-md-8', 'ml-auto', 'mr-auto', 'text-center')}>
-                  <h2 className={classNames('title')}>Awards</h2>
+                  <h2 className={classNames('title', 'mobile-aboutpage-awards-section')}>Awards</h2>
               </div>
               <div className={classNames('container')}>
                   <div className={classNames('row')}>

@@ -177,7 +177,7 @@ export default class Home extends React.Component {
                               </div>
                           </div>
                           <div className={classNames('col-md-6')}>
-                              <h2 className={classNames('card-title')}>{data.about_header[0].text}</h2>
+                              <h2 className={classNames('card-title', 'mobile-padding-home-about-section')}>{data.about_header[0].text}</h2>
                               <div className={classNames('card-body')}>
                                   <div className={classNames('card-description', 'text-black')}>
                                     {RichText.render(data.about_you_text)}
@@ -207,7 +207,7 @@ export default class Home extends React.Component {
                         <div className={classNames('row')}>
                             <div className={classNames('col-md-4')}>
                                 <div className={classNames('card-body', 'pt-0', 'mt-0', 'pb-5')}>
-                                    <h2 className={classNames('card-title')}>{data.the_team_header[0].text}</h2>
+                                    <h2 className={classNames('card-title', 'mobile-padding-teamruma-section')}>{data.the_team_header[0].text}</h2>
                                     <div className={classNames('card-description')}>
                                       {RichText.render(data.the_team_text)}
                                     </div>
@@ -236,7 +236,7 @@ export default class Home extends React.Component {
                 <div className={classNames('container')} >
                       <div className={classNames('row')}>
                             <div className={classNames('col-md-12')}>
-                                <h2 className={classNames('title', 'text-center')}>
+                                <h2 className={classNames('title', 'text-center', 'mobile-padding-communityruma-section')}>
                                   {articleResults[0].data.article_title[0].text}
                                 </h2>
                             </div>
