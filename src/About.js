@@ -152,8 +152,8 @@ export default class About extends React.Component {
                               <div className={classNames('icon')}>
                                 <span className={classNames('icon-laurel')} ></span>
                               </div>
-                              <h4 className={classNames('info-title')}>Double Centurion 2014</h4>
-                              <p></p>
+                              <h4 className={classNames('info-title')}>Double Centurion</h4>
+                              <p>Top 1% Producer Globally – 2014 – Century 21</p>
                           </div>
                       </div>
                       <div className={classNames('col-sm-4')}>
@@ -162,7 +162,7 @@ export default class About extends React.Component {
                                 <span className={classNames('icon-laurel')} ></span>
                               </div>
                               <h4 className={classNames('info-title')}>Grand Centurion Producer</h4>
-                              <p>Top 1% Producer Globally - 2013</p>
+                              <p>Top 1% Producer Globally - 2013 - Century 21</p>
                           </div>
                       </div>
                       <div className={classNames('col-sm-4', 'mobile-last-item')}>
@@ -171,7 +171,7 @@ export default class About extends React.Component {
                                 <span className={classNames('icon-laurel')} ></span>
                               </div>
                               <h4 className={classNames('info-title')}>Centurion Producer</h4>
-                              <p>(Top 2% Producer Globally) 2009, 2010, 2011 & 2012</p>
+                              <p>Top 2% Producer Globally- 2009, 2010, 2011 & 2012 - Century 21</p>
                           </div>
                       </div>
                   </div>
