@@ -87,7 +87,7 @@ export default class Properties extends React.Component {
                 <h1 className={classNames('title', 'text-center', 'desktop-display')}>{propertiespage.header[0].text}</h1>
                 <div className={classNames('title', 'text-center', 'mobile-display')}>
                   <h1 className={classNames('title', 'text-center', 'mobile-display')}>Because</h1>
-                  <h2 className={classNames('title', 'text-center', 'mobile-display')}>There Truely is no Place</h2>
+                  <h2 className={classNames('title', 'text-center', 'mobile-display')}>There Truly is no Place</h2>
                   <h1 className={classNames('title', 'text-center', 'mobile-display')}>Like Home</h1>
                 </div>
               </div>
