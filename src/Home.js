@@ -110,6 +110,14 @@ export default class Home extends React.Component {
     });
   }
 
+  backgroundImage(imageComponent) {
+    if (window.screen.availWidth < 991){
+      return {backgroundImage: "url(" +new ImageURL(imageComponent).getURL()+")"};
+    } else {
+      return {};
+    }
+  }
+
   render() {
     if (this.state.doc && this.state.articles && this.state.testimonials && this.state.contactInfo) {
 
@@ -128,7 +136,7 @@ export default class Home extends React.Component {
       return <div className={classNames('sections-page', 'section-white')}>
         <MainNavigation thisProp={data} navBarTransparent={true}/>
         <div className={classNames('main')}>
-          <div className={classNames('page-header', 'header-filter-lighter')} data-parallax="true">
+          <div className={classNames('page-header', 'header-filter-lighter')} data-parallax="true" style={this.backgroundImage(data.video_poster_image)}>
               <div className={classNames('container', 'hero-text-margin')}>
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-12')} >
@@ -159,7 +167,7 @@ export default class Home extends React.Component {
                   </LinkScroll>
                 </Jump>
               </div>
-              <video autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster={new ImageURL(data.video_poster_image).getURL()}>
+              <video className={classNames('desktop-display')} autoPlay loop id="video-background" muted plays-inline="true" preload="auto" poster={new ImageURL(data.video_poster_image).getURL()}>
                 <source src={new VideoURL(data.homepage_video_link).getURL()} type="video/mp4"/>
               </video>
           </div>
