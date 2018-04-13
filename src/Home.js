@@ -128,7 +128,7 @@ export default class Home extends React.Component {
       return <div className={classNames('sections-page', 'section-white')}>
         <MainNavigation thisProp={data} navBarTransparent={true}/>
         <div className={classNames('main')}>
-          <div className={classNames('page-header', 'header-filter')} data-parallax="true">
+          <div className={classNames('page-header', 'header-filter-lighter')} data-parallax="true">
               <div className={classNames('container', 'hero-text-margin')}>
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-12')} >

@@ -15481,7 +15481,7 @@ strong {
   font-weight: 900; }
 
 .header-filter-lighter::before {
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.3); }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
   font-family: "Oswald", "Helvetica", "Arial", sans-serif;
