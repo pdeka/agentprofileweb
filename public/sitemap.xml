@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://rumamundi.com.au</loc><priority>1</priority></url>
+<url><loc>https://rumamundi.com.au/home</loc><priority>0.5</priority></url>
+<url><loc>https://rumamundi.com.au/about</loc><priority>0.5</priority></url>
+<url><loc>https://rumamundi.com.au/team</loc><priority>0.5</priority></url>
+<url><loc>https://rumamundi.com.au/community</loc><priority>0.5</priority></url>
+<url><loc>https://rumamundi.com.au/testimonials</loc><priority>0.5</priority></url>
+<url><loc>https://rumamundi.com.au/properties</loc><priority>0.5</priority></url>
+<url><loc>https://rumamundi.com.au/contactus</loc><priority>0.5</priority></url>
 </urlset>
