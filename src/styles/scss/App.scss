@@ -14,6 +14,11 @@ body {
   }
 }
 
+.page-header-text{
+  font-size: 56px !important;
+  line-height: 64px !important;
+}
+
 .mobile-display {
   display: none;
 }
@@ -22,7 +27,22 @@ body {
   display: block;
 }
 
+
 @media all and (max-width: 991px) {
+
+  .page-header-text{
+    h1 {
+      line-height: 80px !important;
+      font-size: 67px !important;
+      letter-spacing: 2px;
+    }
+    h2 {
+      line-height: 64px !important;
+      font-size: 36px !important;
+      letter-spacing: 1px;
+    }
+  }
+
   .mobile-display {
     display: block;
   }
@@ -155,7 +175,7 @@ body {
 
   .info {
     margin: 0 auto !important;
-    padding: 47px 0 0px !important;
+    padding: 16px 0 0px 0px !important;
     min-height: 250px !important;
   }
 

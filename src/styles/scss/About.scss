@@ -2,51 +2,29 @@
   height: 144px !important;
 }
 
+.awards-title {
+  font-weight: 400 !important;
+  font-size: 26px !important;
+  line-height: 52px !important;
+  min-height: 104px !important;
+}
+
+
+.awards-title-para {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+}
+
 .about-video-text-margin {
   margin-top: 0px;
 }
 
-.icon-laurel:before {
-  content: "\e900";
-  color: #fff;
+.sponsorship-card-spacing {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
 }
 
-
-@font-face {
-  font-family: 'icomoon';
-  src:  url('../laurel-font/icomoon.eot?babaq');
-  src:  url('../laurel-font/icomoon.eot?babaq#iefix') format('embedded-opentype'),
-    url('../laurel-font/icomoon.ttf?babaq') format('truetype'),
-    url('../laurel-font/icomoon.woff?babaq') format('woff'),
-    url('../laurel-font/icomoon.svg?babaq#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-laurel:before {
-  content: "\1f33f";
-  color: #fff;
-}
-
-.icon-laurel {
-  font-size: 50px;
-  line-height: 51px;
-}
 
 .award-number {
   font-weight: 400;

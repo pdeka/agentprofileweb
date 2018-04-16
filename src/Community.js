@@ -74,7 +74,7 @@ export default class Community extends React.Component {
 
       return <div className={classNames('sections-page')}>
         <MainNavigation navBarTransparent={true}/>
-        <div className={classNames('page-header', 'header-medium', 'header-filter')} data-parallax="true" style={{backgroundImage: "url(" +new ImageURL(communitypage.header_background_image).getURL()+")"}}>
+        <div className={classNames('page-header', 'header-medium', 'header-filter-3')} data-parallax="true" style={{backgroundImage: "url(" +new ImageURL(communitypage.header_background_image).getURL()+")"}}>
         <div className={classNames('container')}>
               <div className={classNames('row', 'justify-content-center')}>
                 <Image src={communitypage.header_foreground_image} />

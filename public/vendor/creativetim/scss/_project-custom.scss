@@ -16,11 +16,29 @@ strong {
   font-weight: 900; // Add the correct font weight in Chrome, Edge, and Safari
 }
 
-.header-filter-lighter {
+.header-filter-3 {
   @extend .header-filter;
   &::before{
     background-color: rgba(0,0,0,.3);
   }
+}
+
+.header-filter-2 {
+  @extend .header-filter;
+  &::before{
+    background-color: rgba(0,0,0,.2);
+  }
+}
+
+.header-filter-1 {
+  @extend .header-filter;
+  &::before{
+    background-color: rgba(0,0,0,.1);
+  }
+}
+
+.features-5-filter:after {
+  background: rgba(0, 0, 0, 0.8) !important;
 }
 
 
@@ -37,8 +55,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
 .footer-big h5,
 .footer-big h4,
 .media .media-heading{
-    font-weight: $font-weight-extra-bold;
     font-family: $font-family-sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
 
     &,
     a{
@@ -46,6 +65,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
         text-decoration: none;
     }
 }
+
 
 .text-black{
   color: $black-color !important;
