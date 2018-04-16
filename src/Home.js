@@ -79,13 +79,11 @@ export default class Home extends React.Component {
         }
       );
 
-      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'contactinformation')).then(
-        (contactInfo) => {
-          if (contactInfo) {
-            this.setState({ contactInfo });
-          }
+      props.prismicCtx.api.query(Prismic.Predicates.at('document.type', 'contactinformation')).then((contactInfo) => {
+        if (contactInfo) {
+          this.setState({contactInfo});
         }
-      );
+      });
 
       return null;
 
@@ -124,6 +122,7 @@ export default class Home extends React.Component {
       let data = this.state.doc.results[0].data;
       let articleResults = this.state.articles.results;
       let testimonialResults = this.state.testimonials.results;
+      let contactInfo = this.state.contactInfo.results[0].data;
 
       let slice = new Slice().findSlice(data.body, "rolling_text");
       let slides = []
@@ -148,8 +147,8 @@ export default class Home extends React.Component {
                   <div className={classNames('row')}>
                       <div className={classNames('col-md-12', 'mt-4')}>
                           <div style={{'textAlign': 'center'}}>
-                            <a href="tel:+61411030202">
-                              <SplashButton aria-label="0411 030 202">0411 030 202</SplashButton>
+                            <a href={"tel:" + contactInfo.phone[0].text}>
+                              <SplashButton aria-label={contactInfo.phone_display_text[0].text}>0411 030 202</SplashButton>
                             </a>
                             &nbsp;
                             &nbsp;
