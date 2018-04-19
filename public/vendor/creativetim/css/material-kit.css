@@ -14195,8 +14195,11 @@ h2.title {
   -webkit-box-shadow: 0 5px 5px -2px rgba(31, 31, 31, 0.4);
           box-shadow: 0 5px 5px -2px rgba(31, 31, 31, 0.4); }
 
-.presentation-page .header-filter:after, .presentation-page .header-filter-3:after, .presentation-page .header-filter-2:after, .presentation-page .header-filter-1:after,
+.presentation-page .header-filter:after, .presentation-page .header-filter-6:after, .presentation-page .header-filter-5:after, .presentation-page .header-filter-4:after, .presentation-page .header-filter-3:after, .presentation-page .header-filter-2:after, .presentation-page .header-filter-1:after,
 .index-page .header-filter:after,
+.index-page .header-filter-6:after,
+.index-page .header-filter-5:after,
+.index-page .header-filter-4:after,
 .index-page .header-filter-3:after,
 .index-page .header-filter-2:after,
 .index-page .header-filter-1:after {
@@ -14760,9 +14763,9 @@ h2.title {
     -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
             box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
 
-.header-filter, .header-filter-3, .header-filter-2, .header-filter-1 {
+.header-filter, .header-filter-6, .header-filter-5, .header-filter-4, .header-filter-3, .header-filter-2, .header-filter-1 {
   position: relative; }
-  .header-filter:before, .header-filter-3:before, .header-filter-2:before, .header-filter-1:before, .header-filter:after, .header-filter-3:after, .header-filter-2:after, .header-filter-1:after {
+  .header-filter:before, .header-filter-6:before, .header-filter-5:before, .header-filter-4:before, .header-filter-3:before, .header-filter-2:before, .header-filter-1:before, .header-filter:after, .header-filter-6:after, .header-filter-5:after, .header-filter-4:after, .header-filter-3:after, .header-filter-2:after, .header-filter-1:after {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -14771,12 +14774,12 @@ h2.title {
     left: 0;
     top: 0;
     content: ""; }
-  .header-filter::before, .header-filter-3::before, .header-filter-2::before, .header-filter-1::before {
+  .header-filter::before, .header-filter-6::before, .header-filter-5::before, .header-filter-4::before, .header-filter-3::before, .header-filter-2::before, .header-filter-1::before {
     background-color: rgba(0, 0, 0, 0.5); }
-  .header-filter .container, .header-filter-3 .container, .header-filter-2 .container, .header-filter-1 .container {
+  .header-filter .container, .header-filter-6 .container, .header-filter-5 .container, .header-filter-4 .container, .header-filter-3 .container, .header-filter-2 .container, .header-filter-1 .container {
     z-index: 2;
     position: relative; }
-  .header-filter[filter-color="purple"]:after, [filter-color="purple"].header-filter-3:after, [filter-color="purple"].header-filter-2:after, [filter-color="purple"].header-filter-1:after, .header-filter[filter-color="primary"]:after, [filter-color="primary"].header-filter-3:after, [filter-color="primary"].header-filter-2:after, [filter-color="primary"].header-filter-1:after {
+  .header-filter[filter-color="purple"]:after, [filter-color="purple"].header-filter-6:after, [filter-color="purple"].header-filter-5:after, [filter-color="purple"].header-filter-4:after, [filter-color="purple"].header-filter-3:after, [filter-color="purple"].header-filter-2:after, [filter-color="purple"].header-filter-1:after, .header-filter[filter-color="primary"]:after, [filter-color="primary"].header-filter-6:after, [filter-color="primary"].header-filter-5:after, [filter-color="primary"].header-filter-4:after, [filter-color="primary"].header-filter-3:after, [filter-color="primary"].header-filter-2:after, [filter-color="primary"].header-filter-1:after {
     background: rgba(225, 190, 231, 0.56);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
@@ -14784,7 +14787,7 @@ h2.title {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(60deg, rgba(225, 190, 231, 0.56), rgba(186, 104, 200, 0.95));
     /* Standard syntax */ }
-  .header-filter[filter-color="blue"]:after, [filter-color="blue"].header-filter-3:after, [filter-color="blue"].header-filter-2:after, [filter-color="blue"].header-filter-1:after, .header-filter[filter-color="info"]:after, [filter-color="info"].header-filter-3:after, [filter-color="info"].header-filter-2:after, [filter-color="info"].header-filter-1:after {
+  .header-filter[filter-color="blue"]:after, [filter-color="blue"].header-filter-6:after, [filter-color="blue"].header-filter-5:after, [filter-color="blue"].header-filter-4:after, [filter-color="blue"].header-filter-3:after, [filter-color="blue"].header-filter-2:after, [filter-color="blue"].header-filter-1:after, .header-filter[filter-color="info"]:after, [filter-color="info"].header-filter-6:after, [filter-color="info"].header-filter-5:after, [filter-color="info"].header-filter-4:after, [filter-color="info"].header-filter-3:after, [filter-color="info"].header-filter-2:after, [filter-color="info"].header-filter-1:after {
     background: rgba(178, 235, 242, 0.56);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
@@ -14792,7 +14795,7 @@ h2.title {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(60deg, rgba(178, 235, 242, 0.56), rgba(77, 208, 225, 0.95));
     /* Standard syntax */ }
-  .header-filter[filter-color="green"]:after, [filter-color="green"].header-filter-3:after, [filter-color="green"].header-filter-2:after, [filter-color="green"].header-filter-1:after, .header-filter[filter-color="success"]:after, [filter-color="success"].header-filter-3:after, [filter-color="success"].header-filter-2:after, [filter-color="success"].header-filter-1:after {
+  .header-filter[filter-color="green"]:after, [filter-color="green"].header-filter-6:after, [filter-color="green"].header-filter-5:after, [filter-color="green"].header-filter-4:after, [filter-color="green"].header-filter-3:after, [filter-color="green"].header-filter-2:after, [filter-color="green"].header-filter-1:after, .header-filter[filter-color="success"]:after, [filter-color="success"].header-filter-6:after, [filter-color="success"].header-filter-5:after, [filter-color="success"].header-filter-4:after, [filter-color="success"].header-filter-3:after, [filter-color="success"].header-filter-2:after, [filter-color="success"].header-filter-1:after {
     background: rgba(165, 214, 167, 0.56);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
@@ -14800,7 +14803,7 @@ h2.title {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(60deg, rgba(165, 214, 167, 0.56), rgba(102, 187, 106, 0.95));
     /* Standard syntax */ }
-  .header-filter[filter-color="orange"]:after, [filter-color="orange"].header-filter-3:after, [filter-color="orange"].header-filter-2:after, [filter-color="orange"].header-filter-1:after, .header-filter[filter-color="warning"]:after, [filter-color="warning"].header-filter-3:after, [filter-color="warning"].header-filter-2:after, [filter-color="warning"].header-filter-1:after {
+  .header-filter[filter-color="orange"]:after, [filter-color="orange"].header-filter-6:after, [filter-color="orange"].header-filter-5:after, [filter-color="orange"].header-filter-4:after, [filter-color="orange"].header-filter-3:after, [filter-color="orange"].header-filter-2:after, [filter-color="orange"].header-filter-1:after, .header-filter[filter-color="warning"]:after, [filter-color="warning"].header-filter-6:after, [filter-color="warning"].header-filter-5:after, [filter-color="warning"].header-filter-4:after, [filter-color="warning"].header-filter-3:after, [filter-color="warning"].header-filter-2:after, [filter-color="warning"].header-filter-1:after {
     background: rgba(255, 224, 178, 0.56);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
@@ -14808,7 +14811,7 @@ h2.title {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(60deg, rgba(255, 224, 178, 0.56), rgba(255, 183, 77, 0.95));
     /* Standard syntax */ }
-  .header-filter[filter-color="red"]:after, [filter-color="red"].header-filter-3:after, [filter-color="red"].header-filter-2:after, [filter-color="red"].header-filter-1:after, .header-filter[filter-color="danger"]:after, [filter-color="danger"].header-filter-3:after, [filter-color="danger"].header-filter-2:after, [filter-color="danger"].header-filter-1:after {
+  .header-filter[filter-color="red"]:after, [filter-color="red"].header-filter-6:after, [filter-color="red"].header-filter-5:after, [filter-color="red"].header-filter-4:after, [filter-color="red"].header-filter-3:after, [filter-color="red"].header-filter-2:after, [filter-color="red"].header-filter-1:after, .header-filter[filter-color="danger"]:after, [filter-color="danger"].header-filter-6:after, [filter-color="danger"].header-filter-5:after, [filter-color="danger"].header-filter-4:after, [filter-color="danger"].header-filter-3:after, [filter-color="danger"].header-filter-2:after, [filter-color="danger"].header-filter-1:after {
     background: rgba(239, 154, 154, 0.56);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
@@ -14816,7 +14819,7 @@ h2.title {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(60deg, rgba(239, 154, 154, 0.56), rgba(239, 83, 80, 0.95));
     /* Standard syntax */ }
-  .header-filter[filter-color="rose"]:after, [filter-color="rose"].header-filter-3:after, [filter-color="rose"].header-filter-2:after, [filter-color="rose"].header-filter-1:after {
+  .header-filter[filter-color="rose"]:after, [filter-color="rose"].header-filter-6:after, [filter-color="rose"].header-filter-5:after, [filter-color="rose"].header-filter-4:after, [filter-color="rose"].header-filter-3:after, [filter-color="rose"].header-filter-2:after, [filter-color="rose"].header-filter-1:after {
     background: rgba(248, 187, 208, 0.56);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
@@ -15481,6 +15484,15 @@ li {
 b,
 strong {
   font-weight: 900; }
+
+.header-filter-6::before {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.header-filter-5::before {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.header-filter-4::before {
+  background-color: rgba(0, 0, 0, 0.4); }
 
 .header-filter-3::before {
   background-color: rgba(0, 0, 0, 0.3); }

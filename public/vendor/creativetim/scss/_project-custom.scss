@@ -16,6 +16,27 @@ strong {
   font-weight: 900; // Add the correct font weight in Chrome, Edge, and Safari
 }
 
+.header-filter-6 {
+  @extend .header-filter;
+  &::before{
+    background-color: rgba(0,0,0,.6);
+  }
+}
+
+.header-filter-5 {
+  @extend .header-filter;
+  &::before{
+    background-color: rgba(0,0,0,.5);
+  }
+}
+
+.header-filter-4 {
+  @extend .header-filter;
+  &::before{
+    background-color: rgba(0,0,0,.4);
+  }
+}
+
 .header-filter-3 {
   @extend .header-filter;
   &::before{
