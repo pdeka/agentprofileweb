@@ -79,7 +79,13 @@ export default class Testimonials extends React.Component {
           <div className={classNames('container')}>
               <div className={classNames('row', 'justify-content-center')}>
                   <div className={classNames('col-md-12')}>
-                    <h1 className={classNames('title', 'text-center')}>{testimonialspage.header[0].text}</h1>
+                    <h1 className={classNames('title', 'text-center')}></h1>
+                    <h1 className={classNames('title', 'text-center', 'page-header-text', 'desktop-display')}>{testimonialspage.header[0].text}</h1>
+                    <div className={classNames('title', 'text-center', 'page-header-text', 'mobile-display')}>
+                      <h1 className={classNames('title', 'text-center', 'mobile-display')}>Your </h1>
+                      <h2 className={classNames('title', 'text-center', 'mobile-display')}>Perception is </h2>
+                      <h1 className={classNames('title', 'text-center', 'mobile-display')}>Our Reality</h1>
+                    </div>
                   </div>
               </div>
           </div>
