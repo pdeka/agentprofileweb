@@ -42,36 +42,6 @@ export default class MainNavigation extends React.Component {
                 <NavButton color="transparent" aria-label="Home">Home</NavButton>
               </Link>
             </li>
-            <li className={classNames('nav-item')}>
-              <Link to="/about" className={classNames('nav-link', 'text-center')}>
-                <NavButton color="transparent" aria-label="Meet Ruma">Meet Ruma</NavButton>
-              </Link>
-            </li>
-            <li className={classNames('nav-item')}>
-              <Link to="/team" className={classNames('nav-link', 'text-center')}>
-                <NavButton color="transparent" aria-label="The Team">The Team</NavButton>
-              </Link>
-            </li>
-            <li className={classNames('nav-item')}>
-              <Link to="/community" className={classNames('nav-link', 'text-center')}>
-                <NavButton color="transparent" aria-label="Our Community">Our Community</NavButton>
-              </Link>
-            </li>
-            <li className={classNames('nav-item')}>
-              <Link to="/testimonials" className={classNames('nav-link', 'text-center')}>
-              <NavButton color="transparent" aria-label="Client Stories">Client Stories</NavButton>
-              </Link>
-            </li>
-            <li className={classNames('nav-item')}>
-              <Link to="/properties" className={classNames('nav-link', 'text-center')}>
-                <NavButton color="transparent" aria-label="Properties">Properties</NavButton>
-              </Link>
-            </li>
-            <li className={classNames('nav-item')} >
-              <Link to="/contactus" className={classNames('nav-link', 'text-center')}>
-                <NavButton color="transparent" aria-label="Contact">Contact</NavButton>
-              </Link>
-            </li>
           </ul>
         </div>
       </div>
