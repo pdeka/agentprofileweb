@@ -3,7 +3,7 @@ export default {
   apiEndpoint: 'https://kenekt.prismic.io/api/v2',
 
   // -- Access token if the Master is not open
-  accessToken: 'MC5XbmpfMlNZQUFDZ0Fnem1G.Qe-_vT3vv73vv73vv73vv70z77-9Su-_ve-_ve-_vTXvv73vv73vv73vv73vv73vv73vv70WE--_ve-_ve-_vUDvv73vv70S77-9Rw',
+  accessToken: 'XX',
 
   // OAuth
   // clientId: 'xxxxxx',
