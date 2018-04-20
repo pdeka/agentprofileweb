@@ -21,12 +21,6 @@ const App = (props) => (
     <Switch>
       <Redirect exact from="/" to="/home"/>
       <Route exact path="/home" render={routeProps => <Home {...routeProps} prismicCtx={props.prismicCtx} />} />
-      <Route exact path="/contactus" render={routeProps => <ContactUs {...routeProps} prismicCtx={props.prismicCtx} />} />
-      <Route exact path="/about" render={routeProps => <About {...routeProps} prismicCtx={props.prismicCtx} />} />
-      <Route exact path="/team" render={routeProps => <Team {...routeProps} prismicCtx={props.prismicCtx} />} />
-      <Route exact path="/testimonials" render={routeProps => <Testimonials {...routeProps} prismicCtx={props.prismicCtx} />} />
-      <Route exact path="/community" render={routeProps => <Community {...routeProps} prismicCtx={props.prismicCtx} />} />
-      <Route exact path="/properties" render={routeProps => <Properties {...routeProps} prismicCtx={props.prismicCtx} />} />
       <Route exact path="/preview" render={routeProps => <Preview {...routeProps} prismicCtx={props.prismicCtx} />} />
       <Route component={NotFound} />
     </Switch>

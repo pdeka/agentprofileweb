@@ -3,7 +3,7 @@ export default {
   apiEndpoint: 'https://rumamundi.prismic.io/api/v2',
 
   // -- Access token if the Master is not open
-  accessToken: 'MC5XbHg4WGlrQUFGWkV3aktF.77-977-9VR5Cf--_ve-_ve-_ve-_vQkpQO-_ve-_vW7vv73vv71p77-9fgQsa--_vWxQLu-_vUQ577-9',
+  accessToken: 'X',
 
   // OAuth
   // clientId: 'xxxxxx',
